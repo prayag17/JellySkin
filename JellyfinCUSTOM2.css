@@ -1,0 +1,110 @@
+#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+
+/*Blur backdrops, feel free to edit the intensity of the filter values*/
+.backdropImage {filter: blur(10px) saturate(130%) contrast(76%) brightness(45%);}
+.backgroundContainer.withBackdrop {background-color: rgba(0,0,0,0);}
+/* Hide "please login" text, margin is to prevent login form moving too far up */
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+
+#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+
+/* Hide "please login" text, margin is to prevent login form moving too far up */
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+
+/*Banner transparency and larger font, adjust both "size-adjust" and "size" to modify font size*/
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color: rgba(0, 0, 0, 0);}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color: rgba(0, 0, 0, 0);}
+.headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}
+.pageTitle {margin-top: auto; margin-bottom: auto;}
+.emby-tab-button {padding: 1.75em 1.7em;}
+.itemDetailImage {
+  border-radius: 1em;
+}
+/*Rounded corners and square hover buttons*/
+.cardContent-button, 
+.cardContent-shadow, 
+.itemDetailImage, 
+.cardOverlayButton-hover, 
+.cardOverlayContainer,
+.cardImageContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.actionSheetMenuItem:hover,
+.dialog
+{border-radius: 10px !important;}
+/*Minimalistic play buttons*/
+.cardOverlayFab-primary {background-color: #00000000; transistion: 8sec;}
+.cardOverlayButtonIcon {background-color: #00000000 !important;}
+.cardOverlayContainer {background-color: rgba(0, 0, 0, 0.8);}
+/*Theme some dialogues*/
+.dialog {background-color: rgba(0, 0, 0, 0.9);}
+.actionSheetMenuItem:hover {background-color: rgba(0, 164, 220, 0.2);}
+.mainDrawer {background-color: rgba(0, 0, 0, 0.9);}
+.navMenuOption:hover {background: rgba(0, 164, 220, 0.2);}
+
+/*Tweak series/movie/album title screen*/
+.detailLogo {display: none;}
+.detailPagePrimaryContainer {background: rgba(0,0,0,0) !important;}
+@media all and (min-width: 100em){
+    .itemBackdrop::after {background-color: rgba(0,0,0,0.05); !important;}
+    .itemBackdrop {height: 23vh !important; background-image: none !important;}
+}
+@media all and (min-width: 32em) and (max-width: 100em){
+    .itemBackdrop::after {background-color: rgba(0,0,0,0.1) !important;}
+    .itemBackdrop {height: 10em !important; background-image: none !important;}
+}
+@media all and (max-width: 32em) {
+    .itemBackdrop {width: 100vw !important; height: 100vh !important; position: fixed; filter: brightness(35%);}
+    .detailPageWrapperContainer {margin-top: 5em;}
+}
+.itemProgressBar {height: 2.5px; background: rgba(0,0,0,0);}
+.cardIndicators {right: 0.3em; top: 0.3em;}
+.paper-icon-button-light:hover {background-color: rgba(0,0,0,0);}
+u/media all and (min-width: 100em){
+    .cardOverlayFab-primary {background-color: #00000000;}
+    .cardOverlayButtonIcon {background-color: #00000000 !important;}
+    .cardOverlayContainer {background-color: rgba(0, 0, 0, 0.7);}
+}
+u/media all and (max-width: 100em){
+    .cardOverlayButtonIcon {border-radius: 5px !important;}
+    .cardOverlayButtonIcon {background-color: rgba(0, 0, 0, 0.5) !important;}
+    .cardOverlayButton {padding: 0.3em;}
+}
+/* Narrow the login form */
+#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+
+/* Hide "please login" text, margin is to prevent login form moving too far up */
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+
+/* Hide "manual" and "forgot" buttons */
+#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
+
+    /* Video Control Panel (blurred_mediaplayer) */
+    --video-controlpanel-background: var(--default-transparent-black);
+    --video-controlpanel-blur-amount: 8px;
+    --video-controlpanel-brightness-amount: 100%;
+
+    /* Progress Bar (colored_progress_bar) */
+    --progressbar-card-color: var(--main-color);
+    --progressbar-card-background-color: var(--default-transparent-black);
+    --progressbar-blur-amount: var(--tertiary-blur-amount);
+
+    /* Save Buttons (colored_save_buttons), make it a gradient if you want! */
+    --save-button-color: var(--main-color);
+
+    /* Colored Tab Buttons (colored_tabbuttons) */
+    --tabbutton-color: var(--interact-color);
+    --tabbutton-hover-color: var(--main-color);
+    
+    /* Navigation Buttons (colored_nav_buttons) */
+    --navmenu-background: var(--main-gradient);
