@@ -17,4 +17,5 @@ Title screen:
 
 There are many more animation changes too!
 
-To use just past everything from this:
+To use just past everything from this: https://github.com/PrayagPrajapati/Jellyfin_CustomCSS/raw/master/JellyfinCUSTOM.css
+and past it in custom css text box and click save. To ope custom css go to Dashboard>General>Custom CSS
