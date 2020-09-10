@@ -1,4 +1,5 @@
 # Jellyfin_CustomCSS
+#WARNING:THIS CSS IS ONLY FOR JELLYFIN 10.6.X.
 
 This is Jellyfin custom-css.
 Here are some images, hope you like it:
@@ -17,5 +18,5 @@ Title screen:
 
 There are many more animation changes too!
 
-To use just past everything from this: https://github.com/PrayagPrajapati/Jellyfin_CustomCSS/raw/master/JellyfinCUSTOM.css
-and past it in custom css text box and click save. To ope custom css go to Dashboard>General>Custom CSS
+To use just past everything from this: https://github.com/PrayagPrajapati/Jellyfin_CustomCSS/raw/master/JellyfinCUSTOM.css or https://github.com/PrayagPrajapati/Jellyfin_CustomCSS/raw/master/JellyfinCUSTOM2.css
+and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
