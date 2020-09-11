@@ -1,5 +1,5 @@
 # Jellyfin_CustomCSS
-#WARNING:THIS CSS IS ONLY FOR JELLYFIN 10.6.X.
+###WARNING:THIS CSS IS ONLY FOR JELLYFIN 10.6.X.
 
 This is Jellyfin custom-css.
 Here are some images, hope you like it:
@@ -15,6 +15,9 @@ Movies/TV screen:
 
 Title screen:
 <a href="https://imgur.com/6Lp9dU9"><img src="https://i.imgur.com/6Lp9dU9.jpg" title="source: imgur.com" /></a>
+
+TV_Shows Season Episode list:
+<a href="https://imgur.com/QQhh4GQ"><img src="https://i.imgur.com/QQhh4GQ.jpg" title="source: imgur.com" /></a>
 
 There are many more animation changes too!
 
