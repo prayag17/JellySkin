@@ -8,7 +8,7 @@ HOME SCREEN:
 <a href="https://imgur.com/DBBbdAy"><img src="https://i.imgur.com/DBBbdAy.jpg" title="source: imgur.com" /></a>
 
 Button Animation:
-https://i.imgur.com/6uUi50i.gif
+https://i.imgur.com/6uUi50i.gifv
 
 Movies/TV screen:
 <a href="https://imgur.com/oxaa0t2"><img src="https://i.imgur.com/oxaa0t2.jpg" title="source: imgur.com" /></a>
