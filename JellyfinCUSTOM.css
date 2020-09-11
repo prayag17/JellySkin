@@ -1,7 +1,7 @@
 #loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
-.backdropImage {filter: blur(10px) saturate(100%) contrast(60%) brightness(38%);}
+.backdropImage {filter: blur(10px) saturate(130%) contrast(76%) brightness(45%);}
 .backgroundContainer.withBackdrop {background-color: rgba(0,0,0,0);}
 /* Hide "please login" text, margin is to prevent login form moving too far up */
 #loginPage h1 {display: none}
@@ -108,3 +108,17 @@ u/media all and (max-width: 100em){
     
     /* Navigation Buttons (colored_nav_buttons) */
     --navmenu-background: var(--main-gradient);
+/*Size episode preview images in a more compact way*/
+.listItemImageButton-icon {padding: 0;}
+.secondary.listItem-overview.listItemBodyText {height: 61px; margin: 0;}
+.listItemImageButton {margin: auto; font-size: 1.6em !important;}
+@media all and (min-width: 100em){
+    .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}
+    .listItem-content {height: 115px;}
+    .secondary.listItem-overview.listItemBodyText {height: 4em; margin: 0;}
+}
+@media all and (max-width: 100em){
+    .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
+    .listItem-content {height: 85px;}
+    .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
+}
