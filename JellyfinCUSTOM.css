@@ -1,7 +1,6 @@
-#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
-.backdropImage {filter: blur(10px) saturate(130%) contrast(76%) brightness(45%);}
+.backdropImage {filter: blur(13px) saturate(130%) contrast(76%) brightness(45%);}
 .backgroundContainer.withBackdrop {background-color: rgba(0,0,0,0);}
 /* Hide "please login" text, margin is to prevent login form moving too far up */
 #loginPage h1 {display: none}
@@ -121,4 +120,57 @@ u/media all and (max-width: 100em){
     .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
     .listItem-content {height: 85px;}
     .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
+}
+
+
+
+/* Remove Media Images */
+.section0 .cardScalable {
+    display: none;
+}
+/* remove My Media title */
+.section0 .sectionTitle {
+    display: none;
+}
+/* My Media Styling */
+
+.section0 .itemsContainer {
+    align-items: center;
+    justify-content: center;
+}
+.section0 button.itemAction.textActionButton {
+    height: 3.5em;
+    background: rgba(0, 0, 0, 0.5);
+border-radius: 100em;
+}
+
+.section0 .overflowBackdropCard,
+    .section0 .overflowSmallBackdropCard {
+        max-width: 9vw;
+    }
+
+.section0 .emby-scroller {
+    margin-right: 0;
+  }
+  .section0 .emby-scrollbuttons {
+    display: none;
+  }
+  .section0 .itemsContainer {
+    flex-wrap: wrap;
+  }
+
+@media (max-width: 75em) and (orientation: landscape){
+.section0 {
+    display: none;
+} }
+
+@media (max-width: 75em){
+.section0 {
+    display: none;
+}    }
+.raised.homeLibraryButton:hover {transition: filter 0.2s}
+.raised.homeLibraryButton {transition: filter 0.2s}
+.homeLibraryButton {
+    min-width: 12em;
+    margin: 0.4em;
 }
