@@ -1,17 +1,30 @@
+@font-face{font-family:'Netflix Sans Thin';font-weight:100; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Light';font-weight:300; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Regular';font-weight:400; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Medium';font-weight:700; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Bold';font-weight:800; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Black';font-weight:900; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')}
+
+.emby-button-foreground{font-family:'Netflix Sans Regular' font-size: 17px;}
+body{font-family:'Netflix Sans Regular'}
+h1{font-family: 'Netflix Sans Bold'; font-size: 35px;}
+h3{font-family: 'Netflix Sans Regular';}
+.navMenuOptionText{font-family: 'Netflix Sans Thin'; font-size: 20px;}
+.sidebarHeader{font-family: 'Netflix Sans Bold'; font-size: 22px; }
+.itemAction.textActionButton{font-family: 'Netflix Sans Thin'; font-size: 18.5px; }
+.inputLabel.inputLabelUnfocused{font-size: 20px; font-family: 'Netflix Sans Thin';}
+h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
+.selectLabel{font-family: 'Netflix Sans Light' font-size: 18.5px}
+.itemAction.textActionButton{font-family: 'Netflix Sans Regular'; font-size: 18.5px;}
+.cardText.cardTextCentered.cardText-secondary{font-family: 'Netflix Sans Thin'; font-size:15px;}
+.osdTitle{font-family: 'Netflix Sans Bold'; font-size: 18.5px;}
+.htmlvideoplayer.htmlvideoplayer-moveupsubtitles{font-family: 'Netflix Sans Bold' font-size: 55px;}
+.overview.detail-clamp-text{font-family: 'Netflix Sans Regular'; font-size: 20px;}
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, black, transparent);}
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
-.backdropImage {filter: blur(13px) saturate(130%) contrast(76%) brightness(45%);}
+.backdropImage {filter: blur(20px) saturate(130%) contrast(76%) brightness(65%);}
 .backgroundContainer.withBackdrop {background-color: rgba(0,0,0,0);}
-/* Hide "please login" text, margin is to prevent login form moving too far up */
-#loginPage h1 {display: none}
-#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
-
-#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
-
-/* Hide "please login" text, margin is to prevent login form moving too far up */
-#loginPage h1 {display: none}
-#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
-
 /*Banner transparency and larger font, adjust both "size-adjust" and "size" to modify font size*/
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color: rgba(0, 0, 0, 0);}
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color: rgba(0, 0, 0, 0);}
@@ -48,7 +61,6 @@
 .actionSheetMenuItem:hover {background-color: rgba(0, 164, 220, 0.2);}
 .mainDrawer {background-color: rgba(0, 0, 0, 0.9);}
 .navMenuOption:hover {background: rgba(0, 164, 220, 0.2);}
-
 /*Tweak series/movie/album title screen*/
 .detailLogo {display: none;}
 .detailPagePrimaryContainer {background: rgba(0,0,0,0) !important;}
@@ -57,7 +69,7 @@
     .itemBackdrop {height: 23vh !important; background-image: none !important;}
 }
 @media all and (min-width: 32em) and (max-width: 100em){
-    .itemBackdrop::after {background-color: rgba(0,0,0,0.1) !important;}
+    .itemBackdrop::after {background-color: rgba(0, 0, 0, 0.1) !important;}
     .itemBackdrop {height: 10em !important; background-image: none !important;}
 }
 @media all and (max-width: 32em) {
@@ -77,34 +89,19 @@ u/media all and (max-width: 100em){
     .cardOverlayButtonIcon {background-color: rgba(0, 0, 0, 0.5) !important;}
     .cardOverlayButton {padding: 0.3em;}
 }
-/* Narrow the login form */
-#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
-
-/* Hide "please login" text, margin is to prevent login form moving too far up */
-#loginPage h1 {display: none}
-#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
-
-/* Hide "manual" and "forgot" buttons */
-#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
-#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
-
     /* Video Control Panel (blurred_mediaplayer) */
     --video-controlpanel-background: var(--default-transparent-black);
     --video-controlpanel-blur-amount: 8px;
     --video-controlpanel-brightness-amount: 100%;
-
     /* Progress Bar (colored_progress_bar) */
     --progressbar-card-color: var(--main-color);
     --progressbar-card-background-color: var(--default-transparent-black);
     --progressbar-blur-amount: var(--tertiary-blur-amount);
-
     /* Save Buttons (colored_save_buttons), make it a gradient if you want! */
     --save-button-color: var(--main-color);
-
     /* Colored Tab Buttons (colored_tabbuttons) */
     --tabbutton-color: var(--interact-color);
     --tabbutton-hover-color: var(--main-color);
-    
     /* Navigation Buttons (colored_nav_buttons) */
     --navmenu-background: var(--main-gradient);
 /*Size episode preview images in a more compact way*/
@@ -121,9 +118,6 @@ u/media all and (max-width: 100em){
     .listItem-content {height: 85px;}
     .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
 }
-
-
-
 /* Remove Media Images */
 .section0 .cardScalable {
     display: none;
@@ -133,7 +127,6 @@ u/media all and (max-width: 100em){
     display: none;
 }
 /* My Media Styling */
-
 .section0 .itemsContainer {
     align-items: center;
     justify-content: center;
@@ -141,14 +134,12 @@ u/media all and (max-width: 100em){
 .section0 button.itemAction.textActionButton {
     height: 3.5em;
     background: rgba(0, 0, 0, 0.5);
-border-radius: 100em;
+border-radius: 10px;
 }
-
 .section0 .overflowBackdropCard,
     .section0 .overflowSmallBackdropCard {
         max-width: 9vw;
     }
-
 .section0 .emby-scroller {
     margin-right: 0;
   }
@@ -168,9 +159,28 @@ border-radius: 100em;
 .section0 {
     display: none;
 }    }
-.raised.homeLibraryButton:hover {transition: filter 0.2s}
-.raised.homeLibraryButton {transition: filter 0.2s}
+.raised.homeLibraryButton:hover {transition: filter 1s}
+.raised.homeLibraryButton {transition: filter 1s}
 .homeLibraryButton {
     min-width: 12em;
     margin: 0.4em;
 }
+/*Narrow the login form*/
+#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+
+/*Hide "please login" text, margin is to prevent login form moving too far up*/
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+
+/*Hide "manual" and "forgot" buttons*/
+#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
+
+/*Login background*/
+#loginPage {background: url(https://i.imgur.com/9vL4iNf.png) !important; background-size: cover !important;}
+/*Theming for the dasboard*/
+.paperList, .visualCardBox {background-color: #000; border-radius: 6px;}
+.listItemIcon {border-radius: 6px !important;}
+.listItem-border {border-color: rgba(255, 255, 255, 0.22) !important;}
+.backgroundContainer {background-color: #101010;}
+.raised {background: #00a4dc;}
