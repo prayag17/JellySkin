@@ -1,7 +1,7 @@
 # Jellyfin_CustomCSS
 ## WARNING:THIS CSS IS ONLY FOR JELLYFIN 10.6.X.
 
-This is Jellyfin custom-css. Netflix Sans are used as the defautl font but if it is not applied in every area then please make a new issue.
+This is Jellyfin custom-css. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
 Here are some images, hope you like it:
 
 HOME SCREEN:
