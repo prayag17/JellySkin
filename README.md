@@ -23,6 +23,9 @@ TV_Shows Season Episode list:
 Movies/TV Shows list:
 <a href="https://imgur.com/HCG3BqZ"><img src="https://i.imgur.com/HCG3BqZ.png" title="source: imgur.com" /></a>
 
+Gradient hover buttons: ...........................................................................................................................................................
+<a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
+
 There are many more animation changes too!
 
 To use just past everything from this: https://github.com/PrayagPrajapati/Jellyfin_CustomCSS/raw/master/JellyfinCUSTOM.css
