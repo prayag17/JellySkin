@@ -1,3 +1,4 @@
+/*Fonts */
 @font-face{font-family:'Netflix Sans Thin';font-weight:100; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')}
 @font-face{font-family:'Netflix Sans Light';font-weight:300; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')}
 @font-face{font-family:'Netflix Sans Regular';font-weight:400; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')}
@@ -19,11 +20,15 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 .cardText.cardTextCentered.cardText-secondary{font-family: 'Netflix Sans Thin'; font-size:15px;}
 .osdTitle{font-family: 'Netflix Sans Bold'; font-size: 18.5px;}
 .htmlvideoplayer.htmlvideoplayer-moveupsubtitles{font-family: 'Netflix Sans Bold' font-size: 55px;}
-.overview.detail-clamp-text{font-family: 'Netflix Sans Regular'; font-size: 20px;}
-.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, black, transparent);}
+.overview.detail-clamp-text{font-family: 'Netflix Sans Regular'; font-size: 17.5px;}
+.itemSelectionCount {font-size: 24.99px;}
+
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);}
+.navMenuOption.emby-button:hover{background: rgb(216,0,255);
+background: linear-gradient(140deg,#aa5cc3,#00a4dc)}
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
-.backdropImage {filter: blur(20px) saturate(130%) contrast(76%) brightness(65%);}
+.backdropImage {filter: blur(20px) saturate(130%) contrast(76%) brightness(95%);}
 .backgroundContainer.withBackdrop {background-color: rgba(0,0,0,0);}
 /*Banner transparency and larger font, adjust both "size-adjust" and "size" to modify font size*/
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color: rgba(0, 0, 0, 0);}
@@ -79,12 +84,12 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 .itemProgressBar {height: 2.5px; background: rgba(0,0,0,0);}
 .cardIndicators {right: 0.3em; top: 0.3em;}
 .paper-icon-button-light:hover {background-color: rgba(0,0,0,0);}
-u/media all and (min-width: 100em){
+@media all and (min-width: 100em){
     .cardOverlayFab-primary {background-color: #00000000;}
     .cardOverlayButtonIcon {background-color: #00000000 !important;}
     .cardOverlayContainer {background-color: rgba(0, 0, 0, 0.7);}
 }
-u/media all and (max-width: 100em){
+@media all and (max-width: 100em){
     .cardOverlayButtonIcon {border-radius: 5px !important;}
     .cardOverlayButtonIcon {background-color: rgba(0, 0, 0, 0.5) !important;}
     .cardOverlayButton {padding: 0.3em;}
