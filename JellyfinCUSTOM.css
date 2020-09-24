@@ -25,7 +25,9 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);}
 .navMenuOption.emby-button:hover{background: rgb(216,0,255);
-background: linear-gradient(140deg,#aa5cc3,#00a4dc)}
+background: linear-gradient(140deg,#aa5cc3,#00a4dc);}
+.raised.emby-button:hover{background: rgb(216,0,255);
+background: linear-gradient(140deg,#aa5cc3,#00a4dc);}
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 .backdropImage {filter: blur(20px) saturate(130%) contrast(76%) brightness(95%);}
