@@ -20,7 +20,7 @@ Title screen:
 TV_Shows Season Episode list:
 <a href="https://imgur.com/nynQz6D"><img src="https://i.imgur.com/nynQz6D.png" title="source: imgur.com" /></a>
 
-Gradient hover buttons: ...........................................................................................................................................................
+Gradient hover buttons: ............................................................................................................................................................
 <a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
 
 There are many more animation changes too!
