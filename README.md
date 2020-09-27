@@ -23,6 +23,10 @@ TV_Shows Season Episode list:
 Gradient hover buttons: 
 <a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
 
+Cast info:
+<a href="https://imgur.com/TPpqpgD"><img src="https://i.imgur.com/TPpqpgD.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/Q3xYu8g"><img src="https://i.imgur.com/Q3xYu8g.png" title="source: imgur.com" /></a>
+
 There are many more animation changes too!
 
 To use just past everything from this: https://github.com/PrayagPrajapati/Jellyfin_CustomCSS/raw/master/JellyfinCUSTOM.css
