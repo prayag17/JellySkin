@@ -5,23 +5,20 @@ This is Jellyfin custom-css. Netflix Sans are used as the default fonts but if i
 Here are some images, hope you like it:
 
 HOME SCREEN:
-<a href="https://imgur.com/gYJbOYI"><img src="https://i.imgur.com/gYJbOYI.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/LMS063i"><img src="https://i.imgur.com/LMS063i.png" title="source: imgur.com" /></a>
 
 Button Animation:
 https://i.imgur.com/6uUi50i.gifv
 
 Movies/TV screen:
-<a href="https://imgur.com/HCG3BqZ"><img src="https://i.imgur.com/HCG3BqZ.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/2GqzyXg"><img src="https://i.imgur.com/2GqzyXg.png" title="source: imgur.com" /></a>
 
 Title screen:
-<a href="https://imgur.com/av8bw4k"><img src="https://i.imgur.com/av8bw4k.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/hJBvNpY"><img src="https://i.imgur.com/hJBvNpY.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/PobXExD"><img src="https://i.imgur.com/PobXExD.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/JhYFTt4"><img src="https://i.imgur.com/JhYFTt4.png" title="source: imgur.com" /></a>
 
 TV_Shows Season Episode list:
-<a href="https://imgur.com/g6zcyMg"><img src="https://i.imgur.com/g6zcyMg.png" title="source: imgur.com" /></a>
-
-Movies/TV Shows list:
-<a href="https://imgur.com/HCG3BqZ"><img src="https://i.imgur.com/HCG3BqZ.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/nynQz6D"><img src="https://i.imgur.com/nynQz6D.png" title="source: imgur.com" /></a>
 
 Gradient hover buttons: ...........................................................................................................................................................
 <a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
