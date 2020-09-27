@@ -1,0 +1,201 @@
+/*Fonts */
+@font-face{font-family:'Netflix Sans Thin';font-weight:100; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Light';font-weight:300; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Regular';font-weight:400; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Medium';font-weight:700; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Bold';font-weight:800; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')}
+@font-face{font-family:'Netflix Sans Black';font-weight:900; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')}
+
+.emby-button-foreground{font-family:'Netflix Sans Regular' font-size: 17px;}
+body{font-family:'Netflix Sans Regular'}
+h1{font-family: 'Netflix Sans Bold'; font-size: 35px; transition: font-size .45s;}
+h3{font-family: 'Netflix Sans Regular';}
+.navMenuOptionText{font-family: 'Netflix Sans Thin'; font-size: 20px;}
+.sidebarHeader{font-family: 'Netflix Sans Bold'; font-size: 22px; }
+.itemAction.textActionButton{font-family: 'Netflix Sans Thin'; font-size: 18.5px; }
+.inputLabel.inputLabelUnfocused{font-size: 20px; font-family: 'Netflix Sans Thin';}
+h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
+.selectLabel{font-family: 'Netflix Sans Light' font-size: 18.5px}
+.itemAction.textActionButton{font-family: 'Netflix Sans Regular'; font-size: 18.5px; background: rgba(0,0,0,0);}
+.cardText.cardTextCentered.cardText-secondary{font-family: 'Netflix Sans Thin'; font-size:15px;}
+.osdTitle{font-family: 'Netflix Sans Bold'; font-size: 18.5px;}
+.htmlvideoplayer.htmlvideoplayer-moveupsubtitles{font-family: 'Netflix Sans Bold' font-size: 55px;}
+.overview.detail-clamp-text{font-family: 'Netflix Sans Regular'; font-size: 17.5px;}
+.itemSelectionCount {font-size: 24.99px;}
+.cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .5s;}
+.cardBox:hover {background: rgba(0,0,0,0.75);}
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);}
+.navMenuOption.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc);}
+.raised.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc);}
+
+/*Hover items*/
+.cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .5s;}
+.cardBox:hover {background: rgba(0,0,0,0.75)}
+.itemName.parentNameLast {font-size: 35px;.itemtransition: font-size .35s;}
+.itemName.parentNameLast:hover {font-size: 38px;}
+.button-flat:hover {font-size: 22px;}
+.mediaInfoItem:hover {font-size: 22px;}
+.mediaInfoItem {transition: font-size .35s;}
+
+/* Adjust both "size-adjust" and "size" to modify size */
+.headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}
+.pageTitle {margin-top: auto; margin-bottom: auto;}
+.emby-tab-button {padding: 1.75em 1.7em;}
+
+/*Blur backdrops, feel free to edit the intensity of the filter values*/
+.backdropImage {filter: blur(20px) saturate(130%) contrast(76%) brightness(95%);}
+.backgroundContainer.withBackdrop {background-color: rgba(0,0,0,0);}
+/*Rounded corners and square hover buttons*/
+.cardContent-button, 
+.cardContent-shadow, 
+.itemDetailImage, 
+.cardOverlayButton-hover, 
+.cardOverlayContainer,
+.cardImageContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.actionSheetMenuItem:hover,
+.dialog
+{border-radius: 10px !important;}
+/* Top menu transparency */
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color:rgba(0, 0, 0, 0);}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color:rgba(0, 0, 0, 0);}
+.playedIndicator { background: #5dd000; }
+/*Minimalistic play buttons*/
+.cardOverlayFab-primary {background-color: #00000000; transistion: 8sec;}
+.cardOverlayButtonIcon {background-color: #00000000 !important;}
+.cardOverlayContainer {background-color: rgba(0, 0, 0, 0.8);}
+/*Theme some dialogues*/
+.dialog {background-color: rgba(0, 0, 0, 0.9);}
+.actionSheetMenuItem:hover {background-color: rgba(0, 164, 220, 0.2);}
+.mainDrawer {background-color: rgba(0, 0, 0, 0.9);}
+.navMenuOption:hover {background: rgba(0, 164, 220, 0.2);}
+/*Tweak series/movie/album title screen*/
+.detailLogo {display: none;}
+.detailPagePrimaryContainer {background: rgba(0,0,0,0) !important;}
+@media all and (min-width: 100em){
+    .itemBackdrop::after {background-color: rgba(0,0,0,0.05); !important;}
+    .itemBackdrop {height: 23vh !important; background-image: none !important;}
+}
+@media all and (min-width: 32em) and (max-width: 100em){
+    .itemBackdrop::after {background-color: rgba(0, 0, 0, 0.1) !important;}
+    .itemBackdrop {height: 10em !important; background-image: none !important;}
+}
+@media all and (max-width: 32em) {
+    .itemBackdrop {width: 100vw !important; height: 100vh !important; position: fixed; filter: brightness(35%);}
+    .detailPageWrapperContainer {margin-top: 5em;}
+}
+.itemProgressBar {height: 2.5px; background: rgba(0,0,0,0);}
+.cardIndicators {right: 0.3em; top: 0.3em;}
+.paper-icon-button-light:hover {background-color: rgba(0,0,0,0);}
+@media all and (min-width: 100em){
+    .cardOverlayFab-primary {background-color: #00000000;}
+    .cardOverlayButtonIcon {background-color: #00000000 !important;}
+    .cardOverlayContainer {background-color: rgba(0, 0, 0, 0.7);}
+}
+@media all and (max-width: 100em){
+    .cardOverlayButtonIcon {border-radius: 5px !important;}
+    .cardOverlayButtonIcon {background-color: rgba(0, 0, 0, 0.5) !important;}
+    .cardOverlayButton {padding: 0.3em;}
+}
+    /* Video Control Panel (blurred_mediaplayer) */
+    --video-controlpanel-background: var(--default-transparent-black);
+    --video-controlpanel-blur-amount: 8px;
+    --video-controlpanel-brightness-amount: 100%;
+    /* Progress Bar (colored_progress_bar) */
+    --progressbar-card-color: var(--main-color);
+    --progressbar-card-background-color: var(--default-transparent-black);
+    --progressbar-blur-amount: var(--tertiary-blur-amount);
+    /* Save Buttons (colored_save_buttons), make it a gradient if you want! */
+    --save-button-color: var(--main-color);
+    /* Colored Tab Buttons (colored_tabbuttons) */
+    --tabbutton-color: var(--interact-color);
+    --tabbutton-hover-color: var(--main-color);
+    /* Navigation Buttons (colored_nav_buttons) */
+    --navmenu-background: var(--main-gradient);
+/*Size episode preview images in a more compact way*/
+.listItemImageButton-icon {padding: 0;}
+.secondary.listItem-overview.listItemBodyText {height: 61px; margin: 0;}
+.listItemImageButton {margin: auto; font-size: 1.6em !important;}
+@media all and (min-width: 100em){
+    .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}
+    .listItem-content {height: 115px;}
+    .secondary.listItem-overview.listItemBodyText {height: 4em; margin: 0;}
+}
+@media all and (max-width: 100em){
+    .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
+    .listItem-content {height: 85px;}
+    .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
+}
+/* Remove Media Images */
+.section0 .cardScalable {
+    display: none;
+}
+/* remove My Media title */
+.section0 .sectionTitle {
+    display: all;
+}
+/* My Media Styling */
+.section0 .itemsContainer {
+    align-items: center;
+    justify-content: center;
+}
+.section0 button.itemAction.textActionButton {
+    height: 3.5em;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+.section0 .overflowBackdropCard,
+    .section0 .overflowSmallBackdropCard {
+        max-width: 9vw;
+    }
+.section0 .emby-scroller {
+    margin-right: 0;
+  }
+  .section0 .emby-scrollbuttons {
+    display: none;
+  }
+  .section0 .itemsContainer {
+    flex-wrap: wrap;
+  }
+
+@media (max-width: 75em) and (orientation: landscape){
+.section0 {
+    display: none;
+} }
+
+@media (max-width: 75em){
+.section0 {
+    display: none;
+}    }
+.raised.homeLibraryButton:hover {transition: filter 1s}
+.raised.homeLibraryButton {transition: filter 1s}
+.homeLibraryButton {
+    min-width: 12em;
+    margin: 0.4em;
+}
+/*Narrow the login form*/
+#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+
+/*Hide "please login" text, margin is to prevent login form moving too far up*/
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+
+/*Hide "manual" and "forgot" buttons*/
+#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
+
+/*Login background*/
+#loginPage {background: url(https://i.imgur.com/9vL4iNf.png) !important; background-size: cover !important;}
+/*Theming for the dasboard*/
+.paperList, .visualCardBox {background-color: #000; border-radius: 6px;}
+.listItemIcon {border-radius: 6px !important;}
+.listItem-border {border-color: rgba(255, 255, 255, 0.22) !important;}
+.backgroundContainer {background-color: #101010;}
+.raised {background: #00a4dc;}
