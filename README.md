@@ -32,7 +32,8 @@ Cast info:
 ![cast-info](screenshots/cast-info.png)
 
 Custom button animations:
-![](https://i.imgur.com/6uUi50i.gif)
+<br/>
+<img src="https://i.imgur.com/oHXtLC1.gif" alt="Databay showcase gif" />
 <center><b>and more</b></center>
 
 
