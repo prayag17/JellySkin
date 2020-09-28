@@ -20,13 +20,16 @@ Title screen:
 TV_Shows Season Episode list:
 <a href="https://imgur.com/nynQz6D"><img src="https://i.imgur.com/nynQz6D.png" title="source: imgur.com" /></a>
 
-Gradient hover buttons: <br>
+Gradient hover buttons:<br>
 <a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
 
 Cast info:
 <a href="https://imgur.com/TPpqpgD"><img src="https://i.imgur.com/TPpqpgD.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/Q3xYu8g"><img src="https://i.imgur.com/Q3xYu8g.png" title="source: imgur.com" /></a>
 
+Dialogs:<br>
+<a href="https://imgur.com/Bdd5487"><img src="https://i.imgur.com/Bdd5487.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/QhfzjYN"><img src="https://i.imgur.com/QhfzjYN.png" title="source: imgur.com" /></a>
 There are many more animation changes too!
 
 To use just past this : ``` @import url(https://prayag17.github.io/JellyfinCSS/JellyfinCUSTOM.css); ```
