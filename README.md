@@ -29,5 +29,5 @@ Cast info:
 
 There are many more animation changes too!
 
-To use just past everything from this: https://github.com/PrayagPrajapati/Jellyfin_CustomCSS/raw/master/JellyfinCUSTOM.css
+To use just past this : ``` @import url(https://prayag17.github.io/JellyfinCSS/JellyfinCUSTOM.css); ```
 and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
