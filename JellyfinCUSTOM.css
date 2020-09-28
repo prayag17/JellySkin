@@ -26,7 +26,7 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);}
 
 /*Hover items*/
-.cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .35s, box-shadow .35s;}
+.cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .25s, box-shadow .25s, transform .25s;}
 .cardBox:hover {background: rgba(0,0,0,0.75);box-shadow: 0px 0px 0px 0px black;}
 .itemName.parentNameLast {font-size: 35px;.itemtransition: font-size .35s;}
 .itemName.parentNameLast:hover {font-size: 38px;}
@@ -34,9 +34,9 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 .mediaInfoItem:hover {font-size: 22px;}
 .mediaInfoItem {transition: font-size .35s;}
 .raised {transition: transform .2s;}
-.cardBox:hover {background: rgba(0,0,0,0.75);}
 .navMenuOption.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc);}
 .raised.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc); transform: scale(1.2 );}
+.cardBox:hover {background: rgba(0,0,0,0.75);transform: scale(0.95);}
 
 /* Adjust both "size-adjust" and "size" to modify size */
 .headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}
