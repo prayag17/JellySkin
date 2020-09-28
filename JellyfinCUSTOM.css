@@ -24,6 +24,9 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 .itemSelectionCount {font-size: 24.99px;}
 .cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .5s;}
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);}
+.navMenuOption-selected {background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;}
+.cardText button[data-type="Actor"] {font-size: 10px !important;}
+
 
 /*Hover items*/
 .cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .25s, box-shadow .25s, transform .25s;}
@@ -34,12 +37,16 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 .mediaInfoItem:hover {font-size: 22px;}
 .mediaInfoItem {transition: font-size .35s;}
 .raised {transition: transform .2s;}
-.navMenuOption.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc);}
+.navMenuOption.emby-button:hover{background: linear-gradient(140deg,#aa5cc3,#00a4dc); transform: scale(1.1);}
 .raised.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc); transform: scale(1.2 );}
 .cardBox:hover {background: rgba(0,0,0,0.75);transform: scale(0.95);}
+navMenuOption-selected {background: rgb(216,0,255); background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;}
+.videoOsdBottom {background-color: rgba(0,0,0,.3); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: 0px -8px 12px 0px black;}
+.osdHeader {background: rgba(0,0,0,0.3)!important;-webkit-backdrop-filter: blur(25px)!important;backdrop-filter: blur(25px)!important;box-shadow: 0px 8px 12px 0px black;}
+.dialog {background-color: rgba(0, 0, 0, 0.35) !important;backdrop-filter: blur(20px) !important;-webkit-backdrop-filter: blur(20px) !important;box-shadow: 0 0 20px 4px black;}
 
 /* Adjust both "size-adjust" and "size" to modify size */
-.headerTabs.sectionTabs {text-size-adjust: 110%;  font-size: 110%;}
+.headerTabs.sectionTabs {text-size-adjust: 130%;  font-size: 130%;}
 .pageTitle {margin-top: auto; margin-bottom: auto;}
 .emby-tab-button {padding: 1.75em 1.7em;}
 
@@ -75,7 +82,7 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 /*Theme some dialogues*/
 .dialog {background-color: rgba(0, 0, 0, 0.9);}
 .actionSheetMenuItem:hover {background-color: rgba(0, 164, 220, 0.2);}
-.mainDrawer {background-color: rgba(0, 0, 0, 0.9);}
+.mainDrawer {background-color: rgba(0, 0, 0, 0.35); -webkit-backdrop-filter: blur(25px); backdrop-filter: blur(25px); box-shadow: 5px 2px 20px 0px black;}
 .navMenuOption:hover {background: rgba(0, 164, 220, 0.2);}
 /*Tweak series/movie/album title screen*/
 .detailLogo {display: none;}
