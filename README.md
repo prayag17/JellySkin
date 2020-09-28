@@ -30,6 +30,7 @@ Cast info:
 Dialogs:<br>
 <a href="https://imgur.com/Bdd5487"><img src="https://i.imgur.com/Bdd5487.jpg" title="source: imgur.com" /></a>
 <a href="https://imgur.com/QhfzjYN"><img src="https://i.imgur.com/QhfzjYN.png" title="source: imgur.com" /></a>
+<br>
 There are many more animation changes too!
 
 To use just past this : ``` @import url(https://prayag17.github.io/JellyfinCSS/JellyfinCUSTOM.css); ```
