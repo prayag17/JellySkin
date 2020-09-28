@@ -1,33 +1,34 @@
-# Jellyfin_CustomCSS
-## WARNING:THIS CSS IS ONLY FOR JELLYFIN 10.6.X.
+<div align="center">
+<h1>Jellyfin CustomCSS</h1>
+<h4>Warning: This css is only for Jellyfin 10.6.X. </h4>
+  <br>
+</div>
 
-This is Jellyfin custom-css. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
-Here are some images, hope you like it:
+Jellyfin CustomCSS is a custom theme for jellyfin,  Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
 
-HOME SCREEN:
-<a href="https://imgur.com/LMS063i"><img src="https://i.imgur.com/LMS063i.png" title="source: imgur.com" /></a>
+To use the theme copy paste everything from the link below into "Dashboard>General>Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save.
 
-Button Animation:
-https://i.imgur.com/6uUi50i.gifv
+Home:
+![Home](screenshots/home.png)
 
-Movies/TV screen:
-<a href="https://imgur.com/2GqzyXg"><img src="https://i.imgur.com/2GqzyXg.png" title="source: imgur.com" /></a>
+Movies/TV:
+![movie-tv](screenshots/movie-tv.png)
 
-Title screen:
-<a href="https://imgur.com/PobXExD"><img src="https://i.imgur.com/PobXExD.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/JhYFTt4"><img src="https://i.imgur.com/JhYFTt4.png" title="source: imgur.com" /></a>
+Title:
+![title-2](screenshots/title.png)
 
-TV_Shows Season Episode list:
-<a href="https://imgur.com/nynQz6D"><img src="https://i.imgur.com/nynQz6D.png" title="source: imgur.com" /></a>
+Season Episode list:
+![season-ep-list](screenshots/season-ep-list.png)
 
 Gradient hover buttons: 
-<a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
+![gradient-anim](screenshots/gradient-btn.png)
 
 Cast info:
-<a href="https://imgur.com/TPpqpgD"><img src="https://i.imgur.com/TPpqpgD.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/Q3xYu8g"><img src="https://i.imgur.com/Q3xYu8g.png" title="source: imgur.com" /></a>
+![cast-info](screenshots/cast-info.png)
 
-There are many more animation changes too!
+Custom button animations:
+![custom-button-anim](https://i.imgur.com/6uUi50i.gif)
 
-To use just past everything from this: https://github.com/PrayagPrajapati/Jellyfin_CustomCSS/raw/master/JellyfinCUSTOM.css
-and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
+<center><b>and more</b></center>
+
+
