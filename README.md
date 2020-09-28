@@ -32,8 +32,7 @@ Cast info:
 ![cast-info](screenshots/cast-info.png)
 
 Custom button animations:
-![custom-button-anim](https://i.imgur.com/6uUi50i.gif)
-
+![](https://i.imgur.com/6uUi50i.gif)
 <center><b>and more</b></center>
 
 
