@@ -14,7 +14,7 @@ save.
 Home:
 ![Home](screenshots/home.png)
 
-Movies/TV:
+Movies/TV Shows:
 ![movie-tv](screenshots/movie-tv.png)
 
 Title:
