@@ -34,6 +34,6 @@ Cast info:
 Custom button animations:
 <br/>
 <img src="https://i.imgur.com/oHXtLC1.gif" alt="Databay showcase gif" />
-<center><b>and more</b></center>
+<br/>
 
 
