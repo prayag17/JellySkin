@@ -44,6 +44,10 @@ navMenuOption-selected {background: rgb(216,0,255); background: linear-gradient(
 .videoOsdBottom {background-color: rgba(0,0,0,.3); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: 0px -8px 12px 0px black;}
 .osdHeader {background: rgba(0,0,0,0.3)!important;-webkit-backdrop-filter: blur(25px)!important;backdrop-filter: blur(25px)!important;box-shadow: 0px 8px 12px 0px black;}
 .dialog {background-color: rgba(0, 0, 0, 0.35) !important;backdrop-filter: blur(20px) !important;-webkit-backdrop-filter: blur(20px) !important;box-shadow: 0 0 20px 4px black;}
+.listItem.listItem-border:hover {border-color: rgba(0,0,0,0) !important;transform: scale(1.1);background: black;}
+.listItem-border {transition: border-color .2s, transform .2s, background .2s;}
+div#divRunningTasks:hover {transform: scale(1.1);}
+div#divRunningTasks {transition: transform .2s;}
 
 /* Adjust both "size-adjust" and "size" to modify size */
 .headerTabs.sectionTabs {text-size-adjust: 130%;  font-size: 130%;}
