@@ -31,7 +31,7 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 /*Hover items*/
 .cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .25s, box-shadow .25s, transform .25s;}
 .cardBox:hover {background: rgba(0,0,0,0.75);box-shadow: 0px 0px 0px 0px black;}
-.itemName.parentNameLast {font-size: 35px;.itemtransition: font-size .35s;}
+.itemName.parentNameLast {font-size: 35px; transition: font-size .2s;}
 .itemName.parentNameLast:hover {font-size: 38px;}
 .button-flat:hover {font-size: 22px;}
 .mediaInfoItem:hover {font-size: 22px;}
