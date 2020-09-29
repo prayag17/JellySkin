@@ -17,8 +17,7 @@ Animations
 <img src="https://i.imgur.com/33NI8CV.gif">
 <img src="https://i.imgur.com/aBC9o0b.gif">
 <img src="https://i.imgur.com/JncxBe2.gif">
-<img src="https://i.imgur.com/iMW1z0W.gif">
-
+<br>
 Movies/TV screen:
 <a href="https://imgur.com/2GqzyXg"><img src="https://i.imgur.com/2GqzyXg.png" title="source: imgur.com" /></a>
 
