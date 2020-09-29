@@ -38,7 +38,7 @@ h2{font-size: 20px; font-family: 'Netflix Sans Medium';}
 .mediaInfoItem {transition: font-size .35s;}
 .raised {transition: transform .2s; background:#3a3a3a !important;}
 .navMenuOption.emby-button:hover{background: linear-gradient(140deg,#aa5cc3,#00a4dc); transform: scale(1.1);}
-.raised.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc); transform: scale(1.2);}
+.raised.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc) !impotant; transform: scale(1.2);}
 .cardBox:hover {background: rgba(0,0,0,0.75);transform: scale(0.95);}
 navMenuOption-selected {background: rgb(216,0,255); background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;}
 .videoOsdBottom {background-color: rgba(0,0,0,.3); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: 0px -8px 12px 0px black;}
