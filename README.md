@@ -11,8 +11,11 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 HOME SCREEN:
 <a href="https://imgur.com/LMS063i"><img src="https://i.imgur.com/LMS063i.png" title="source: imgur.com" /></a>
 
-Button Animation:
-https://i.imgur.com/6uUi50i.gifv
+Animations
+<img src="https://i.imgur.com/0mAIEgL.gif">
+<img src="https://i.imgur.com/QynAax0.gif">
+<img src="https://i.imgur.com/33NI8CV.gif">
+<img src="https://i.imgur.com/aBC9o0b.gif">
 
 Movies/TV screen:
 <a href="https://imgur.com/2GqzyXg"><img src="https://i.imgur.com/2GqzyXg.png" title="source: imgur.com" /></a>
