@@ -5,6 +5,9 @@
 This is Jellyfin custom-css. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
 Here are some images, hope you like it:
 
+To use just copy this : ``` @import url(https://prayag17.github.io/JellyfinCSS/JellyfinCUSTOM.css); ```
+and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
+
 HOME SCREEN:
 <a href="https://imgur.com/LMS063i"><img src="https://i.imgur.com/LMS063i.png" title="source: imgur.com" /></a>
 
@@ -34,5 +37,4 @@ Dialogs:<br>
 <br>
 There are many more animation changes too!
 
-To use just past this : ``` @import url(https://prayag17.github.io/JellyfinCSS/JellyfinCUSTOM.css); ```
-and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
+
