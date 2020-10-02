@@ -5,7 +5,6 @@
 @font-face{font-family:'Netflix Sans Medium';font-weight:700; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')}
 @font-face{font-family:'Netflix Sans Bold';font-weight:800; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')}
 @font-face{font-family:'Netflix Sans Black';font-weight:900; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')}
-
 @font-face{
   font-family:'Netflix Sans';
   font-weight:100; 
@@ -36,7 +35,6 @@
   font-weight:900; 
   src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
 }
-
 body, h1, h2, h3, h4 {
   font-family: 'Netflix Sans', sans-serif;
 }
@@ -61,6 +59,10 @@ navMenuOption-selected {background: rgb(216,0,255); background: linear-gradient(
 div#divRunningTasks:hover {transform: scale(1.1);}
 div#divRunningTasks {transition: transform .2s;}
 
+.cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .5s;}
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);}
+.navMenuOption-selected {background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;}
+.cardText button[data-type="Actor"] {font-size: 16.5px !important;}
 
 /* Adjust both "size-adjust" and "size" to modify size */
 .headerTabs.sectionTabs {text-size-adjust: 130%;  font-size: 130%;}
