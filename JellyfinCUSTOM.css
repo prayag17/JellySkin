@@ -62,7 +62,6 @@ div#divRunningTasks {transition: transform .2s;}
 .cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .5s;}
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);}
 .navMenuOption-selected {background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;}
-.cardText button[data-type="Actor"] {font-size: 16.5px !important;}
 
 /* Adjust both "size-adjust" and "size" to modify size */
 .headerTabs.sectionTabs {text-size-adjust: 130%;  font-size: 130%;}
