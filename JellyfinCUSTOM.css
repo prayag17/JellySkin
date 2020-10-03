@@ -39,37 +39,106 @@ body, h1, h2, h3, h4 {
   font-family: 'Netflix Sans', sans-serif;
 }
 /*Hover items*/
-.cardBox {background: rgba(0,0,0,0.27);border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);transition: background .25s, box-shadow .25s, transform .25s;}
-.cardBox:hover {background: rgba(0,0,0,0.75);box-shadow: 0px 0px 0px 0px black;}
-.itemName.parentNameLast {font-size: 35px; transition: font-size .2s;}
-.itemName.parentNameLast:hover {font-size: 38px;}
-.button-flat:hover {transform: scale(1.55);}
-.mediaInfoItem:hover {font-size: 22px;}
-.mediaInfoItem {transition: font-size .35s;}
-.raised {transition: transform .2s; background:#3a3a3a !important;}
-.navMenuOption.emby-button:hover{background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important; transform: scale(1.1);}
-.raised.emby-button:hover{background: rgb(216,0,255); background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important; transform: scale(1.2);}
-.cardBox:hover {background: rgba(0,0,0,0.75);transform: scale(0.95);}
-navMenuOption-selected {background: rgb(216,0,255); background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;}
-.videoOsdBottom {background-color: rgba(0,0,0,.3); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); box-shadow: 0px -8px 12px 0px black;}
-.osdHeader {background: rgba(0,0,0,0.3)!important;-webkit-backdrop-filter: blur(25px)!important;backdrop-filter: blur(25px)!important;box-shadow: 0px 8px 12px 0px black;}
-.dialog {background-color: rgba(0, 0, 0, 0.35) !important;backdrop-filter: blur(20px) !important;-webkit-backdrop-filter: blur(20px) !important;box-shadow: 0 0 20px 4px black;}
-.listItem.listItem-border:hover {border-color: rgba(0,0,0,0) !important;transform: scale(1.1);background: black;}
-.listItem-border {transition: border-color .2s, transform .2s, background .2s;}
-div#divRunningTasks:hover {transform: scale(1.1);}
-div#divRunningTasks {transition: transform .2s;}
+.cardBox {
+  background: rgba(0,0,0,0.27);
+  border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);
+  transition: background .25s, box-shadow .25s, transform .25s;
+}
+.cardBox:hover {
+  background: rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 0px 0px black;
+}
+.itemName.parentNameLast {
+  font-size: 35px; 
+  transition: font-size .2s;
+}
+.itemName.parentNameLast:hover {
+  font-size: 38px;
+}
+.button-flat:hover {
+  transform: scale(1.55);
+}
+.mediaInfoItem:hover {
+  font-size: 22px;
+}
+.mediaInfoItem {
+  transition: font-size .35s;
+}
+.raised {
+  transition: transform .2s; 
+  background:#3a3a3a !important;
+}
+.navMenuOption.emby-button:hover{
+  background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
+  transform: scale(1.1);
+}
+.raised.emby-button:hover{
+  background: rgb(216,0,255);
+  background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
+  transform: scale(1.2);
+}
+.cardBox:hover {
+  background: rgba(0,0,0,0.75);
+  transform: scale(0.95);
+}
+navMenuOption-selected {
+  background: rgb(216,0,255);
+  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+}
+.videoOsdBottom {
+  background-color: rgba(0,0,0,.3);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  box-shadow: 0px -8px 12px 0px black;
+}
+.osdHeader {
+  background: rgba(0,0,0,0.3)!important;
+  -webkit-backdrop-filter: blur(25px)!important;
+  backdrop-filter: blur(25px)!important;
+  box-shadow: 0px 8px 12px 0px black;
+}
+.listItem.listItem-border:hover {
+  border-color: rgba(0,0,0,0) !important;
+  transform: scale(1.1);
+  background: black;
+}
+.listItem-border {
+  transition: border-color .2s, transform .2s, background .2s;
+}
+div#divRunningTasks:hover {
+  transform: scale(1.1);
+}
+div#divRunningTasks {
+  transition: transform .2s;
+}
 
-.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);}
-.navMenuOption-selected {background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;}
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);
+}
+.navMenuOption-selected {
+  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+}
 
 /* Adjust both "size-adjust" and "size" to modify size */
-.headerTabs.sectionTabs {text-size-adjust: 130%;  font-size: 130%;}
-.pageTitle {margin-top: auto; margin-bottom: auto;}
-.emby-tab-button {padding: 1.75em 1.7em;}
+.headerTabs.sectionTabs {
+  text-size-adjust: 130%;
+  font-size: 130%;
+}
+.pageTitle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.emby-tab-button {
+  padding: 1.75em 1.7em;
+}
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
-.backdropImage {filter: blur(20px) saturate(130%) contrast(76%) brightness(95%);}
-.backgroundContainer.withBackdrop {background-color: rgba(0,0,0,0);}
+.backdropImage {
+  filter: blur(20px) saturate(130%) contrast(76%) brightness(95%);
+}
+.backgroundContainer.withBackdrop {
+  background-color: rgba(0,0,0,0);
+}
 /*Rounded corners and square hover buttons*/
 .cardContent-button, 
 .cardContent-shadow, 
@@ -86,31 +155,73 @@ div#divRunningTasks {transition: transform .2s;}
 .innerCardFooter,
 .blurhash-canvas,
 .actionSheetMenuItem:hover,
-.dialog
-{border-radius: 10px !important;}
+.dialog{
+  border-radius: 10px !important; 
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  box-shadow: 0 0 20px 4px black;
+}
 /* Top menu transparency */
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color:rgba(0, 0, 0, 0);}
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color:rgba(0, 0, 0, 0);}
-.playedIndicator { background: #5dd000; }
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+  background:none;
+  background-color:rgba(0, 0, 0, 0);
+}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  background:none;
+  background-color:rgba(0, 0, 0, 0);
+}
+.playedIndicator {
+  background: #5dd000;
+}
 /*Minimalistic play buttons*/
-.cardOverlayFab-primary {background-color: #00000000; transistion: 8sec;}
-.cardOverlayButtonIcon {background-color: #00000000 !important;}
-.cardOverlayContainer {background-color: rgba(0, 0, 0, 0.8);}
+.cardOverlayFab-primary {
+  background-color: #00000000;
+  transistion: 8sec;
+}
+.cardOverlayButtonIcon {
+  background-color: #00000000 !important;
+}
+.cardOverlayContainer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 /*Theme some dialogues*/
-.dialog {background-color: rgba(0, 0, 0, 0.9);}
-.actionSheetMenuItem:hover {background-color: rgba(0, 164, 220, 0.2);}
-.mainDrawer {background-color: rgba(0, 0, 0, 0.35); -webkit-backdrop-filter: blur(25px); backdrop-filter: blur(25px); box-shadow: 5px 2px 20px 0px black;}
-.navMenuOption:hover {background: rgba(0, 164, 220, 0.2);}
+.actionSheetMenuItem:hover {
+  background-color: rgba(0, 164, 220, 0.2);
+}
+.mainDrawer {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  box-shadow: 8px 0px 20px 0px black;
+}
+.navMenuOption:hover {
+  background: rgba(0, 164, 220, 0.2);
+}
 /*Tweak series/movie/album title screen*/
-.detailLogo {display: none;}
-.detailPagePrimaryContainer {background: rgba(0,0,0,0) !important;}
+.detailLogo {
+  display: none;
+}
+.detailPagePrimaryContainer {
+  background: rgba(0,0,0,0) !important;
+}
 @media all and (min-width: 100em){
-    .itemBackdrop::after {background-color: rgba(0,0,0,0.05); !important;}
-    .itemBackdrop {height: 23vh !important; background-image: none !important;}
+    .itemBackdrop::after {
+      background-color: rgba(0,0,0,0.05); !important;
+  }
+    .itemBackdrop {
+      height: 23vh !important;
+      background-image: none !important;
+  }
 }
 @media all and (min-width: 32em) and (max-width: 100em){
-    .itemBackdrop::after {background-color: rgba(0, 0, 0, 0.1) !important;}
-    .itemBackdrop {height: 10em !important; background-image: none !important;}
+    .itemBackdrop::after {
+      background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+    .itemBackdrop {
+      height: 10em !important;
+      background-image: none !important;
+  }
 }
 @media all and (max-width: 32em) {
     .itemBackdrop {width: 100vw !important; height: 100vh !important; position: fixed; filter: brightness(35%);}
@@ -120,14 +231,26 @@ div#divRunningTasks {transition: transform .2s;}
 .cardIndicators {right: 0.3em; top: 0.3em;}
 .paper-icon-button-light:hover {background-color: rgba(0,0,0,0);}
 @media all and (min-width: 100em){
-    .cardOverlayFab-primary {background-color: #00000000;}
-    .cardOverlayButtonIcon {background-color: #00000000 !important;}
-    .cardOverlayContainer {background-color: rgba(0, 0, 0, 0.7);}
+    .cardOverlayFab-primary {
+      background-color: #00000000;
+  }
+    .cardOverlayButtonIcon {
+      background-color: #00000000 !important;
+  }
+    .cardOverlayContainer {
+      background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 @media all and (max-width: 100em){
-    .cardOverlayButtonIcon {border-radius: 5px !important;}
-    .cardOverlayButtonIcon {background-color: rgba(0, 0, 0, 0.5) !important;}
-    .cardOverlayButton {padding: 0.3em;}
+    .cardOverlayButtonIcon {
+      border-radius: 5px !important;
+  }
+    .cardOverlayButtonIcon {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+    .cardOverlayButton {
+      padding: 0.3em;
+  }
 }
     /* Video Control Panel (blurred_mediaplayer) */
     --video-controlpanel-background: var(--default-transparent-black);
@@ -145,18 +268,40 @@ div#divRunningTasks {transition: transform .2s;}
     /* Navigation Buttons (colored_nav_buttons) */
     --navmenu-background: var(--main-gradient);
 /*Size episode preview images in a more compact way*/
-.listItemImageButton-icon {padding: 0;}
-.secondary.listItem-overview.listItemBodyText {height: 61px; margin: 0;}
-.listItemImageButton {margin: auto; font-size: 1.6em !important;}
+.listItemImageButton-icon {
+  padding: 0;
+}
+.secondary.listItem-overview.listItemBodyText {
+  height: 61px;
+  margin: 0;
+}
+.listItemImageButton {
+  margin: auto;
+  font-size: 1.6em !important;
+}
 @media all and (min-width: 100em){
-    .listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}
-    .listItem-content {height: 115px;}
-    .secondary.listItem-overview.listItemBodyText {height: 4em; margin: 0;}
+    .listItemImage.listItemImage-large.itemAction.lazy {
+      height: 110px;
+  }
+    .listItem-content {
+      height: 115px;
+  }
+    .secondary.listItem-overview.listItemBodyText {
+      height: 4em;
+      margin: 0;
+  }
 }
 @media all and (max-width: 100em){
-    .listItemImage.listItemImage-large.itemAction.lazy {height: 80px;}
-    .listItem-content {height: 85px;}
-    .secondary.listItem-overview.listItemBodyText {height: 2.5em; margin: 0;}
+    .listItemImage.listItemImage-large.itemAction.lazy {
+      height: 80px;
+  }
+    .listItem-content {
+      height: 85px;
+  }
+    .secondary.listItem-overview.listItemBodyText {
+      height: 2.5em;
+      margin: 0;
+  }
 }
 /* Remove Media Images */
 .section0 .cardScalable {
@@ -193,34 +338,64 @@ div#divRunningTasks {transition: transform .2s;}
 @media (max-width: 75em) and (orientation: landscape){
 .section0 {
     display: none;
-} }
+  } 
+}
 
 @media (max-width: 75em){
 .section0 {
     display: none;
-}    }
-.raised.homeLibraryButton:hover {transition: filter 1s}
-.raised.homeLibraryButton {transition: filter 1s}
+  }
+}
+.raised.homeLibraryButton:hover {
+  transition: filter 1s;
+}
+.raised.homeLibraryButton {
+  transition: filter 1s;
+}
 .homeLibraryButton {
     min-width: 12em;
     margin: 0.4em;
 }
 /*Narrow the login form*/
-#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+#loginPage .readOnlyContent, #loginPage form {
+  max-width: 22em;
+}
 
 /*Hide "please login" text, margin is to prevent login form moving too far up*/
-#loginPage h1 {display: none}
-#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+#loginPage h1 {
+  display: none;
+}
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 50px;
+}
 
 /*Hide "manual" and "forgot" buttons*/
-#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
-#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
+#loginPage .raised.cancel.block.btnManual.emby-button {
+  display: none;
+}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none;
+}
 
 /*Login background*/
-#loginPage {background: url(https://i.imgur.com/9vL4iNf.png) !important; background-size: cover !important;}
+#loginPage {
+  background: url(https://i.imgur.com/9vL4iNf.png) !important;
+  background-size: cover !important;
+}
 /*Theming for the dasboard*/
-.paperList, .visualCardBox {background-color: #000; border-radius: 6px;}
-.listItemIcon {border-radius: 6px !important;}
-.listItem-border {border-color: rgba(255, 255, 255, 0.22) !important;}
-.backgroundContainer {background-color: #101010;}
-.raised {background: #00a4dc;}
+.paperList, .visualCardBox {
+  background-color: #000;
+  border-radius: 6px;
+}
+.listItemIcon {
+  border-radius: 6px !important;
+}
+.listItem-border {
+  border-color: rgba(255, 255, 255, 0.22) !important;
+}
+.backgroundContainer {
+  background-color: #101010;
+}
+.raised {
+  background: #00a4dc;
+}
