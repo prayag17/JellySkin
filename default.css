@@ -410,3 +410,6 @@ div#divRunningTasks {
 .raised {
   background: #00a4dc;
 }
+.headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
+    border-radius: 5px !important;
+}
