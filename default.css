@@ -65,7 +65,7 @@ video::-webkit-media-text-track-display {
   font-size: 38px;
 }
 .button-flat:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .mediaInfoItem:hover {
   font-size: 22px;
@@ -79,12 +79,12 @@ video::-webkit-media-text-track-display {
 }
 .navMenuOption.emby-button:hover{
   background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .raised.emby-button:hover{
   background: rgb(216,0,255);
   background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .cardBox:hover {
   background: rgba(0,0,0,0.75);
@@ -108,14 +108,14 @@ navMenuOption-selected {
 }
 .listItem.listItem-border:hover {
   border-color: rgba(0,0,0,0) !important;
-  transform: scale(1.1);
+  transform: scale(1.2);
   background: black;
 }
 .listItem-border {
   transition: border-color .2s, transform .2s, background .2s;
 }
 div#divRunningTasks:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 div#divRunningTasks {
   transition: transform .2s;
