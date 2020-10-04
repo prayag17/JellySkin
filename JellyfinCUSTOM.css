@@ -157,10 +157,12 @@ div#divRunningTasks {
 .actionSheetMenuItem:hover,
 .dialog{
   border-radius: 10px !important; 
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-  box-shadow: 0 0 20px 4px black;
+}
+.dialog{
+   background-color: rgba(0, 0, 0, 0.1) !important;
+   backdrop-filter: blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+   box-shadow: 0 0 20px 4px black;
 }
 /* Top menu transparency */
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
