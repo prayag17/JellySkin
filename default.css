@@ -37,13 +37,15 @@ body, h1, h2, h3, h4 {
 .videoSubtitles{
     font-family: 'Netflix Sans', sans-serif;
     font-weight: 700;
-    font-size:90%
+    font-size: 90%;
+    text-shadow: 0 0 14px black;  
 }
 /*Chrome, Edge Chromium & Saffari*/
 video::-webkit-media-text-track-display {
     font-family: "Netflix Sans", sans-serif;
     font-weight: 700;
     font-size: 90%;
+    text-shadow: 0 0 14px black;
 }
 /*Hover items*/
 .cardBox {
