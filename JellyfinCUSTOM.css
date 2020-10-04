@@ -1,10 +1,4 @@
 /*Fonts */
-@font-face{font-family:'Netflix Sans Thin';font-weight:100; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')}
-@font-face{font-family:'Netflix Sans Light';font-weight:300; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')}
-@font-face{font-family:'Netflix Sans Regular';font-weight:400; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')}
-@font-face{font-family:'Netflix Sans Medium';font-weight:700; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')}
-@font-face{font-family:'Netflix Sans Bold';font-weight:800; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')}
-@font-face{font-family:'Netflix Sans Black';font-weight:900; src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')}
 @font-face{
   font-family:'Netflix Sans';
   font-weight:100; 
@@ -37,6 +31,17 @@
 }
 body, h1, h2, h3, h4 {
   font-family: 'Netflix Sans', sans-serif;
+}
+/*Subtitle Fonts (Netflix Sans Medium) thanks the u/Edgementality-https://bit.ly/33slrSa*/
+/*Firefox*/
+.videoSubtitles{
+    font-family: 'Netflix Sans', sans-serif;
+    font-weight: 700;
+}
+/*Chrome, Edge Chromium & Saffari*/
+video::-webkit-media-text-track-display {
+    font-family: "Netflix Sans", sans-serif;
+    font-weight: 700;
 }
 /*Hover items*/
 .cardBox {
