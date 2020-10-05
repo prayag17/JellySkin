@@ -32,7 +32,6 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <a href="https://imgur.com/2GqzyXg"><img src="https://i.imgur.com/2GqzyXg.png" title="source: imgur.com" /></a>
 
 <h5>Title screen:</h5>
-<a href="https://imgur.com/PobXExD"><img src="https://i.imgur.com/PobXExD.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/JhYFTt4"><img src="https://i.imgur.com/JhYFTt4.png" title="source: imgur.com" /></a>
 
 <h5>TV Shows Season Episode list:</h5>
@@ -42,7 +41,7 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
 
 <h5>Cast info:</h5>
-<a href="https://imgur.com/TPpqpgD"><img src="https://i.imgur.com/TPpqpgD.png" title="source: imgur.com" /></a>
+
 <a href="https://imgur.com/Q3xYu8g"><img src="https://i.imgur.com/Q3xYu8g.png" title="source: imgur.com" /></a>
 
 <h5>Dialogs</h5>
