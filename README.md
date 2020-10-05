@@ -1,9 +1,9 @@
 <div align="center">
-<h1>Jellyfin CustomCSS</h1>
+<h1>JellySkin</h1>
 <h4>Warning: This css is only for Jellyfin 10.6.X. </h4>
 
 <br>
-This is Jellyfin custom-css. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
+This is JellySkin. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
 
 To use just copy this : 
 ```css
