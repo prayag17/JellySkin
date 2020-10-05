@@ -4,7 +4,6 @@
 
 <br>
 This is Jellyfin custom-css. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
-Here are some images, hope you like it:
 
 To use just copy this : 
 ```css
@@ -13,10 +12,14 @@ To use just copy this :
 
 and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
 
-Home screen:
+<h3>Here are some images:</h3>
+
+
+
+<h5>Home screen:</h5>
 <a href="https://imgur.com/LMS063i"><img src="https://i.imgur.com/LMS063i.png" title="source: imgur.com" /></a>
 
-Animations
+<h5>Animations:</h5>
 <img src="https://i.imgur.com/0mAIEgL.gif">
 <img src="https://i.imgur.com/QynAax0.gif">
 <img src="https://i.imgur.com/33NI8CV.gif">
@@ -25,24 +28,24 @@ Animations
 <img src="https://i.imgur.com/DnXvK8J.gif">
 <br>
 <br>
-Movies/TV screen:
+<h5>Movies/TV screen:</h5>
 <a href="https://imgur.com/2GqzyXg"><img src="https://i.imgur.com/2GqzyXg.png" title="source: imgur.com" /></a>
 
-Title screen:
+<h5>Title screen:</h5>
 <a href="https://imgur.com/PobXExD"><img src="https://i.imgur.com/PobXExD.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/JhYFTt4"><img src="https://i.imgur.com/JhYFTt4.png" title="source: imgur.com" /></a>
 
-TV Shows Season Episode list:
+<h5>TV Shows Season Episode list:</h5>
 <a href="https://imgur.com/nynQz6D"><img src="https://i.imgur.com/nynQz6D.png" title="source: imgur.com" /></a>
 
-Gradient hover buttons:<br>
+<h5>Gradient hover buttons:</h5>
 <a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
 
-Cast info:
+<h5>Cast info:</h5>
 <a href="https://imgur.com/TPpqpgD"><img src="https://i.imgur.com/TPpqpgD.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/Q3xYu8g"><img src="https://i.imgur.com/Q3xYu8g.png" title="source: imgur.com" /></a>
 
-Dialogs:<br>
+<h5>Dialogs</h5>
 <a href="https://imgur.com/Bdd5487"><img src="https://i.imgur.com/Bdd5487.jpg" title="source: imgur.com" /></a>
 <a href="https://imgur.com/QhfzjYN"><img src="https://i.imgur.com/QhfzjYN.png" title="source: imgur.com" /></a>
 <br>
