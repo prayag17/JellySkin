@@ -48,6 +48,7 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <a href="https://imgur.com/Bdd5487"><img src="https://i.imgur.com/Bdd5487.jpg" title="source: imgur.com" /></a>
 <a href="https://imgur.com/QhfzjYN"><img src="https://i.imgur.com/QhfzjYN.png" title="source: imgur.com" /></a>
 <br>
+<h5 align="center">
 There are many more animation changes too!
-
+</h5>
 
