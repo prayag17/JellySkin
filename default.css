@@ -67,12 +67,6 @@ video::-webkit-media-text-track-display {
 .button-flat:hover {
   transform: scale(1.5);
 }
-.mediaInfoItem:hover {
-  font-size: 22px;
-}
-.mediaInfoItem {
-  transition: font-size .35s;
-}
 .raised {
   transition: transform .2s; 
   background:#3a3a3a !important;
