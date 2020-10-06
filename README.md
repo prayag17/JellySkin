@@ -1,5 +1,5 @@
 
-<h1 align="center">Jellyfin CustomCSS</h1>
+<h1 align="center">JellySkin</h1>
 <h4 align="center">Warning: This css is only for Jellyfin 10.6.X. </h4>
 <br>
 This is Jellyfin custom-css. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
