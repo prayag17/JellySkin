@@ -163,8 +163,10 @@ div#divRunningTasks {
 }
 .dialog{
    background-color: rgba(0, 0, 0, 0.1) !important;
-   backdrop-filter: blur(20px) !important;
-   -webkit-backdrop-filter: blur(20px) !important;
+   backdrop-filter: blur(60px) !important;
+   -webkit-backdrop-filter: blur(60px) !important;
+   -moz-backdrop-filter: blur (60px) !important;
+   -o-backdrop-filter: blur(60px) !important;
    box-shadow: 0 0 20px 4px black;
 }
 /* Top menu transparency */
@@ -196,8 +198,10 @@ div#divRunningTasks {
 }
 .mainDrawer {
   background-color: rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(50px);
-  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(60px);
+  -moz-backdrop-filter: blur(60px);
+  -o-backdrop-filter: blur(60px);
+  backdrop-filter: blur(60px);
   box-shadow: 8px 0px 20px 0px black;
 }
 .navMenuOption:hover {
