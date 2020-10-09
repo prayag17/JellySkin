@@ -26,21 +26,17 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <img src="/img/title page 2.png">
 
 <h5>TV Shows Season Episode list:</h5>
-<a href="https://imgur.com/nynQz6D"><img src="https://i.imgur.com/nynQz6D.png" title="source: imgur.com" /></a>
-
-<h5>Gradient hover buttons:</h5>
-<a href="https://imgur.com/cJmqueA"><img src="https://i.imgur.com/cJmqueA.jpg" title="source: imgur.com" /></a>
+<img src="/img/Episode list.png">
 
 <h5>Cast info:</h5>
-
 <a href="https://imgur.com/Q3xYu8g"><img src="https://i.imgur.com/Q3xYu8g.png" title="source: imgur.com" /></a>
 
 <h5>Dialogs</h5>
-<a href="https://imgur.com/Bdd5487"><img src="https://i.imgur.com/Bdd5487.jpg" title="source: imgur.com" /></a>
-<a href="https://imgur.com/QhfzjYN"><img src="https://i.imgur.com/QhfzjYN.png" title="source: imgur.com" /></a>
+<img src="/img/Dialog 1.png">
+<img src="/img/Dialog 2.png">
 <br>
 <br>
-<h5 align="ceter">Animations</h5>
+<h4 align="ceter">Animations</h4>
 <img src="/img/Gifs/Animation 1.gif">
 <img src="/img/Gifs/Animation 2.gif">
 <img src="/img/Gifs/Animation 3.gif">
