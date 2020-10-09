@@ -14,25 +14,16 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 
 <h3>Here are some images:</h3>
 
-
-
 <h5>Home screen:</h5>
-<a href="https://imgur.com/LMS063i"><img src="https://i.imgur.com/LMS063i.png" title="source: imgur.com" /></a>
+<img src="/img/Home Screen.png">
 
-<h5>Animations:</h5>
-<img src="https://i.imgur.com/0mAIEgL.gif">
-<img src="https://i.imgur.com/QynAax0.gif">
-<img src="https://i.imgur.com/33NI8CV.gif">
-<img src="https://i.imgur.com/aBC9o0b.gif">
-<img src="https://i.imgur.com/jIUzV8O.gif">
-<img src="https://i.imgur.com/DnXvK8J.gif">
-<br>
-<br>
-<h5>Movies/TV screen:</h5>
-<a href="https://imgur.com/2GqzyXg"><img src="https://i.imgur.com/2GqzyXg.png" title="source: imgur.com" /></a>
+<h5>Library View</h5>
+<img src="/img/Lib Page 1.png">
+<img src="/img/Lib Page 2.png">
 
 <h5>Title screen:</h5>
-<a href="https://imgur.com/JhYFTt4"><img src="https://i.imgur.com/JhYFTt4.png" title="source: imgur.com" /></a>
+<img src="/img/title page 1.png">
+<img src="/img/title page 2.png">
 
 <h5>TV Shows Season Episode list:</h5>
 <a href="https://imgur.com/nynQz6D"><img src="https://i.imgur.com/nynQz6D.png" title="source: imgur.com" /></a>
@@ -48,6 +39,11 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <a href="https://imgur.com/Bdd5487"><img src="https://i.imgur.com/Bdd5487.jpg" title="source: imgur.com" /></a>
 <a href="https://imgur.com/QhfzjYN"><img src="https://i.imgur.com/QhfzjYN.png" title="source: imgur.com" /></a>
 <br>
+<br>
+<h5 align="ceter">Animations</h5>
+<img src="/img/Gifs/Animation 1.gif">
+<img src="/img/Gifs/Animation 2.gif">
+<img src="/img/Gifs/Animation 3.gif">
 <h5 align="center">
 There are many more animation changes too!
 </h5>
