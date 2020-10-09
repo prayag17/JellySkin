@@ -121,6 +121,50 @@ div#divRunningTasks {
 .navMenuOption-selected {
   background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
 }
+.detailPageContent {
+    text-shadow: 0 0 5px black;
+}
+select {
+    box-shadow: 0 0 13px 1px black;
+    background: rgba(0,0,0,0.2) !important;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    text-shadow: 0 0 5px black;
+}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(40px) !important;
+    -webkit-backdrop-filter: blur(40px) !important;
+    box-shadow: 0 0 12px 4px black;
+    text-shadow: 0 0 5px black;
+}
+.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
+button.button-flat.btnResume.detailButton.emby-button,
+button.emby-tab-button.emby-button,
+h2 {
+    text-shadow: 0 0 5px black;
+}
+.tmla-mask {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0);
+}
+.dialogBackdropOpened {
+    opacity: 1 !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.dialogBackdrop {
+    background-color: #0000;
+}
+.listItem:hover {
+    background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
+    transform: scale(1.1);
+}
+.listItem{
+    transition: transform .2s;
+}
 
 /* Adjust both "size-adjust" and "size" to modify size */
 .headerTabs.sectionTabs {
