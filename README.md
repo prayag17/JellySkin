@@ -1,5 +1,6 @@
 <div align="center">
 <h1>JellySkin</h1>
+<h2>This uses Netflix Sans from the official netflix CSS. If I am violating any copyright agrement then please don't ban this repo but make an issue for it.</h2>
 <h4>Warning: This css is only for Jellyfin 10.6.X. </h4>
 </div>
 <br>
