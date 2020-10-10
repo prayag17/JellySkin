@@ -16,31 +16,32 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <h3>Here are some images:</h3>
 
 <h5>Home screen:</h5>
-<img src="/img/Home Screen.png">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Home%20Screen.png?raw=true">
 
 <h5>Library View</h5>
-<img src="/img/Lib Page 1.png">
-<img src="/img/Lib Page 2.png">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Lib%20Page%201.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Lib%20Page%202.png?raw=true">
 
 <h5>Title screen:</h5>
-<img src="/img/title page 1.png">
-<img src="/img/title page 2.png">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/title%20page%201.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/title%20page%202.png?raw=true">
 
 <h5>TV Shows Season Episode list:</h5>
-<img src="/img/Episode list.png">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Episode%20list.png?raw=true">
 
 <h5>Cast info:</h5>
-<a href="https://imgur.com/Q3xYu8g"><img src="https://i.imgur.com/Q3xYu8g.png" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/Q3xYu8g.png">
 
 <h5>Dialogs</h5>
-<img src="/img/Dialog 1.png">
-<img src="/img/Dialog 2.png">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Dialog%201.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Dialog%202.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Dialog%203.png?raw=true">
 <br>
 <br>
 <h4 align="ceter">Animations</h4>
-<img src="/img/Gifs/Animation 1.gif">
-<img src="/img/Gifs/Animation 2.gif">
-<img src="/img/Gifs/Animation 3.gif">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Gifs/Animation%205.gif?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Gifs/Animation%202.gif?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/img/Gifs/Animation%203.gif?raw=true">
 <h5 align="center">
 There are many more animation changes too!
 </h5>
