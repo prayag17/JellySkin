@@ -8,7 +8,7 @@ This is JellySkin. Netflix Sans are used as the default fonts but if it is not a
 
 To use just copy this : 
 ```css
-@import url(https://prayag17.github.io/JellyfinCSS/JellyfinCUSTOM.css);
+@import url(https://prayag17.github.io/JellySkin/default.css);
 ```
 
 and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
