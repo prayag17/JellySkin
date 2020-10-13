@@ -364,10 +364,6 @@ h2 {
     display: all;
 }
 /* My Media Styling */
-.section0 .itemsContainer {
-    align-items: center;
-    justify-content: center;
-}
 .section0 button.itemAction.textActionButton {
     height: 3.5em;
     background: rgba(0, 0, 0, 0);
@@ -387,13 +383,13 @@ h2 {
     flex-wrap: wrap;
   }
 
-@media (max-width: 75em) and (orientation: landscape){
+@media (max-width: 1px) and (orientation: landscape){
 .section0 {
     display: none;
   } 
 }
 
-@media (max-width: 75em){
+@media (max-width: 1px){
 .section0 {
     display: none;
   }
