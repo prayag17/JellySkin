@@ -36,7 +36,7 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Side%20bar.png?raw=true">
 <br>
 <br>
-<h4 align="ceter">Animations</h4>
+<h4 align="ceter" class="animations">Animations</h4>
 <img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%201.gif?raw=true">
 <img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%202.gif?raw=true">
 <img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%203.gif?raw=true">
