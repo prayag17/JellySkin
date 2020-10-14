@@ -1,7 +1,8 @@
 <div align="center">
 <h1>JellySkin</h1>
 <h2>This uses Netflix Sans from the official netflix CSS. If I am violating any copyright agrement then please don't ban this repo but make an issue for it.</h2>
-<h4>Warning: This css is only for Jellyfin 10.6.X. </h4>
+<h4>Warning: This css is only for Jellyfin 10.6.X.
+Note: This CSS is fully supported now in Firefox and other browsers, but it may not have the blur features instead it would be barkened as firefox doesn't have backdrop-filter CSS tag supported, to use that you might have to manually enable the backdrop filter. I have given a way at the bottom.</h4>
 </div>
 <br>
 This is JellySkin. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
@@ -46,3 +47,21 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <h4 align="center">
 There are many more animation changes too!
 </h4>
+<h4 align="center">Enabling backdrop-filter in firefox</h4>
+Deaktiviert From version 70: this feature is behind the
+```
+layout.css.backdrop-filter.enabled
+```
+preference (needs to be set to
+```
+true
+```
+) and the
+```
+gfx.webrender.all
+```
+preference (needs to be set to
+```
+true
+```
+). To change preferences in Firefox, visit about:config.
