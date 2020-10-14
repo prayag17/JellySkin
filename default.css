@@ -199,16 +199,16 @@ navMenuOption-selected {
   background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
 }
 .videoOsdBottom {
-  background-color: rgba(0,0,0,.3);
-  -webkit-backdrop-filter: blur(25px);
-  backdrop-filter: blur(25px);
-  box-shadow: 0px -8px 12px 0px black;
+    background-color: rgba(0,0,0,.85);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 8px 5px black;
 }
 .osdHeader {
-  background: rgba(0,0,0,0.3)!important;
-  -webkit-backdrop-filter: blur(25px)!important;
-  backdrop-filter: blur(25px)!important;
-  box-shadow: 0px 8px 12px 0px black;
+  background: rgba(0,0,0,0.85)!important;
+  -webkit-backdrop-filter: blur(5px)!important;
+  backdrop-filter: blur(5px)!important;
+  box-shadow: 0px 0px 8px 5px black;
 }
 .listItem.listItem-border:hover {
   border-color: rgba(0,0,0,0) !important;
