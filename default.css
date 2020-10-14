@@ -47,22 +47,135 @@ video::-webkit-media-text-track-display {
     font-size: 90%;
     text-shadow: 0 0 14px black;
 }
+/*Setting border Radius*/
+
+:root {--rounding: 10px;}
+/*Rounded corners on pretty much everything-Source Monochromic*/
+.formDialogHeader {
+  border-top-left-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
+}
+.formDialogFooter {
+  border-bottom-left-radius: var(--rounding);
+  border-bottom-right-radius: var(--rounding);
+}
+.cardOverlayContainer {
+	border-radius: var(--rounding) !important;
+}
+.toast,
+.paperList,
+.cardContent,
+.sessionNowPlayingInnerContent, 
+.listItem:hover, 
+.cardImage,
+.fab,
+.raised,
+.multiSelectCheckboxOutline,
+.itemSelectionPanel,
+.cardContent-button, 
+.cardContent-shadow, 
+.itemDetailImage, 
+.cardOverlayButton-hover,
+.cardImageContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.actionSheetMenuItem:hover,
+.dialog,
+.listItemIcon,
+.listItem-border,
+.button-flat,
+.visualCardBox,
+.checkboxOutline,
+.emby-select-withcolor,
+.chapterThumbTextContainer,
+.chapterThumbContainer,
+.chapterThumb,
+.emby-input, 
+.emby-textarea, 
+.emby-select-withcolor,
+.cardOverlayButtonIcon,
+.subtitleappearance-preview.flex.align-items-center.justify-content-center {
+  border-radius: var(--rounding) !important;
+}
+.osdPoster img {
+  border-radius: var(--rounding); border: none;
+}
+.mdl-slider::-moz-range-thumb {
+  border-radius: var(--rounding);
+}
+.mdl-slider::-ms-thumb {
+  border-radius: var(--rounding);
+}
+.mdl-slider::-webkit-slider-thumb {
+  border-radius: var(--rounding);
+}
+
+div[data-role="controlgroup"] a[data-role="button"]:first-child {
+	border-bottom-left-radius: var(--rounding);
+	border-top-left-radius: var(--rounding);
+}
+div[data-role="controlgroup"] a[data-role="button"]:last-child {
+	border-bottom-right-radius: var(--rounding);
+	border-top-right-radius: var(--rounding);
+}
+/*fixing Poster Margin*/
+.itemsContainer>.card>.cardBox {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+.cardBox-bottompadded {
+    margin-bottom: 16px !important;
+}
 /*Hover items*/
+.emby-input, .emby-textarea {
+    color: inherit;
+    background: #292929;
+    border: .07em solid #7b7b7b;
+    border-radius: .2em;
+    box-shadow: 0 0 13px 1px black;
+    background: rgba(0,0,0,0.2) !important;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    text-shadow: 0 0 5px black;
+}
+.emby-select-withcolor  {
+    border: .07em solid #7b7b7b;
+}
+.playedIndicator,
+.countIndicator {
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px black;
+}
+.actionSheetMenuItem:hover {
+    background: linear-gradient(140deg,#aa5cc385,#00a4dc75) !important;
+}
 .cardBox {
-  background: rgba(0,0,0,0.27);
-  border-radius: 10px;box-shadow: 7px 7px 8px -1px rgba(0,0,0,0.79);
-  transition: background .25s, box-shadow .25s, transform .25s;
+    background: rgba(0,0,0,0.27);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 3px rgb(0 0 0);
+    transition: background .2s, box-shadow .2s, transform .2s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
 }
 .cardBox:hover {
-  background: rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 0px 0px black;
+    background: rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 0px black;
+    background: rgba(0,0,0,0.75);
+    transform: scale(1.087);
 }
 .itemName.parentNameLast {
   font-size: 35px; 
   transition: font-size .2s;
 }
 .itemName.parentNameLast:hover {
-  font-size: 38px;
+  font-size: 40px;
 }
 .button-flat:hover {
   transform: scale(1.5);
