@@ -560,3 +560,32 @@ h2 {
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
     border-radius: 5px !important;
 }
+/*For browsers that don't support backdrop-filter*/
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .videoOsdBottom {
+    background-color: rgba(0,0,0,.95);
+  }
+  .osdHeader {
+    background: rgba(0,0,0,0.95) !important;
+  }
+  .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+  }
+  .tmla-mask {
+    background-color: rgba(0,0,0,0.1);
+  }
+  .dialogBackdropOpened {
+    opacity: 1 !important;
+    background: rgba(0,0,0,0.1); 
+  }
+  .dialog{
+   background-color: rgba(0, 0, 0, 0.95) !important;
+   box-shadow: 0 0 20px 4px black;
+  }
+  .mainDrawer {
+  background-color: rgba(0, 0, 0, 0.95);
+  box-shadow: none;
+  }  
+}
