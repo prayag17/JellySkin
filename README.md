@@ -16,32 +16,33 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <h3>Here are some images:</h3>
 
 <h5>Home screen:</h5>
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Home%20Screen.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Home.png?raw=true">
 
 <h5>Library View</h5>
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Lib%20Page%201.png?raw=true">
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Lib%20Page%202.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/lib%201.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/lib%202.png?raw=true">
 
 <h5>Title screen:</h5>
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/title%20page%201.png?raw=true">
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/title%20page%202.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/title%201.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/title%202.png?raw=true">
 
 <h5>TV Shows Season Episode list:</h5>
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Episode%20list.png?raw=true">
-
-<h5>Cast info:</h5>
-<img src="https://i.imgur.com/Q3xYu8g.png">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/EpiList.png?raw=true">
 
 <h5>Dialogs</h5>
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Dialog%201.png?raw=true">
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Dialog%202.png?raw=true">
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Dialog%203.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Dialog%201.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Dialog%202.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Dialog%203.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Side%20bar.png?raw=true">
 <br>
 <br>
 <h4 align="ceter">Animations</h4>
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Gifs/Animation%205.gif?raw=true">
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Gifs/Animation%202.gif?raw=true">
-<img src="https://github.com/prayag17/JellySkin/blob/master/img/Gifs/Animation%203.gif?raw=true">
-<h5 align="center">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%201.gif?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%202.gif?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%203.gif?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%204.gif?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%205.gif?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Gifs/Animation%206.gif?raw=true">
+<h4 align="center">
 There are many more animation changes too!
-</h5>
+</h4>
