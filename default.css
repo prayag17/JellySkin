@@ -242,12 +242,14 @@ select {
     text-shadow: 0 0 5px black;
 }
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-    background: none;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(40px) !important;
-    -webkit-backdrop-filter: blur(40px) !important;
-    box-shadow: 0 0 12px 4px black;
     text-shadow: 0 0 5px black;
+}	
+.align-items-center {
+    -webkit-align-items: center;
+    align-items: center;
+    backdrop-filter: blur(60px) !important;
+    -webkit-backdrop-filter: blur(60px) !important;	
+    box-shadow: 0 0 8px 3px black;
 }
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
 button.button-flat.btnResume.detailButton.emby-button,
