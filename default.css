@@ -243,6 +243,7 @@ select {
 }
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
     text-shadow: 0 0 5px black;
+    padding-bottom: 10px;
 }	
 .align-items-center {
     -webkit-align-items: center;
