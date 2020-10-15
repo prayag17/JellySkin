@@ -44,7 +44,7 @@ body, h1, h2, h3, h4 {
 video::-webkit-media-text-track-display {
     font-family: "Netflix Sans", sans-serif;
     font-weight: 700;
-    font-size: 90%;
+    font-size: 88.54%;
     text-shadow: 0 0 14px black;
 }
 /*Setting border Radius*/
@@ -292,7 +292,7 @@ h2 {
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 .backdropImage {
-  filter: blur(20px) saturate(130%) contrast(76%) brightness(95%);
+  filter: blur(60px) saturate(150%) contrast(100%) brightness(75%);
 }
 .backgroundContainer.withBackdrop {
   background-color: rgba(0,0,0,0);
