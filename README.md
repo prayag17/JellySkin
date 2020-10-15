@@ -28,11 +28,11 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/title%202.png?raw=true">
 
 <h5>TV Shows Season Episode list:</h5>
-<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/EpiList.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Epilist.png?raw=true">
 
 <h5>Dialogs</h5>
 <img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Dialog%201%20.png?raw=true">
-<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Dialog%202%20.png?raw=true">
+<img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Dialog%202.png?raw=true">
 <img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Dialog%203.png?raw=true">
 <img src="https://github.com/prayag17/JellySkin/blob/master/Version%204/Side%20bar.png?raw=true">
 <br>
