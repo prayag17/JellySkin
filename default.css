@@ -252,6 +252,10 @@ select {
     -webkit-backdrop-filter: blur(60px) !important;	
     box-shadow: 0 0 8px 3px black;
 }
+.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
+    backdrop-filter: none !important;
+    box-shadow: 0 0 black;
+}
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
 button.button-flat.btnResume.detailButton.emby-button,
 button.emby-tab-button.emby-button,
