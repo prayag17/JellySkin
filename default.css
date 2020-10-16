@@ -134,6 +134,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .cardBox-bottompadded {
     margin-bottom: 16px !important;
 }
+.sectionTitleContainer.flex {
+    box-shadow: 0 0 black !important;
+}
 /*Hover items*/
 .emby-input, .emby-textarea {
     color: inherit;
