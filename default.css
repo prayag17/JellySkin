@@ -373,6 +373,9 @@ h2 {
 .detailPagePrimaryContainer {
   background: rgba(0,0,0,0) !important;
 }
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0.502788297936362) 75%, rgba(0,0,0,0) 100%);
+}
 @media all and (min-width: 100em){
     .itemBackdrop::after {
       background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0.502788297936362) 75%, rgba(0,0,0,0) 100%);
