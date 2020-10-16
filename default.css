@@ -227,10 +227,6 @@ div#divRunningTasks:hover {
 div#divRunningTasks {
   transition: transform .2s;
 }
-
-.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
-  background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.38) 68%, rgba(0,0,0,0) 100%);
-}
 .navMenuOption-selected {
   background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
 }
@@ -379,7 +375,7 @@ h2 {
 }
 @media all and (min-width: 100em){
     .itemBackdrop::after {
-      background-color: rgba(0,0,0,0.05); !important;
+      background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0.502788297936362) 75%, rgba(0,0,0,0) 100%);
   }
     .itemBackdrop {
       height: 23vh !important;
@@ -388,7 +384,7 @@ h2 {
 }
 @media all and (min-width: 32em) and (max-width: 100em){
     .itemBackdrop::after {
-      background-color: rgba(0, 0, 0, 0.1) !important;
+      background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0.502788297936362) 75%, rgba(0,0,0,0) 100%) !important;
   }
     .itemBackdrop {
       height: 10em !important;
@@ -424,21 +420,6 @@ h2 {
       padding: 0.3em;
   }
 }
-    /* Video Control Panel (blurred_mediaplayer) */
-    --video-controlpanel-background: var(--default-transparent-black);
-    --video-controlpanel-blur-amount: 8px;
-    --video-controlpanel-brightness-amount: 100%;
-    /* Progress Bar (colored_progress_bar) */
-    --progressbar-card-color: var(--main-color);
-    --progressbar-card-background-color: var(--default-transparent-black);
-    --progressbar-blur-amount: var(--tertiary-blur-amount);
-    /* Save Buttons (colored_save_buttons), make it a gradient if you want! */
-    --save-button-color: var(--main-color);
-    /* Colored Tab Buttons (colored_tabbuttons) */
-    --tabbutton-color: var(--interact-color);
-    --tabbutton-hover-color: var(--main-color);
-    /* Navigation Buttons (colored_nav_buttons) */
-    --navmenu-background: var(--main-gradient);
 /*Size episode preview images in a more compact way*/
 .listItemImageButton-icon {
   padding: 0;
