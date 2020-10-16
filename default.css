@@ -242,15 +242,11 @@ select {
 }
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
     text-shadow: 0 0 5px black;
-    padding-bottom: 50px;
-}	
-.align-items-center {
-    -webkit-align-items: center;
-    align-items: center;
     backdrop-filter: blur(60px) !important;
     -webkit-backdrop-filter: blur(60px) !important;	
     box-shadow: 0 0 8px 3px black;
-}
+}	
+
 .justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
     backdrop-filter: none !important;
     box-shadow: 0 0 black;
