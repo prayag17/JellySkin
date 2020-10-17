@@ -364,7 +364,7 @@ h2 {
 }
 /*Tweak series/movie/album title screen*/
 .detailLogo {
-  display: none;
+  display: all;
 }
 .detailPagePrimaryContainer {
   background: rgba(0,0,0,0) !important;
@@ -475,9 +475,6 @@ h2 {
     }
 .section0 .emby-scroller {
     margin-right: 0;
-  }
-  .section0 .emby-scrollbuttons {
-    display: none;
   }
   .section0 .itemsContainer {
     flex-wrap: wrap;
