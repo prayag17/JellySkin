@@ -391,12 +391,26 @@ h2 {
   }
 }
 @media all and (max-width: 32em) {
-    .itemBackdrop {width: 100vw !important; height: 100vh !important; position: fixed; filter: brightness(35%);}
-    .detailPageWrapperContainer {margin-top: 5em;}
+    .itemBackdrop {
+	    width: 100vw !important; 
+	    height: 100vh !important; 
+	    position: fixed; 
+	    filter: brightness(35%);
+	}
+    .detailPageWrapperContainer {
+	    margin-top: 5em;
+	}
 }
-.itemProgressBar {height: 2.5px; background: rgba(0,0,0,0);}
-.cardIndicators {right: 0.3em; top: 0.3em;}
-.paper-icon-button-light:hover {background-color: rgba(0,0,0,0);}
+.itemProgressBar {
+	height: 2.5px; 
+	background: rgba(0,0,0,0);
+}
+.cardIndicators {
+	right: 0.3em; top: 0.3em;
+}
+.paper-icon-button-light:hover {
+	background-color: rgba(0,0,0,0);
+}
 @media all and (min-width: 100em){
     .cardOverlayFab-primary {
       background-color: #00000000;
@@ -485,11 +499,17 @@ h2 {
     display: none;
   } 
 }
+.section0 .sectionTitle {
+    padding-top: 60px !important;
+}
 
 @media (max-width: 1px){
 .section0 {
     display: none;
   }
+}
+.section0 .sectionTitle {
+    padding-top: 60px !important;
 }
 .raised.homeLibraryButton:hover {
   transition: filter 1s;
