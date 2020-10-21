@@ -69,7 +69,6 @@ video::-webkit-media-text-track-display {
 .listItem:hover, 
 .cardImage,
 .fab,
-.raised,
 .multiSelectCheckboxOutline,
 .itemSelectionPanel,
 .cardContent-button, 
@@ -183,9 +182,13 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .button-flat:hover {
   transform: scale(1.5);
 }
+.button-flat {
+  border-radius: 5px !important;
+}	
 .raised {
-  transition: transform .2s; 
+  transition: transform .2s, background .2s; 
   background:#3a3a3a !important;
+  border-radius: 5px !important;	
 }
 .navMenuOption.emby-button:hover{
   background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
@@ -203,14 +206,14 @@ navMenuOption-selected {
 }
 .videoOsdBottom {
     background-color: rgba(0,0,0,.85);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     box-shadow: 0px 0px 8px 5px black;
 }
 .osdHeader {
   background: rgba(0,0,0,0.85)!important;
-  -webkit-backdrop-filter: blur(5px)!important;
-  backdrop-filter: blur(5px)!important;
+  -webkit-backdrop-filter: blur(10px)!important;
+  backdrop-filter: blur(10px)!important;
   box-shadow: 0px 0px 8px 5px black;
 }
 .listItem.listItem-border:hover {
@@ -234,7 +237,7 @@ div#divRunningTasks {
     text-shadow: 0 0 5px black;
 }
 select {
-    box-shadow: 0 0 13px 1px black;
+    box-shadow: 0 0 13px 1px black !important;
     background: rgba(0,0,0,0.2) !important;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
@@ -335,6 +338,13 @@ h2 {
 }
 .playedIndicator {
   background: #5dd000;
+}
+.upNextDialog {
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 8px 5px black;
+}
+.upNextDialog-poster-img {
+    border-radius: 10px;
 }
 /*Minimalistic play buttons*/
 .cardOverlayFab-primary {
