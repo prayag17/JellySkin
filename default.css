@@ -543,15 +543,6 @@ h2 {
 #loginPage .padded-left.padded-right.padded-bottom-page {
   margin-top: 50px;
 }
-
-/*Hide "manual" and "forgot" buttons*/
-#loginPage .raised.cancel.block.btnManual.emby-button {
-  display: none;
-}
-#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
-  display: none;
-}
-
 /*Login background*/
 #loginPage {
   background: url(https://wallpapercave.com/wp/wp5502431.jpg) !important;
