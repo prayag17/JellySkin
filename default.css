@@ -237,11 +237,11 @@ div#divRunningTasks {
     text-shadow: 0 0 5px black;
 }
 select {
-    box-shadow: 0 0 13px 1px black !important;
+    box-shadow: 0 0 6px 0px black !important;
     background: rgba(0,0,0,0.2) !important;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px) !important;
     -webkit-backdrop-filter: blur(50px);
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px black !important;
 }
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
     text-shadow: 0 0 5px black;
@@ -295,7 +295,7 @@ h2 {
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 .backdropImage {
-  filter: blur(35px) saturate(110%) contrast(120%) brightness(95%);
+  filter: blur(50px) saturate(105%) contrast(115%) brightness(65%);
 }
 .backgroundContainer.withBackdrop {
   background-color: rgba(0,0,0,0);
