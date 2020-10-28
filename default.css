@@ -147,13 +147,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 /*Hover items*/
 .emby-input, .emby-textarea {
     color: inherit;
-    background: #292929;
     border: .07em solid #7b7b7b;
     border-radius: .2em;
-    box-shadow: 0 0 13px 1px black;
+    box-shadow: 0 0 8px 0px black !important;
     background: rgba(0,0,0,0.2) !important;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
     text-shadow: 0 0 5px black;
 }
 .emby-select-withcolor  {
@@ -603,7 +602,11 @@ h2 {
   .mainDrawer {
   background-color: rgba(0, 0, 0, 0.95);
   box-shadow: none;
-  }  
+  }
+  .playerStats {
+  background: rgba(28,28,28,.8);
+  box-shadow: 0 0 8px black !important;
+  }	
 }
 /* fixed height for the bottom row */
 :root {
@@ -689,4 +692,11 @@ h2 {
 .remoteControlButton {
      left: -110px;
      top: var(--element-fixed-top);
+}
+/*Theming Playback data info*/
+.playerStats {
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
+    box-shadow: 0 0 8px black;
 }
