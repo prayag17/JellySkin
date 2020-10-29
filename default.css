@@ -30,7 +30,7 @@
   src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
 }
 body, h1, h2, h3, h4 {
-  font-family: 'Netflix Sans', sans-serif;
+  font-family: 'Netflix Sans' !important;
 }
 /*Subtitle Fonts (Netflix Sans Medium) thanks the u/Edgementality-https://bit.ly/33slrSa*/
 /*Firefox*/
