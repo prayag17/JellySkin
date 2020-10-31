@@ -1,0 +1,14 @@
+:root {--sea: linear-gradient(to right, #43cea2 0%, #185a9d  51%, #43cea2  100%) !important;}
+:root {--seasel: linear-gradient(to left, #43cea2 0%, #185a9d  51%, #43cea2  100%) !important;}
+.actionSheetMenuItem:hover {
+  background: var(--sea) !important;
+}
+.navMenuOption.emby-button:hover{
+  background: var(--seasel) !important;
+}
+.raised.emby-button:hover{
+  background: var(--sea) !important;
+}
+.navMenuOption-selected {
+  background: var(--sea) !important;
+}
