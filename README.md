@@ -1,9 +1,8 @@
 <div align="center">
 <h1>JellySkin</h1>
 <h2>This uses Netflix Sans from the official netflix CSS. If I am violating any copyright agrement then please don't ban this repo but make an issue for it.</h2>
-  <h3>Use 67% or 70% zoom in web browser for better experience</h3> 
-<h4>Warning: This css is only for Jellyfin 10.6.X.<br>
-Note: Finally!! This CSS is fully supported now in Firefox and other browsers, but it may not have the blur features instead it would be barkened as firefox doesn't have backdrop-filter CSS tag supported, to use that you might have to manually enable the backdrop filter. I have given a way at the bottom and <strong>if you are using firefox your performace might get worse</strong>.</h4>
+<h3>Use 67% or 70% zoom in web browser for better experience</h3> 
+<h4>Note: Finally!! This CSS is fully supported now in Firefox and other browsers, but it may not have the blur features instead it would be barkened as firefox doesn't have backdrop-filter CSS tag supported, to use that you might have to manually enable the backdrop filter. I have given a way at the bottom and <strong>if you are using firefox your performace might get worse</strong>.</h4>
 </div>
 <br>
 This is JellySkin. Netflix Sans are used as the default fonts but if it is not applied in every area then please make a new issue.
@@ -12,7 +11,13 @@ To use just copy this :
 ```css
 @import url("https://prayag17.github.io/JellySkin/default.css");
 ```
-
+To use different gradient for your buttons I have added few different gradients you can choose or you can create your own (check the steps given bellow), the default gradient used is jellyfin's default logo gradient,using this alone will only skin the button colors and I know the names for this are very funny:
+```css
+@import url("https://prayag17.github.io/JellySkin/seaGradient.css");
+@import url("https://prayag17.github.io/JellySkin/sunsetGradient.css");
+@import url("https://prayag17.github.io/JellySkin/morningGradient.css");
+@import url("https://prayag17.github.io/JellySkin/nightSkyGradient.css");
+```
 and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
 
 <h3>Here are some images:</h3>
@@ -51,6 +56,18 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <h4 align="center">
 There are many more animation changes too!
 </h4>
+<div class="customGradient" align="center">
+<h4 align="center">Using custom own Gradient or color</h4>
+Create your gradient or solid color and past it in --custom and gradient in opposite angle in --customsel
+  ```css
+  :root {--custom: your gradient;}
+  :root {--customsel: your gradient in opposite angle;} 
+  ```
+Now, to use your own Gradient (to get great button or any gradient go to https://cssgradient.io/gradient-backgrounds or https://cssgradient.io) or solid color:
+```css
+@import url("https://prayag17.github.io/JellySkin/customCol.css");
+```
+</div>  
 <h4 align="center">Enabling backdrop-filter in firefox</h4>
 Deaktiviert From version 70: this feature is behind the
 layout.css.backdrop-filter.enabled
