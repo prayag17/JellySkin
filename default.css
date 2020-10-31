@@ -379,6 +379,10 @@ h2 {
 .navMenuOption:hover {
   background: rgba(0, 164, 220, 0.2);
 }
+/*Fixing position of tv or movie poster*/
+.detailImageContainer .card {
+  position:fixed;
+}
 /*Tweak series/movie/album title screen*/
 .detailLogo {
   display: all;
@@ -387,11 +391,11 @@ h2 {
   background: rgba(0,0,0,0) !important;
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
-  background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0.502788297936362) 75%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
 }
 @media all and (min-width: 100em){
     .itemBackdrop::after {
-      background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0.502788297936362) 75%, rgba(0,0,0,0) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
   }
     .itemBackdrop {
       height: 23vh !important;
@@ -400,7 +404,7 @@ h2 {
 }
 @media all and (min-width: 32em) and (max-width: 100em){
     .itemBackdrop::after {
-      background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0.502788297936362) 75%, rgba(0,0,0,0) 100%) !important;
+      background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
   }
     .itemBackdrop {
       height: 10em !important;
@@ -769,3 +773,4 @@ h2 {
     -webkit-backdrop-filter: blur(90px);
     box-shadow: 0 0 8px black;
 }
+
