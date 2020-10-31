@@ -1,0 +1,14 @@
+:root {--nightsky: linear-gradient(to right, #155799, #159957) !important;}
+:root {--nightsky: linear-gradient(to left, #155799, #159957) !important;}
+.actionSheetMenuItem:hover {
+  background: var(--nightsky) !important;
+}
+.navMenuOption.emby-button:hover{
+  background: var(--nightskysel) !important;
+}
+.raised.emby-button:hover{
+  background: var(--nightsky) !important;
+}
+.navMenuOption-selected {
+  background: var(--nightsky) !important;
+}
