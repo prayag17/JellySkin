@@ -19,7 +19,17 @@ To use different gradient for your buttons I have added few different gradients 
 @import url("https://prayag17.github.io/JellySkin/nightSkyGradient.css");
 ```
 and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
-
+<br>
+Using custom own Gradient or color
+Create your gradient or solid color and past it in ```--custom``` and gradient in opposite angle in ```--customsel``` :
+```css
+:root {--custom: your gradient;}
+:root {--customsel: your gradient in opposite angle;} 
+```
+Now, to use your own Gradient (to get great button or any gradient go to https://cssgradient.io/gradient-backgrounds or https://cssgradient.io) or solid color:
+```css
+@import url("https://prayag17.github.io/JellySkin/customCol.css");
+```  
 <h3>Here are some images:</h3>
 
 <h5>Login Page</h5>
@@ -56,16 +66,6 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <h4 align="center">
 There are many more animation changes too!
 </h4>
-<h4 align="center">Using custom own Gradient or color</h4>
-Create your gradient or solid color and past it in --custom and gradient in opposite angle in --customsel
-  ```css
-  :root {--custom: your gradient;}
-  :root {--customsel: your gradient in opposite angle;} 
-  ```
-Now, to use your own Gradient (to get great button or any gradient go to https://cssgradient.io/gradient-backgrounds or https://cssgradient.io) or solid color:
-```css
-@import url("https://prayag17.github.io/JellySkin/customCol.css");
-```  
 <h4 align="center">Enabling backdrop-filter in firefox</h4>
 Deaktiviert From version 70: this feature is behind the
 layout.css.backdrop-filter.enabled
