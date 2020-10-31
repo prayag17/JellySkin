@@ -1,0 +1,14 @@
+:root {--sunset: linear-gradient(to right, rgba(235,95,37,1) 0%, rgba(144,0,255,1) 100%) !important;}
+:root {--sunsetsel: linear-gradient(to left, rgba(235,95,37,1) 0%, rgba(144,0,255,1) 100%) !important;}
+.actionSheetMenuItem:hover {
+  background: var(--sunset) !important;
+}
+.navMenuOption.emby-button:hover{
+  background: var(--sunsetsel) !important;
+}
+.raised.emby-button:hover{
+  background: var(--sunset) !important;
+}
+.navMenuOption-selected {
+  background: var(--sunset) !important;
+}
