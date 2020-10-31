@@ -56,7 +56,6 @@ and past it in custom css text box and click save. To open Custom CSS settings g
 <h4 align="center">
 There are many more animation changes too!
 </h4>
-<div class="customGradient" align="center">
 <h4 align="center">Using custom own Gradient or color</h4>
 Create your gradient or solid color and past it in --custom and gradient in opposite angle in --customsel
   ```css
@@ -66,8 +65,7 @@ Create your gradient or solid color and past it in --custom and gradient in oppo
 Now, to use your own Gradient (to get great button or any gradient go to https://cssgradient.io/gradient-backgrounds or https://cssgradient.io) or solid color:
 ```css
 @import url("https://prayag17.github.io/JellySkin/customCol.css");
-```
-</div>  
+```  
 <h4 align="center">Enabling backdrop-filter in firefox</h4>
 Deaktiviert From version 70: this feature is behind the
 layout.css.backdrop-filter.enabled
