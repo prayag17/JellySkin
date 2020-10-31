@@ -1,0 +1,12 @@
+.actionSheetMenuItem:hover {
+  background: var(--custom) !important;
+}
+.navMenuOption.emby-button:hover{
+  background: var(--customsel) !important;
+}
+.raised.emby-button:hover{
+  background: var(--custom) !important;
+}
+.navMenuOption-selected {
+  background: var(--custom) !important;
+}
