@@ -43,18 +43,18 @@ body, h1, h2, h3, h4 {
 video::-webkit-media-text-track-display {
     font-family: "Netflix Sans", sans-serif !important;
     font-weight: 700 !important;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
+    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
 /*backup for subtitles*/
 video::-webkit-media-text-track-container {
     font-family: "Netflix Sans", sans-serif !important;
     font-weight: 700 !important;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
+    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
 video:cue {
     font-family: "Netflix Sans", sans-serif !important;
     font-weight: 700 !important;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
+    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
 /*Setting border Radius*/
 :root {--rounding: 10px;}
@@ -167,7 +167,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     background: linear-gradient(140deg,#aa5cc385,#00a4dc75) !important;
 }
 .cardBox {
-    background: rgba(0,0,0,0.27);
+    background: rgba(0,0,0,0.25);
     border-radius: 10px;
     box-shadow: 0px 0px 9px 0px rgb(0 0 0);
     transition: background .2s, box-shadow .2s, transform .2s;
