@@ -1,3 +1,186 @@
+/*Top Bar Transparent*/
+#dashboardPage,
+#dashboardGeneralPage,
+#userProfilesPage,
+#devicesPage,
+#serverActivityPage,
+#liveTvStatusPage,
+#liveTvSettingsPage,
+#networkingPage,
+#apiKeysPage,
+#logPage,
+#notificationSettingsPage,
+#scheduledTasksPage,
+#itemDetailPage {
+  margin-top: 60px;
+  padding-top: 0px !important;
+  overflow: scroll;
+}
+
+@media all and (min-width: 100em){
+  #indexPage,
+  #moviesPage,
+  #tvRecommendedPage,
+  #musicRecommendedPage {
+    margin-top: 70px;
+    padding-top: 0px !important;
+    overflow: scroll;
+  }
+  #encodingSettingsPage,
+  #mediaLibraryPage,
+  #dlnaSettingsPage,
+  #pluginsPage {
+    margin-top: 60px;
+    padding-top: 0px !important;
+    overflow: scroll;
+  }
+}
+
+@media all and (max-width: 100em){
+  #indexPage,
+  #moviesPage,
+  #tvRecommendedPage,
+  #encodingSettingsPage,
+  #mediaLibraryPage,
+  #dlnaSettingsPage,
+  #pluginsPage,
+  #musicRecommendedPage {
+    margin-top: 130px;
+    padding-top: 0px !important;
+    overflow: scroll;
+  }
+}
+.skinHeader-withBackground {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+
+/*Theming Indicators*/
+.playedIndicator, .countIndicator {
+    border-radius: 5px;
+    box-shadow: 0 0 15px -2px black;
+}
+.countIndicator, .fullSyncIndicator, .playedIndicator {
+    background: #ffffffad;
+    color: #e50914;
+}
+.playedIndicator {
+    background: #e50914;
+    color: white;
+    box-shadow: 0 0 15px -2px black;
+}
+button.emby-tab-button.emby-button.emby-tab-button-active:hover {
+    color: #e50914 !important;
+}
+.emby-tab-button.show-focus:focus, .emby-tab-button:hover {
+    color: #e50914 !important;
+}
+
+/*Theming Title Page*/
+div#itemBackdrop {
+    height: 70% !Important;
+}
+.layout-desktop .detailRibbon, .layout-tv .detailRibbon {
+    height: 14.2em;
+    margin-top: -11%;
+}
+.detailPageSecondaryContainer {
+    margin: 0em;
+    background: black;
+}
+.detailRibbon {
+    background: linear-gradient(to top, black, transparent);
+}
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
+    background: rgba(0,0,0,0.1) !important;
+}
+.itemName {
+    font-size: 3em !important;
+}
+@media (max-height: 100em;){
+  .layout-desktop .detailRibbon, .layout-tv .detailRibbon {
+        margin-top: -26%;
+        margin-bottom: -3%;
+    }
+    .detailPageSecondaryContainer {
+        margin: 1.25em 0em;
+    }
+    span.material-icons.detailButton-icon.favorite {
+        color: #e50914;
+        transform: scale(1.3);
+    }
+}
+@media (max-width: 62.5em){
+  .layout-desktop .detailPageWrapperContainer, .layout-tv .detailPageWrapperContainer {
+    margin-top: -20em;
+  }
+}
+
+/*Login Page*/
+.inputContainer {
+    margin-bottom: 1.8em;
+    margin-top: 1.8em;
+}
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    background: #000000BF;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    border-radius: 10px;
+}
+/*Narrow the login form*/
+#loginPage .readOnlyContent, #loginPage form {
+  max-width: 22em;
+}
+
+/*Hide "please login" text, margin is to prevent login form moving too far up*/
+#loginPage h1 {
+  display: none;
+}
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 50px;
+}
+/*Login background with radial gradient overlay to make it look like netflix login*/
+#loginPage {
+    background: radial-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%),url(https://assets.nflxext.com/ffe/siteui/vlv3/bcd713c9-291e-4186-a275-117b387eaaf2/2af1c55a-fdb6-4f2e-8e5b-63fd1c52f0b4/US-en-20201019-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
+    background-size: cover !important;
+}
+/*Progress Bar*/
+.emby-checkbox:checked+span+.checkboxOutline, .itemProgressBarForeground {
+    background-color: #e50914 !important;
+}
+.itemProgressBar {
+    background: black !important;
+}
+/*video Page*/
+.mdl-slider-background-lower {
+    background-color: #e50914 1important;
+}
+.sliderBubble {
+    background: #e50914 !important;
+}
+/*Scroll Bar theme*/
+::-webkit-scrollbar-thumb {
+  background: #e50914 !important; 
+}
+.page {
+    padding-bottom: 0 !important;
+}
+::-webkit-scrollbar-track {
+  background: black !important;
+}
+:::-webkit-scrollbar-track-piece {
+    background-color: black !important;
+}
+/*Variables*/
+:root {
+  --deftraback: rgba(229, 9, 20, .2) !important;
+}
+:root {
+  --rounding: 5px;
+}
 /*Fonts */
 @font-face{
   font-family:'Netflix Sans';
@@ -56,8 +239,7 @@ video:cue {
     font-weight: 700 !important;
     text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
-/*Setting border Radius*/
-:root {--rounding: 10px;}
+
 /*Rounded corners on pretty much everything-Source Monochromic*/
 .formDialogHeader {
   border-top-left-radius: var(--rounding);
@@ -68,7 +250,7 @@ video:cue {
   border-bottom-right-radius: var(--rounding);
 }
 .cardOverlayContainer {
-	border-radius: var(--rounding) !important;
+  border-radius: var(--rounding) !important;
 }
 .toast,
 .paperList,
@@ -122,14 +304,16 @@ video:cue {
 .mdl-slider::-webkit-slider-thumb {
   border-radius: var(--rounding);
 }
-
+.cardContent-button, .cardContent-shadow, .itemDetailImage, .cardOverlayButton-hover, .cardOverlayContainer, .cardImageContainer, .cardPadder, .listItemImage, .listItemImageButton, .listItemButton, .headerButton, .paper-icon-button-light, .innerCardFooter, .blurhash-canvas, .actionSheetMenuItem:hover, .dialog {
+    border-radius: var(--rounding) !important;
+}
 div[data-role="controlgroup"] a[data-role="button"]:first-child {
-	border-bottom-left-radius: var(--rounding);
-	border-top-left-radius: var(--rounding);
+  border-bottom-left-radius: var(--rounding);
+  border-top-left-radius: var(--rounding);
 }
 div[data-role="controlgroup"] a[data-role="button"]:last-child {
-	border-bottom-right-radius: var(--rounding);
-	border-top-right-radius: var(--rounding);
+  border-bottom-right-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
 }
 /*fixing Poster Margin*/
 .itemsContainer>.card>.cardBox {
@@ -147,8 +331,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 /*Hover items*/
 .emby-input, .emby-textarea {
     color: inherit;
-    border: .07em solid #7b7b7b;
-    border-radius: .2em;
+    border: .07em solid #e50914;
+    border-radius:  var(--rounding);
     box-shadow: 0 0 8px 0px black !important;
     background: rgba(0,0,0,0.2) !important;
     backdrop-filter: blur(60px);
@@ -156,7 +340,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     text-shadow: 0 0 5px black;
 }
 .emby-select-withcolor  {
-    border: .07em solid #7b7b7b;
+    border: .07em solid #e50914;
 }
 .playedIndicator,
 .countIndicator {
@@ -164,52 +348,43 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     box-shadow: 0 0 5px 1px black;
 }
 .actionSheetMenuItem:hover {
-    background: linear-gradient(140deg,#aa5cc385,#00a4dc75) !important;
+    background: var(--deftraback) !important;
 }
 .cardBox {
-    background: rgba(0,0,0,0.25);
-    border-radius: 10px;
-    box-shadow: 0px 0px 9px 0px rgb(0 0 0);
-    transition: background .2s, box-shadow .2s, transform .2s;
+    border-radius: var(--rounding);
+    transition: box-shadow .2s, transform .2s;
     transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
 }
 .cardBox:hover {
-    background: rgba(0,0,0,0.75);
     box-shadow: 0px 0px 0px 0px black;
-    background: rgba(0,0,0,0.75);
     transform: scale(1.087);
 }
-.itemName.parentNameLast {
-  font-size: 35px; 
-  transition: font-size .2s;
-}
-.itemName.parentNameLast:hover {
-  font-size: 40px;
-}
-.button-flat:hover {
-  transform: scale(1.5);
+.paper-icon-button-light:hover:not(:disabled) {
+    color: #e50914;
+    background-color: #2020208c;
+    box-shadow: 0 0 15px -2px black;
 }
 .button-flat {
-  border-radius: 5px !important;
-}	
+  border-radius: var(--rounding) !important;
+} 
 .raised {
-  transition: transform .2s, background .2s; 
-  background:#3a3a3a !important;
-  border-radius: 5px !important;	
-}
-.navMenuOption.emby-button:hover{
-  background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
-  transform: scale(1.2);
+  transition: transform .2s; 
+  background:#e50914 !important;
+  border-radius: var(--rounding) !important;  
 }
 .raised.emby-button:hover{
-  background: rgb(216,0,255);
-  background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
   transform: scale(1.2);
 }
-
-navMenuOption-selected {
-  background: rgb(216,0,255);
-  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+.navMenuOption-selected {
+    background: #e50914 !important;
+}
+.navMenuOption:hover {
+    background: var(--deftraback) !important;
+    transform: scale(1.2);
+}
+.button-flat:hover {
+    color: #e50914;
+    transform: scale(1.5);
 }
 .videoOsdBottom {
     background-color: rgba(0,0,0,.85);
@@ -228,17 +403,15 @@ navMenuOption-selected {
   transform: scale(1.1);
   background: #3f3f3f;
 }
-.listItem-border {
+.listItem.listItem-border {
   transition: border-color .2s, transform .2s, background .2s;
+  border-color: #e50914 !important;
 }
 div#divRunningTasks:hover {
   transform: scale(1.1);
 }
 div#divRunningTasks {
   transition: transform .2s, background .2s;
-}
-.navMenuOption-selected {
-  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
 }
 .detailPageContent {
     text-shadow: 0 0 5px black;
@@ -249,17 +422,6 @@ select {
     backdrop-filter: blur(50px) !important;
     -webkit-backdrop-filter: blur(50px);
     text-shadow: 0 0 5px black !important;
-}
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-    text-shadow: 0 0 5px black;
-    backdrop-filter: blur(60px) !important;
-    -webkit-backdrop-filter: blur(60px) !important;	
-    box-shadow: 0 0 8px 3px black;
-}	
-
-.justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
-    backdrop-filter: none !important;
-    box-shadow: 0 0 black;
 }
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
 button.button-flat.btnResume.detailButton.emby-button,
@@ -283,8 +445,8 @@ h2 {
 .listItem:hover {
     transform: scale(1.1);
 }
-.listItem{
-    transition: transform .2s;
+.listItem {
+    transition: transform .2s, background .2s, border-color .2s;
 }
 
 /* Adjust both "size-adjust" and "size" to modify size */
@@ -302,10 +464,12 @@ h2 {
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 .backdropImage {
-  filter: blur(50px) saturate(105%) contrast(115%) brightness(65%);
+    filter: blur(50px) saturate(155%) contrast(130%) brightness(45%);
 }
 .backgroundContainer.withBackdrop {
-  background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+    background-image: url(https://i.imgur.com/REuCzPK.png) !important;
+    opacity: .35;
 }
 /*Rounded corners and square hover buttons*/
 .cardContent-button, 
@@ -324,10 +488,10 @@ h2 {
 .blurhash-canvas,
 .actionSheetMenuItem:hover,
 .dialog{
-  border-radius: 10px !important; 
+  border-radius: var(--rounding) !important; 
 }
 .dialog{
-   background-color: rgba(0, 0, 0, 0.1) !important;
+   background-color: rgba(0, 0, 0, 0.85) !important;
    backdrop-filter: blur(60px) !important;
    -webkit-backdrop-filter: blur(60px) !important;
    -moz-backdrop-filter: blur (60px) !important;
@@ -344,7 +508,7 @@ h2 {
   background-color:rgba(0, 0, 0, 0);
 }
 .playedIndicator {
-  background: #5dd000;
+  background: #e50914;
 }
 .upNextDialog {
     backdrop-filter: blur(15px);
@@ -356,7 +520,6 @@ h2 {
 /*Minimalistic play buttons*/
 .cardOverlayFab-primary {
   background-color: #00000000;
-  transistion: 8sec;
 }
 .cardOverlayButtonIcon {
   background-color: #00000000 !important;
@@ -382,77 +545,6 @@ h2 {
 /*Fixing position of tv or movie poster*/
 .detailImageContainer .card {
   position:fixed;
-}
-/*Tweak series/movie/album title screen*/
-.detailLogo {
-  display: all;
-}
-.detailPagePrimaryContainer {
-  background: rgba(0,0,0,0) !important;
-}
-.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
-  background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
-}
-@media all and (min-width: 100em){
-    .itemBackdrop::after {
-      background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
-  }
-    .itemBackdrop {
-      height: 23vh !important;
-      background-image: none !important;
-  }
-}
-@media all and (min-width: 32em) and (max-width: 100em){
-    .itemBackdrop::after {
-      background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
-  }
-    .itemBackdrop {
-      height: 10em !important;
-      background-image: none !important;
-  }
-}
-@media all and (max-width: 32em) {
-    .itemBackdrop {
-	    width: 100vw !important; 
-	    height: 100vh !important; 
-	    position: fixed; 
-	    filter: brightness(35%);
-	}
-    .detailPageWrapperContainer {
-	    margin-top: 5em;
-	}
-}
-.itemProgressBar {
-	height: 2.5px; 
-	background: rgba(0,0,0,0);
-}
-.cardIndicators {
-	right: 0.3em; top: 0.3em;
-}
-.paper-icon-button-light:hover {
-	background-color: rgba(0,0,0,0);
-}
-@media all and (min-width: 100em){
-    .cardOverlayFab-primary {
-      background-color: #00000000;
-  }
-    .cardOverlayButtonIcon {
-      background-color: #00000000 !important;
-  }
-    .cardOverlayContainer {
-      background-color: rgba(0, 0, 0, 0.7);
-  }
-}
-@media all and (max-width: 100em){
-    .cardOverlayButtonIcon {
-      border-radius: 5px !important;
-  }
-    .cardOverlayButtonIcon {
-      background-color: rgba(0, 0, 0, 0.5) !important;
-  }
-    .cardOverlayButton {
-      padding: 0.3em;
-  }
 }
 /*Size episode preview images in a more compact way*/
 .listItemImageButton-icon {
@@ -490,19 +582,11 @@ h2 {
       margin: 0;
   }
 }
-/* Remove Media Images */
-.section0 .cardScalable {
-    display: none;
-}
-/* remove My Media title */
-.section0 .sectionTitle {
-    display: all;
-}
 /* My Media Styling */
 .section0 button.itemAction.textActionButton {
     height: 3.5em;
     background: rgba(0, 0, 0, 0);
-    border-radius: 10px;
+    border-radius:  var(--rounding);
 }
 .section0 .overflowBackdropCard,
     .section0 .overflowSmallBackdropCard {
@@ -542,42 +626,29 @@ h2 {
     min-width: 12em;
     margin: 0.4em;
 }
-/*Narrow the login form*/
-#loginPage .readOnlyContent, #loginPage form {
-  max-width: 22em;
-}
 
-/*Hide "please login" text, margin is to prevent login form moving too far up*/
-#loginPage h1 {
-  display: none;
-}
-#loginPage .padded-left.padded-right.padded-bottom-page {
-  margin-top: 50px;
-}
-/*Login background*/
-#loginPage {
-  background: url(https://wallpapercave.com/wp/wp5502431.jpg) !important;
-  background-size: cover !important;
-}
 /*Theming for the dasboard*/
 .paperList, .visualCardBox {
   background-color: #000;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 .listItemIcon {
-  border-radius: 6px !important;
+  border-radius: 5px !important;
+}
+.listItemIcon:not(.listItemIcon-transparent) {
+    background-color: #e50914 !important;
 }
 .listItem-border {
-  border-color: rgba(255, 255, 255, 0.22) !important;
+  border-color: #e50914 !important;
 }
 .backgroundContainer {
   background-color: #101010;
 }
 .raised {
-  background: #00a4dc;
+  background: #e50914;
 }
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
-    border-radius: 5px !important;
+    border-radius: var(--rounding) !important;
 }
 /*For browsers that don't support backdrop-filter*/
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -588,9 +659,7 @@ h2 {
     background: rgba(0,0,0,0.95) !important;
   }
   .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-    background: none;
     background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
   }
   .tmla-mask {
     background-color: rgba(0,0,0,0.1);
@@ -610,59 +679,7 @@ h2 {
   .playerStats {
   background: rgba(28,28,28,.8);
   box-shadow: 0 0 8px black !important;
-  }	
-  /*Banner transparency*/
-  #dashboardPage,
-#dashboardGeneralPage,
-#userProfilesPage,
-#devicesPage,
-#serverActivityPage,
-#liveTvStatusPage,
-#liveTvSettingsPage,
-#networkingPage,
-#apiKeysPage,
-#logPage,
-#notificationSettingsPage,
-#scheduledTasksPage,
-#itemDetailPage {
-  margin-top: 60px;
-    padding-top: 0px !important;
-  overflow: scroll;
-}
-
-@media all and (min-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #musicRecommendedPage {
-    margin-top: 70px;
-    padding-top: 0px !important;
-    overflow: scroll;
   }
-  #encodingSettingsPage,
-  #mediaLibraryPage,
-  #dlnaSettingsPage,
-  #pluginsPage {
-    margin-top: 60px;
-    padding-top: 0px !important;
-    overflow: scroll;
-  }
-}
-
-@media all and (max-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #encodingSettingsPage,
-  #mediaLibraryPage,
-  #dlnaSettingsPage,
-  #pluginsPage,
-  #musicRecommendedPage {
-    margin-top: 130px;
-    padding-top: 0px !important;
-    overflow: scroll;
-  }
-}
 /* fixed height for the bottom row */
 :root {
   --element-fixed-top: 95px;
@@ -670,13 +687,13 @@ h2 {
 
 /* Now playing bar in the footer */
 .nowPlayingBar {
-       width: 650px;
-       z-index: 10;
-       position: fixed;
-       top: 300px;
-       height: 120px;
+      width: 650px;
+      z-index: 10;
+      position: fixed;
+      top: 300px;
+      height: 120px;
       border-style: solid;
-      border-color: white;
+      border-color: #e50914;
       background-color: black;
       margin-left: 50%;
 }
@@ -711,7 +728,6 @@ h2 {
      min-width: 500px;
 }
 
-/* Hold mute, volume slider container, repeat, favorite and remote control buttons */
 .nowPlayingBarRight {
      width: 402px !important;
      left: -60px;
@@ -755,4 +771,3 @@ h2 {
     -webkit-backdrop-filter: blur(90px);
     box-shadow: 0 0 8px black;
 }
-
