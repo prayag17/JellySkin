@@ -144,6 +144,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .sectionTitleContainer.flex {
     box-shadow: 0 0 black !important;
 }
+.section2 a.raised.homeLibraryButton.emby-button {
+    background: rgba(0,0,0,0.4) !important;
+}
 /*Hover items*/
 .emby-input, .emby-textarea {
     color: inherit;
