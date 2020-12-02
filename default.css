@@ -227,11 +227,10 @@ navMenuOption-selected {
 }
 .listItem.listItem-border:hover {
   border-color: rgba(0,0,0,0) !important;
-  transform: scale(1.1);
   background: #3f3f3f;
 }
 .listItem-border {
-  transition: border-color .2s, transform .2s, background .2s;
+  transition: border-color .2s, background .2s;
 }
 div#divRunningTasks:hover {
   transform: scale(1.1);
