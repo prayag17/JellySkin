@@ -207,7 +207,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .raised.emby-button:hover{
   background: rgb(216,0,255);
   background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
-  transform: scale(1.2);
 }
 
 navMenuOption-selected {
@@ -257,9 +256,16 @@ select {
     text-shadow: 0 0 5px black;
     backdrop-filter: blur(60px) !important;
     -webkit-backdrop-filter: blur(60px) !important;	
-    box-shadow: 0 0 8px 3px black;
-}	
-
+    box-shadow: 0 0 20px 0px black;
+}
+/*cardbox border-radius change*/
+#indexPage button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
+.emby-scroller button.cardImageContainer.coveredImage.cardContent,
+.childrenItemsContainer button.cardImageContainer.coveredImage.cardContent,
+.nextUpItems button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
+.vertical-wrap button.cardImageContainer.coveredImage.cardContent {
+    border-radius: 10px 10px 0px 0px !important;
+}
 .justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
     backdrop-filter: none !important;
     box-shadow: 0 0 black;
@@ -284,12 +290,17 @@ h2 {
     background-color: #0000;
 }
 .listItem:hover {
-    transform: scale(1.1);
+    background: black;
 }
 .listItem{
-    transition: transform .2s;
+    transition: background .2s;
 }
-
+.cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow {
+    box-shadow: 0 0 rgba(0,0,0,0) !important;
+}
+.card-hoverable:hover .cardOverlayContainer{
+    border-radius: 10px 10px 0px 0px !important;
+}
 /* Adjust both "size-adjust" and "size" to modify size */
 .headerTabs.sectionTabs {
   text-size-adjust: 130%;
