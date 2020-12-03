@@ -282,7 +282,10 @@ select {
 .emby-scroller button.cardImageContainer.coveredImage.cardContent,
 .childrenItemsContainer button.cardImageContainer.coveredImage.cardContent,
 .nextUpItems button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
-.vertical-wrap button.cardImageContainer.coveredImage.cardContent {
+.vertical-wrap button.cardImageContainer.coveredImage.cardContent,
+.emby-scroller button.cardImageContainer {
+    border-radius: 10px 10px 0px 0px !IMPORTANT;
+}{
     border-radius: 10px 10px 0px 0px !important;
 }
 .justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
