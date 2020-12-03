@@ -296,6 +296,8 @@ button.emby-tab-button.emby-button,
 h2 {
     text-shadow: 0 0 5px black;
 }
+
+
 .tmla-mask {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -449,11 +451,40 @@ h2 {
     .itemBackdrop {
 	    width: 100vw !important; 
 	    height: 100vh !important; 
-	    position: fixed; 
-	    filter: brightness(35%);
+	    position: fixed;
 	}
     .detailPageWrapperContainer {
-	    margin-top: 5em;
+	    background: white;
+            color: #383838;
+            width: 90%;
+            border-radius: 10px;
+            margin: 20em auto;
+            font-size: 110%;
+	    box-shadow: 0px 0px 15px -5px black;
+	}
+    .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon, 
+    button.button-flat.btnResume.detailButton.emby-button,
+    button.emby-tab-button.emby-button, h2 {
+	    text-shadow: none !important;
+	}
+    .detailPageContent {
+            text-shadow: none !important;
+	}
+    select {
+	    text-shadow: none !important;
+	}
+	.button-flat:hover {
+	    transform: none;
+	}
+	span.material-icons.detailButton-icon.play_arrow {
+	    background: linear-gradient(140deg,#aa5cc3,#00a4dc);
+	    padding: .6em 5em;
+	    border-radius: 25vh;
+	    margin-top: -14.5em;
+	    margin-left: 8em;
+	    position: absolute;
+	    color: white;
+	    box-shadow: 0px 0px 15px -5px black;
 	}
 }
 .itemProgressBar {
