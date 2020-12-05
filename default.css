@@ -483,10 +483,10 @@ h2 {
 	}
 	span.material-icons.detailButton-icon.play_arrow {
 	    background: linear-gradient(140deg,#aa5cc3,#00a4dc);
-	    padding: .6em 5em;
+	    padding: .6em 3em;
 	    border-radius: 25vh;
-	    margin-top: -16.5em;
-	    margin-left: 8em;
+	    margin-top: -1490%;
+	    margin-left: 702%;
 	    position: absolute;
 	    color: white;
 	    box-shadow: 0px 0px 15px -5px black;
