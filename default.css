@@ -1,3 +1,11 @@
+/*Mini My media*/
+#indexPage .raised.emby-button:hover {
+    background: rgb(0,0,0,.5) !important;
+}
+#indexPage .raised.emby-button {
+    background: rgb(0,0,0,.25) !important;
+    transition: background .2s;
+}
 /*Fonts */
 @font-face{
   font-family:'Netflix Sans';
@@ -420,9 +428,6 @@ h2 {
   position:fixed;
 }
 /*Tweak series/movie/album title screen*/
-.detailLogo {
-  display: all;
-}
 .detailPagePrimaryContainer {
   background: rgba(0,0,0,0) !important;
 }
@@ -554,14 +559,6 @@ h2 {
       height: 2.5em;
       margin: 0;
   }
-}
-/* Remove Media Images */
-.section0 .cardScalable {
-    display: none;
-}
-/* remove My Media title */
-.section0 .sectionTitle {
-    display: all;
 }
 /* My Media Styling */
 .section0 button.itemAction.textActionButton {
