@@ -478,18 +478,18 @@ h2 {
     select {
 	    text-shadow: none !important;
 	}
-	.button-flat:hover {
+    .button-flat:hover {
 	    transform: none;
 	}
-	span.material-icons.detailButton-icon.play_arrow {
+    span.material-icons.detailButton-icon.play_arrow {
 	    background: linear-gradient(140deg,#aa5cc3,#00a4dc);
 	    padding: .6em 3em;
-	    border-radius: 25vh;
-	    margin-top: -1490%;
-	    margin-left: 702%;
+	    margin-top: -11.5em;
 	    position: absolute;
 	    color: white;
 	    box-shadow: 0px 0px 15px -5px black;
+	    margin-left: 8em;
+	    border-radius: 25vh;
 	}
 }
 .itemProgressBar {
