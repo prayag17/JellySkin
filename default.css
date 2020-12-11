@@ -443,6 +443,15 @@ h2 {
       background-image: none !important;
   }
 }
+@media (max-width: 68.75em;){
+.detailLogo {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9em;
+    width: 71%;
+	display: block;
+}
+}
 @media all and (min-width: 32em) and (max-width: 100em){
     .itemBackdrop::after {
       background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
@@ -480,16 +489,6 @@ h2 {
 	}
     .button-flat:hover {
 	    transform: none;
-	}
-    span.material-icons.detailButton-icon.play_arrow {
-	    background: linear-gradient(140deg,#aa5cc3,#00a4dc);
-	    padding: .6em 3em;
-	    margin-top: -11.5em;
-	    position: absolute;
-	    color: white;
-	    box-shadow: 0px 0px 15px -5px black;
-	    margin-left: 8em;
-	    border-radius: 25vh;
 	}
 }
 .itemProgressBar {
@@ -577,20 +576,6 @@ h2 {
     flex-wrap: wrap;
   }
 
-@media (max-width: 1px) and (orientation: landscape){
-.section0 {
-    display: none;
-  } 
-}
-.section0 .sectionTitle {
-    padding-top: 60px !important;
-}
-
-@media (max-width: 1px){
-.section0 {
-    display: none;
-  }
-}
 .section0 .sectionTitle {
     padding-top: 60px !important;
 }
