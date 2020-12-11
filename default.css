@@ -1,115 +1,160 @@
-/*Mini My media*/
+    /*Mini My media*/
+
 #indexPage .raised.emby-button:hover {
-    background: rgb(0,0,0,.5) !important;
+    background: rgb(0, 0, 0, .5) !important;
 }
+
 #indexPage .raised.emby-button {
-    background: rgb(0,0,0,.25) !important;
+    background: rgb(0, 0, 0, .25) !important;
     transition: background .2s;
 }
+
+
 /*Fonts */
-@font-face{
-  font-family:'Netflix Sans';
-  font-weight:100;
-  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
 }
-@font-face{
-  font-family:'Netflix Sans';
-  font-weight:300;
-  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
 }
-@font-face{
-  font-family:'Netflix Sans';
-  font-weight:400;
-  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
 }
-@font-face{
-  font-family:'Netflix Sans';
-  font-weight:700;
-  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
 }
-@font-face{
-  font-family:'Netflix Sans';
-  font-weight:800;
-  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
 }
-@font-face{
-  font-family:'Netflix Sans';
-  font-weight:900;
-  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
 }
-body, h1, h2, h3, h4 {
-  font-family: 'Netflix Sans' !important;
+
+body,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Netflix Sans' !important;
 }
+
+
 /*Subtitle Fonts (Netflix Sans Medium) thanks the u/Edgementality-https://bit.ly/33slrSa*/
+
+
 /*Firefox*/
-.videoSubtitles{
+
+.videoSubtitles {
     font-family: 'Netflix Sans', sans-serif !important;
     font-weight: 700 !important;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;  
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
 }
+
+
 /*Chrome, Edge Chromium & Saffari*/
+
 video::-webkit-media-text-track-display {
     font-family: "Netflix Sans", sans-serif !important;
     font-weight: 700 !important;
     text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
+
+
 /*backup for subtitles*/
+
 video::-webkit-media-text-track-container {
     font-family: "Netflix Sans", sans-serif !important;
     font-weight: 700 !important;
     text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
+
 video:cue {
     font-family: "Netflix Sans", sans-serif !important;
     font-weight: 700 !important;
     text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
+
+
 /*epub reader fix*/
-.bookplayerButtonIcon{
+
+.bookplayerButtonIcon {
     color: white !important;
 }
-.calibre{
-    color: white !important; 
-    font-family: 'Netflix Sans' !important; 
+
+.calibre {
+    color: white !important;
+    font-family: 'Netflix Sans' !important;
     text-decoration: none !important;
 }
+
 .calibre a {
     color: white;
     text-decoration: none;
 }
+
 .calibre a:hover {
     text-decoration: underline;
 }
+
 #bookPlayer .epub-container {
-    background: rgba(0,0,0,0.65);
+    background: rgba(0, 0, 0, 0.65);
     height: 100%;
 }
+
+
 /*Setting border Radius*/
-:root {--rounding: 10px;}
+
+:root {
+    --rounding: 10px;
+}
+
+
 /*Rounded corners on pretty much everything-Source Monochromic*/
+
 .formDialogHeader {
-  border-top-left-radius: var(--rounding);
-  border-top-right-radius: var(--rounding);
+    border-top-left-radius: var(--rounding);
+    border-top-right-radius: var(--rounding);
 }
+
 .formDialogFooter {
-  border-bottom-left-radius: var(--rounding);
-  border-bottom-right-radius: var(--rounding);
+    border-bottom-left-radius: var(--rounding);
+    border-bottom-right-radius: var(--rounding);
 }
+
 .cardOverlayContainer {
-	border-radius: var(--rounding) !important;
+    border-radius: var(--rounding) !important;
 }
+
 .toast,
 .paperList,
 .cardContent,
-.sessionNowPlayingInnerContent, 
-.listItem:hover, 
+.sessionNowPlayingInnerContent,
+.listItem:hover,
 .cardImage,
 .fab,
 .multiSelectCheckboxOutline,
 .itemSelectionPanel,
-.cardContent-button, 
-.cardContent-shadow, 
-.itemDetailImage, 
+.cardContent-button,
+.cardContent-shadow,
+.itemDetailImage,
 .cardOverlayButton-hover,
 .cardImageContainer,
 .cardPadder,
@@ -131,35 +176,44 @@ video:cue {
 .chapterThumbTextContainer,
 .chapterThumbContainer,
 .chapterThumb,
-.emby-input, 
-.emby-textarea, 
+.emby-input,
+.emby-textarea,
 .emby-select-withcolor,
 .cardOverlayButtonIcon,
 .subtitleappearance-preview.flex.align-items-center.justify-content-center {
-  border-radius: var(--rounding) !important;
+    border-radius: var(--rounding) !important;
 }
+
 .osdPoster img {
-  border-radius: var(--rounding); border: none;
+    border-radius: var(--rounding);
+    border: none;
 }
+
 .mdl-slider::-moz-range-thumb {
-  border-radius: var(--rounding);
+    border-radius: var(--rounding);
 }
+
 .mdl-slider::-ms-thumb {
-  border-radius: var(--rounding);
+    border-radius: var(--rounding);
 }
+
 .mdl-slider::-webkit-slider-thumb {
-  border-radius: var(--rounding);
+    border-radius: var(--rounding);
 }
 
 div[data-role="controlgroup"] a[data-role="button"]:first-child {
-	border-bottom-left-radius: var(--rounding);
-	border-top-left-radius: var(--rounding);
+    border-bottom-left-radius: var(--rounding);
+    border-top-left-radius: var(--rounding);
 }
+
 div[data-role="controlgroup"] a[data-role="button"]:last-child {
-	border-bottom-right-radius: var(--rounding);
-	border-top-right-radius: var(--rounding);
+    border-bottom-right-radius: var(--rounding);
+    border-top-right-radius: var(--rounding);
 }
+
+
 /*fixing Poster Margin*/
+
 .itemsContainer>.card>.cardBox {
     margin-left: 16px;
     margin-right: 16px;
@@ -169,123 +223,154 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .cardBox-bottompadded {
     margin-bottom: 16px !important;
 }
+
 .sectionTitleContainer.flex {
     box-shadow: 0 0 black !important;
 }
+
 .section2 a.raised.homeLibraryButton.emby-button {
-    background: rgba(0,0,0,0.4) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
 }
+
+
 /*Hover items*/
-.emby-input, .emby-textarea {
+
+.emby-input,
+.emby-textarea {
     color: inherit;
     border: .07em solid #7b7b7b;
     border-radius: .2em;
     box-shadow: 0 0 8px 0px black !important;
-    background: rgba(0,0,0,0.2) !important;
+    background: rgba(0, 0, 0, 0.2) !important;
     backdrop-filter: blur(60px);
     -webkit-backdrop-filter: blur(60px);
     text-shadow: 0 0 5px black;
 }
-.emby-select-withcolor  {
+
+.emby-select-withcolor {
     border: .07em solid #7b7b7b;
 }
+
 .playedIndicator,
 .countIndicator {
     border-radius: 5px;
     box-shadow: 0 0 5px 1px black;
 }
+
 .actionSheetMenuItem:hover {
-    background: linear-gradient(140deg,#aa5cc385,#00a4dc75) !important;
+    background: linear-gradient(140deg, #aa5cc385, #00a4dc75) !important;
 }
+
 .cardBox {
-    background: rgba(0,0,0,0.25);
+    background: rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     box-shadow: 0px 0px 9px 0px rgb(0 0 0);
     transition: background .2s, box-shadow .2s, transform .2s;
     transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
 }
+
 .cardBox:hover {
-    background: rgba(0,0,0,0.75);
+    background: rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 0px 0px black;
-    background: rgba(0,0,0,0.75);
+    background: rgba(0, 0, 0, 0.75);
     transform: scale(1.087);
 }
+
 .itemName.parentNameLast {
-  font-size: 35px; 
-  transition: font-size .2s;
+    font-size: 35px;
+    transition: font-size .2s;
 }
+
 .itemName.parentNameLast:hover {
-  font-size: 40px;
+    font-size: 40px;
 }
+
 .button-flat:hover {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
+
 .button-flat {
-  border-radius: 5px !important;
-}	
+    border-radius: 5px !important;
+}
+
 .raised {
-  transition: transform .2s, background .2s; 
-  background:#3a3a3a !important;
-  border-radius: 5px !important;	
+    transition: transform .2s, background .2s;
+    background: #3a3a3a !important;
+    border-radius: 5px !important;
 }
-.navMenuOption.emby-button:hover{
-  background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
-  transform: scale(1.2);
+
+.navMenuOption.emby-button:hover {
+    background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
+    transform: scale(1.2);
 }
-.raised.emby-button:hover{
-  background: rgb(216,0,255);
-  background: linear-gradient(140deg,#aa5cc3,#00a4dc) !important;
+
+.raised.emby-button:hover {
+    background: rgb(216, 0, 255);
+    background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
 }
 
 navMenuOption-selected {
-  background: rgb(216,0,255);
-  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+    background: rgb(216, 0, 255);
+    background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
 }
+
 .videoOsdBottom {
-    background-color: rgba(0,0,0,.85);
+    background-color: rgba(0, 0, 0, .85);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 8px 5px black;
 }
+
 .osdHeader {
-  background: rgba(0,0,0,0.85)!important;
-  -webkit-backdrop-filter: blur(10px)!important;
-  backdrop-filter: blur(10px)!important;
-  box-shadow: 0px 0px 8px 5px black;
+    background: rgba(0, 0, 0, 0.85)!important;
+    -webkit-backdrop-filter: blur(10px)!important;
+    backdrop-filter: blur(10px)!important;
+    box-shadow: 0px 0px 8px 5px black;
 }
+
 .listItem.listItem-border:hover {
-  border-color: rgba(0,0,0,0) !important;
-  background: #3f3f3f;
+    border-color: rgba(0, 0, 0, 0) !important;
+    background: #3f3f3f;
 }
+
 .listItem-border {
-  transition: border-color .2s, background .2s;
+    transition: border-color .2s, background .2s;
 }
+
 div#divRunningTasks:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 div#divRunningTasks {
-  transition: transform .2s, background .2s;
+    transition: transform .2s, background .2s;
 }
+
 .navMenuOption-selected {
-  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+    background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
 }
+
 .detailPageContent {
     text-shadow: 0 0 5px black;
 }
+
 select {
     box-shadow: 0 0 6px 0px black !important;
-    background: rgba(0,0,0,0.2) !important;
+    background: rgba(0, 0, 0, 0.2) !important;
     backdrop-filter: blur(50px) !important;
     -webkit-backdrop-filter: blur(50px);
     text-shadow: 0 0 5px black !important;
 }
+
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
     text-shadow: 0 0 5px black;
     backdrop-filter: blur(60px) !important;
-    -webkit-backdrop-filter: blur(60px) !important;	
+    -webkit-backdrop-filter: blur(60px) !important;
     box-shadow: 0 0 20px 0px black;
 }
+
+
 /*cardbox border-radius change*/
+
 #indexPage button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
 .emby-scroller button.cardImageContainer.coveredImage.cardContent,
 .childrenItemsContainer button.cardImageContainer.coveredImage.cardContent,
@@ -294,10 +379,12 @@ select {
 .emby-scroller button.cardImageContainer {
     border-radius: 10px 10px 0px 0px !important;
 }
+
 .justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
     backdrop-filter: none !important;
     box-shadow: 0 0 black;
 }
+
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
 button.button-flat.btnResume.detailButton.emby-button,
 button.emby-tab-button.emby-button,
@@ -305,57 +392,74 @@ h2 {
     text-shadow: 0 0 5px black;
 }
 
-
 .tmla-mask {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
+
 .dialogBackdropOpened {
     opacity: 1 !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
 .dialogBackdrop {
     background-color: #0000;
 }
+
 .listItem:hover {
     background: black;
 }
-.listItem{
+
+.listItem {
     transition: background .2s;
 }
-.cardBox:not(.visualCardBox) .cardPadder, .cardContent-shadow {
-    box-shadow: 0 0 rgba(0,0,0,0) !important;
-}
-.card-hoverable:hover .cardOverlayContainer{
-    border-radius: 10px 10px 0px 0px !important;
-}
-/* Adjust both "size-adjust" and "size" to modify size */
-.headerTabs.sectionTabs {
-  text-size-adjust: 130%;
-  font-size: 130%;
-}
-.pageTitle {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.emby-tab-button {
-  padding: 1.75em 1.7em;
+
+.cardBox:not(.visualCardBox) .cardPadder,
+.cardContent-shadow {
+    box-shadow: 0 0 rgba(0, 0, 0, 0) !important;
 }
 
+.card-hoverable:hover .cardOverlayContainer {
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+
+/* Adjust both "size-adjust" and "size" to modify size */
+
+.headerTabs.sectionTabs {
+    text-size-adjust: 130%;
+    font-size: 130%;
+}
+
+.pageTitle {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.emby-tab-button {
+    padding: 1.75em 1.7em;
+}
+
+
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
+
 .backdropImage {
-  filter: blur(50px) saturate(105%) contrast(115%) brightness(65%);
+    filter: blur(50px) saturate(105%) contrast(115%) brightness(65%);
 }
+
 .backgroundContainer.withBackdrop {
-  background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
+
+
 /*Rounded corners and square hover buttons*/
-.cardContent-button, 
-.cardContent-shadow, 
-.itemDetailImage, 
-.cardOverlayButton-hover, 
+
+.cardContent-button,
+.cardContent-shadow,
+.itemDetailImage,
+.cardOverlayButton-hover,
 .cardOverlayContainer,
 .cardImageContainer,
 .cardPadder,
@@ -367,438 +471,500 @@ h2 {
 .innerCardFooter,
 .blurhash-canvas,
 .actionSheetMenuItem:hover,
-.dialog{
-  border-radius: 10px !important; 
+.dialog {
+    border-radius: 10px !important;
 }
-.dialog{
-   background-color: rgba(0, 0, 0, 0.1) !important;
-   backdrop-filter: blur(60px) !important;
-   -webkit-backdrop-filter: blur(60px) !important;
-   -moz-backdrop-filter: blur (60px) !important;
-   -o-backdrop-filter: blur(60px) !important;
-   box-shadow: 0 0 20px 4px black;
+
+.dialog {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(60px) !important;
+    -webkit-backdrop-filter: blur(60px) !important;
+    -moz-backdrop-filter: blur (60px) !important;
+    -o-backdrop-filter: blur(60px) !important;
+    box-shadow: 0 0 20px 4px black;
 }
+
+
 /* Top menu transparency */
+
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-  background:none;
-  background-color:rgba(0, 0, 0, 0);
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
 }
+
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
-  background:none;
-  background-color:rgba(0, 0, 0, 0);
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
 }
+
 .playedIndicator {
-  background: #5dd000;
+    background: #5dd000;
 }
+
 .upNextDialog {
     backdrop-filter: blur(15px);
     box-shadow: 0 0 8px 5px black;
 }
+
 .upNextDialog-poster-img {
     border-radius: 10px;
 }
+
+
 /*Minimalistic play buttons*/
+
 .cardOverlayFab-primary {
-  background-color: #00000000;
-  transistion: 8sec;
+    background-color: #00000000;
+    transistion: 8sec;
 }
+
 .cardOverlayButtonIcon {
-  background-color: #00000000 !important;
+    background-color: #00000000 !important;
 }
+
 .cardOverlayContainer {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
+
 /*Theme some dialogues*/
+
 .actionSheetMenuItem:hover {
-  background-color: rgba(0, 164, 220, 0.2);
+    background-color: rgba(0, 164, 220, 0.2);
 }
+
 .mainDrawer {
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(60px);
-  -moz-backdrop-filter: blur(60px);
-  -o-backdrop-filter: blur(60px);
-  backdrop-filter: blur(60px);
-  box-shadow: 0 0 8px 3px black;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(60px);
+    -moz-backdrop-filter: blur(60px);
+    -o-backdrop-filter: blur(60px);
+    backdrop-filter: blur(60px);
+    box-shadow: 0 0 8px 3px black;
 }
+
 .navMenuOption:hover {
-  background: rgba(0, 164, 220, 0.2);
+    background: rgba(0, 164, 220, 0.2);
 }
+
+
 /*Fixing position of tv or movie poster*/
+
 .detailImageContainer .card {
-  position:fixed;
+    position: fixed;
 }
+
+
 /*Tweak series/movie/album title screen*/
+
 .detailPagePrimaryContainer {
-  background: rgba(0,0,0,0) !important;
+    background: rgba(0, 0, 0, 0) !important;
 }
-.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
-  background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
+
+.layout-desktop .itemBackdrop:after,
+.layout-tv .itemBackdrop:after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%) !important;
 }
-@media all and (min-width: 100em){
+
+@media all and (min-width: 100em) {
     .itemBackdrop::after {
-      background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
-  }
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%) !important;
+    }
     .itemBackdrop {
-      height: 23vh !important;
-      background-image: none !important;
-  }
+        height: 23vh !important;
+        background-image: none !important;
+    }
 }
-@media (max-width: 68.75em;){
-.detailLogo {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 9em;
-    width: 71%;
-	display: block;
+
+@media (max-width: 68.75em) {
+    .detailLogo {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 9em;
+        width: 71%;
+        display: block;
+    }
 }
-}
-@media all and (min-width: 32em) and (max-width: 100em){
+
+@media all and (min-width: 32em) and (max-width: 100em) {
     .itemBackdrop::after {
-      background: linear-gradient(180deg, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%) !important;
-  }
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%) !important;
+    }
     .itemBackdrop {
-      height: 10em !important;
-      background-image: none !important;
-  }
+        height: 10em !important;
+        background-image: none !important;
+    }
 }
+
 @media all and (max-width: 32em) {
     .itemBackdrop {
-	    width: 100vw !important; 
-	    height: 100vh !important; 
-	    position: fixed;
-	}
+        width: 100vw !important;
+        height: 100vh !important;
+        position: fixed;
+    }
     .detailPageWrapperContainer {
-	    background: white;
-            color: #383838;
-            width: 90%;
-            border-radius: 10px;
-            margin: 20em auto;
-            font-size: 110%;
-	    box-shadow: 0px 0px 15px -5px black;
-	}
-    .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon, 
+        background: white;
+        color: #383838;
+        width: 90%;
+        border-radius: 10px;
+        margin: 20em auto;
+        font-size: 110%;
+        box-shadow: 0px 0px 15px -5px black;
+    }
+    .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
     button.button-flat.btnResume.detailButton.emby-button,
-    button.emby-tab-button.emby-button, h2 {
-	    text-shadow: none !important;
-	}
+    button.emby-tab-button.emby-button,
+    h2 {
+        text-shadow: none !important;
+    }
     .detailPageContent {
-            text-shadow: none !important;
-	}
+        text-shadow: none !important;
+    }
     select {
-	    text-shadow: none !important;
-	}
+        text-shadow: none !important;
+    }
     .button-flat:hover {
-	    transform: none;
-	}
+        transform: none;
+    }
 }
+
 .itemProgressBar {
-	height: 2.5px; 
-	background: rgba(0,0,0,0);
+    height: 2.5px;
+    background: rgba(0, 0, 0, 0);
 }
+
 .cardIndicators {
-	right: 0.3em; top: 0.3em;
+    right: 0.3em;
+    top: 0.3em;
 }
+
 .paper-icon-button-light:hover {
-	background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
-@media all and (min-width: 100em){
+
+@media all and (min-width: 100em) {
     .cardOverlayFab-primary {
-      background-color: #00000000;
-  }
+        background-color: #00000000;
+    }
     .cardOverlayButtonIcon {
-      background-color: #00000000 !important;
-  }
+        background-color: #00000000 !important;
+    }
     .cardOverlayContainer {
-      background-color: rgba(0, 0, 0, 0.7);
-  }
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
-@media all and (max-width: 100em){
+
+@media all and (max-width: 100em) {
     .cardOverlayButtonIcon {
-      border-radius: 5px !important;
-  }
+        border-radius: 5px !important;
+    }
     .cardOverlayButtonIcon {
-      background-color: rgba(0, 0, 0, 0.5) !important;
-  }
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
     .cardOverlayButton {
-      padding: 0.3em;
-  }
+        padding: 0.3em;
+    }
 }
+
+
 /*Size episode preview images in a more compact way*/
+
 .listItemImageButton-icon {
-  padding: 0;
+    padding: 0;
 }
+
 .secondary.listItem-overview.listItemBodyText {
-  height: 61px;
-  margin: 0;
+    height: 61px;
+    margin: 0;
 }
+
 .listItemImageButton {
-  margin: auto;
-  font-size: 1.6em !important;
+    margin: auto;
+    font-size: 1.6em !important;
 }
-@media all and (min-width: 100em){
+
+@media all and (min-width: 100em) {
     .listItemImage.listItemImage-large.itemAction.lazy {
-      height: 110px;
-  }
+        height: 110px;
+    }
     .listItem-content {
-      height: 115px;
-  }
+        height: 115px;
+    }
     .secondary.listItem-overview.listItemBodyText {
-      height: 4em;
-      margin: 0;
-  }
+        height: 4em;
+        margin: 0;
+    }
 }
-@media all and (max-width: 100em){
+
+@media all and (max-width: 100em) {
     .listItemImage.listItemImage-large.itemAction.lazy {
-      height: 80px;
-  }
+        height: 80px;
+    }
     .listItem-content {
-      height: 85px;
-  }
+        height: 85px;
+    }
     .secondary.listItem-overview.listItemBodyText {
-      height: 2.5em;
-      margin: 0;
-  }
+        height: 2.5em;
+        margin: 0;
+    }
 }
+
+
 /* My Media Styling */
+
 .section0 button.itemAction.textActionButton {
     height: 3.5em;
     background: rgba(0, 0, 0, 0);
     border-radius: 10px;
 }
+
 .section0 .overflowBackdropCard,
-    .section0 .overflowSmallBackdropCard {
-        max-width: 90vw;
-    }
+.section0 .overflowSmallBackdropCard {
+    max-width: 90vw;
+}
+
 .section0 .emby-scroller {
     margin-right: 0;
-  }
-  .section0 .itemsContainer {
+}
+
+.section0 .itemsContainer {
     flex-wrap: wrap;
-  }
+}
 
 .section0 .sectionTitle {
     padding-top: 60px !important;
 }
+
 .raised.homeLibraryButton:hover {
-  transition: filter 1s;
+    transition: filter 1s;
 }
+
 .raised.homeLibraryButton {
-  transition: filter 1s;
+    transition: filter 1s;
 }
+
 .homeLibraryButton {
     min-width: 12em;
     margin: 0.4em;
 }
+
+
 /*Narrow the login form*/
-#loginPage .readOnlyContent, #loginPage form {
-  max-width: 22em;
+
+#loginPage .readOnlyContent,
+#loginPage form {
+    max-width: 22em;
 }
 
+
 /*Hide "please login" text, margin is to prevent login form moving too far up*/
+
 #loginPage h1 {
-  display: none;
+    display: none;
 }
+
 #loginPage .padded-left.padded-right.padded-bottom-page {
-  margin-top: 50px;
+    margin-top: 50px;
 }
+
+
 /*Login background*/
+
 #loginPage {
-  background: url(https://wallpapercave.com/wp/wp5502431.jpg) !important;
-  background-size: cover !important;
+    background: url(https://wallpapercave.com/wp/wp5502431.jpg) !important;
+    background-size: cover !important;
 }
+
+
 /*Theming for the dasboard*/
-.paperList, .visualCardBox {
-  background-color: #000;
-  border-radius: 6px;
+
+.paperList,
+.visualCardBox {
+    background-color: #000;
+    border-radius: 6px;
 }
+
 .listItemIcon {
-  border-radius: 6px !important;
+    border-radius: 6px !important;
 }
+
 .listItem-border {
-  border-color: rgba(255, 255, 255, 0.22) !important;
+    border-color: rgba(255, 255, 255, 0.22) !important;
 }
+
 .backgroundContainer {
-  background-color: #101010;
+    background-color: #101010;
 }
+
 .raised {
-  background: #00a4dc;
+    background: #00a4dc;
 }
+
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
     border-radius: 5px !important;
 }
+
+
 /*For browsers that don't support backdrop-filter*/
+
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .videoOsdBottom {
-    background-color: rgba(0,0,0,.95);
-  }
-  .osdHeader {
-    background: rgba(0,0,0,0.95) !important;
-  }
-  .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-    background: none;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-  }
-  .tmla-mask {
-    background-color: rgba(0,0,0,0.1);
-  }
-  .dialogBackdropOpened {
-    opacity: 1 !important;
-    background: rgba(0,0,0,0.1); 
-  }
-  .dialog{
-   background-color: rgba(0, 0, 0, 0.95) !important;
-   box-shadow: 0 0 20px 4px black;
-  }
-  .mainDrawer {
-  background-color: rgba(0, 0, 0, 0.95);
-  box-shadow: none;
-  }
-  .playerStats {
-  background: rgba(28,28,28,.8);
-  box-shadow: 0 0 8px black !important;
-  }	
-  /*Banner transparency*/
-  #dashboardPage,
-#dashboardGeneralPage,
-#userProfilesPage,
-#devicesPage,
-#serverActivityPage,
-#liveTvStatusPage,
-#liveTvSettingsPage,
-#networkingPage,
-#apiKeysPage,
-#logPage,
-#notificationSettingsPage,
-#scheduledTasksPage,
-#itemDetailPage {
-  margin-top: 60px;
-    padding-top: 0px !important;
-  overflow: scroll;
-}
-
-@media all and (min-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #musicRecommendedPage {
-    margin-top: 70px;
-    padding-top: 0px !important;
-    overflow: scroll;
-  }
-  #encodingSettingsPage,
-  #mediaLibraryPage,
-  #dlnaSettingsPage,
-  #pluginsPage {
-    margin-top: 60px;
-    padding-top: 0px !important;
-    overflow: scroll;
-  }
-}
-
-@media all and (max-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #encodingSettingsPage,
-  #mediaLibraryPage,
-  #dlnaSettingsPage,
-  #pluginsPage,
-  #musicRecommendedPage {
-    margin-top: 130px;
-    padding-top: 0px !important;
-    overflow: scroll;
-  }
-}
-/* fixed height for the bottom row */
-:root {
-  --element-fixed-top: 95px;
-}
-
-/* Now playing bar in the footer */
-.nowPlayingBar {
-       width: 650px;
-       z-index: 10;
-       position: fixed;
-       top: 300px;
-       height: 120px;
-      border-style: solid;
-      border-color: white;
-      background-color: black;
-      margin-left: 50%;
-}
-
-/* Only child of nowPlayingBar */
-.nowPlayingBarTop {
-     height: 5px !important;
-     max-width: 500px
-     top: 10px;
-}
-
-/* Song progress seekbar */
-.nowPlayingBarPositionContainer {
-     position: relative;
-     top: 1.0em !important;
-}
-
-/* Container that holds album thumbnail, artist and album name */
-.nowPlayingBarInfoContainer {
-     position: fixed !important;
-     left: 12px;
-     top: 34px;
-     height: 60px;
-     width: 1100px;
-}
-
-/* Holds the next, previous track, play/pause, next and time elements */
-.nowPlayingBarCenter {
-     position: relative !important;
-     left: 32px;
-     top: var(--element-fixed-top);
-     min-width: 500px;
-}
-
-/* Hold mute, volume slider container, repeat, favorite and remote control buttons */
-.nowPlayingBarRight {
-     width: 402px !important;
-     left: -60px;
-}
-
-/* Mute button */
-.muteButton {
-    position: relative;
-    top: var(--element-fixed-top);
-}
-
-/* Volume slider */
-.nowPlayingBarVolumeSliderContainer {
-     position: relative;
-     left: -4px;
-     top: var(--element-fixed-top);
-}
-
-/* Toggle repeat */
-.toggleRepeatButton {
-     position: relative !important;
-     left: -20px;
-     top: var(--element-fixed-top);
-}
-
-/* Favorite */
-.nowPlayingBarUserDataButtons {
-     position: relative;
-     left: -4px;
-     top: var(--element-fixed-top);
-}
-/* Remote control */
-.remoteControlButton {
-     left: -110px;
-     top: var(--element-fixed-top);
-}
-/*Theming Playback data info*/
-.playerStats {
-    background: rgba(0,0,0,0.1);
-    backdrop-filter: blur(90px);
-    -webkit-backdrop-filter: blur(90px);
-    box-shadow: 0 0 8px black;
-}
+    .videoOsdBottom {
+        background-color: rgba(0, 0, 0, .95);
+    }
+    .osdHeader {
+        background: rgba(0, 0, 0, 0.95) !important;
+    }
+    .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+        background: none;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+    .tmla-mask {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .dialogBackdropOpened {
+        opacity: 1 !important;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .dialog {
+        background-color: rgba(0, 0, 0, 0.95) !important;
+        box-shadow: 0 0 20px 4px black;
+    }
+    .mainDrawer {
+        background-color: rgba(0, 0, 0, 0.95);
+        box-shadow: none;
+    }
+    .playerStats {
+        background: rgba(28, 28, 28, .8);
+        box-shadow: 0 0 8px black !important;
+    }
+    /*Banner transparency*/
+    #dashboardPage,
+    #dashboardGeneralPage,
+    #userProfilesPage,
+    #devicesPage,
+    #serverActivityPage,
+    #liveTvStatusPage,
+    #liveTvSettingsPage,
+    #networkingPage,
+    #apiKeysPage,
+    #logPage,
+    #notificationSettingsPage,
+    #scheduledTasksPage,
+    #itemDetailPage {
+        margin-top: 60px;
+        padding-top: 0px !important;
+        overflow: scroll;
+    }
+    @media all and (min-width: 100em) {
+        #indexPage,
+        #moviesPage,
+        #tvRecommendedPage,
+        #musicRecommendedPage {
+            margin-top: 70px;
+            padding-top: 0px !important;
+            overflow: scroll;
+        }
+        #encodingSettingsPage,
+        #mediaLibraryPage,
+        #dlnaSettingsPage,
+        #pluginsPage {
+            margin-top: 60px;
+            padding-top: 0px !important;
+            overflow: scroll;
+        }
+    }
+    @media all and (max-width: 100em) {
+        #indexPage,
+        #moviesPage,
+        #tvRecommendedPage,
+        #encodingSettingsPage,
+        #mediaLibraryPage,
+        #dlnaSettingsPage,
+        #pluginsPage,
+        #musicRecommendedPage {
+            margin-top: 130px;
+            padding-top: 0px !important;
+            overflow: scroll;
+        }
+    }
+    /* fixed height for the bottom row */
+    :root {
+        --element-fixed-top: 95px;
+    }
+    /* Now playing bar in the footer */
+    .nowPlayingBar {
+        width: 650px;
+        z-index: 10;
+        position: fixed;
+        top: 300px;
+        height: 120px;
+        border-style: solid;
+        border-color: white;
+        background-color: black;
+        margin-left: 50%;
+    }
+    /* Only child of nowPlayingBar */
+    .nowPlayingBarTop {
+        height: 5px !important;
+        max-width: 500px top: 10px;
+    }
+    /* Song progress seekbar */
+    .nowPlayingBarPositionContainer {
+        position: relative;
+        top: 1.0em !important;
+    }
+    /* Container that holds album thumbnail, artist and album name */
+    .nowPlayingBarInfoContainer {
+        position: fixed !important;
+        left: 12px;
+        top: 34px;
+        height: 60px;
+        width: 1100px;
+    }
+    /* Holds the next, previous track, play/pause, next and time elements */
+    .nowPlayingBarCenter {
+        position: relative !important;
+        left: 32px;
+        top: var(--element-fixed-top);
+        min-width: 500px;
+    }
+    /* Hold mute, volume slider container, repeat, favorite and remote control buttons */
+    .nowPlayingBarRight {
+        width: 402px !important;
+        left: -60px;
+    }
+    /* Mute button */
+    .muteButton {
+        position: relative;
+        top: var(--element-fixed-top);
+    }
+    /* Volume slider */
+    .nowPlayingBarVolumeSliderContainer {
+        position: relative;
+        left: -4px;
+        top: var(--element-fixed-top);
+    }
+    /* Toggle repeat */
+    .toggleRepeatButton {
+        position: relative !important;
+        left: -20px;
+        top: var(--element-fixed-top);
+    }
+    /* Favorite */
+    .nowPlayingBarUserDataButtons {
+        position: relative;
+        left: -4px;
+        top: var(--element-fixed-top);
+    }
+    /* Remote control */
+    .remoteControlButton {
+        left: -110px;
+        top: var(--element-fixed-top);
+    }
+    /*Theming Playback data info*/
+    .playerStats {
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(90px);
+        -webkit-backdrop-filter: blur(90px);
+        box-shadow: 0 0 8px black;
+    }
