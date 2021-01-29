@@ -92,34 +92,6 @@ video:cue {
     text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
 
-
-/*epub reader fix*/
-
-.bookplayerButtonIcon {
-    color: white !important;
-}
-
-.calibre {
-    color: white !important;
-    font-family: 'Netflix Sans' !important;
-    text-decoration: none !important;
-}
-
-.calibre a {
-    color: white;
-    text-decoration: none;
-}
-
-.calibre a:hover {
-    text-decoration: underline;
-}
-
-#bookPlayer .epub-container {
-    background: rgba(0, 0, 0, 0.65);
-    height: 100%;
-}
-
-
 /*Setting border Radius*/
 
 :root {
@@ -476,7 +448,7 @@ h2 {
 }
 
 .dialog {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(60px) !important;
     -webkit-backdrop-filter: blur(60px) !important;
     -moz-backdrop-filter: blur (60px) !important;
