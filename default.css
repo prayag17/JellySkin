@@ -273,7 +273,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 .navMenuOption.emby-button:hover {
     background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
-    transform: scale(1.2);
 }
 
 .raised.emby-button:hover {
