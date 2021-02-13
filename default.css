@@ -250,11 +250,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 .itemName.parentNameLast {
     font-size: 35px;
-    transition: font-size .2s;
-}
-
-.itemName.parentNameLast:hover {
-    font-size: 40px;
 }
 
 .button-flat:hover {
