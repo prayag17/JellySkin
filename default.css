@@ -395,12 +395,6 @@ h2 {
 
 
 /* Adjust both "size-adjust" and "size" to modify size */
-
-.headerTabs.sectionTabs {
-    text-size-adjust: 130%;
-    font-size: 130%;
-}
-
 .pageTitle {
     margin-top: auto;
     margin-bottom: auto;
