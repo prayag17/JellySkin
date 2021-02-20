@@ -419,6 +419,9 @@ h2 {
 .backgroundContainer.withBackdrop {
     background: linear-gradient(to top, black 5%, transparent);
 }
+.layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
+    background: transparent;
+}
 
 /*Rounded corners and square hover buttons*/
 
