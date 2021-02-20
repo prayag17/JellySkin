@@ -8,8 +8,10 @@
     background: rgb(0, 0, 0, .25) !important;
     transition: background .2s;
 }
-
-
+/*background*/
+.backgroundContainer.withBackdrop {
+    background: linear-gradient(to top, black 5%, transparent);
+}
 /*Fonts */
 
 @font-face {
@@ -412,13 +414,11 @@ h2 {
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 
 .backdropImage {
-    filter: blur(50px) saturate(105%) contrast(115%) brightness(65%);
+    filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
 }
-
 .backgroundContainer.withBackdrop {
-    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(to top, black 5%, transparent);
 }
-
 
 /*Rounded corners and square hover buttons*/
 
