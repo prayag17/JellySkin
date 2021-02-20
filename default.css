@@ -1,3 +1,12 @@
+/*Movie Posters*/
+.layout-mobile .portraitCard {
+  width: 50%;
+}
+@media all and (min-width: 32em) and (max-width: 100em){
+  .layout-mobile .portraitCard {
+    width: 50%;
+  }
+}
 /*Mini My media*/
 
 #indexPage .raised.emby-button:hover {
@@ -546,7 +555,7 @@ h2 {
     }
 }
 
-@media all and (max-width: 32em) {
+@media all and (max-width: 32em), (max-height: 32em) {
     button.button-flat.btnPlay.detailButton.emby-button {
     background: linear-gradient(140deg, #aa5cc3, #00a4dc);
     color: white;
@@ -583,6 +592,9 @@ h2 {
     }
     .button-flat:hover {
         transform: none;
+    }
+    * {
+        transform: scale(1) !important;
     }
 }
 
