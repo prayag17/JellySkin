@@ -522,11 +522,12 @@ h2 {
 .detailPagePrimaryContainer {
     background: rgba(0, 0, 0, 0) !important;
 }
+@media (min-width: 32em), (min-height: 32em){
 .itemBackdrop {
         height: 23vh !important;
         background-image: none !important;
+    }
 }
-
 @media (max-width: 68.75em) {
     .detailLogo {
         left: 50%;
