@@ -522,12 +522,9 @@ h2 {
 .detailPagePrimaryContainer {
     background: rgba(0, 0, 0, 0) !important;
 }
-
-@media all and (min-width: 100em) {
-    .itemBackdrop {
+.itemBackdrop {
         height: 23vh !important;
         background-image: none !important;
-    }
 }
 
 @media (max-width: 68.75em) {
