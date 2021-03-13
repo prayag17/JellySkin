@@ -1,53 +1,53 @@
 /*Mini My media*/
 
 #indexPage .raised.emby-button:hover {
-    background: rgb(0, 0, 0, .5) !important;
+  background: rgb(0, 0, 0, .5) !important;
 }
 
 #indexPage .raised.emby-button {
-    background: rgb(0, 0, 0, .25) !important;
-    transition: background .2s;
+  background: rgb(0, 0, 0, .25) !important;
+  transition: background .2s;
 }
 /*background*/
 .backgroundContainer.withBackdrop {
-    background: linear-gradient(to top, black 5%, transparent);
+  background: linear-gradient(to top, black 5%, transparent);
 }
 /*Fonts */
 
 @font-face {
-    font-family: 'Netflix Sans';
-    font-weight: 100;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+  font-family: 'Netflix Sans';
+  font-weight: 100;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    font-weight: 300;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+  font-family: 'Netflix Sans';
+  font-weight: 300;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    font-weight: 400;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+  font-family: 'Netflix Sans';
+  font-weight: 400;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    font-weight: 700;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+  font-family: 'Netflix Sans';
+  font-weight: 700;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    font-weight: 800;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+  font-family: 'Netflix Sans';
+  font-weight: 800;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
 }
 
 @font-face {
-    font-family: 'Netflix Sans';
-    font-weight: 900;
-    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+  font-family: 'Netflix Sans';
+  font-weight: 900;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
 }
 
 body,
@@ -55,7 +55,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Netflix Sans' !important;
+  font-family: 'Netflix Sans' !important;
 }
 
 
@@ -65,56 +65,56 @@ h4 {
 /*Firefox*/
 
 .videoSubtitles {
-    font-family: 'Netflix Sans', sans-serif !important;
-    font-weight: 700 !important;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
+  font-family: 'Netflix Sans', sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
 }
 
 
 /*Chrome, Edge Chromium & Saffari*/
 
 video::-webkit-media-text-track-display {
-    font-family: "Netflix Sans", sans-serif !important;
-    font-weight: 700 !important;
-    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
+  font-family: "Netflix Sans", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
 
 
 /*backup for subtitles*/
 
 video::-webkit-media-text-track-container {
-    font-family: "Netflix Sans", sans-serif !important;
-    font-weight: 700 !important;
-    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
+  font-family: "Netflix Sans", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
 
 video:cue {
-    font-family: "Netflix Sans", sans-serif !important;
-    font-weight: 700 !important;
-    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
+  font-family: "Netflix Sans", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
 
 /*Setting border Radius*/
 
 :root {
-    --rounding: 10px;
+  --rounding: 10px;
 }
 
 
 /*Rounded corners on pretty much everything-Source Monochromic*/
 
 .formDialogHeader {
-    border-top-left-radius: var(--rounding);
-    border-top-right-radius: var(--rounding);
+  border-top-left-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
 }
 
 .formDialogFooter {
-    border-bottom-left-radius: var(--rounding);
-    border-bottom-right-radius: var(--rounding);
+  border-bottom-left-radius: var(--rounding);
+  border-bottom-right-radius: var(--rounding);
 }
 
 .cardOverlayContainer {
-    border-radius: var(--rounding) !important;
+  border-radius: var(--rounding) !important;
 }
 
 .toast,
@@ -155,55 +155,55 @@ video:cue {
 .emby-select-withcolor,
 .cardOverlayButtonIcon,
 .subtitleappearance-preview.flex.align-items-center.justify-content-center {
-    border-radius: var(--rounding) !important;
+  border-radius: var(--rounding) !important;
 }
 
 .osdPoster img {
-    border-radius: var(--rounding);
-    border: none;
+  border-radius: var(--rounding);
+  border: none;
 }
 
 .mdl-slider::-moz-range-thumb {
-    border-radius: var(--rounding);
+  border-radius: var(--rounding);
 }
 
 .mdl-slider::-ms-thumb {
-    border-radius: var(--rounding);
+  border-radius: var(--rounding);
 }
 
 .mdl-slider::-webkit-slider-thumb {
-    border-radius: var(--rounding);
+  border-radius: var(--rounding);
 }
 
 div[data-role="controlgroup"] a[data-role="button"]:first-child {
-    border-bottom-left-radius: var(--rounding);
-    border-top-left-radius: var(--rounding);
+  border-bottom-left-radius: var(--rounding);
+  border-top-left-radius: var(--rounding);
 }
 
 div[data-role="controlgroup"] a[data-role="button"]:last-child {
-    border-bottom-right-radius: var(--rounding);
-    border-top-right-radius: var(--rounding);
+  border-bottom-right-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
 }
 
 
 /*fixing Poster Margin*/
 
 .itemsContainer>.card>.cardBox {
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
 }
 
 .cardBox-bottompadded {
-    margin-bottom: 16px !important;
+  margin-bottom: 16px !important;
 }
 
 .sectionTitleContainer.flex {
-    box-shadow: 0 0 black !important;
+  box-shadow: 0 0 black !important;
 }
 
 .section2 a.raised.homeLibraryButton.emby-button {
-    background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 
@@ -211,129 +211,129 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 .emby-input,
 .emby-textarea {
-    color: inherit;
-    border: .07em solid #7b7b7b;
-    border-radius: .2em;
-    box-shadow: 0 0 8px 0px black !important;
-    background: rgba(0, 0, 0, 0.2) !important;
-    backdrop-filter: blur(60px);
-    -webkit-backdrop-filter: blur(60px);
-    text-shadow: 0 0 5px black;
+  color: inherit;
+  border: .07em solid #7b7b7b;
+  border-radius: .2em;
+  box-shadow: 0 0 8px 0px black !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+  text-shadow: 0 0 5px black;
 }
 
 .emby-select-withcolor {
-    border: .07em solid #7b7b7b;
+  border: .07em solid #7b7b7b;
 }
 
 .playedIndicator,
 .countIndicator {
-    border-radius: 5px;
-    box-shadow: 0 0 5px 1px black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px black;
 }
 
 .actionSheetMenuItem:hover {
-    background: linear-gradient(140deg, #aa5cc385, #00a4dc75) !important;
+  background: linear-gradient(140deg, #aa5cc385, #00a4dc75) !important;
 }
 
 .cardBox {
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    box-shadow: 0px 0px 9px 0px rgb(0 0 0);
-    transition: background .2s, box-shadow .2s, transform .2s;
-    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 0px rgb(0 0 0);
+  transition: background .2s, box-shadow .2s, transform .2s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
 }
 
 .cardBox:hover {
-    background: rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 0px 0px black;
-    background: rgba(0, 0, 0, 0.75);
-    transform: scale(1.087);
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 0px 0px black;
+  background: rgba(0, 0, 0, 0.75);
+  transform: scale(1.087);
 }
 
 .itemName.parentNameLast {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .button-flat:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .button-flat {
-    border-radius: 5px !important;
+  border-radius: 5px !important;
 }
 
 .raised {
-    transition: transform .2s, background .2s;
-    background: #3a3a3a !important;
-    border-radius: 5px !important;
+  transition: transform .2s, background .2s;
+  background: #3a3a3a !important;
+  border-radius: 5px !important;
 }
 
 .navMenuOption.emby-button:hover {
-    background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
+  background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
 }
 
 .raised.emby-button:hover {
-    background: rgb(216, 0, 255);
-    background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
+  background: rgb(216, 0, 255);
+  background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
 }
 
 navMenuOption-selected {
-    background: rgb(216, 0, 255);
-    background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+  background: rgb(216, 0, 255);
+  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
 }
 
 .videoOsdBottom {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 8px 5px black;
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 8px 5px black;
 }
 
 .osdHeader {
-    background: rgba(0, 0, 0, 0.85)!important;
-    -webkit-backdrop-filter: blur(10px)!important;
-    backdrop-filter: blur(10px)!important;
-    box-shadow: 0px 0px 8px 5px black;
+  background: rgba(0, 0, 0, 0.85)!important;
+  -webkit-backdrop-filter: blur(10px)!important;
+  backdrop-filter: blur(10px)!important;
+  box-shadow: 0px 0px 8px 5px black;
 }
 
 .listItem.listItem-border:hover {
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: #3f3f3f;
+  border-color: rgba(0, 0, 0, 0) !important;
+  background: #3f3f3f;
 }
 
 .listItem-border {
-    transition: border-color .2s, background .2s;
+  transition: border-color .2s, background .2s;
 }
 
 div#divRunningTasks:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 div#divRunningTasks {
-    transition: transform .2s, background .2s;
+  transition: transform .2s, background .2s;
 }
 
 .navMenuOption-selected {
-    background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
 }
 
 .detailPageContent {
-    text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px black;
 }
 
 select {
-    box-shadow: 0 0 6px 0px black !important;
-    background: rgba(0, 0, 0, 0.2) !important;
-    backdrop-filter: blur(50px) !important;
-    -webkit-backdrop-filter: blur(50px);
-    text-shadow: 0 0 5px black !important;
+  box-shadow: 0 0 6px 0px black !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(50px) !important;
+  -webkit-backdrop-filter: blur(50px);
+  text-shadow: 0 0 5px black !important;
 }
 
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-    text-shadow: 0 0 5px black;
-    backdrop-filter: blur(60px) !important;
-    -webkit-backdrop-filter: blur(60px) !important;
-    box-shadow: 0 0 20px 0px black;
+  text-shadow: 0 0 5px black;
+  backdrop-filter: blur(60px) !important;
+  -webkit-backdrop-filter: blur(60px) !important;
+  box-shadow: 0 0 20px 0px black;
 }
 
 
@@ -345,76 +345,76 @@ select {
 .nextUpItems button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
 .vertical-wrap button.cardImageContainer.coveredImage.cardContent,
 .emby-scroller button.cardImageContainer {
-    border-radius: 10px 10px 0px 0px !important;
+  border-radius: 10px 10px 0px 0px !important;
 }
 
 .justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
-    backdrop-filter: none !important;
-    box-shadow: 0 0 black;
+  backdrop-filter: none !important;
+  box-shadow: 0 0 black;
 }
 
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
 button.button-flat.btnResume.detailButton.emby-button,
 button.emby-tab-button.emby-button,
 h2 {
-    text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px black;
 }
 
 .tmla-mask {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .dialogBackdropOpened {
-    opacity: 1 !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+  opacity: 1 !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .dialogBackdrop {
-    background-color: #0000;
+  background-color: #0000;
 }
 
 .listItem:hover {
-    background: black;
+  background: black;
 }
 
 .listItem {
-    transition: background .2s;
+  transition: background .2s;
 }
 
 .cardBox:not(.visualCardBox) .cardPadder,
 .cardContent-shadow {
-    box-shadow: 0 0 rgba(0, 0, 0, 0) !important;
+  box-shadow: 0 0 rgba(0, 0, 0, 0) !important;
 }
 
 .card-hoverable:hover .cardOverlayContainer {
-    border-radius: 10px 10px 0px 0px !important;
+  border-radius: 10px 10px 0px 0px !important;
 }
 
 
 /* Adjust both "size-adjust" and "size" to modify size */
 .pageTitle {
-    margin-top: auto;
-    margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .emby-tab-button {
-    padding: 1.75em 1.7em;
+  padding: 1.75em 1.7em;
 }
 
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 
 .backdropImage {
-    filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
+  filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
 }
 .backgroundContainer.withBackdrop {
-    background: linear-gradient(to top, black 5%, transparent);
+  background: linear-gradient(to top, black 5%, transparent);
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
-    background: transparent;
+  background: transparent;
 }
 
 /*Rounded corners and square hover buttons*/
@@ -435,269 +435,281 @@ h2 {
 .blurhash-canvas,
 .actionSheetMenuItem:hover,
 .dialog {
-    border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 
 .dialog {
-    background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(60px) !important;
-    -webkit-backdrop-filter: blur(60px) !important;
-    -moz-backdrop-filter: blur (60px) !important;
-    -o-backdrop-filter: blur(60px) !important;
-    box-shadow: 0 0 20px 4px black;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(60px) !important;
+  -webkit-backdrop-filter: blur(60px) !important;
+  -moz-backdrop-filter: blur (60px) !important;
+  -o-backdrop-filter: blur(60px) !important;
+  box-shadow: 0 0 20px 4px black;
 }
 
 
 /* Top menu transparency */
 
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-    background: none;
-    background-color: rgba(0, 0, 0, 0);
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
-    background: none;
-    background-color: rgba(0, 0, 0, 0);
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .playedIndicator {
-    background: #5dd000;
+  background: #5dd000;
 }
 
 .upNextDialog {
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 8px 5px black;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 8px 5px black;
 }
 
 .upNextDialog-poster-img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 
 /*Minimalistic play buttons*/
 
 .cardOverlayFab-primary {
-    background-color: #00000000;
-    transistion: 8sec;
+  background-color: #00000000;
+  transistion: 8sec;
 }
 
 .cardOverlayButtonIcon {
-    background-color: #00000000 !important;
+  background-color: #00000000 !important;
 }
 
 .cardOverlayContainer {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
 /*Theme some dialogues*/
 
 .actionSheetMenuItem:hover {
-    background-color: rgba(0, 164, 220, 0.2);
+  background-color: rgba(0, 164, 220, 0.2);
 }
 
 .mainDrawer {
-    background-color: rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(60px);
-    -moz-backdrop-filter: blur(60px);
-    -o-backdrop-filter: blur(60px);
-    backdrop-filter: blur(60px);
-    box-shadow: 0 0 8px 3px black;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(60px);
+  -moz-backdrop-filter: blur(60px);
+  -o-backdrop-filter: blur(60px);
+  backdrop-filter: blur(60px);
+  box-shadow: 0 0 8px 3px black;
 }
 
 .navMenuOption:hover {
-    background: rgba(0, 164, 220, 0.2);
+  background: rgba(0, 164, 220, 0.2);
 }
 
 
 /*Fixing position of tv or movie poster*/
 
 .detailImageContainer .card {
-    position: fixed;
+  position: fixed;
 }
 
 
 /*Tweak series/movie/album title screen*/
 
 .detailPagePrimaryContainer {
-    background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 @media (min-width: 32em), (min-height: 32em){
-.itemBackdrop {
-        height: 23vh !important;
-        background-image: none !important;
-    }
+  .itemBackdrop {
+    height: 23vh !important;
+    background-image: none !important;
+  }
 }
 @media (max-width: 68.75em) {
-    .detailLogo {
-        left: 50%;
-        transform: translateX(-50%);
-        top: 9em;
-        width: 71%;
-        display: block;
-    }
+  .detailLogo {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9em;
+    width: 71%;
+    display: block;
+  }
 }
 
 @media all and (max-width: 32em), (max-height: 32em) {
-    button.button-flat.btnPlay.detailButton.emby-button {
+  button.button-flat.btnPlay.detailButton.emby-button {
     background: linear-gradient(140deg, #aa5cc3, #00a4dc);
     color: white;
     position: absolute;
-    top: -15%;
-    width: 50%;
-    border-radius: 50px !important;
-    }
-    .itemBackdrop {
-        width: 100vw !important;
-        height: 100vh !important;
-        position: fixed;
-    }
-    .detailPageWrapperContainer {
-        background: white;
-        color: #383838;
-        width: 90%;
-        border-radius: 10px;
-        top: 75%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 110%;
-        box-shadow: 0px 0px 15px -5px black;
-    }
-    .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
-    button.button-flat.btnResume.detailButton.emby-button,
-    button.emby-tab-button.emby-button,
-    h2 {
-        text-shadow: none !important;
-    }
-    .detailPageContent {
-        text-shadow: none !important;
-    }
-    select {
-        text-shadow: none !important;
-    }
-    .button-flat:hover {
-        transform: none;
-    }
+    top: 35%;
+    width: 6em;
+    height: 6em;
+    border-radius: 25px !important;
+    box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+  }
+  .itemBackdrop {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed;
+  }
+  .detailPageWrapperContainer {
+    background: white;
+    color: #383838;
+    width: 90%;
+    border-radius: 10px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 110%;
+  }
+  .primaryImageWrapper>img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80vw;
+    max-height: 50vh;
+    border-radius: var(--rounding);
+    box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+  }
+  #itemDetailPage span.material-icons.detailButton-icon.play_arrow {
+    font-size: 2.5em !important;
+}
+  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
+  button.button-flat.btnResume.detailButton.emby-button,
+  button.emby-tab-button.emby-button,
+  h2 {
+    text-shadow: none !important;
+  }
+  .detailPageContent {
+    text-shadow: none !important;
+  }
+  select {
+    text-shadow: none !important;
+  }
+  .button-flat:hover {
+    transform: none;
+  }
 }
 
 .itemProgressBar {
-    height: 2.5px;
-    background: rgba(0, 0, 0, 0);
+  height: 2.5px;
+  background: rgba(0, 0, 0, 0);
 }
 
 .cardIndicators {
-    right: 0.3em;
-    top: 0.3em;
+  right: 0.3em;
+  top: 0.3em;
 }
 
 .paper-icon-button-light:hover {
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @media all and (min-width: 100em) {
-    .cardOverlayFab-primary {
-        background-color: #00000000;
-    }
-    .cardOverlayButtonIcon {
-        background-color: #00000000 !important;
-    }
-    .cardOverlayContainer {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+  .cardOverlayFab-primary {
+    background-color: #00000000;
+  }
+  .cardOverlayButtonIcon {
+    background-color: #00000000 !important;
+  }
+  .cardOverlayContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 @media all and (max-width: 100em) {
-    .cardOverlayButtonIcon {
-        border-radius: 5px !important;
-    }
-    .cardOverlayButtonIcon {
-        background-color: rgba(0, 0, 0, 0.5) !important;
-    }
-    .cardOverlayButton {
-        padding: 0.3em;
-    }
+  .cardOverlayButtonIcon {
+    border-radius: 5px !important;
+  }
+  .cardOverlayButtonIcon {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .cardOverlayButton {
+    padding: 0.3em;
+  }
 }
 
 
 /*Size episode preview images in a more compact way*/
 
 .listItemImageButton-icon {
-    padding: 0;
+  padding: 0;
 }
 
 .secondary.listItem-overview.listItemBodyText {
-    height: 61px;
-    margin: 0;
+  height: 61px;
+  margin: 0;
 }
 
 .listItemImageButton {
-    margin: auto;
-    font-size: 1.6em !important;
+  margin: auto;
+  font-size: 1.6em !important;
 }
 
 @media all and (min-width: 100em) {
-    .listItemImage.listItemImage-large.itemAction.lazy {
-        height: 110px;
-    }
-    .listItem-content {
-        height: 115px;
-    }
-    .secondary.listItem-overview.listItemBodyText {
-        height: 4em;
-        margin: 0;
-    }
+  .listItemImage.listItemImage-large.itemAction.lazy {
+    height: 110px;
+  }
+  .listItem-content {
+    height: 115px;
+  }
+  .secondary.listItem-overview.listItemBodyText {
+    height: 4em;
+    margin: 0;
+  }
 }
 
 @media all and (max-width: 100em) {
-    .listItemImage.listItemImage-large.itemAction.lazy {
-        height: 80px;
-    }
-    .listItem-content {
-        height: 85px;
-    }
-    .secondary.listItem-overview.listItemBodyText {
-        height: 2.5em;
-        margin: 0;
-    }
+  .listItemImage.listItemImage-large.itemAction.lazy {
+    height: 80px;
+  }
+  .listItem-content {
+    height: 85px;
+  }
+  .secondary.listItem-overview.listItemBodyText {
+    height: 2.5em;
+    margin: 0;
+  }
 }
 
 
 /* My Media Styling */
 
 .section0 button.itemAction.textActionButton {
-    height: 3.5em;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 10px;
+  height: 3.5em;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
 }
 
 .section0 .overflowBackdropCard,
 .section0 .overflowSmallBackdropCard {
-    max-width: 90vw;
+  max-width: 90vw;
 }
 
 .section0 .emby-scroller {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .section0 .itemsContainer {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .section0 .sectionTitle {
-    padding-top: 60px !important;
+  padding-top: 60px !important;
 }
 
 .raised.homeLibraryButton:hover {
-    transition: filter 1s;
+  transition: filter 1s;
 }
 
 .raised.homeLibraryButton {
-    transition: filter 1s;
+  transition: filter 1s;
 }
 
 .homeLibraryButton {
-    min-width: 12em;
-    margin: 0.4em;
+  min-width: 12em;
+  margin: 0.4em;
 }
 
 
@@ -705,26 +717,26 @@ h2 {
 
 #loginPage .readOnlyContent,
 #loginPage form {
-    max-width: 22em;
+  max-width: 22em;
 }
 
 
 /*Hide "please login" text, margin is to prevent login form moving too far up*/
 
 #loginPage h1 {
-    display: none;
+  display: none;
 }
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 
 /*Login background*/
 
 #loginPage {
-    background: url(https://wallpapercave.com/wp/wp5502431.jpg) !important;
-    background-size: cover !important;
+  background: url(https://wallpapercave.com/wp/wp5502431.jpg) !important;
+  background-size: cover !important;
 }
 
 
@@ -732,117 +744,117 @@ h2 {
 
 .paperList,
 .visualCardBox {
-    background-color: #000;
-    border-radius: 6px;
+  background-color: #000;
+  border-radius: 6px;
 }
 
 .listItemIcon {
-    border-radius: 6px !important;
+  border-radius: 6px !important;
 }
 
 .listItem-border {
-    border-color: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.22) !important;
 }
 
 .backgroundContainer {
-    background-color: #101010;
+  background-color: #101010;
 }
 
 .raised {
-    background: #00a4dc;
+  background: #00a4dc;
 }
 
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
-    border-radius: 5px !important;
+  border-radius: 5px !important;
 }
 
 
 /*For browsers that don't support backdrop-filter*/
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    .videoOsdBottom {
-        background-color: rgba(0, 0, 0, .95);
+  .videoOsdBottom {
+    background-color: rgba(0, 0, 0, .95);
+  }
+  .osdHeader {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+  .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+  }
+  .tmla-mask {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .dialogBackdropOpened {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .dialog {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 0 0 20px 4px black;
+  }
+  .mainDrawer {
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: none;
+  }
+  .playerStats {
+    background: rgba(28, 28, 28, .8);
+    box-shadow: 0 0 8px black !important;
+  }
+  /*Banner transparency*/
+  #dashboardPage,
+  #dashboardGeneralPage,
+  #userProfilesPage,
+  #devicesPage,
+  #serverActivityPage,
+  #liveTvStatusPage,
+  #liveTvSettingsPage,
+  #networkingPage,
+  #apiKeysPage,
+  #logPage,
+  #notificationSettingsPage,
+  #scheduledTasksPage,
+  #itemDetailPage {
+    margin-top: 60px;
+    padding-top: 0px !important;
+    overflow: scroll;
+  }
+  @media all and (min-width: 100em) {
+    #indexPage,
+    #moviesPage,
+    #tvRecommendedPage,
+    #musicRecommendedPage {
+      margin-top: 70px;
+      padding-top: 0px !important;
+      overflow: scroll;
     }
-    .osdHeader {
-        background: rgba(0, 0, 0, 0.95) !important;
+    #encodingSettingsPage,
+    #mediaLibraryPage,
+    #dlnaSettingsPage,
+    #pluginsPage {
+      margin-top: 60px;
+      padding-top: 0px !important;
+      overflow: scroll;
     }
-    .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-        background: none;
-        background-color: rgba(0, 0, 0, 0);
-        box-shadow: none;
+  }
+  @media all and (max-width: 100em) {
+    #indexPage,
+    #moviesPage,
+    #tvRecommendedPage,
+    #encodingSettingsPage,
+    #mediaLibraryPage,
+    #dlnaSettingsPage,
+    #pluginsPage,
+    #musicRecommendedPage {
+      margin-top: 130px;
+      padding-top: 0px !important;
+      overflow: scroll;
     }
-    .tmla-mask {
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    .dialogBackdropOpened {
-        opacity: 1 !important;
-        background: rgba(0, 0, 0, 0.1);
-    }
-    .dialog {
-        background-color: rgba(0, 0, 0, 0.95) !important;
-        box-shadow: 0 0 20px 4px black;
-    }
-    .mainDrawer {
-        background-color: rgba(0, 0, 0, 0.95);
-        box-shadow: none;
-    }
-    .playerStats {
-        background: rgba(28, 28, 28, .8);
-        box-shadow: 0 0 8px black !important;
-    }
-    /*Banner transparency*/
-    #dashboardPage,
-    #dashboardGeneralPage,
-    #userProfilesPage,
-    #devicesPage,
-    #serverActivityPage,
-    #liveTvStatusPage,
-    #liveTvSettingsPage,
-    #networkingPage,
-    #apiKeysPage,
-    #logPage,
-    #notificationSettingsPage,
-    #scheduledTasksPage,
-    #itemDetailPage {
-        margin-top: 60px;
-        padding-top: 0px !important;
-        overflow: scroll;
-    }
-    @media all and (min-width: 100em) {
-        #indexPage,
-        #moviesPage,
-        #tvRecommendedPage,
-        #musicRecommendedPage {
-            margin-top: 70px;
-            padding-top: 0px !important;
-            overflow: scroll;
-        }
-        #encodingSettingsPage,
-        #mediaLibraryPage,
-        #dlnaSettingsPage,
-        #pluginsPage {
-            margin-top: 60px;
-            padding-top: 0px !important;
-            overflow: scroll;
-        }
-    }
-    @media all and (max-width: 100em) {
-        #indexPage,
-        #moviesPage,
-        #tvRecommendedPage,
-        #encodingSettingsPage,
-        #mediaLibraryPage,
-        #dlnaSettingsPage,
-        #pluginsPage,
-        #musicRecommendedPage {
-            margin-top: 130px;
-            padding-top: 0px !important;
-            overflow: scroll;
-        }
     /*Theming Playback data info*/
     .playerStats {
-        background: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(90px);
-        -webkit-backdrop-filter: blur(90px);
-        box-shadow: 0 0 8px black;
+      background: rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(90px);
+      -webkit-backdrop-filter: blur(90px);
+      box-shadow: 0 0 8px black;
     }
