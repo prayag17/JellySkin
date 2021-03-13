@@ -753,7 +753,7 @@ h2 {
 }
 
 .listItem-border {
-  border-color: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(0,0,0,0) !important;
 }
 
 .backgroundContainer {
