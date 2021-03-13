@@ -574,7 +574,7 @@ h2 {
   }
   #itemDetailPage span.material-icons.detailButton-icon.play_arrow {
     font-size: 2.5em !important;
-}
+  }
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
   button.button-flat.btnResume.detailButton.emby-button,
   button.emby-tab-button.emby-button,
@@ -648,8 +648,21 @@ h2 {
 }
 
 @media all and (min-width: 100em) {
+  #itemDetailPage .listItemIndicators{
+    display: none;
+  }
+  #itemDetailPage .listItemImageButton{
+    display: none;
+  }
   .listItemImage.listItemImage-large.itemAction.lazy {
-    height: 110px;
+    height: -webkit-fill-available;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(40%) blur(3px);
+    width: -webkit-fill-available;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
   .listItem-content {
     height: 115px;
