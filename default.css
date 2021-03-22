@@ -642,19 +642,11 @@ h2 {
   margin: 0;
 }
 
-.listItemImageButton {
-  margin: auto;
-  font-size: 1.6em !important;
-}
-
-@media all and (min-width: 100em) {
-  #itemDetailPage .listItemIndicators{
+ .layout-mobile #itemDetailPage .listItemImageButton{
     display: none;
   }
-  #itemDetailPage .listItemImageButton{
-    display: none;
-  }
-  .listItemImage.listItemImage-large.itemAction.lazy {
+  
+ .layout-mobile .listItemImage.listItemImage-large.itemAction.lazy {
     height: -webkit-fill-available;
     position: absolute;
     z-index: -1;
@@ -664,7 +656,18 @@ h2 {
     top: 50%;
     transform: translate(-50%,-50%);
   }
-  .listItem-content {
+ 
+
+.listItemImageButton {
+  margin: auto;
+  font-size: 1.6em !important;
+}
+
+@media all and (min-width: 100em) {
+  #itemDetailPage .listItemIndicators{
+    display: none;
+  }
+ .listItem-content {
     height: 115px;
   }
   .secondary.listItem-overview.listItemBodyText {
