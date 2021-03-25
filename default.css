@@ -726,25 +726,26 @@ h2 {
   max-width: 22em;
 }
 
+/*Login background*/
+#loginPage {
+    background: url(https://prayag17.github.io/JellySkin/login.png), radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)) !important;
+    background-size: cover !important;
+    background-blend-mode: overlay;
+}
 
-/*Hide "please login" text, margin is to prevent login form moving too far up*/
-
-#loginPage h1 {
-  display: none;
+#loginPage .squareCard {
+    width: 50%;
 }
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
-  margin-top: 50px;
+    width: 22em;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0,0,0,0.5);
+    padding: 5em 2em !important;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
 }
-
-
-/*Login background*/
-
-#loginPage {
-  background: url(https://wallpapercave.com/wp/wp5502431.jpg) !important;
-  background-size: cover !important;
-}
-
 
 /*Theming for the dasboard*/
 
