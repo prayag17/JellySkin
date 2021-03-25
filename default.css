@@ -484,22 +484,9 @@ h2 {
   border-radius: 10px;
 }
 
-
-/*Minimalistic play buttons*/
-
-.cardOverlayFab-primary {
-  background-color: #00000000;
-  transition: all 8s;
-}
-
-.cardOverlayButtonIcon {
-  background-color: #00000000 !important;
-}
-
 .cardOverlayContainer {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 /*Theme some dialogues*/
 
