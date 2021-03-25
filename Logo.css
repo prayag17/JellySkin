@@ -6,6 +6,7 @@
 
 #itemDetailPage .layout-mobile .detailLogo {
     left: 50%;
+    top: 0;
     display: block;
     z-index: 1;
 }

@@ -413,6 +413,9 @@ h2 {
   border-radius: 10px 10px 0px 0px !important;
 }
 
+.overflowPortraitCard, .overflowSquareCard {
+    width: 40vw !important;
+}
 
 /* Adjust both "size-adjust" and "size" to modify size */
 .pageTitle {
@@ -568,7 +571,7 @@ h2 {
     color: #383838;
     width: 98%;
     border-radius: 10px;
-    top: 10%;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 110%;
