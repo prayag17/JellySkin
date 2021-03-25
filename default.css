@@ -281,12 +281,7 @@ select {
 /*Header*/
 .skinHeader-withBackground {
   text-shadow: 0 0 5px black;
-  box-shadow: 0 0 20px 0px black;
   background-color: transparent !important;
-}
-
-#itemDetailPage .skinHeader-withBackground {
-  box-shadow: none !important;
 }
 
 #dashboardPage,
