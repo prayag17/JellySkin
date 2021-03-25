@@ -285,7 +285,7 @@ select {
   background-color: transparent !important;
 }
 
-.itemDetailPage .skinHeader-withBackground {
+#itemDetailPage .skinHeader-withBackground {
   box-shadow: none !important;
 }
 
