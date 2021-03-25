@@ -1,0 +1,11 @@
+#itemDetailPage .detailLogo {
+    position: absolute;
+    left: 32%;
+    top: 10%;
+}
+.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+    padding-top: 8em;
+}
+#itemDetailPage .itemName.infoText.parentNameLast {
+    display: none;
+}

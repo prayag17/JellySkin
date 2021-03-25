@@ -13,42 +13,7 @@
   background: linear-gradient(to top, black 5%, transparent);
 }
 /*Fonts */
-
-@font-face {
-  font-family: 'Netflix Sans';
-  font-weight: 100;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
-}
-
-@font-face {
-  font-family: 'Netflix Sans';
-  font-weight: 300;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
-}
-
-@font-face {
-  font-family: 'Netflix Sans';
-  font-weight: 400;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
-}
-
-@font-face {
-  font-family: 'Netflix Sans';
-  font-weight: 700;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
-}
-
-@font-face {
-  font-family: 'Netflix Sans';
-  font-weight: 800;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
-}
-
-@font-face {
-  font-family: 'Netflix Sans';
-  font-weight: 900;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body,
 h1,
@@ -58,30 +23,22 @@ h4 {
   font-family: 'Netflix Sans' !important;
 }
 
-
 /*Subtitle Fonts (Netflix Sans Medium) thanks the u/Edgementality-https://bit.ly/33slrSa*/
-
-
 /*Firefox*/
-
 .videoSubtitles {
   font-family: 'Netflix Sans', sans-serif !important;
   font-weight: 700 !important;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
 }
 
-
 /*Chrome, Edge Chromium & Saffari*/
-
 video::-webkit-media-text-track-display {
   font-family: "Netflix Sans", sans-serif !important;
   font-weight: 700 !important;
   text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
 
-
 /*backup for subtitles*/
-
 video::-webkit-media-text-track-container {
   font-family: "Netflix Sans", sans-serif !important;
   font-weight: 700 !important;
@@ -95,14 +52,11 @@ video:cue {
 }
 
 /*Setting border Radius*/
-
 :root {
   --rounding: 10px;
 }
 
-
 /*Rounded corners on pretty much everything-Source Monochromic*/
-
 .formDialogHeader {
   border-top-left-radius: var(--rounding);
   border-top-right-radius: var(--rounding);
@@ -206,9 +160,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
-
 /*Hover items*/
-
 .emby-input,
 .emby-textarea {
   color: inherit;
@@ -239,15 +191,20 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   box-shadow: 0px 0px 9px 0px rgb(0 0 0);
-  transition: background .2s, box-shadow .2s, transform .2s;
-  transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  transition: background .2s ease-out;
 }
 
-.cardBox:hover {
+.card:hover .cardBox {
   background: rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 0px 0px black;
-  background: rgba(0, 0, 0, 0.75);
-  transform: scale(1.087);
+}
+
+.cardImageContainer {
+    background-size: 100%;
+    transition: background .2s ease-out;
+}
+
+.card:hover .cardImageContainer{
+  background-size: 110%;
 }
 
 .itemName.parentNameLast {
@@ -280,20 +237,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 navMenuOption-selected {
   background: rgb(216, 0, 255);
   background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
-}
-
-.videoOsdBottom {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 0px 8px 5px black;
-}
-
-.osdHeader {
-  background: rgba(0, 0, 0, 0.85)!important;
-  -webkit-backdrop-filter: blur(10px)!important;
-  backdrop-filter: blur(10px)!important;
-  box-shadow: 0px 0px 8px 5px black;
 }
 
 .listItem.listItem-border:hover {
@@ -336,6 +279,10 @@ select {
   box-shadow: 0 0 20px 0px black;
 }
 
+/*Video Player*/
+.layout-desktop .osdControls {
+    width: 100%;
+}
 
 /*cardbox border-radius change*/
 
@@ -455,17 +402,6 @@ h2 {
 
 
 /* Top menu transparency */
-
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-  background: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
-  background: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .playedIndicator {
   background: #5dd000;
 }
@@ -794,12 +730,6 @@ h2 {
 /*For browsers that don't support backdrop-filter*/
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .videoOsdBottom {
-    background-color: rgba(0, 0, 0, .95);
-  }
-  .osdHeader {
-    background: rgba(0, 0, 0, 0.95) !important;
-  }
   .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
     background: none;
     background-color: rgba(0, 0, 0, 0);
