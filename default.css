@@ -199,8 +199,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .cardImageContainer {
-    background-size: 105%;
-    transition: background .15s ease-out;
+  background-size: 105%;
+  transition: background .15s ease-out;
 }
 
 .card:hover .cardImageContainer{
@@ -208,8 +208,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .progressring-bg {
-    border: .25em solid transparent;
-    background: transparent;
+  border: .25em solid transparent;
+  background: transparent;
 }
 
 .itemName.parentNameLast {
@@ -287,7 +287,7 @@ select {
 
 /*Video Player*/
 .layout-desktop .osdControls {
-    width: 100%;
+  width: 100%;
 }
 
 /*cardbox border-radius change*/
@@ -426,7 +426,7 @@ h2 {
 
 .cardOverlayFab-primary {
   background-color: #00000000;
-  transistion: 8sec;
+  transistion: all 8s;
 }
 
 .cardOverlayButtonIcon {
@@ -659,10 +659,6 @@ h2 {
   flex-wrap: wrap;
 }
 
-.section0 .sectionTitle {
-  padding-top: 60px !important;
-}
-
 .raised.homeLibraryButton:hover {
   transition: filter 1s;
 }
@@ -816,3 +812,5 @@ h2 {
       -webkit-backdrop-filter: blur(90px);
       box-shadow: 0 0 8px black;
     }
+  }
+}
