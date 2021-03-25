@@ -285,6 +285,10 @@ select {
   background-color: transparent !important;
 }
 
+.itemDetailPage .skinHeader-withBackground {
+  box-shadow: none !important;
+}
+
 #dashboardPage,
 #dashboardGeneralPage,
 #userProfilesPage,
