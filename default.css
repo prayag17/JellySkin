@@ -507,7 +507,7 @@ h2 {
   -moz-backdrop-filter: blur(60px);
   -o-backdrop-filter: blur(60px);
   backdrop-filter: blur(60px);
-  box-shadow: 0 0 8px 3px black;
+  box-shadow: 0 0 20px 0px black;
 }
 
 .navMenuOption:hover {
