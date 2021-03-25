@@ -278,12 +278,68 @@ select {
   text-shadow: 0 0 5px black !important;
 }
 
+/*Header*/
 .skinHeader-withBackground {
   text-shadow: 0 0 5px black;
-  backdrop-filter: blur(60px) !important;
-  -webkit-backdrop-filter: blur(60px) !important;
   box-shadow: 0 0 20px 0px black;
-  background: transparent;
+  background-color: transparent !important;
+}
+
+#dashboardPage,
+#dashboardGeneralPage,
+#userProfilesPage,
+#devicesPage,
+#serverActivityPage,
+#liveTvStatusPage,
+#liveTvSettingsPage,
+#networkingPage,
+#apiKeysPage,
+#logPage,
+#notificationSettingsPage,
+#scheduledTasksPage,
+#itemDetailPage,
+#userImagePage,
+#displayPreferencesPage,
+#homeScreenPreferencesPage,
+#languagePreferencesPage,
+#quickConnectPreferencesPage {
+  margin-top: 60px;
+    padding-top: 0px !important;
+  overflow: scroll;
+}
+
+@media all and (min-width: 100em){
+  #indexPage,
+  #moviesPage,
+  #tvRecommendedPage,
+  #musicRecommendedPage {
+    margin-top: 70px;
+    padding-top: 0px !important;
+    overflow: scroll;
+  }
+  #encodingSettingsPage,
+  #mediaLibraryPage,
+  #dlnaSettingsPage,
+  #pluginsPage {
+    margin-top: 60px;
+    padding-top: 0px !important;
+    overflow: scroll;
+  }
+}
+
+@media all and (max-width: 100em){
+  #indexPage,
+  #moviesPage,
+  #tvRecommendedPage,
+  #encodingSettingsPage,
+  #mediaLibraryPage,
+  #dlnaSettingsPage,
+  #pluginsPage,
+  #musicRecommendedPage {
+    margin-top: 130px;
+    padding-top: 0px !important;
+    overflow: scroll;
+  }
 }
 
 /*Video Player*/
@@ -733,11 +789,6 @@ h2 {
 /*For browsers that don't support backdrop-filter*/
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
-    background: none;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-  }
   .tmla-mask {
     background-color: rgba(0, 0, 0, 0.1);
   }
