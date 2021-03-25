@@ -207,6 +207,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background-size: 120%;
 }
 
+.progressring-bg {
+    border: .25em solid transparent;
+    background: transparent;
+}
+
 .itemName.parentNameLast {
   font-size: 35px;
 }
