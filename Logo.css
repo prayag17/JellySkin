@@ -3,6 +3,17 @@
     left: 32%;
     top: 10%;
 }
+
+#itemDetailPage .layout-mobile .detailLogo {
+    left: 50%;
+    display: block;
+    z-index: 1;
+}
+
+.layout-mobile .infoText {
+    padding-top: 2em;
+}
+
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
     padding-top: 8em;
 }

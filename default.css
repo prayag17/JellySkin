@@ -552,7 +552,7 @@ h2 {
     background: linear-gradient(140deg, #aa5cc3, #00a4dc);
     color: white;
     position: absolute;
-    top: 35%;
+    top: 42.5%;
     width: 6em;
     height: 6em;
     border-radius: 25px !important;
@@ -566,7 +566,7 @@ h2 {
   .detailPageWrapperContainer {
     background: white;
     color: #383838;
-    width: 90%;
+    width: 98%;
     border-radius: 10px;
     top: 10%;
     left: 50%;
