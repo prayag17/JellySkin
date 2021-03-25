@@ -277,11 +277,12 @@ select {
   text-shadow: 0 0 5px black !important;
 }
 
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+.skinHeader-withBackground {
   text-shadow: 0 0 5px black;
   backdrop-filter: blur(60px) !important;
   -webkit-backdrop-filter: blur(60px) !important;
   box-shadow: 0 0 20px 0px black;
+  background: transparent;
 }
 
 /*Video Player*/
