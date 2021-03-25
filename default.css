@@ -408,8 +408,12 @@ h2 {
   border-radius: 10px 10px 0px 0px !important;
 }
 
-.overflowPortraitCard, .overflowSquareCard {
+.layout-mobile .overflowPortraitCard, .layout-mobile .overflowSquareCard {
     width: 40vw !important;
+}
+
+.layout-mobile .portraitCard {
+    width: 50%;
 }
 
 /* Adjust both "size-adjust" and "size" to modify size */
