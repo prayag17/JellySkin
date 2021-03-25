@@ -1,23 +1,36 @@
 #itemDetailPage .detailLogo {
-    position: absolute;
-    left: 32%;
-    top: 10%;
+  position: absolute;
+  left: 32%;
+  top: 10%;
 }
 
-#itemDetailPage .layout-mobile .detailLogo {
-    left: 50%;
-    top: 0;
-    display: block;
-    z-index: 1;
+.layout-mobile #itemDetailPage .detailLogo {
+  left: 50%;
+  top: 65%;
+  z-index: 1;
+  display: block;
+  max-height: 10em
+}
+
+.layout-mobile.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon{
+  padding-top: 4.5rem !important;
 }
 
 .layout-mobile .infoText {
-    padding-top: 2em;
+  padding-top: 2em;
 }
 
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    padding-top: 8em;
+  padding-top: 8em;
 }
 #itemDetailPage .itemName.infoText.parentNameLast {
-    display: none;
+  display: none;
+}
+
+.layout-mobile button.button-flat.btnPlay.detailButton.emby-button {
+  top: 30%;
+}
+
+.layout-mobile .primaryImageWrapper {
+  margin-bottom: 8em;
 }

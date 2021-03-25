@@ -558,7 +558,7 @@ h2 {
     position: fixed;
   }
   .detailPageWrapperContainer {
-    background: white;
+    background: #ddd;
     color: #383838;
     width: 98%;
     border-radius: 10px;
