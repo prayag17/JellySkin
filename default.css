@@ -649,7 +649,7 @@ h2 {
   display: none;
 }
 .layout-mobile .listItemImage.listItemImage-large.itemAction.lazy {
-  height: 110%;
+  height: 110% !important;
   position: absolute;
   z-index: -1;
   filter: brightness(40%) blur(5px);
