@@ -2,6 +2,7 @@
   position: absolute;
   left: 32%;
   top: 10%;
+  background-position: 0 !important;
 }
 
 .layout-mobile #itemDetailPage .detailLogo {
