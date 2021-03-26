@@ -3,6 +3,7 @@
   left: 32%;
   top: 10%;
   background-position: 0 !important;
+  display:block;
 }
 
 .layout-mobile #itemDetailPage .detailLogo {
