@@ -12,7 +12,7 @@
   max-height: 10em
 }
 
-.layout-mobile.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon{
+.layout-mobile .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon{
   padding-top: 4.5rem !important;
 }
 
