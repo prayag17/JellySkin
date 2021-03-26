@@ -8,10 +8,11 @@
 
 .layout-mobile #itemDetailPage .detailLogo {
   left: 50%;
-  top: 65%;
+  top: 70%;
   z-index: 1;
   display: block;
-  max-height: 10em
+  max-height: 10em;
+  background-position: 50% !important;
 }
 
 .layout-mobile .detailLogo {
