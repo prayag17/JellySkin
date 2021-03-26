@@ -525,6 +525,11 @@ h2 {
 .detailPagePrimaryContainer {
   background: rgba(0, 0, 0, 0) !important;
 }
+
+#itemDetailPage .emby-select {
+    box-shadow: none !important;
+}
+
 @media (min-width: 32em), (min-height: 32em){
   .itemBackdrop {
     height: 23vh !important;
