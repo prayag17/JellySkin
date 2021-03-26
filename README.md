@@ -60,6 +60,18 @@ Now, to use your own Gradient (to get great button or any gradient go to https:/
 <br>
 <br>
 
+<div class="conribute" align="center" style="text-align: center;">
+<h2> Wanna Contribute? </h2>
+<ul>
+<li>Fork this Repo</li>
+<li>Add your features</li>
+<li>Create a Pull Request</li>
+<li>Wait for it to be merged.</li>
+</ul>
+</div>
+<br>
+<br>
+
 <div class="firefox">
 <h4 align="center">Enabling backdrop-filter in firefox</h4>
 Deaktiviert From version 70: this feature is behind the
