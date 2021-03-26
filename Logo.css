@@ -12,6 +12,14 @@
   max-height: 10em
 }
 
+.layout-mobile .detailLogo {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 9em;
+  width: 71%;
+  display: block;
+}
+
 .layout-mobile .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon{
   padding-top: 4.5rem !important;
 }

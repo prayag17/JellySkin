@@ -528,6 +528,10 @@ h2 {
   background: rgba(0, 0, 0, 0) !important;
 }
 
+.detailLogo{
+  display: none;
+}
+
 #itemDetailPage .emby-select {
     box-shadow: none !important;
 }
@@ -536,15 +540,6 @@ h2 {
   .itemBackdrop {
     height: 23vh !important;
     background-image: none !important;
-  }
-}
-@media (max-width: 68.75em) {
-  .detailLogo {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 9em;
-    width: 71%;
-    display: block;
   }
 }
 
