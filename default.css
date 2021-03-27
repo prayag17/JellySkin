@@ -548,7 +548,7 @@ h2 {
     background: linear-gradient(140deg,rgba(170,92,195,.5), rgba(0,164,220,.5));
     color: white;
     position: absolute;
-    top: 42.5%;
+    top: 31.5%;
     width: 6em;
     height: 6em;
     border-radius: 25px !important;
@@ -575,7 +575,7 @@ h2 {
     max-width: 80vw;
     max-height: 50vh;
     border-radius: var(--rounding);
-    box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+    box-shadow: 0px 0px 25px #6f6e6e;
   }
   #itemDetailPage span.material-icons.detailButton-icon.play_arrow {
     font-size: 2.5em !important;

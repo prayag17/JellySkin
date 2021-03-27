@@ -14,19 +14,12 @@
   padding-top: 4.5rem !important;
 }
 
-.layout-mobile .infoText {
-  padding-top: 2em;
+#itemDetailPage .itemName.infoText.parentNameLast {
+  display: none;
 }
 
-.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-  padding-top: 8em;
-}
 .layou-mobile #itemDetailPage .itemName.infoText.parentNameLast {
   display: block;
-}
-
-.layout-mobile button.button-flat.btnPlay.detailButton.emby-button {
-  top: 30%;
 }
 
 .layout-mobile .primaryImageWrapper {
