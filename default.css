@@ -22,10 +22,7 @@ h1,h2,h3,h4 {
   box-shadow: 0px 0px 9px 0px black;
   transition: background .15s ease-out, box-shadow .15s ease-out;
 }
-/*background*/
-.backgroundContainer.withBackdrop {
-  background: linear-gradient(to top, black 5%, transparent);
-}
+
 /*Subtitle Fonts thanks the u/Edgementality-https://bit.ly/33slrSa*/
 /*Firefox*/
 .videoSubtitles {
@@ -440,7 +437,8 @@ h2 {
   filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
 }
 .backgroundContainer.withBackdrop {
-  background: linear-gradient(to top, black 5%, transparent);
+    background: rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 210px 60px black;
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: transparent;
@@ -763,10 +761,6 @@ h2 {
 
 .listItem-border {
   border-color: rgba(0,0,0,0) !important;
-}
-
-.backgroundContainer {
-  background-color: #101010;
 }
 
 .raised {
