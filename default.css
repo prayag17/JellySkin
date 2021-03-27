@@ -155,6 +155,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   margin-bottom: 16px !important;
 }
 
+.collectionItemsContainer .card.portraitCard {
+    width: 25%;
+}
+
 .sectionTitleContainer.flex {
   box-shadow: 0 0 black !important;
 }
