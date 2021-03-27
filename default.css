@@ -545,7 +545,7 @@ h2 {
 
 @media all and (max-width: 32em), (max-height: 32em) {
   button.button-flat.btnPlay.detailButton.emby-button {
-    background: linear-gradient(140deg,rgba(170,92,195,.5), rgba(0,164,220,.5));
+    background: linear-gradient(140deg,rgba(170,92,195,.85), rgba(0,164,220,.85));
     color: white;
     position: absolute;
     top: 31.5%;
