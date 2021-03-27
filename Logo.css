@@ -6,21 +6,8 @@
   display:block;
 }
 
-.layout-mobile #itemDetailPage .detailLogo {
-  left: 50%;
-  top: 70%;
-  z-index: 1;
-  display: block;
-  max-height: 10em;
-  background-position: 50% !important;
-}
-
 .layout-mobile .detailLogo {
-  left: 50%;
-  transform: translateX(-50%);
-  top: 9em;
-  width: 71%;
-  display: block;
+  display: none;
 }
 
 .layout-mobile .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon{
@@ -35,7 +22,7 @@
   padding-top: 8em;
 }
 #itemDetailPage .itemName.infoText.parentNameLast {
-  display: none;
+  display: block;
 }
 
 .layout-mobile button.button-flat.btnPlay.detailButton.emby-button {
