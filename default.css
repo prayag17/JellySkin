@@ -544,15 +544,8 @@ h2 {
 }
 
 @media all and (max-width: 32em), (max-height: 32em) {
-  button.button-flat.btnPlay.detailButton.emby-button {
-    background: linear-gradient(140deg,rgba(170,92,195,.85), rgba(0,164,220,.85));
-    color: white;
-    position: absolute;
-    top: 31.5%;
-    width: 6em;
-    height: 6em;
-    border-radius: 25px !important;
-    box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+  .layout-mobile #itemDetailPage .button-flat {
+      margin-left: auto !important;
   }
   .itemBackdrop {
     width: 100vw !important;
@@ -576,9 +569,6 @@ h2 {
     max-height: 50vh;
     border-radius: var(--rounding);
     box-shadow: 0px 0px 25px #6f6e6e;
-  }
-  #itemDetailPage span.material-icons.detailButton-icon.play_arrow {
-    font-size: 2.5em !important;
   }
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
   button.button-flat.btnResume.detailButton.emby-button,
