@@ -544,9 +544,6 @@ h2 {
 }
 
 @media all and (max-width: 32em), (max-height: 32em) {
-  .layout-mobile #itemDetailPage .button-flat {
-      margin-left: auto !important;
-  }
   .itemBackdrop {
     width: 100vw !important;
     height: 100vh !important;
