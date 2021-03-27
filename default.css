@@ -257,10 +257,6 @@ navMenuOption-selected {
   transition: border-color .2s, background .2s;
 }
 
-.listItemImage-large {
-    height: 6vw !important;
-}
-
 div#divRunningTasks:hover {
   transform: scale(1.1);
 }
