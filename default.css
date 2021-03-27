@@ -389,20 +389,6 @@ h2 {
   background-color: #0000;
 }
 
-.listItem:hover {
-  background: black;
-}
-
-.listItem {
-  color: white !important;
-  border-radius: var(--rounding);
-  margin-bottom: 1em;
-}
-
-.listItem {
-  transition: background .2s;
-}
-
 .cardBox:not(.visualCardBox) .cardPadder,
 .cardContent-shadow {
   box-shadow: 0 0 rgba(0, 0, 0, 0) !important;
@@ -627,18 +613,44 @@ h2 {
 
 /*Size episode preview images in a more compact way*/
 
+.listItem-content {
+    height: 100%;
+    margin: 0px !important;
+    border-radius: var(--rounding);
+    background: rgba(0,0,0,0.65);
+    overflow: hidden;
+    position: relative;
+    transition: background .15s ease-in;
+}
+
+.listItem:hover .listItem-content {
+  background: rgba(0,0,0,0.8);
+}
+
+.listItemImage {
+    height: 100%;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+
 .listItemImageButton-icon {
   padding: 0;
 }
 
+.listItem {
+    position: relative;
+    height: 12em;
+}
+
 .secondary.listItem-overview.listItemBodyText {
-  height: 61px;
+  height: 100%;
   margin: 0;
 }
 
 .layout-mobile #itemDetailPage .listItemImageButton{
   display: none;
 }
+
 .layout-mobile .listItemImage.listItemImage-large.itemAction.lazy {
   height: 110% !important;
   position: absolute;
@@ -656,33 +668,6 @@ h2 {
   margin: auto;
   font-size: 1.6em !important;
 }
-
-@media all and (min-width: 100em) {
-  #itemDetailPage .listItemIndicators{
-    display: none;
-  }
-  .listItem-content {
-    height: 115px;
-  }
-  .secondary.listItem-overview.listItemBodyText {
-    height: 4em;
-    margin: 0;
-  }
-}
-
-@media all and (max-width: 100em) {
-  .listItemImage.listItemImage-large.itemAction.lazy {
-    height: 80px;
-  }
-  .listItem-content {
-    height: 85px;
-  }
-  .secondary.listItem-overview.listItemBodyText {
-    height: 2.5em;
-    margin: 0;
-  }
-}
-
 
 /* My Media Styling */
 
