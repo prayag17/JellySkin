@@ -6,15 +6,15 @@ h1,h2,h3,h4 {
 }
 
 ::selection {
-    background: #aa5cc3;
-    text-shadow: none;
+  background: #aa5cc3;
+  text-shadow: none;
 }
 
 /*Mini My media*/
 
 #indexPage .raised.emby-button:hover {
-    background: rgb(0, 0, 0, .75) !important;
-    box-shadow: 0px 5px 9px 0px black;
+  background: rgb(0, 0, 0, .75) !important;
+  box-shadow: 0px 5px 9px 0px black;
 }
 
 #indexPage .raised.emby-button {
@@ -153,7 +153,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .collectionItemsContainer .card.portraitCard {
-    width: 25%;
+  width: 25%;
 }
 
 .sectionTitleContainer.flex {
@@ -307,7 +307,7 @@ select {
 #languagePreferencesPage,
 #quickConnectPreferencesPage {
   margin-top: 60px;
-    padding-top: 0px !important;
+  padding-top: 0px !important;
   overflow: scroll;
 }
 
@@ -374,8 +374,6 @@ h2 {
 }
 
 .tmla-mask {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -399,11 +397,11 @@ h2 {
 }
 
 .layout-mobile .overflowPortraitCard, .layout-mobile .overflowSquareCard {
-    width: 40vw !important;
+  width: 40vw !important;
 }
 
 .layout-mobile .portraitCard {
-    width: 50%;
+  width: 50%;
 }
 
 /* Adjust both "size-adjust" and "size" to modify size */
@@ -423,8 +421,8 @@ h2 {
   filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
 }
 .backgroundContainer.withBackdrop {
-    background: rgba(0,0,0,0.3);
-    box-shadow: inset 0 0 210px 40px black;
+  background: rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 210px 40px black;
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: transparent;
@@ -485,13 +483,18 @@ h2 {
   background-color: rgba(0, 164, 220, 0.2);
 }
 
-.mainDrawer {
+.mainDrawer.drawer-open {
   background-color: rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(60px);
   -moz-backdrop-filter: blur(60px);
   -o-backdrop-filter: blur(60px);
+  box-shadow: 0 0 0 1000vh rgb(0 0 0 / 45%), 0 0 20px 0px black;
   backdrop-filter: blur(60px);
-  box-shadow: 0 0 20px 0px black;
+}
+
+.mainDrawer {
+  box-shadow: none;
+  transition: all .2s !important;
 }
 
 .navMenuOption:hover {
@@ -517,7 +520,7 @@ h2 {
 }
 
 #itemDetailPage .emby-select {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 @media (min-width: 32em), (min-height: 32em){
@@ -614,13 +617,13 @@ h2 {
 /*Size episode preview images in a more compact way*/
 
 .listItem-content {
-    height: 100%;
-    margin: 0px !important;
-    border-radius: var(--rounding);
-    background: rgba(0,0,0,0.65);
-    overflow: hidden;
-    position: relative;
-    transition: background .15s ease-in;
+  height: 100%;
+  margin: 0px !important;
+  border-radius: var(--rounding);
+  background: rgba(0,0,0,0.65);
+  overflow: hidden;
+  position: relative;
+  transition: background .15s ease-in;
 }
 
 .listItem:hover .listItem-content {
@@ -628,9 +631,9 @@ h2 {
 }
 
 .listItemImage {
-    height: 100%;
-    border-radius: 0px !important;
-    box-shadow: none !important;
+  height: 100%;
+  border-radius: 0px !important;
+  box-shadow: none !important;
 }
 
 .listItemImageButton-icon {
@@ -638,8 +641,8 @@ h2 {
 }
 
 .listItem {
-    position: relative;
-    height: 12em;
+  position: relative;
+  height: 12em;
 }
 
 .secondary.listItem-overview.listItemBodyText {
@@ -713,23 +716,23 @@ h2 {
 
 /*Login background*/
 #loginPage {
-    background: url(https://prayag17.github.io/JellySkin/login.png), radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)) !important;
-    background-size: cover !important;
-    background-blend-mode: overlay;
+  background: url(https://prayag17.github.io/JellySkin/login.png), radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)) !important;
+  background-size: cover !important;
+  background-blend-mode: overlay;
 }
 
 #loginPage .squareCard {
-    width: 50%;
+  width: 50%;
 }
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
-    width: 22em;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(0,0,0,0.5);
-    padding: 5em 2em !important;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
+  width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0,0,0,0.5);
+  padding: 5em 2em !important;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
 }
 
 /*Theming for the dasboard*/
@@ -760,9 +763,6 @@ h2 {
 /*For browsers that don't support backdrop-filter*/
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .tmla-mask {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
   .dialogBackdropOpened {
     opacity: 1 !important;
     background: rgba(0, 0, 0, 0.1);
