@@ -21,7 +21,7 @@
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
   padding-top: 8em;
 }
-#itemDetailPage .itemName.infoText.parentNameLast {
+.layou-mobile #itemDetailPage .itemName.infoText.parentNameLast {
   display: block;
 }
 
