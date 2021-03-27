@@ -438,7 +438,7 @@ h2 {
 }
 .backgroundContainer.withBackdrop {
     background: rgba(0,0,0,0.3);
-    box-shadow: inset 0 0 210px 60px black;
+    box-shadow: inset 0 0 210px 40px black;
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: transparent;
