@@ -616,7 +616,7 @@ h2 {
 
 /*Size episode preview images in a more compact way*/
 
-.listItem-content {
+#itemDetailPage .listItem-content {
   height: 100%;
   margin: 0px !important;
   border-radius: var(--rounding);
@@ -626,11 +626,11 @@ h2 {
   transition: background .15s ease-in;
 }
 
-.listItem:hover .listItem-content {
+#itemDetailPage .listItem:hover .listItem-content {
   background: rgba(0,0,0,0.8);
 }
 
-.listItemImage {
+#itemDetailPage .listItemImage {
   height: 100%;
   border-radius: 0px !important;
   box-shadow: none !important;
@@ -640,12 +640,12 @@ h2 {
   padding: 0;
 }
 
-.listItem {
+#itemDetailPage .listItem {
   position: relative;
   height: 12em;
 }
 
-.secondary.listItem-overview.listItemBodyText {
+#itemDetailPage .secondary.listItem-overview.listItemBodyText {
   height: 100%;
   margin: 0;
 }
