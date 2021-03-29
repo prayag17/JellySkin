@@ -73,8 +73,7 @@ video:cue {
 }
 
 .toast,
-.paperList,
-.listItem:hover,
+.paperList,,
 .fab,
 .multiSelectCheckboxOutline,
 .itemSelectionPanel,
@@ -88,8 +87,7 @@ video:cue {
 .headerButton,
 .paper-icon-button-light,
 .innerCardFooter,
-.blurhash-canvas,
-.actionSheetMenuItem:hover,
+.blurhash-canvas,,
 .dialog,
 .listItemIcon,
 .listItem-border,
@@ -145,8 +143,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .listItemButton,
 .headerButton,
 .paper-icon-button-light,
-.innerCardFooter,
-.actionSheetMenuItem:hover,
+.innerCardFooter,,
 .dialog {
   border-radius: var(--rounding);
 }
@@ -478,10 +475,6 @@ h2 {
 }
 
 /*Theme some dialogues*/
-
-.actionSheetMenuItem:hover {
-  background-color: rgba(0, 164, 220, 0.2);
-}
 
 .mainDrawer.drawer-open {
   background-color: rgba(0, 0, 0, 0.1);
