@@ -30,6 +30,10 @@
     display: block !important;
 }
 
+.itemName {
+    margin: .5em 0 !important;
+}
+
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
   display: block;
 }
