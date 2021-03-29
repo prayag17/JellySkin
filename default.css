@@ -54,6 +54,7 @@ video:cue {
 /*Setting border Radius*/
 :root {
   --rounding: 10px;
+  --card-rounding: 10px 10px 0px 0px;
 }
 
 /*Rounded corners on pretty much everything-Source Monochromic*/
@@ -73,10 +74,7 @@ video:cue {
 
 .toast,
 .paperList,
-.cardContent,
-.sessionNowPlayingInnerContent,
 .listItem:hover,
-.cardImage,
 .fab,
 .multiSelectCheckboxOutline,
 .itemSelectionPanel,
@@ -84,8 +82,6 @@ video:cue {
 .cardContent-shadow,
 .itemDetailImage,
 .cardOverlayButton-hover,
-.cardImageContainer,
-.cardPadder,
 .listItemImage,
 .listItemImageButton,
 .listItemButton,
@@ -99,14 +95,9 @@ video:cue {
 .listItem-border,
 .button-flat,
 .visualCardBox,
-.checkboxOutline,
-.emby-select-withcolor,
 .chapterThumbTextContainer,
 .chapterThumbContainer,
 .chapterThumb,
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor,
 .cardOverlayButtonIcon,
 .subtitleappearance-preview.flex.align-items-center.justify-content-center {
   border-radius: var(--rounding) !important;
@@ -139,6 +130,36 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   border-top-right-radius: var(--rounding);
 }
 
+.emby-select,
+.emby-select-withcolor{
+  border-radius: 5px;
+}
+
+.cardContent-button,
+.cardContent-shadow,
+.itemDetailImage,
+.cardOverlayButton-hover,
+.cardImageContainer,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.actionSheetMenuItem:hover,
+.dialog {
+  border-radius: var(--rounding);
+}
+
+.cardImage,
+.visualCardBox .cardContent,
+.sessionNowPlayingInnerContent,
+.cardImageContainer,
+.cardOverlayContainer,
+.blurhash-canvas,
+.cardPadder {
+  border-radius: var(--card-rounding);
+}
 
 /*fixing Poster Margin*/
 
@@ -169,7 +190,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .emby-textarea {
   color: inherit;
   border: .07em solid #7b7b7b;
-  border-radius: .2em;
+  border-radius: 5px;
   box-shadow: 0 0 8px 0px black !important;
   background: rgba(0, 0, 0, 0.2) !important;
   backdrop-filter: blur(60px);
@@ -426,27 +447,6 @@ h2 {
 }
 .layout-desktop .itemBackdrop:after, .layout-tv .itemBackdrop:after {
   background: transparent;
-}
-
-/*Rounded corners and square hover buttons*/
-
-.cardContent-button,
-.cardContent-shadow,
-.itemDetailImage,
-.cardOverlayButton-hover,
-.cardOverlayContainer,
-.cardImageContainer,
-.cardPadder,
-.listItemImage,
-.listItemImageButton,
-.listItemButton,
-.headerButton,
-.paper-icon-button-light,
-.innerCardFooter,
-.blurhash-canvas,
-.actionSheetMenuItem:hover,
-.dialog {
-  border-radius: 10px !important;
 }
 
 .dialog {
