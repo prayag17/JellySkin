@@ -73,7 +73,7 @@ video:cue {
 }
 
 .toast,
-.paperList,,
+.paperList,
 .fab,
 .multiSelectCheckboxOutline,
 .itemSelectionPanel,
@@ -87,7 +87,7 @@ video:cue {
 .headerButton,
 .paper-icon-button-light,
 .innerCardFooter,
-.blurhash-canvas,,
+.blurhash-canvas,
 .dialog,
 .listItemIcon,
 .listItem-border,
@@ -143,7 +143,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .listItemButton,
 .headerButton,
 .paper-icon-button-light,
-.innerCardFooter,,
+.innerCardFooter,
+.cardOverlayButton,
 .dialog {
   border-radius: var(--rounding);
 }
