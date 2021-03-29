@@ -37,28 +37,28 @@ Now, to use your own Gradient (to get great button or any gradient go to https:/
 <h3>Here are some images:</h3>
 
 <h5>Login Page</h5>
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/login.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/login.jpg">
 
 <h5>Home screen:</h5>
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Home.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Home.jpg">
 
 <h5>Library View</h5>
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Movies.jpg">
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/TV%20Shows.jpg">
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Collections.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Movies.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/TV%20Shows.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Collections.jpg">
 
 <h5>Title screen:</h5>
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Title%20Page-Movie.jpg">
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Title%20Page-TV.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Title%20Page-Movie.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Title%20Page-TV.jpg">
 
 <h5>TV Shows Season Episode list:</h5>
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Ep-list.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Ep-list.jpg">
 
 <h5>Dialogs</h5>
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Menu.jpg">
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Dialog-1.jpg">
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Dialog-2.jpg">
-<img src="https://prayag17.github.io/JellySkin/Public%20Version%2010/Dialog-3.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Menu.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Dialog-1.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Dialog-2.jpg">
+<img src="https://prayag17.github.io/JellySkin/img/Dialog-3.jpg">
 <br>
 <br>
 
