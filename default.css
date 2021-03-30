@@ -618,6 +618,11 @@ h2 {
   overflow: hidden;
   position: relative;
   transition: background .15s ease-in;
+  color: #ddd;
+}
+
+.layout-mobile #itemDetailPage .listItem-bottomoverview.secondary {
+    display: none;
 }
 
 #itemDetailPage .listItem:hover .listItem-content {
@@ -651,7 +656,6 @@ h2 {
 .layout-mobile .listItemImage.listItemImage-large.itemAction.lazy {
   height: 110% !important;
   position: absolute;
-  z-index: -1;
   filter: brightness(40%) blur(5px);
   left: 50%;
   top: 50%;
