@@ -72,6 +72,7 @@ video:cue {
   border-radius: var(--rounding) !important;
 }
 
+.nowPlayingPageImage,
 .toast,
 .paperList,
 .fab,
