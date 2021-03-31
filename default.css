@@ -551,7 +551,7 @@ h2 {
     max-width: 80vw;
     max-height: 50vh;
     border-radius: var(--rounding);
-    box-shadow: 0px 0px 25px #6f6e6e;
+    box-shadow: 0px 25px 20px -20px #404040, 0px 0px 17px 0px #969595;
   }
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
   button.button-flat.btnResume.detailButton.emby-button,
@@ -623,7 +623,7 @@ h2 {
 }
 
 .layout-mobile #itemDetailPage .listItem-bottomoverview.secondary {
-    display: none;
+  display: none;
 }
 
 #itemDetailPage .listItem:hover .listItem-content {
