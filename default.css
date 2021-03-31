@@ -160,7 +160,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   border-radius: var(--card-rounding);
 }
 
-.emby-checkbox {
+.checkboxOutline {
     border-radius: 5px !important;
 }
 
