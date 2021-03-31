@@ -245,7 +245,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   font-size: 35px;
 }
 
-.button-flat:hover {
+#itemDetailPage .button-flat:hover {
   transform: scale(1.5);
 }
 
