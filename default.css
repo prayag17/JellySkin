@@ -160,6 +160,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   border-radius: var(--card-rounding);
 }
 
+.emby-checkbox {
+    border-radius: 5px !important;
+}
+
 /*fixing Poster Margin*/
 
 .itemsContainer>.card>.cardBox {
