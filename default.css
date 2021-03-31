@@ -518,6 +518,10 @@ h2 {
   box-shadow: none !important;
 }
 
+.layout-mobile #itemDetailPage .cardBox {
+    box-shadow: 0px 15px 10px -10px #8f8f8f, 0px 0px 17px 0px #b2b2b2;
+}
+
 @media (min-width: 32em), (min-height: 32em){
   .itemBackdrop {
     height: 23vh !important;
