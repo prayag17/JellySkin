@@ -232,7 +232,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   transition: background .15s ease-out;
 }
 
-.card:hover .cardImageContainer{
+.scrollSlider .card:hover .cardImageContainer {
   background-size: 120%;
 }
 
