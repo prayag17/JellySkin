@@ -129,6 +129,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   border-top-right-radius: var(--rounding);
 }
 
+.detailImageContainer .cardBox {
+    overflow: hidden;
+    border-right: var(--rounding);
+}
+
 .emby-select,
 .emby-select-withcolor{
   border-radius: 5px;
