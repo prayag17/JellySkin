@@ -319,6 +319,22 @@ select {
   background-color: transparent !important;
 }
 
+.emby-button-foreground::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: rgb(0,164,220);
+    position: absolute;
+    bottom: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width .15s ease-in-out;
+}
+
+.emby-tab-button:hover .emby-button-foreground::after {
+    width: 120%;
+}
+
 #dashboardPage,
 #dashboardGeneralPage,
 #userProfilesPage,
