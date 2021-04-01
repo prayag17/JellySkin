@@ -377,6 +377,7 @@ select {
 /*Video Player*/
 .layout-desktop .osdControls {
   width: 100%;
+  max-width: 100%;
 }
 
 /*cardbox border-radius change*/
