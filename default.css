@@ -242,7 +242,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .detailImageContainer .card:hover .cardImageContainer {
-  background-size: 120%;
+  background-size: 105%;
 }
 
 .progressring-bg {
