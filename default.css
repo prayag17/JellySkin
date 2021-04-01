@@ -87,7 +87,6 @@ video:cue {
 .listItemButton,
 .headerButton,
 .paper-icon-button-light,
-.innerCardFooter,
 .blurhash-canvas,
 .dialog,
 .listItemIcon,
@@ -149,7 +148,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .listItemButton,
 .headerButton,
 .paper-icon-button-light,
-.innerCardFooter,
 .cardOverlayButton,
 .dialog {
   border-radius: var(--rounding);
@@ -588,9 +586,17 @@ h2 {
   }
 }
 
+.innerCardFooter {
+  height: 100%;
+}
+
 .itemProgressBar {
-  height: 2.5px;
+  height: 100%;
   background: rgba(0, 0, 0, 0);
+}
+
+.itemProgressBarForeground {
+    background: linear-gradient(140deg, rgba(170,92,195,.8), rgba(0,164,220,.8)) !important;
 }
 
 .cardIndicators {
