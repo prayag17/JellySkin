@@ -237,7 +237,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   transition: background .15s ease-out;
 }
 
-.scrollSlider .card:hover .cardImageContainer {
+.card:hover .cardImageContainer {
+  background-size: 120%;
+}
+
+.detailImageContainer .card:hover .cardImageContainer {
   background-size: 120%;
 }
 
