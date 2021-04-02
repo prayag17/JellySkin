@@ -582,7 +582,8 @@ h2 {
     max-width: 80vw;
     max-height: 50vh;
     border-radius: var(--rounding);
-    box-shadow:  0px 35px 20px -25px #8c8c8c, 0px 0px 20px 0px #afaeae;
+    margin-bottom: 3.5rem;
+    box-shadow:  0px 2rem 3rem -1.5rem #111111, 0px 0px 20px 0px #afaeae;
   }
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
   button.button-flat.btnResume.detailButton.emby-button,
@@ -611,7 +612,7 @@ h2 {
 }
 
 .itemProgressBarForeground {
-  background: linear-gradient(140deg, rgba(170,92,195,.8), rgba(0,164,220,.8)) !important;
+  background: linear-gradient(140deg, rgba(170,92,195,.65), rgba(0,164,220,.65)) !important;
 }
 
 .cardIndicators {
@@ -647,6 +648,41 @@ h2 {
   }
 }
 
+/*Player theme*/
+#nowPlayingPage {
+  background: linear-gradient(140deg,#3E2247 10%,#003C50 90%);
+  background-size: 550%;
+  animation: bg 5s ease-in-out infinite;
+}
+
+.nowPlayingPageImage {
+  box-shadow: none !important;
+  border: none;
+  overflow: hidden;
+}
+
+.layout-mobile .remoteControlContent {
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem !important;
+  margin: 0 7.3%;
+  border-radius: var(--rounding);
+  height: 80%;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes bg{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 100%;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
 
 /*Size episode preview images in a more compact way*/
 
@@ -699,7 +735,7 @@ h2 {
 }
 
 .layout-mobile #itemDetailPage .listItem-content {
-    background: none !important;
+  background: none !important;
 }
 
 .listItemImageButton {
