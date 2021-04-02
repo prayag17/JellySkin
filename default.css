@@ -69,7 +69,7 @@ video:cue {
 }
 
 .cardOverlayContainer {
-  border-radius: var(--rounding) !important;
+  border-radius: var(---card-rounding) !important;
 }
 
 .nowPlayingPageImage,
@@ -129,8 +129,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .detailImageContainer .cardBox {
-    overflow: hidden;
-    border-right: var(--rounding);
+  overflow: hidden;
+  border-right: var(--rounding);
 }
 
 .emby-select,
@@ -157,7 +157,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .visualCardBox .cardContent,
 .sessionNowPlayingInnerContent,
 .cardImageContainer,
-.cardOverlayContainer,
 .blurhash-canvas,
 .cardPadder {
   border-radius: var(--card-rounding);
@@ -320,19 +319,19 @@ select {
 }
 
 .emby-button-foreground::after {
-    content: "";
-    height: 2px;
-    width: 0%;
-    background: rgb(0,164,220);
-    position: absolute;
-    bottom: -35%;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: width .15s ease-in-out;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: rgb(0,164,220);
+  position: absolute;
+  bottom: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width .15s ease-in-out;
 }
 
 .emby-tab-button:hover .emby-button-foreground::after {
-    width: 120%;
+  width: 120%;
 }
 
 #dashboardPage,
@@ -612,7 +611,7 @@ h2 {
 }
 
 .itemProgressBarForeground {
-    background: linear-gradient(140deg, rgba(170,92,195,.8), rgba(0,164,220,.8)) !important;
+  background: linear-gradient(140deg, rgba(170,92,195,.8), rgba(0,164,220,.8)) !important;
 }
 
 .cardIndicators {
@@ -657,23 +656,12 @@ h2 {
   border-radius: var(--rounding);
   background: rgba(0,0,0,0.65);
   overflow: hidden;
-  position: relative;
   transition: background .15s ease-in;
   color: #ddd;
 }
 
-.layout-mobile #itemDetailPage .listItem-bottomoverview.secondary {
-  display: none;
-}
-
 #itemDetailPage .listItem:hover .listItem-content {
   background: rgba(0,0,0,0.8);
-}
-
-#itemDetailPage .listItemImage {
-  height: 100%;
-  border-radius: 0px !important;
-  box-shadow: none !important;
 }
 
 .listItemImageButton-icon {
@@ -682,7 +670,10 @@ h2 {
 
 #itemDetailPage .listItem {
   position: relative;
-  height: 12em;
+  height: 16rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: var(--rounding);
 }
 
 #itemDetailPage .secondary.listItem-overview.listItemBodyText {
@@ -696,7 +687,7 @@ h2 {
 
 .layout-mobile .listItemImage {
   height: 110% !important;
-  width: 110% !important;
+  width: 120% !important;
   position: absolute;
   filter: brightness(40%) blur(5px);
   left: 50%;
@@ -704,7 +695,11 @@ h2 {
   transform: translate(-50%,-50%);
   overflow: hidden;
   border-radius: 10px !important;
-  width: 110%;
+  z-index: -1;
+}
+
+.layout-mobile #itemDetailPage .listItem-content {
+    background: none !important;
 }
 
 .listItemImageButton {
