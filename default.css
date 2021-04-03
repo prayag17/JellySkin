@@ -702,6 +702,7 @@ h2 {
     height: 100%;
     border-radius: 10px 0px 0px 10px !important;
     position: absolute;
+    z-index: 1;
 }
 
 .listItemBody {
