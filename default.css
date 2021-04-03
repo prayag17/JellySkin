@@ -708,6 +708,11 @@ h2 {
     padding-left: 21vw;
 }
 
+.layout-mobile .listItemBody {
+    padding-left: 0;
+}
+
+
 @media all and (max-width: 62.5em){
   .listItemBody {
       padding-left: 23vw;
@@ -750,6 +755,7 @@ h2 {
 
 .layout-mobile #itemDetailPage .listItem-content {
   background: none !important;
+  position: unset;
 }
 
 .listItemImageButton {
