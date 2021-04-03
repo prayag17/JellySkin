@@ -82,7 +82,6 @@ video:cue {
 .cardContent-shadow,
 .itemDetailImage,
 .cardOverlayButton-hover,
-.listItemImage,
 .listItemImageButton,
 .listItemButton,
 .headerButton,
@@ -143,7 +142,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .itemDetailImage,
 .cardOverlayButton-hover,
 .cardImageContainer,
-.listItemImage,
 .listItemImageButton,
 .listItemButton,
 .headerButton,
@@ -697,6 +695,11 @@ h2 {
 
 #itemDetailPage .listItem:hover .listItem-content {
   background: rgba(0,0,0,0.8);
+}
+
+.listItemImage {
+    height: 100%;
+    border-radius: 10px 0px 0px 10px !important;
 }
 
 .listItemImageButton-icon {
