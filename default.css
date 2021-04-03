@@ -236,6 +236,14 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background-size: 120%;
 }
 
+.overflowSquareCard .cardImageContainer {
+    background-size: 180%;
+}
+
+.overflowSquareCard:hover .cardImageContainer {
+    background-size: 200%;
+}
+
 .detailImageContainer .card:hover .cardImageContainer {
   background-size: 105%;
 }
