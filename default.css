@@ -647,12 +647,12 @@ h2 {
 }
 
 /*Player theme*/
-@keyframes bg{
+@keyframes gradient{
   0%{
     background-position: 0 0;
   }
   50%{
-    background-position: 100%;
+    background-position: 100% 100%;
   }
   100%{
     background-position: 0 0;
@@ -662,7 +662,7 @@ h2 {
 #nowPlayingPage {
   background: linear-gradient(140deg,#3E2247 10%,#003C50 90%);
   background-size: 550%;
-  animation: bg 7s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: gradient 10s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 }
 
 .nowPlayingPageImage {
@@ -676,51 +676,25 @@ h2 {
   padding: 0.5rem !important;
   margin: 0 7.3%;
   border-radius: var(--rounding);
-  height: 80%;
-  position: relative;
   overflow: hidden;
+  height: 65%;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
 }
 
 /*Size episode preview images in a more compact way*/
 
 #itemDetailPage .listItem-content {
-  height: 100%;
-  margin: 0px !important;
-  border-radius: var(--rounding);
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
   overflow: hidden;
-  transition: background .15s ease-in;
-  color: #ddd;
-  position: relative;
+  transition: background .15s ease-in-out;
+  backdrop-filter: blur(20px);
 }
 
 #itemDetailPage .listItem:hover .listItem-content {
   background: rgba(0,0,0,0.8);
-}
-
-.listItemImage {
-    height: 100%;
-    border-radius: 10px 0px 0px 10px !important;
-    position: absolute;
-    z-index: 1;
-}
-
-.listItemBody {
-    padding-left: 21vw;
-}
-
-.layout-mobile .listItemBody {
-    padding-left: 0;
-}
-
-.listItemIcon+.listItemBody, .paperList .listItemBody {
-    padding-left: .75em;
-}
-
-@media all and (max-width: 62.5em){
-  .listItemBody {
-      padding-left: 23vw;
-  }
 }
 
 .listItemImageButton-icon {
@@ -760,6 +734,7 @@ h2 {
 .layout-mobile #itemDetailPage .listItem-content {
   background: none !important;
   position: unset;
+  color: white;
 }
 
 .listItemImageButton {
