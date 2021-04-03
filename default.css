@@ -705,7 +705,7 @@ h2 {
 
 #itemDetailPage .listItem {
   position: relative;
-  height: 16rem;
+  height: fit-content;
   overflow: hidden;
   margin-bottom: 1.5rem;
   border-radius: var(--rounding);
