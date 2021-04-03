@@ -237,11 +237,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .overflowSquareCard .cardImageContainer {
-    background-size: 180%;
+  background-size: 180%;
 }
 
 .overflowSquareCard:hover .cardImageContainer {
-    background-size: 200%;
+  background-size: 200%;
 }
 
 .detailImageContainer .card:hover .cardImageContainer {
@@ -555,6 +555,10 @@ h2 {
   box-shadow: 0px 15px 10px -10px #5d5d5d, 0px 0px 13px 0px #a1a1a1;
 }
 
+.layout-mobile #itemDetailPage {
+  background: linear-gradient(140deg,#3E2247 10%,#003C50 90%);
+}
+
 @media (min-width: 32em), (min-height: 32em){
   .itemBackdrop {
     height: 23vh !important;
@@ -577,7 +581,7 @@ h2 {
     color: #383838;
     width: 98%;
     border-radius: 10px;
-    top: 0%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 110%;
