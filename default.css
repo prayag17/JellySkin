@@ -691,6 +691,7 @@ h2 {
   overflow: hidden;
   transition: background .15s ease-in;
   color: #ddd;
+  position: relative;
 }
 
 #itemDetailPage .listItem:hover .listItem-content {
@@ -700,6 +701,17 @@ h2 {
 .listItemImage {
     height: 100%;
     border-radius: 10px 0px 0px 10px !important;
+    position: absolute;
+}
+
+.listItemBody {
+    padding-left: 21vw;
+}
+
+@media all and (max-width: 62.5em){
+  .listItemBody {
+      padding-left: 23vw;
+  }
 }
 
 .listItemImageButton-icon {
