@@ -712,6 +712,9 @@ h2 {
     padding-left: 0;
 }
 
+.listItemIcon+.listItemBody, .paperList .listItemBody {
+    padding-left: .75em;
+}
 
 @media all and (max-width: 62.5em){
   .listItemBody {
