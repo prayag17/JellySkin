@@ -858,7 +858,7 @@ h2 {
   backdrop-filter: blur(90px);
   -webkit-backdrop-filter: blur(90px);
   box-shadow: 0 0 8px black;
-
+}
 /*For browsers that don't support backdrop-filter*/
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .mainDrawer.drawer-open{
