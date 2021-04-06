@@ -581,7 +581,7 @@ h2 {
   .detailPageWrapperContainer {
     background: #ddd;
     color: #383838;
-    width: 98%;
+    width: 90%;
     border-radius: 10px;
     top: 5%;
     left: 50%;
@@ -637,7 +637,7 @@ h2 {
 }
 
 .navMenuOptionIcon {
-    font-size: 1.75rem !important;
+  font-size: 1.75rem !important;
 }
 
 .paper-icon-button-light:hover {
@@ -852,10 +852,18 @@ h2 {
   border-radius: 5px !important;
 }
 
+/*Theming Playback data info*/
+.playerStats {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(90px);
+  -webkit-backdrop-filter: blur(90px);
+  box-shadow: 0 0 8px black;
 
 /*For browsers that don't support backdrop-filter*/
-
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .mainDrawer.drawer-open{
+    background: rgba(0,0,0,0.85);
+  }
   .dialogBackdropOpened {
     opacity: 1 !important;
     background: rgba(0, 0, 0, 0.1);
@@ -871,62 +879,5 @@ h2 {
   .playerStats {
     background: rgba(28, 28, 28, .8);
     box-shadow: 0 0 8px black !important;
-  }
-  /*Banner transparency*/
-  #dashboardPage,
-  #dashboardGeneralPage,
-  #userProfilesPage,
-  #devicesPage,
-  #serverActivityPage,
-  #liveTvStatusPage,
-  #liveTvSettingsPage,
-  #networkingPage,
-  #apiKeysPage,
-  #logPage,
-  #notificationSettingsPage,
-  #scheduledTasksPage,
-  #itemDetailPage {
-    margin-top: 60px;
-    padding-top: 0px !important;
-    overflow: scroll;
-  }
-  @media all and (min-width: 100em) {
-    #indexPage,
-    #moviesPage,
-    #tvRecommendedPage,
-    #musicRecommendedPage {
-      margin-top: 70px;
-      padding-top: 0px !important;
-      overflow: scroll;
-    }
-    #encodingSettingsPage,
-    #mediaLibraryPage,
-    #dlnaSettingsPage,
-    #pluginsPage {
-      margin-top: 60px;
-      padding-top: 0px !important;
-      overflow: scroll;
-    }
-  }
-  @media all and (max-width: 100em) {
-    #indexPage,
-    #moviesPage,
-    #tvRecommendedPage,
-    #encodingSettingsPage,
-    #mediaLibraryPage,
-    #dlnaSettingsPage,
-    #pluginsPage,
-    #musicRecommendedPage {
-      margin-top: 130px;
-      padding-top: 0px !important;
-      overflow: scroll;
-    }
-    /*Theming Playback data info*/
-    .playerStats {
-      background: rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(90px);
-      -webkit-backdrop-filter: blur(90px);
-      box-shadow: 0 0 8px black;
-    }
   }
 }
