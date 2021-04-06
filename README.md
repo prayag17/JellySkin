@@ -77,7 +77,7 @@ Now, to use your own Gradient (to get great button or any gradient go to https:/
 <div class="firefox">
 <h4 align="center">Enabling backdrop-filter in firefox</h4>
 
-```
+<code style="display: block !important;">
 Deaktiviert From version 70: this feature is behind the
 layout.css.backdrop-filter.enabled
 preference (needs to be set to
@@ -88,6 +88,6 @@ preference (needs to be set to
     true
     ).
  To change preferences in Firefox, visit about:config.
-```
+</code>
 
 </div>
