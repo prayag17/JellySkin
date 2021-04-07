@@ -349,13 +349,6 @@ span.material-icons.detailButton-icon.check.playstatebutton-icon-played, span.ma
   transition: opacity .2s ease-in-out;
 }
 
-.defaultCardBackground {
-  background: var(--accent);
-  color: transparent;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-}
-
 .dashboardSection .defaultCardBackground {
   color: white;
 }
