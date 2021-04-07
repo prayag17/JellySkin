@@ -269,6 +269,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   border-radius: 5px !important;
 }
 
+.detailButton-content {
+  filter: drop-shadow(0px 3px 3px black);
+}
+
 .navMenuOption::before {
   content: "";
   width: 100%;
