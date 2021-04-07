@@ -328,7 +328,6 @@ span.listItemIcon.material-icons {
   background-clip: text !important;
 }
 
-
 .cardImage {
   background: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
   -webkit-background-clip: text;
@@ -371,6 +370,28 @@ span.material-icons.detailButton-icon.check.playstatebutton-icon-played, span.ma
 
 #indexPage .raised::before {
   background: transparent;
+}
+
+/*fancy link*/
+.button-link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #00a4dc;
+  position: absolute;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .2s ease;
+}
+
+.button-link:hover {
+  text-decoration: none;
+}
+
+.button-link:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .listItem.listItem-border:hover {
