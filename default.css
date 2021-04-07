@@ -309,13 +309,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   transition: margin-right .2s;
 }
 
-.userActivityItems{
-  border: 3px solid transparent;
-  border-image: linear-gradient(140deg, #aa5cc380 20%, #00a4dc80);
-  border-image-slice: 1;
-  border-radius: 3px !important;
-}
-
 span.listItemIcon.material-icons {
   background: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
   -webkit-background-clip: text;
