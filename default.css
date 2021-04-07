@@ -349,6 +349,10 @@ span.material-icons.detailButton-icon.check.playstatebutton-icon-played, span.ma
   transition: opacity .2s ease-in-out;
 }
 
+.raised:hover::before{
+  opacity: 100%;
+}
+
 .dashboardSection .defaultCardBackground {
   color: white;
 }
