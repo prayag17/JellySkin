@@ -318,7 +318,7 @@ span.listItemIcon.material-icons {
 }
 
 .defaultCardBackground {
-  color: transparent;
+  background: transparent;
 }
 
 .cardImageIcon {
