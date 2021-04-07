@@ -317,6 +317,18 @@ span.listItemIcon.material-icons {
   font-size: 2rem;
 }
 
+.defaultCardBackground {
+  color: transparent;
+}
+
+.cardImageIcon {
+  background: var(--accent);
+  color: transparent;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+
 .cardImage {
   background: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
   -webkit-background-clip: text;
