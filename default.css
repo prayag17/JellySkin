@@ -47,7 +47,7 @@ video::-webkit-media-text-track-container {
 }
 
 video:cue {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Raleway" !important;
   font-weight: 700 !important;
   text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
 }
@@ -56,8 +56,10 @@ video:cue {
 :root {
   --rounding: 10px;
   --card-rounding: 10px 10px 0px 0px;
+  --accent: linear-gradient(140deg, #aa5cc3, #00a4dc);
+  --accent-selected: linear-gradient(140deg, #00a4dc, #aa5cc3);
+  --accent-text: linear-gradient(#00a4dc 0%, #aa5cc3 60%);
 }
-
 /*Rounded corners on pretty much everything-Source Monochromic*/
 .formDialogHeader {
   border-top-left-radius: var(--rounding);
@@ -267,24 +269,91 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   border-radius: 5px !important;
 }
 
-.raised {
-  transition: transform .2s, background .2s;
-  background: #3a3a3a !important;
-  border-radius: 5px !important;
+.navMenuOption::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--accent);
+  z-index: -1;
+  left: 0;
+  opacity: 0%;
+  transition: opacity .2s;
 }
 
-.navMenuOption.emby-button:hover {
-  background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
+.navMenuOption:hover::before {
+  opacity: 100%;
 }
 
-.raised.emby-button:hover {
-  background: rgb(216, 0, 255);
-  background: linear-gradient(140deg, #aa5cc3, #00a4dc) !important;
+.navMenuOption .navMenuOptionIcon {
+  transition: margin-right .2s;
+}
+
+.navMenuOption:hover .navMenuOptionIcon {
+  margin-right: 1.5em;
+}
+
+.listItem-border.emby-button:hover {
+  background: black;
+}
+
+.listItem-border.emby-button:hover .listItemIcon {
+  margin-right: .65rem;
+}
+
+.listItem-border.emby-button .listItemIcon {
+  transition: margin-right .2s;
+}
+
+span.listItemIcon.material-icons {
+  background: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+.cardImage {
+  background: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 navMenuOption-selected {
-  background: rgb(216, 0, 255);
-  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+  background: var(--accent-selected) !important;
+}
+
+span.material-icons.detailButton-icon.check.playstatebutton-icon-played, span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
+  background: var(--accent-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.raised::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: var(--accent);
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.defaultCardBackground {
+  background: var(--accent);
+  color: transparent;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+#indexPage .raised::before {
+  background: transparent;
 }
 
 .listItem.listItem-border:hover {
@@ -305,7 +374,7 @@ div#divRunningTasks {
 }
 
 .navMenuOption-selected {
-  background: linear-gradient(140deg, #00a4dc, #aa5cc3) !important;
+  background: var(--accent-selected) !important;
 }
 
 .detailPageContent {
@@ -345,6 +414,8 @@ select {
 #dashboardPage,
 #dashboardGeneralPage,
 #userProfilesPage,
+#pluginCatalogPage,
+#repositories,
 #devicesPage,
 #serverActivityPage,
 #liveTvStatusPage,
@@ -527,11 +598,6 @@ h2 {
   transition: all .2s !important;
 }
 
-.navMenuOption:hover {
-  background: rgba(0, 164, 220, 0.2);
-}
-
-
 /*Fixing position of tv or movie poster*/
 
 .detailImageContainer .card {
@@ -638,6 +704,7 @@ h2 {
 
 .navMenuOptionIcon {
   font-size: 1.75rem !important;
+  transition: margin .2s ease-in-out;
 }
 
 .paper-icon-button-light:hover {
@@ -842,10 +909,6 @@ h2 {
 
 .listItem-border {
   border-color: rgba(0,0,0,0) !important;
-}
-
-.raised {
-  background: #00a4dc;
 }
 
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
