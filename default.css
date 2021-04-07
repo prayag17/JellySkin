@@ -352,6 +352,10 @@ span.material-icons.detailButton-icon.check.playstatebutton-icon-played, span.ma
   background-clip: text !important;
 }
 
+.dashboardSection .defaultCardBackground {
+  color: white;
+}
+
 #indexPage .raised::before {
   background: transparent;
 }
