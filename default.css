@@ -395,6 +395,12 @@ span.material-icons.detailButton-icon.check.playstatebutton-icon-played, span.ma
   transform-origin: left;
 }
 
+#itemDetailPage .button-link::after {
+  background: white;
+  height: 2px;
+}
+/*fancy link end*/
+
 .listItem.listItem-border:hover {
   border-color: rgba(0, 0, 0, 0) !important;
   background: #3f3f3f;
