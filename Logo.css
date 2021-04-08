@@ -1,17 +1,17 @@
 #itemDetailPage .detailLogo {
   position: absolute;
-  left: 33%;
-  top: 10%;
+  left: 32.5%;
+  top: 13%;
   background-position: 0 !important;
   display:block;
 }
 
 .detailRibbon {
-    margin-top: 1em !important;
+  margin-top: 1em !important;
 }
 
 .layout-mobile .detailRibbon {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .layout-mobile .detailLogo {
@@ -27,11 +27,11 @@
 }
 
 .hide+.detailPageWrapperContainer .itemName {
-    display: block !important;
+  display: block !important;
 }
 
 .itemName {
-    margin: .5em 0 !important;
+  margin: .5em 0 !important;
 }
 
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
