@@ -193,6 +193,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
+fieldset {
+  border: 1px dotted rgb(87 87 87);
+  border-radius: var(--rounding);
+}
+
 /*Hover items*/
 .emby-input,
 .emby-textarea {
