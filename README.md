@@ -54,6 +54,16 @@ Now, to use your own Gradient (to get great button or any gradient go to https:/
 <h5>TV Shows Season Episode list:</h5>
 <img src="https://prayag17.github.io/JellySkin/img/Ep-list.jpg">
 
+<h5>Settings</h5>
+<img src="https://prayag17.github.io/JellySkin/img/Settings.jpg">
+
+<h5>Dashboard</h5>
+<img src="https://prayag17.github.io/JellySkin/img/Dashboard.jpg">
+
+<h5>Plugins</h5>
+<img src="https://prayag17.github.io/JellySkin/img/Plugins.jpg">
+
+
 <h5>Dialogs</h5>
 <img src="https://prayag17.github.io/JellySkin/img/Menu.jpg">
 <img src="https://prayag17.github.io/JellySkin/img/Dialog-1.jpg">
