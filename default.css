@@ -25,6 +25,10 @@ h1,h2,h3,h4 {
   border-radius: var(--rounding);
 }
 
+.raised{
+  border-radius: 5px;
+}
+
 /*Subtitle Fonts thanks the u/Edgementality-https://bit.ly/33slrSa*/
 /*Firefox*/
 .videoSubtitles {
