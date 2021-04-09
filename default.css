@@ -526,6 +526,20 @@ select {
   max-width: 100%;
 }
 
+.sliderBubble {
+  border-radius: var(--rounding);
+  background: rgba(0,0,0,0.5);
+  font-weight: 400 !important;
+}
+
+h1.sliderBubbleText {
+  background: var(--accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
 /*cardbox border-radius change*/
 
 #indexPage button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
