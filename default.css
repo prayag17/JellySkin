@@ -679,6 +679,12 @@ h2 {
   background: rgba(0, 0, 0, 0) !important;
 }
 
+.card[data-type=Actor] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+}
+
 .detailLogo{
   display: none;
 }
@@ -697,6 +703,7 @@ h2 {
 
 .layout-mobile .mainDetailButtons {
   width: 100%;
+  font-size: 100%;
 }
 
 .layout-mobile .detailButton-content {
