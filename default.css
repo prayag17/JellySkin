@@ -691,6 +691,14 @@ h2 {
   background: linear-gradient(140deg,#3E2247 10%,#003C50 90%);
 }
 
+.layout-mobile .mainDetailButtons {
+  width: 100%;
+}
+
+.layout-mobile .detailButton-content {
+  filter: none;
+}
+
 @media (min-width: 32em), (min-height: 32em){
   .itemBackdrop {
     height: 23vh !important;
