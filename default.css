@@ -698,13 +698,14 @@ h2 {
   background: rgba(0,0,0,0.5);
   width: -webkit-fill-available;
   border-radius: 0px 0px 10px 10px;
-  height: 1.5rem;
+  height: 22px;
 }
 
 .card[data-type=Actor] .cardText-first {
-  bottom: 11%;
+  bottom: 23.5px;
   background: rgba(0,0,0,0.5);
   width: -webkit-fill-available;
+  height: 22px;
 }
 
 .card[data-type=Actor] .cardScalable {
