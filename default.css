@@ -900,7 +900,7 @@ h2 {
 }
 
 .layout-mobile .listItemImage {
-  height: 110% !important;
+  height: 120% !important;
   width: 120% !important;
   position: absolute;
   filter: brightness(40%) blur(5px);
@@ -910,6 +910,10 @@ h2 {
   overflow: hidden;
   border-radius: 10px !important;
   z-index: -1;
+}
+
+.layout-mobile #itemDetailPage .listItem-content {
+  backdrop-filter: none;
 }
 
 .layout-mobile #itemDetailPage .listItem-content {
