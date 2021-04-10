@@ -672,17 +672,62 @@ h2 {
   position: fixed;
 }
 
-
 /*Tweak series/movie/album title screen*/
-
 .detailPagePrimaryContainer {
   background: rgba(0, 0, 0, 0) !important;
+}
+
+.card[data-type=Actor] .cardBox {
+  background: none;
+  position: relative;
 }
 
 .card[data-type=Actor] .cardScalable {
   height: 0;
   overflow: hidden;
   padding-top: 100%;
+  border-radius: var(--rounding);
+}
+
+.card[data-type=Actor] .cardText {
+  position: absolute;
+}
+
+.card[data-type=Actor] .cardText-secondary {
+  bottom: 0%;
+  background: rgba(0,0,0,0.5);
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 1.5rem;
+}
+
+.card[data-type=Actor] .cardText-first {
+  bottom: 11%;
+  background: rgba(0,0,0,0.5);
+  width: -webkit-fill-available;
+}
+
+.card[data-type=Actor] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: 3rem;
+}
+
+.card[data-type=Actor] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23%;
+  right: 0;
+}
+
+.card[data-type=Actor] .cardPadder {
+  background: none;
+}
+
+.card[data-type=Actor] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .detailLogo{
