@@ -708,6 +708,10 @@ h2 {
   height: 22px;
 }
 
+.layout-mobile .card[data-type=Actor] .cardText-first {
+  color: white !important;
+}
+
 .card[data-type=Actor] .cardScalable {
   overflow: hidden;
   border-radius: var(--rounding);
