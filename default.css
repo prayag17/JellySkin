@@ -94,7 +94,6 @@ video:cue {
 .listItemButton,
 .headerButton,
 .paper-icon-button-light,
-.blurhash-canvas,
 .dialog,
 .listItemIcon,
 .listItem-border,
@@ -821,17 +820,22 @@ h2 {
   }
 }
 
-.innerCardFooter {
-  height: 100%;
-}
-
 .itemProgressBar {
   height: 100%;
   background: rgba(0, 0, 0, 0);
 }
 
+.innerCardFooter {
+  height: 6px;
+  background: rgba(255,255,255,.6);
+  width: 95%;
+  left: 50%;
+  transform: translate(-50%, -5px);
+  border-radius: var(--rounding);
+}
+
 .itemProgressBarForeground {
-  background: linear-gradient(140deg, rgba(170,92,195,.65), rgba(0,164,220,.65)) !important;
+  background: linear-gradient(140deg, rgb(170,92,195), rgb(0,164,220)) !important;
 }
 
 .cardIndicators {
