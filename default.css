@@ -835,7 +835,7 @@ h2 {
 }
 
 .itemProgressBarForeground {
-  background: linear-gradient(140deg, rgb(170,92,195), rgb(0,164,220)) !important;
+  background: var(--accent) !important;
 }
 
 .cardIndicators {
