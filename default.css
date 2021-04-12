@@ -653,16 +653,16 @@ h2 {
 
 .mainDrawer.drawer-open {
   background-color: rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(60px);
-  -moz-backdrop-filter: blur(60px);
-  -o-backdrop-filter: blur(60px);
   box-shadow: 0 0 0 1000vh rgb(0 0 0 / 45%), 0 0 20px 0px black;
-  backdrop-filter: blur(60px);
 }
 
 .mainDrawer {
   box-shadow: none;
   transition: all .2s !important;
+  -webkit-backdrop-filter: blur(60px);
+  -moz-backdrop-filter: blur(60px);
+  -o-backdrop-filter: blur(60px);
+  backdrop-filter: blur(60px);
 }
 
 /*Fixing position of tv or movie poster*/
