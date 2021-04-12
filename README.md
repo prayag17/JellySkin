@@ -19,7 +19,7 @@ To use different gradient for your buttons I have added few different gradients 
 ```css
 @import url("https://prayag17.github.io/JellySkin/seaGradient.css");
 @import url("https://prayag17.github.io/JellySkin/sunsetGradient.css");
-@import url("https://prayag17.github.io/JellySkin/morningGradient.css");
+@import url("https://prayag17.github.io/JellySkin/mauveGradient.css");
 @import url("https://prayag17.github.io/JellySkin/nightSkyGradient.css");
 ```
 and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.

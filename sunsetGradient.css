@@ -1,2 +1,2 @@
-:root {--accent: linear-gradient(to right, rgba(235,95,37,1) 0%, rgba(144,0,255,1) 100%) !important;}
-:root {--accent-selected: linear-gradient(to left, rgba(235,95,37,1) 0%, rgba(144,0,255,1) 100%) !important;}
+:root {--accent: linear-gradient(to right, rgba(126,8,224,1) 0%, rgba(200,96,53,1) 100%) !important;}
+:root {--accent-selected: linear-gradient(to left, rgba(126,8,224,1) 0%, rgba(200,96,53,1) 100%) !important;}
