@@ -590,7 +590,7 @@ h2 {
 }
 
 .layout-mobile .overflowPortraitCard, .layout-mobile .overflowSquareCard {
-  width: 40vw !important;
+  width: 200px !important;
 }
 
 .layout-mobile .portraitCard {
@@ -752,6 +752,7 @@ h2 {
 
 .layout-mobile #itemDetailPage .cardBox {
   box-shadow: 0px 15px 10px -10px #5d5d5d, 0px 0px 13px 0px #a1a1a1;
+  background: rgba(0,0,0,0.25) !important;
 }
 
 .layout-mobile #itemDetailPage::before{
