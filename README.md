@@ -25,14 +25,15 @@ To use different gradient for your buttons I have added few different gradients 
 and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
 <br>
 Using custom own Gradient or color
-Create your gradient or solid color and past it in ```--custom``` and gradient in opposite angle in ```--customsel``` :
+Create your gradient or solid color and past it in ```--accent``` and gradient in opposite angle in ```--accent-selected``` :
 ```css
-:root {--custom: your gradient;}
-:root {--customsel: your gradient in opposite angle;}
+:root {--accent: your gradient;}
+:root {--accent-selected: your gradient in opposite angle;}
 ```
 Now, to use your own Gradient (to get great button or any gradient go to https://cssgradient.io/gradient-backgrounds or https://cssgradient.io) or solid color:
 ```css
-@import url("https://prayag17.github.io/JellySkin/customCol.css");
+:root {--accent: your gradient;}
+:root {--accent-selected: your gradient in opposite angle;}
 ```  
 <h3>Here are some images:</h3>
 

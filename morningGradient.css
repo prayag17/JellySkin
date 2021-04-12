@@ -1,14 +1,2 @@
-:root {--morning: linear-gradient(to right, rgba(255,197,62,1) 0%, rgba(36,125,235,1) 100%) !important;}
-:root {--morningsel: linear-gradient(to left, rgba(255,197,62,1) 0%, rgba(36,125,235,1) 100%) !important;}
-.actionSheetMenuItem:hover {
-  background: var(--morning) !important;
-}
-.navMenuOption.emby-button:hover{
-  background: var(--morningsel) !important;
-}
-.raised.emby-button:hover{
-  background: var(--morning) !important;
-}
-.navMenuOption-selected {
-  background: var(--morning) !important;
-}
+:root {--accent: linear-gradient(to right, rgba(255,197,62,1) 0%, rgba(36,125,235,1) 100%) !important;}
+:root {--accent-selected: linear-gradient(to left, rgba(255,197,62,1) 0%, rgba(36,125,235,1) 100%) !important;}
