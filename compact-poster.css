@@ -28,3 +28,19 @@
 .cardOverlayButton-br {
   bottom: 3.5em;
 }
+.card[data-type="CollectionFolder"] .itemAction.textActionButton {
+  height: 1.5em;
+}
+.card[data-type="CollectionFolder"] .cardText-first {
+  bottom: 5px;
+}
+.card[data-type="CollectionFolder"] .cardScalable::after {
+  height: calc(1.5rem + 10px);
+}
+.innerCardFooter {
+  height: 3rem;
+  background: transparent;
+  width: 100%;
+  transform: translate(-50%, 0);
+  border-radius: 0;
+}
