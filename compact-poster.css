@@ -25,3 +25,6 @@
   border-radius: 10px !important;
   overflow: hidden;
 }
+.cardOverlayButton-br {
+  bottom: 3.5em;
+}
