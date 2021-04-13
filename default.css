@@ -240,6 +240,10 @@ fieldset {
   box-shadow: 0 5px 9px black;
 }
 
+.layout-mobile .card:hover .cardBox {
+  background: rgba(0,0,0,0.25) !important;
+}
+
 .cardImageContainer {
   background-size: 105%;
   transition: background .15s ease-out;
@@ -247,6 +251,14 @@ fieldset {
 
 .card:hover .cardImageContainer {
   background-size: 120%;
+}
+
+.layout-mobile .cardImageContainer {
+  background-size: cover;
+}
+
+.layout-mobile .card:hover .cardImageContainer {
+  background-size: cover;
 }
 
 .overflowSquareCard .cardImageContainer {

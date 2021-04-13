@@ -34,7 +34,15 @@ Now, to use your own Gradient (to get great button or any gradient go to https:/
 ```css
 :root {--accent: your gradient;}
 :root {--accent-selected: your gradient in opposite angle;}
-```  
+```
+<br>
+<h3>Don't like the progress bar</h3>
+Add the follwing line to custom CSS with the default css file-
+
+```css
+@import url("https://prayag17.github.io/JellySkin/progress-bar.css");
+```
+
 <h3>Here are some images:</h3>
 
 <h5>Login Page</h5>
