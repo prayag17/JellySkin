@@ -14,6 +14,12 @@ To use Logos like the images given below use:
 ```css
 @import url("https://prayag17.github.io/JellySkin/Logo.css");
 ```
+<br>
+<h3>If you want to display your posters to be compact use the following line with default css</h3>
+
+```css
+@import url("https://prayag17.github.io/JellySkin/compact-poster.css")
+```
 
 To use different gradient for your buttons I have added few different gradients you can choose or you can create your own (check the steps given bellow), the default gradient used is jellyfin's default logo gradient,using this alone will only skin the button colors and I know the names for this are very funny:
 ```css

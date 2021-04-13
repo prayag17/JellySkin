@@ -1,0 +1,27 @@
+.cardScalable::after {
+  content: "";
+  background: rgba(0,0,0,0.75);
+  width: 100%;
+  height: 3.5rem;
+  position: absolute;
+  bottom: 0;
+}
+.cardText {
+  position: absolute;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+}
+.cardText-first {
+  bottom: 1.6rem;
+  height: 1.5rem;
+}
+.cardText-secondary {
+  bottom: 0;
+  height: 1.5rem;
+}
+.cardScalable {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
