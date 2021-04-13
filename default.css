@@ -970,21 +970,62 @@ h2 {
   margin: 0;
 }
 
-.layout-mobile #itemDetailPage .listItemImageButton{
-  display: none;
+.layout-mobile #itemDetailPage .listItemImageButton {
+  font-size: 0 !important;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+  backdrop-filter: blur(10px);
+}
+
+.layout-mobile .listItemIndicators {
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layout-mobile .playedIndicator {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.layout-mobile .listItemIndicators .indicatorIcon.check {
+  position: absolute;
+  top: 8%;
+  right: 32%;
+}
+
+.layout-mobile .listItemBodyText {
+  max-width: 12rem;
+}
+
+.layout-mobile .playedIndicator {
+  background: transparent;
 }
 
 .layout-mobile .listItemImage {
-  height: 120% !important;
-  width: 120% !important;
+  height: 100% !important;
+  width: 100% !important;
   position: absolute;
-  filter: brightness(40%) blur(5px);
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
   overflow: hidden;
   border-radius: 10px !important;
   z-index: -1;
+}
+
+.layout-mobile .listViewUserDataButtons {
+  position: absolute;
+  right: 0;
+  top: 8%;
+}
+
+.layout-mobile .listItemButton {
+  padding: 0 .556em !important;
 }
 
 .layout-mobile #itemDetailPage .listItem-content {
