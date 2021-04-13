@@ -994,7 +994,7 @@ h2 {
 
 .layout-mobile .listItemIndicators .indicatorIcon.check {
   position: absolute;
-  top: 8%;
+  top: 5%;
   right: 32%;
 }
 
@@ -1021,7 +1021,7 @@ h2 {
 .layout-mobile .listViewUserDataButtons {
   position: absolute;
   right: 0;
-  top: 8%;
+  top: 5%;
 }
 
 .layout-mobile .listItemButton {
