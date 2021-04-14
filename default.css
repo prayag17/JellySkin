@@ -588,8 +588,6 @@ h2 {
 
 .dialogBackdropOpened {
   opacity: 1 !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .dialogBackdrop {
@@ -643,7 +641,7 @@ h2 {
   -webkit-backdrop-filter: blur(60px) !important;
   -moz-backdrop-filter: blur (60px) !important;
   -o-backdrop-filter: blur(60px) !important;
-  box-shadow: 0 0 20px 4px black;
+  box-shadow: 0 0 0 500vw rgb(0,0,0,.5), 0 0 20px 4px black;
 }
 
 
