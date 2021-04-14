@@ -1108,6 +1108,141 @@ h2 {
   backdrop-filter: blur(10px);
 }
 
+.layout-mobile #loginPage {
+  background: linear-gradient(140deg,#3E2247 10%,#003C50) !important;
+  overflow: scroll;
+}
+
+.layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+  background: #eee;
+  width: 80%;
+  color: #373737;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: -4rem;
+}
+
+.layout-mobile #loginPage .cardBox.cardBox-bottompadded {
+  background: white;
+  color: black;
+  font-weight: 800;
+  border: .5px solid rgba(0,0,0,0.5);
+  box-shadow: none;
+}
+
+.layout-mobile #loginPage .emby-input {
+  height: 100%;
+  width: 80%;
+  float: right;
+  background: transparent !important;
+  backdrop-filter: none;
+  box-shadow: none !important;
+  border: none;
+  font-size: 2rem;
+  text-shadow: none;
+}
+
+.layout-mobile #loginPage .raised {
+  border-radius: 50px;
+  background: linear-gradient(90deg, #aa5cc3 0%, #00a4dc);
+  font-size: 1.3rem !important;
+  overflow: hidden !Important;
+}
+
+.layout-mobile #loginPage h1 {
+  display: none;
+}
+
+.layout-mobile #loginPage .inputContainer {
+  position: relative;
+  height: 3rem;
+  border: 1px solid #aaa;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.layout-mobile #loginPage .inputLabel[for=txtManualName] {
+  font-size: 0;
+  color: #383838;
+}
+
+.layout-mobile #loginPage .inputLabel[for=txtManualName]::before {
+  content: "\e853";
+  font-size: 3rem;
+  font-family: 'Material Icons Outlined';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.layout-mobile #loginPage .inputLabel[for=txtManualName]::after {
+  content: "";
+  height: 70%;
+  width: 2px;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  right: 82.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.layout-mobile #loginPage .inputLabel[for=txtManualName]::after {
+  content: "";
+  height: 70%;
+  width: 2px;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  right: 82.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.layout-mobile #loginPage .inputLabel[for=txtManualPassword] {
+  font-size: 0;
+  color: #383838;
+}
+
+.layout-mobile #loginPage .inputLabel[for=txtManualPassword]::before {
+  content: "\e0da";
+  font-size: 3rem;
+  font-family: 'Material Icons Outlined';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1%;
+}
+
+.layout-mobile #loginPage .inputLabel[for=txtManualPassword]::after {
+  content: "";
+  height: 70%;
+  width: 2px;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  right: 82.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hide+.pageTitleWithDefaultLogo {
+  width: 95% !important;
+  background-size: contain;
+  height: 8rem;
+  background-position: 50%;
+  margin-top: 01rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (orientation: landscape){
+  .hide+.pageTitleWithDefaultLogo {
+    display: none;
+  }
+
+  .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-top: auto;
+    margin-bottom: auto !important;
+  }
+}
 /*Theming for the dasboard*/
 
 .paperList,
