@@ -116,3 +116,12 @@ preference (needs to be set to
 </code>
 
 </div>
+
+<div class="icons">
+<h3 align="center">If you have blocked google fonts then Icons won't load so here is a fix for is</h3>
+  <h4>Note: Icons will load slowly as compared to before</h4>
+  
+  ```css
+  @import url("https://prayag17.github.io/Jellyfin-Icons/github-hosted/Outline.css");
+  ```
+</div>
