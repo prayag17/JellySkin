@@ -1203,7 +1203,7 @@ h2 {
 }
 
 .layout-mobile #loginPage .inputLabel[for=txtManualPassword]::before {
-  content: "\e0da";
+  content: "\f042";
   font-size: 3rem;
   font-family: 'Material Icons Outlined';
   position: absolute;
@@ -1237,10 +1237,34 @@ h2 {
   .hide+.pageTitleWithDefaultLogo {
     display: none;
   }
-
   .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
     margin-top: auto;
     margin-bottom: auto !important;
+  }
+}
+
+@media (max-height: 621px){
+  .hide+.pageTitleWithDefaultLogo {
+    display: none;
+  }
+  .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-top: auto;
+    margin-bottom: auto !important;
+  }
+}
+
+@media (max-width: 346px){
+  .layout-mobile #loginPage .inputLabel[for=txtManualName]::before {
+    font-size: 2.5rem;
+  }
+  .layout-mobile #loginPage .inputLabel[for=txtManualPassword]::before {
+    font-size: 2.5rem;
+  }
+  .layout-mobile #loginPage .emby-input {
+    font-size: 1.5rem;
+  }
+  .layout-mobile #loginPage .raised {
+    font-size: .895rem !important;
   }
 }
 /*Theming for the dasboard*/
