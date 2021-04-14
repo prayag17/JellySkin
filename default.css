@@ -240,6 +240,10 @@ fieldset {
   box-shadow: 0 5px 9px black;
 }
 
+.cardScalable {
+  overflow: hidden;
+}
+
 .layout-mobile .card:hover .cardBox {
   background: rgba(0,0,0,0.25) !important;
 }
