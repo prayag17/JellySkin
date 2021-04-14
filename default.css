@@ -707,11 +707,11 @@ h2 {
 
 .card[data-type=Actor] .cardImageContainer::after {
   content: "";
-  background: rgba(0,0,0,0.75);
+  background: linear-gradient(360deg, rgba(0,0,0,0.75), transparent 70%);
   width: 100%;
-  height: 55px;
   bottom: 0;
   position: absolute;
+  padding-top: 100%;
 }
 
 .card[data-type=Actor] .cardText-secondary {
