@@ -1001,11 +1001,11 @@ h2 {
 }
 
 .layout-mobile .listItemBodyText {
-  max-width: 12rem;
+  max-width: 10rem;
 }
 
 .layout-mobile .listItem .playedIndicator {
-    background: transparent;
+  background: transparent;
 }
 
 .layout-mobile .listItemImage {
