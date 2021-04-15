@@ -1004,8 +1004,8 @@ h2 {
   max-width: 12rem;
 }
 
-.layout-mobile .playedIndicator {
-  background: transparent;
+.layout-mobile .listItem .playedIndicator {
+    background: transparent;
 }
 
 .layout-mobile .listItemImage {
