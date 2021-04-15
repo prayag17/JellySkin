@@ -235,7 +235,7 @@ fieldset {
   transition: background .15s ease-out, box-shadow .15s ease-out;
 }
 
-.card:hover .cardBox {
+.card:hover .cardBox,.card:focus .cardBox {
   background: rgba(0, 0, 0, 0.75);
   box-shadow: 0 5px 9px black;
 }
