@@ -773,6 +773,7 @@ h2 {
   color: transparent;
   border-radius: 10px;
   width: fit-content !important;
+  margin: 0 auto;
 }
 
 #itemDetailPage .emby-select {
