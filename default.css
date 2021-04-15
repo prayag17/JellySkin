@@ -594,6 +594,10 @@ h2 {
   background-color: #0000;
 }
 
+.raised {
+  background: #00a4dc;
+}
+
 .cardBox:not(.visualCardBox) .cardPadder,
 .cardContent-shadow {
   box-shadow: 0 0 rgba(0, 0, 0, 0) !important;
