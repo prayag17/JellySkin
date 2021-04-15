@@ -760,6 +760,17 @@ h2 {
   display: none;
 }
 
+.layout-mobile .tagline {
+  text-align: center;
+  font-weight: 700;
+  background: var(--accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-radius: 10px;
+  width: fit-content !important;
+}
+
 #itemDetailPage .emby-select {
   box-shadow: none !important;
 }
