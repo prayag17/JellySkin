@@ -10,6 +10,11 @@ h4 {
     font-family: 'Raleway' !important;
 }
 
+::-moz-selection {
+    background: #aa5cc3;
+    text-shadow: none;
+}
+
 ::selection {
     background: #aa5cc3;
     text-shadow: none;
@@ -317,7 +322,8 @@ fieldset {
 }
 
 .detailButton-content {
-    filter: drop-shadow(0px 3px 3px black);
+    -webkit-filter: drop-shadow(0px 3px 3px black);
+            filter: drop-shadow(0px 3px 3px black);
 }
 
 .navMenuOption::before {
@@ -603,7 +609,8 @@ h1.sliderBubbleText {
 }
 
 .justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
-    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+            backdrop-filter: none !important;
     box-shadow: 0 0 black;
 }
 
@@ -664,7 +671,8 @@ h2 {
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 
 .backdropImage {
-    filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
+    -webkit-filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
+            filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
 }
 
 .backgroundContainer.withBackdrop {
@@ -694,7 +702,8 @@ h2 {
 }
 
 .upNextDialog {
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
     box-shadow: 0 0 8px 5px black;
 }
 
@@ -815,6 +824,8 @@ h2 {
     -webkit-background-clip: text;
     color: transparent;
     border-radius: 10px;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
     width: fit-content !important;
     margin: 0 auto;
 }
@@ -845,7 +856,8 @@ h2 {
 }
 
 .layout-mobile .detailButton-content {
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
 }
 
 @media (min-width: 32em),
@@ -955,7 +967,7 @@ h2 {
     .cardOverlayButtonIcon {
         border-radius: 5px !important;
     }
-    .cardOverlayButtonIcon {
+    .layout-mobile .cardOverlayButtonIcon {
         background-color: rgba(0, 0, 0, 0.5) !important;
     }
     .cardOverlayButton {
@@ -965,6 +977,18 @@ h2 {
 
 
 /*Player theme*/
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
 
 @keyframes gradient {
     0% {
@@ -981,7 +1005,8 @@ h2 {
 #nowPlayingPage {
     background: linear-gradient(140deg, #3E2247 10%, #003C50 90%);
     background-size: 550%;
-    animation: gradient 10s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    -webkit-animation: gradient 10s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            animation: gradient 10s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     overflow-y: scroll;
 }
 
@@ -1011,7 +1036,8 @@ h2 {
     border-radius: 10px;
     overflow: hidden;
     transition: background .15s ease-in-out;
-    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
 }
 
 #itemDetailPage .listItem:hover .listItem-content {
@@ -1024,6 +1050,8 @@ h2 {
 
 #itemDetailPage .listItem {
     position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     overflow: hidden;
     margin-bottom: 1.5rem;
@@ -1041,7 +1069,8 @@ h2 {
     height: 100%;
     background: rgba(16, 16, 16, .65);
     z-index: -1;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
 }
 
 .layout-mobile .listItemIndicators {
@@ -1094,7 +1123,8 @@ h2 {
 }
 
 .layout-mobile #itemDetailPage .listItem-content {
-    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
 }
 
 .layout-mobile #itemDetailPage .listItem-content {
@@ -1131,11 +1161,15 @@ h2 {
 }
 
 .raised.homeLibraryButton:hover {
+    transition: -webkit-filter 1s;
     transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
 }
 
 .raised.homeLibraryButton {
+    transition: -webkit-filter 1s;
     transition: filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
 }
 
 .homeLibraryButton {
@@ -1171,7 +1205,8 @@ h2 {
     background: rgba(0, 0, 0, 0.5);
     padding: 2em 2em !important;
     border-radius: 20px;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
 }
 
 .layout-mobile #loginPage {
@@ -1201,7 +1236,8 @@ h2 {
     width: 80%;
     float: right;
     background: transparent !important;
-    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
     box-shadow: none !important;
     border: none;
     font-size: 2rem;
