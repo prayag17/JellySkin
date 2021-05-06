@@ -250,7 +250,7 @@ fieldset {
     box-shadow: none;
     background: transparent !important;
     color: white;
-    box-shadow: 0 0 5px rgb(24 24 24 / 80%);
+    box-shadow: none;
 }
 
 .cardImageContainer::after {
