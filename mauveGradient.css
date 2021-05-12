@@ -1,2 +1,5 @@
-:root {--accent: linear-gradient(to right, #42275a, #734b6d) !important;}
-:root {--accent-selected: linear-gradient(to left, #42275a, #734b6d) !important;}
+:root {
+    --accent: linear-gradient(140deg, #42275a, #734b6d) !important;
+    --accent-selected: linear-gradient(140deg, #734b6d, #42275a) !important;
+    --accent-icon: linear-gradient(140deg, #42275a 20%, #734b6d) !important;
+}

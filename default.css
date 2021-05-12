@@ -84,6 +84,7 @@ video:cue {
     --accent: linear-gradient(140deg, #aa5cc3, #00a4dc);
     --accent-selected: linear-gradient(140deg, #00a4dc, #aa5cc3);
     --accent-text: linear-gradient(#00a4dc 0%, #aa5cc3 60%);
+    --accent-icon: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
 }
 
 
@@ -377,7 +378,7 @@ fieldset {
 }
 
 span.listItemIcon.material-icons {
-    background: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
+    background: var(--accent-icon);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -396,7 +397,7 @@ span.listItemIcon.material-icons {
 }
 
 .cardImage {
-    background: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
+    background: var(--accent-icon);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
