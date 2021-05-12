@@ -529,45 +529,15 @@ select {
     width: 120%;
 }
 
-#dashboardPage,
-#dashboardGeneralPage,
-#userProfilesPage,
-#pluginCatalogPage,
-#repositories,
-#devicesPage,
-#serverActivityPage,
-#liveTvStatusPage,
-#liveTvSettingsPage,
-#networkingPage,
-#apiKeysPage,
-#logPage,
-#notificationSettingsPage,
-#scheduledTasksPage,
-#itemDetailPage,
-#userImagePage,
-#displayPreferencesPage,
-#homeScreenPreferencesPage,
-#languagePreferencesPage,
-#quickConnectPreferencesPage {
+div[data-role=page] {
     margin-top: 60px;
     padding-top: 0px !important;
     overflow: scroll;
 }
 
 @media all and (min-width: 100em) {
-    #indexPage,
-    #moviesPage,
-    #tvRecommendedPage,
-    #musicRecommendedPage {
+    div[data-role=page] {
         margin-top: 70px;
-        padding-top: 0px !important;
-        overflow: scroll;
-    }
-    #encodingSettingsPage,
-    #mediaLibraryPage,
-    #dlnaSettingsPage,
-    #pluginsPage {
-        margin-top: 60px;
         padding-top: 0px !important;
         overflow: scroll;
     }
