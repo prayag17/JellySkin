@@ -530,17 +530,21 @@ select {
     width: 120%;
 }
 
+.force-scroll {
+    overflow: hidden;
+}
+
 div[data-role=page] {
-    margin-top: 60px;
+    margin-top: 130px;
     padding-top: 0px !important;
-    overflow: scroll;
+    overflow: hidden scroll;
 }
 
 @media all and (min-width: 100em) {
     div[data-role=page] {
         margin-top: 70px;
         padding-top: 0px !important;
-        overflow: scroll;
+        overflow: hidden scroll;
     }
 }
 
@@ -555,7 +559,7 @@ div[data-role=page] {
     #musicRecommendedPage {
         margin-top: 130px;
         padding-top: 0px !important;
-        overflow: scroll;
+        overflow: hidden scroll;
     }
 }
 
