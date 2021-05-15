@@ -1148,10 +1148,6 @@ h2 {
     margin-right: 0;
 }
 
-.section0 .itemsContainer {
-    flex-wrap: wrap;
-}
-
 .raised.homeLibraryButton:hover {
     transition: -webkit-filter 1s;
     transition: filter 1s;
