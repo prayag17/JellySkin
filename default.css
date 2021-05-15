@@ -36,7 +36,21 @@ h4 {
 }
 
 .raised {
-    border-radius: 5px;
+    border-radius: 50vh;
+    overflow: hidden;
+}
+
+.backgroundContainer,
+.dialog,
+.nowPlayingPlaylist,
+.nowPlayingContextMenu,
+html {
+    background-color: #100912;
+}
+
+.mainDrawer,
+.drawer-open {
+    background-color: #100912;
 }
 
 
@@ -106,7 +120,6 @@ video:cue {
 
 .nowPlayingPageImage,
 .toast,
-.paperList,
 .fab,
 .multiSelectCheckboxOutline,
 .itemSelectionPanel,
@@ -120,7 +133,6 @@ video:cue {
 .paper-icon-button-light,
 .dialog,
 .listItemIcon,
-.listItem-border,
 .button-flat,
 .visualCardBox,
 .chapterThumbTextContainer,
@@ -194,6 +206,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 .checkboxOutline {
     border-radius: 5px !important;
+}
+
+.paperList {
+    border-radius: 20px !important;
+    overflow: hidden;
+    border: .01em solid #191819;
 }
 
 
@@ -1364,7 +1382,6 @@ h2 {
 .paperList,
 .visualCardBox {
     background-color: #000;
-    border-radius: 6px;
 }
 
 .listItemIcon {
@@ -1377,6 +1394,15 @@ h2 {
 
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
     border-radius: 5px !important;
+}
+
+#dashboardPage .cardBox {
+    box-shadow: none;
+    border: .01em solid #191819;
+}
+
+.listItem.listItem-border {
+    border-radius: 0 !important;
 }
 
 
