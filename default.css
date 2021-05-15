@@ -59,6 +59,15 @@ html {
     border-radius: 0 !important;
 }
 
+.layout-tv body {
+    overflow-y: scroll;
+}
+
+.layout-tv div[data-role=page] {
+    margin: 0;
+    overflow: visible;
+}
+
 
 /*Subtitle Fonts thanks the u/Edgementality-https://bit.ly/33slrSa*/
 
