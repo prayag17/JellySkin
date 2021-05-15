@@ -653,6 +653,7 @@ h2 {
 
 .cardBox:not(.visualCardBox) .cardPadder,
 .cardContent-shadow {
+    background: transparent;
     box-shadow: 0 0 rgba(0, 0, 0, 0) !important;
 }
 
