@@ -205,7 +205,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .headerButton,
 .paper-icon-button-light,
 .cardOverlayButton,
-.dialog {
+.dialog,
+a.listItem-border {
     border-radius: var(--rounding);
 }
 
