@@ -50,6 +50,10 @@ html {
     background: rgb(0 60 80 / 10%);
 }
 
+.content-primary {
+    padding-top: 0;
+}
+
 .layout-mobile .adminDrawerLogo {
     border-bottom: 1px solid rgb(224 224 224 / 30%);
     border-radius: 0 !important;
