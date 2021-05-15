@@ -576,7 +576,7 @@ div[data-role=page],
 
 @media (min-width: 100em) {
     div[data-role=page] {
-        margin-top: 5em;
+        margin-top: 5em !important;
         padding-top: 0px !important;
         overflow: hidden scroll;
     }
