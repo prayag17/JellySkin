@@ -44,13 +44,15 @@ h4 {
 .dialog,
 .nowPlayingPlaylist,
 .nowPlayingContextMenu,
+.mainDrawer,
+.drawer-open,
 html {
-    background-color: #100912;
+    background: rgb(0 60 80 / 10%);
 }
 
-.mainDrawer,
-.drawer-open {
-    background-color: #100912;
+.layout-mobile .adminDrawerLogo {
+    border-bottom: 1px solid rgb(224 224 224 / 30%);
+    border-radius: 0 !important;
 }
 
 
@@ -552,33 +554,23 @@ select {
     overflow: hidden;
 }
 
-div[data-role=page] {
-    margin-top: 130px;
+div[data-role=page],
+.libraryPage:not(.noSecondaryNavPage) {
+    margin-top: 9em;
     padding-top: 0px !important;
     overflow: hidden scroll;
 }
 
-@media all and (min-width: 100em) {
+@media (min-width: 100em) {
     div[data-role=page] {
-        margin-top: 70px;
+        margin-top: 5em;
         padding-top: 0px !important;
         overflow: hidden scroll;
     }
 }
 
-@media all and (max-width: 100em) {
-    #indexPage,
-    #moviesPage,
-    #tvRecommendedPage,
-    #encodingSettingsPage,
-    #mediaLibraryPage,
-    #dlnaSettingsPage,
-    #pluginsPage,
-    #musicRecommendedPage {
-        margin-top: 130px;
-        padding-top: 0px !important;
-        overflow: hidden scroll;
-    }
+div[data-role=page]:not(.withTabs) {
+    margin-top: 4em !important;
 }
 
 
@@ -1382,7 +1374,7 @@ div#loginPage {
 }
 
 
-/*Theming for the dasboard*/
+/*Theming for the dashboard*/
 
 .paperList,
 .visualCardBox {
