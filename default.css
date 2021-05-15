@@ -1194,6 +1194,10 @@ h2 {
 
 /*Login background*/
 
+div#loginPage {
+    margin-top: 0;
+}
+
 #loginPage {
     background: url(https://prayag17.github.io/JellySkin/login.png), radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) !important;
     background-size: cover !important;
