@@ -1,39 +1,41 @@
 #itemDetailPage .detailLogo {
-  position: absolute;
-  left: 32.5%;
-  top: 9.5%;
-  background-position: 0 !important;
-  display:block;
+    position: absolute;
+    left: 32.5%;
+    top: 9.5%;
+    background-position: 0 !important;
+    display: block;
+    -webkit-filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.75));
+    filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.75));
 }
 
 .detailRibbon {
-  margin-top: 1em !important;
+    margin-top: 1em !important;
 }
 
 .layout-mobile .detailRibbon {
-  margin-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 .layout-mobile .detailLogo {
-  display: none;
+    display: none;
 }
 
-.layout-mobile .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon{
-  padding-top: 4.5rem !important;
+.layout-mobile .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+    padding-top: 4.5rem !important;
 }
 
 #itemDetailPage .itemName.infoText.parentNameLast {
-  display: none;
+    display: none;
 }
 
 .hide+.detailPageWrapperContainer .itemName {
-  display: block !important;
+    display: block !important;
 }
 
 .itemName {
-  margin: .5em 0 !important;
+    margin: .5em 0 !important;
 }
 
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-  display: block;
+    display: block;
 }
