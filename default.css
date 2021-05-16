@@ -763,6 +763,10 @@ h2 {
     background: rgba(0, 0, 0, 0) !important;
 }
 
+.mediaInfoOfficialRating {
+    border-radius: 100vh;
+}
+
 .card[data-type=Actor] .cardBox {
     background: none;
     position: relative;
