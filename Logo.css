@@ -4,8 +4,8 @@
     top: 9.5%;
     background-position: 0 !important;
     display: block;
-    -webkit-filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.75));
-    filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.75));
+    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
 }
 
 .detailRibbon {
