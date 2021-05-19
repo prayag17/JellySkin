@@ -597,6 +597,11 @@ div[data-role=page]:not(.withTabs) {
 
 /*Video Player*/
 
+div#videoOsdPage {
+    overflow: hidden !important;
+    margin-top: 0 !important;
+}
+
 .layout-desktop .osdControls {
     width: 100%;
     max-width: 100%;
@@ -1432,6 +1437,28 @@ div#loginPage {
 
 
 /*For browsers that don't support backdrop-filter*/
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .mainDrawer.drawer-open {
+        background: rgba(0, 0, 0, 0.85);
+    }
+    .dialogBackdropOpened {
+        opacity: 1 !important;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .dialog {
+        background-color: rgba(0, 0, 0, 0.95) !important;
+        box-shadow: 0 0 20px 4px black;
+    }
+    .mainDrawer {
+        background-color: rgba(0, 0, 0, 0.95);
+        box-shadow: none;
+    }
+    .playerStats {
+        background: rgba(28, 28, 28, .8);
+        box-shadow: 0 0 8px black !important;
+    }
+}
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
     .mainDrawer.drawer-open {
