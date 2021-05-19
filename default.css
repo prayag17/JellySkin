@@ -759,6 +759,7 @@ h2 {
 
 .detailImageContainer .card {
     position: fixed;
+    top: 50% !important;
 }
 
 
