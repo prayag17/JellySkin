@@ -7,7 +7,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Raleway' !important;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 ::-moz-selection {
@@ -1058,6 +1058,21 @@ h2 {
 
 /*Size episode preview images in a more compact way*/
 
+.childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media all and (max-width: 1001px) {
+    .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.layout-mobile .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+    grid-template-columns: 1fr;
+}
+
 #itemDetailPage .listItem-content {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -1065,6 +1080,16 @@ h2 {
     transition: background .15s ease-in-out;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
+    flex-flow: column;
+    -webkit-transition: background .15s ease-in-out;
+    -moz-transition: background .15s ease-in-out;
+    -ms-transition: background .15s ease-in-out;
+    -o-transition: background .15s ease-in-out;
+}
+
+.listItemImage.listItemImage-large {
+    width: 100%;
+    margin: 0;
 }
 
 #itemDetailPage .listItem:hover .listItem-content {
@@ -1152,6 +1177,7 @@ h2 {
 .layout-mobile #itemDetailPage .listItem-content {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
+    align-items: flex-start;
 }
 
 .layout-mobile #itemDetailPage .listItem-content {
