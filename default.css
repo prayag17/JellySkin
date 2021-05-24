@@ -1508,3 +1508,19 @@ div#loginPage {
         box-shadow: 0 0 8px black !important;
     }
 }
+
+
+/* Chapters */
+
+.chapterCard .innerCardFooter {
+    height: auto;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.chapterCard .innerCardFooter>.cardText:first-child {
+    float: left;
+}
+
+.chapterCard .innerCardFooter>.cardText:last-child {
+    float: right;
+}
