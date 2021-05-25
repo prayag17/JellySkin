@@ -325,12 +325,12 @@ fieldset {
 }
 
 .cardImageContainer {
-    background-size: 105%;
+    background-size: 105% !important;
     transition: background .15s ease-out;
 }
 
-.card:hover .cardImageContainer {
-    background-size: 120%;
+:not(.detailImageContainer)>.card:hover .cardImageContainer {
+    background-size: 120% !important;
 }
 
 .layout-mobile .cardImageContainer {
