@@ -1308,6 +1308,11 @@ div#loginPage {
     display: none;
 }
 
+.layout-mobile h1.itemName {
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
 .layout-mobile #loginPage .inputContainer {
     position: relative;
     height: 3rem;
