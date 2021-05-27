@@ -1092,6 +1092,11 @@ h2 {
     margin: 0;
 }
 
+html:not(.layout-mobile) .listItemImage {
+    -webkit-mask: linear-gradient(black calc(100% - 3.5em), rgba(0, 0, 0, 0)100%);
+    mask: linear-gradient(black calc(100% - 3.5em), rgba(0, 0, 0, 0)100%);
+}
+
 #itemDetailPage .listItem:hover .listItem-content {
     background: rgba(0, 0, 0, 0.8);
 }
