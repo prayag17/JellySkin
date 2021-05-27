@@ -1239,6 +1239,61 @@ html:not(.layout-mobile) .listItemImage {
     max-width: 22em;
 }
 
+@-webkit-keyframes act-labl {
+    0% {
+        top: 50%;
+        left: 5%;
+    }
+    100% {
+        top: -50%;
+        left: 0;
+    }
+}
+
+@keyframes act-labl {
+    0% {
+        top: 50%;
+        left: 5%;
+    }
+    100% {
+        top: -50%;
+        left: 0;
+    }
+}
+
+html:not(.layout-mobile) #loginPage .inputContainer {
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 2.75em;
+}
+
+html:not(.layout-mobile) #loginPage .inputLabelUnfocused {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    transition: .2s;
+}
+
+html:not(.layout-mobile) #loginPage .inputLabelFocused,
+html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
+    top: -50%;
+    left: 0;
+    -webkit-animation: act-labl .2s;
+    animation: act-labl .2s;
+    transform: translateY(-50%) scale(1.1);
+    position: absolute;
+    z-index: 1;
+    transition: .2s;
+    -webkit-transform: translateY(-50%) scale(1.1);
+    -moz-transform: translateY(-50%) scale(1.1);
+    -ms-transform: translateY(-50%) scale(1.1);
+    -o-transform: translateY(-50%) scale(1.1);
+}
+
 
 /*Login background*/
 
@@ -1517,6 +1572,22 @@ div#loginPage {
         background: rgba(28, 28, 28, .8);
         box-shadow: 0 0 8px black !important;
     }
+}
+
+
+/* Chapters */
+
+.chapterCard .innerCardFooter {
+    height: auto;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.chapterCard .innerCardFooter>.cardText:first-child {
+    float: left;
+}
+
+.chapterCard .innerCardFooter>.cardText:last-child {
+    float: right;
 }
 
 
