@@ -430,14 +430,7 @@ span.listItemIcon.material-icons {
     background-clip: text !important;
 }
 
-.cardImage {
-    background: var(--accent-icon);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-navMenuOption-selected {
+.navMenuOption-selected {
     background: var(--accent-selected) !important;
 }
 
