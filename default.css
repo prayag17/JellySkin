@@ -2671,8 +2671,7 @@ div#loginPage {
 }
 
 .chapterThumbContainer {
-    box-shadow: 0 0 1.9vh #000;
-    flex-grow: 1;
+    box-shadow: none !important;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -2692,11 +2691,8 @@ div#loginPage {
 }
 
 .chapterThumbTextContainer {
+    position: relative;
     padding: 0 1em;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
     border-radius: 0px 0px 10px 10px !important;
 }
 
