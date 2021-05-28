@@ -1198,6 +1198,14 @@ video:cue {
 }
 
 
+/*Image streching fix*/
+
+img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
 /*Rounded corners on pretty much everything-Source Monochromic*/
 
 .formDialogHeader {
@@ -1231,9 +1239,7 @@ video:cue {
 .listItemIcon,
 .button-flat,
 .visualCardBox,
-.chapterThumbTextContainer,
 .chapterThumbContainer,
-.chapterThumb,
 .cardOverlayButtonIcon,
 .subtitleappearance-preview.flex.align-items-center.justify-content-center {
     border-radius: var(--rounding) !important;
@@ -1683,7 +1689,7 @@ div#videoOsdPage {
 
 .sliderBubble {
     border-radius: var(--rounding);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     font-weight: 400 !important;
 }
 
@@ -2664,18 +2670,41 @@ div#loginPage {
     float: right;
 }
 
-
-/* Chapters */
-
-.chapterCard .innerCardFooter {
-    height: auto;
-    background: rgba(0, 0, 0, 0.7);
+.chapterThumbContainer {
+    box-shadow: 0 0 1.9vh #000;
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
-.chapterCard .innerCardFooter>.cardText:first-child {
-    float: left;
+.chapterThumb {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: var(--card-rounding);
+    -webkit-border-radius: var(--card-rounding);
+    -moz-border-radius: var(--card-rounding);
+    -ms-border-radius: var(--card-rounding);
+    -o-border-radius: var(--card-rounding);
 }
 
-.chapterCard .innerCardFooter>.cardText:last-child {
-    float: right;
+.chapterThumbTextContainer {
+    padding: 0 1em;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+.sliderBubble::after {
+    content: "";
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(0, 0, 0, 0.4);
+    bottom: -20px;
 }
