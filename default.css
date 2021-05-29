@@ -1366,13 +1366,22 @@ fieldset {
     border: .07em solid #7b7b7b;
 }
 
-.playedIndicator,
-.countIndicator {
-    border-radius: 5px;
-    box-shadow: none;
-    background: transparent !important;
+.cardIndicators {
+    right: 0;
+    top: 0;
+}
+
+.indicator {
+    background: var(--accent) !important;
+    border-radius: 0px 0px 0px 5px;
+    padding: .1em;
+    box-shadow: 0 0 10px 1px black;
     color: white;
-    box-shadow: none;
+}
+
+.indicators {
+    right: 0;
+    top: 0;
 }
 
 .cardImageContainer::after {
@@ -2038,11 +2047,6 @@ h2 {
 
 .itemProgressBarForeground {
     background: var(--accent) !important;
-}
-
-.cardIndicators {
-    right: 0.3em;
-    top: 0.3em;
 }
 
 .mainDetailButtons {
