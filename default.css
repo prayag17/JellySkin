@@ -1869,6 +1869,10 @@ h2 {
     height: 100%;
 }
 
+.layout-mobile .drawer-open .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
+    overflow-y: scroll;
+}
+
 .layout-mobile .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
     overflow: hidden;
 }
