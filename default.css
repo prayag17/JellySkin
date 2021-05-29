@@ -2227,7 +2227,7 @@ html:not(.layout-mobile) .listItemImage {
 }
 
 .layout-mobile .listItem .playedIndicator {
-    background: transparent;
+    background: transparent !important;
 }
 
 .layout-mobile .listItemImage {
