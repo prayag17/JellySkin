@@ -1668,10 +1668,6 @@ select {
     transition: width .15s ease-in-out;
 }
 
-.emby-tab-button-active {
-    display: none;
-}
-
 .emby-tab-button:hover .emby-button-foreground::after {
     width: 120%;
 }
