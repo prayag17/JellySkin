@@ -1384,17 +1384,6 @@ fieldset {
     top: 0;
 }
 
-.cardImageContainer::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(-135deg, rgba(24, 24, 24, 0.5) 5%, transparent 30%);
-    z-index: -1;
-}
-
 .actionSheetMenuItem:hover {
     background: linear-gradient(140deg, #aa5cc385, #00a4dc75) !important;
 }
