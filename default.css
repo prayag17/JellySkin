@@ -2332,6 +2332,16 @@ html:not(.layout-mobile) .listItemImage {
     margin-right: 0;
 }
 
+.emby-scroller {
+    -webkit-mask: linear-gradient(to left, transparent, black 15px calc(100% - 15px), transparent);
+    mask: linear-gradient(to left, transparent, black 15px calc(100% - 15px), transparent);
+}
+
+.mainDrawer-scrollContainer {
+    -webkit-mask: linear-gradient(to top, transparent, black 15px calc(100% - 15px), transparent);
+    mask: linear-gradient(to top, transparent, black 15px calc(100% - 15px), transparent);
+}
+
 .raised.homeLibraryButton:hover {
     transition: -webkit-filter 1s;
     transition: filter 1s;
