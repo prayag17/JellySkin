@@ -2656,10 +2656,13 @@ a.button-link.emby-button[href="https://jellyfin.org"] {
     background: var(--accent);
     color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 a.button-link.emby-button[href="https://jellyfin.org"]::after {
     background: var(--accent);
+    height: 5px;
+    bottom: -5px;
 }
 
 
