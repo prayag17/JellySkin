@@ -2645,6 +2645,23 @@ div#loginPage {
     border-radius: 0 !important;
 }
 
+a.button-link.emby-button[href="https://jellyfin.org"]:hover,
+a.button-link.emby-button[href="https://jellyfin.org"]:focus {
+    font-weight: 700;
+}
+
+a.button-link.emby-button[href="https://jellyfin.org"] {
+    font-size: 3em;
+    font-weight: 300;
+    background: var(--accent);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+a.button-link.emby-button[href="https://jellyfin.org"]::after {
+    background: var(--accent);
+}
+
 
 /*Theming Playback data info*/
 
