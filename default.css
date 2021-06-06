@@ -2233,6 +2233,15 @@ h2 {
     margin: 0;
 }
 
+.listItem[data-mediatype=Audio] {
+    padding: 0 1em;
+    border-radius: 15px !IMPORTANT;
+    -webkit-border-radius: 15px !IMPORTANT;
+    -moz-border-radius: 15px !IMPORTANT;
+    -ms-border-radius: 15px !IMPORTANT;
+    -o-border-radius: 15px !IMPORTANT;
+}
+
 .layout-mobile #itemDetailPage .listItemImageButton {
     font-size: 0 !important;
     width: 100%;
