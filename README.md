@@ -1,6 +1,6 @@
 <div align="center">
 <h1>JellySkin</h1><h3>Use 67% or 70% zoom in web browser for better experience</h3>
-<h4>Note: To take full experience of this CSS on FireFox scroll down to the bottom of the page.</h4>
+<h4>Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.</h4>
 </div>
 <br>
 <h3>How to use</h3>
