@@ -613,9 +613,7 @@ body.force-scroll {
 .mainAnimatedPages {
     height: 100vh;
     position: relative !important;
-    overflow-y: scroll;
-    -webkit-mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
-    mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
+    overflow: hidden;
 }
 
 .libraryPage:not(.noSecondaryNavPage) {
@@ -646,6 +644,16 @@ div[data-role=page] {
     position: static;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
+    -webkit-mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
+    mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
+}
+
+div#videoOsdPage {
+    overflow: hidden !important;
+    margin-top: 0 !important;
+    -webkit-mask: none !important;
+    mask: none !important;
 }
 
 div[data-role=page]:not(.withTabs) {
