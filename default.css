@@ -649,10 +649,10 @@ div[data-role=page] {
     mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
 }
 
-.layout-tv div[data-role=page] {}
-
 .layout-tv .mainAnimatedPages {
     overflow: visible;
+    mask: none;
+    -webkit-mask: none;
 }
 
 div#videoOsdPage {
