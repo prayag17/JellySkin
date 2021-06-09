@@ -16,6 +16,9 @@ To use Logos like the images given below use:
 ```
 <br>
 
+<h3>Fix Performance</h3>
+In JellySkin 11 I have added a transparency gradient like CTalvio's Themes and just like his skin's have a performance issue on some older devices because of this I have created that remove all the transparency gradient in the skin.
+  
 ```css
 @import url("https://prayag17.github.io/JellySkin/addons/imp-per.css");
 ```
@@ -36,15 +39,18 @@ To use different gradient for your buttons I have added few different gradients 
 ```
 <br>
 Using custom own Gradient or color
-Create your gradient or solid color and past it in ```--accent``` and gradient in opposite angle in ```--accent-selected``` :
+Create your gradient or solid color and past it in `--accent` and gradient in opposite angle in `--accent-selected` :
 ```css
 :root {--accent: your gradient;}
 :root {--accent-selected: your gradient in opposite angle;}
 ```
+  
 Now, to use your own Gradient (to get great button or any gradient go to https://cssgradient.io/gradient-backgrounds or https://cssgradient.io) or solid color:
 ```css
-:root {--accent: your gradient;}
-:root {--accent-selected: your gradient in opposite angle;}
+:root {
+  --accent: your gradient;
+  --accent-selected: your gradient in opposite angle;
+}
 ```
 <br>
 <h3>Don't like the progress bar</h3>
