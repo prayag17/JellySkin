@@ -1,15 +1,16 @@
 #itemDetailPage .detailLogo {
-    position: absolute;
-    left: 32.5%;
-    top: 9.5%;
-    background-position: 0 !important;
+    position: static;
+    margin-left: 32.5%;
     display: block;
     -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
     filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    flex-shrink: 0;
+    background-position: 0 50%;
+    margin-top: 8vh;
 }
 
-.detailRibbon {
-    margin-top: 1em !important;
+.layout-desktop .detailRibbon {
+    margin-top: 0;
 }
 
 .layout-mobile .detailRibbon {

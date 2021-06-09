@@ -12,21 +12,27 @@ To use just copy this :
 To use Logos like the images given below use:
 
 ```css
-@import url("https://prayag17.github.io/JellySkin/Logo.css");
+@import url("https://prayag17.github.io/JellySkin/addons/Logo.css");
 ```
+<br>
+
+```css
+@import url("https://prayag17.github.io/JellySkin/addons/imp-per.css)
+```
+
 <br>
 <h3>If you want to display your posters to be compact use the following line with default css</h3>
 
 ```css
-@import url("https://prayag17.github.io/JellySkin/compact-poster.css")
+@import url("https://prayag17.github.io/JellySkin/addons/compact-poster.css")
 ```
 
 To use different gradient for your buttons I have added few different gradients you can choose or you can create your own (check the steps given bellow), the default gradient used is jellyfin's default logo gradient,using this alone will only skin the button colors and I know the names for this are very funny:
 ```css
-@import url("https://prayag17.github.io/JellySkin/seaGradient.css");
-@import url("https://prayag17.github.io/JellySkin/sunsetGradient.css");
-@import url("https://prayag17.github.io/JellySkin/mauveGradient.css");
-@import url("https://prayag17.github.io/JellySkin/nightSkyGradient.css");
+@import url("https://prayag17.github.io/JellySkin/addons/Gradients/seaGradient.css");
+@import url("https://prayag17.github.io/JellySkin/addons/Gradients/sunsetGradient.css");
+@import url("https://prayag17.github.io/JellySkin/addons/Gradients/mauveGradient.css");
+@import url("https://prayag17.github.io/JellySkin/addons/Gradients/nightSkyGradient.css");
 ```
 and past it in custom css text box and click save. To open Custom CSS settings go to Dashboard>General>Custom CSS.
 <br>
@@ -46,7 +52,7 @@ Now, to use your own Gradient (to get great button or any gradient go to https:/
 Add the follwing line to custom CSS with the default css file-
 
 ```css
-@import url("https://prayag17.github.io/JellySkin/progress-bar.css");
+@import url("https://prayag17.github.io/JellySkin/addons/progress-bar.css");
 ```
 
 <h3>Here are some images:</h3>
@@ -115,13 +121,4 @@ preference (needs to be set to
  To change preferences in Firefox, visit about:config.
 </code>
 
-</div>
-
-<div class="icons">
-<h3 align="center">If you have blocked google fonts then Icons won't load so here is a fix for is</h3>
-  <h4>Note: Icons will load slowly as compared to before</h4>
-  
-  ```css
-  @import url("https://prayag17.github.io/Jellyfin-Icons/github-hosted/Outline.css");
-  ```
 </div>
