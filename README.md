@@ -113,7 +113,7 @@ preference (needs to be set to
 
 <div class="nginx-reverseproxy">
 <h3>Using Nginx Reverse Proxy</h3>
-When using the Nginx Reverse proxy config from the [Jellyfin docs](https://jellyfin.org/docs/general/networking/nginx.html) the theme will probably not work by default. (If you are using the subpath config, you can ignore all this.)
+  When using the Nginx Reverse proxy config from the <a href="https://jellyfin.org/docs/general/networking/nginx.html">Jellyfin docs</a> the theme will probably not work by default. (If you are using the subpath config, you can ignore all this.)
 
 This config includes an CSP (Content Security Policy) with headers that don't allow for loading in external content that are not defined there.
 
