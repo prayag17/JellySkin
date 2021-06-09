@@ -92,18 +92,6 @@ Add the follwing line to custom CSS with the default css file-
 <br>
 <br>
 
-<div class="conribute" align="center" style="text-align: center;">
-<h2> Wanna Contribute? </h2>
-<ul>
-<li>Fork this Repo</li>
-<li>Add your features</li>
-<li>Create a Pull Request</li>
-<li>Wait for it to be merged.</li>
-</ul>
-</div>
-<br>
-<br>
-
 <div class="firefox">
 <h4 align="center">Enabling backdrop-filter in firefox</h4>
 
@@ -124,6 +112,7 @@ preference (needs to be set to
 
 
 <div class="nginx-reverseproxy">
+<h3>Using Nginx Reverse Proxy</h3>
 When using the Nginx Reverse proxy config from the [Jellyfin docs](https://jellyfin.org/docs/general/networking/nginx.html) the theme will probably not work by default. (If you are using the subpath config, you can ignore all this.)
 
 This config includes an CSP (Content Security Policy) with headers that don't allow for loading in external content that are not defined there.
@@ -142,3 +131,14 @@ add_header Content-Security-Policy "default-src https: data: blob: http://image.
 
 If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from an external source.
   
+<div class="conribute" align="center" style="text-align: center;">
+<h2> Wanna Contribute? </h2>
+<ul>
+<li>Fork this Repo</li>
+<li>Add your features</li>
+<li>Create a Pull Request</li>
+<li>Wait for it to be merged.</li>
+</ul>
+</div>
+<br>
+<br>
