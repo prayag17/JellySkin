@@ -1,10 +1,10 @@
 <div align="center">
 <h1>JellySkin</h1><h3>Use 67% or 70% zoom in web browser for better experience</h3>
-<h4>Note:To take full experience of this CSS on FireFox click <a href="#firefox">here</a></strong>.</h4>
+<h4>Note: To take full experience of this CSS on FireFox scroll down to the bottom of the page.</h4>
 </div>
 <br>
 <h3>How to use</h3>
-To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using reverse proxy</b> click <a href="#nginx-reverseproxy">here</a></strong> to learn how to fix this.
+To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
 
 ```css
 @import url("https://prayag17.github.io/JellySkin/default.css");
@@ -93,7 +93,7 @@ Add the follwing line to custom CSS with the default css file-
 <br>
 
 <div class="firefox">
-<h4 align="center">Enabling backdrop-filter in firefox</h4>
+<h3>Enabling backdrop-filter in FireFox</h3>
 
 <code style="display: block !important;">
 Deaktiviert From version 70: this feature is behind the
@@ -130,6 +130,7 @@ add_header Content-Security-Policy "default-src https: data: blob: http://image.
 ```
 
 If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from an external source.
+  </div>
   
 <div class="conribute" align="center" style="text-align: center;">
 <h2> Wanna Contribute? </h2>
