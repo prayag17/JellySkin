@@ -14,6 +14,8 @@ To use Logos like the images given below use:
 ```css
 @import url("https://prayag17.github.io/JellySkin/addons/Logo.css");
 ```
+  
+<h3> You can also use Jellyfin-Skin-Manager-Plugin : https://github.com/danieladov/jellyfin-plugin-skin-manager
 <br>
 
 <h3>Fix Performance</h3>
