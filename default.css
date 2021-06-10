@@ -674,6 +674,25 @@ div#itemBackdrop {
     margin-top: 7.2em;
 }
 
+.layout-mobile #itemDetailPage {
+    position: fixed;
+    -webkit-mask: none;
+    margin-top: 4em !important;
+    height: calc(100vh - 4em);
+}
+
+.layout-mobile #itemDetailPage::after {
+    content: "";
+    background: linear-gradient(140deg, #3E2247 10%, #003C50 90%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    -webkit-mask: linear-gradient(to bottom, black 4EM, transparent calc(15px + 4em) calc(100% - 15px), BLACK);
+}
+
 
 /*Subtitle preview*/
 
@@ -1021,10 +1040,8 @@ h2 {
         color: #383838;
         width: 90%;
         border-radius: 10px;
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
         font-size: 110%;
+        margin: 20px auto;
     }
     .primaryImageWrapper>img {
         display: block;
