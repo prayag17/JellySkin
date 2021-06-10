@@ -1416,14 +1416,12 @@ html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
 
 /*Login background*/
 
-div#loginPage {
-    margin-top: 0 !important;
-}
-
 #loginPage {
     background: url(https://prayag17.github.io/JellySkin/login.png), radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) !important;
     background-size: cover !important;
     background-blend-mode: overlay;
+    margin-top: 0 !important;
+    -webkit-mask: none;
 }
 
 #loginPage .squareCard {
@@ -1437,7 +1435,7 @@ div#loginPage {
     background: rgba(0, 0, 0, 0.5);
     padding: 2em 2em !important;
     border-radius: 20px;
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: bl1ur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -1506,12 +1504,13 @@ div#loginPage {
 }
 
 .layout-mobile #loginPage .inputLabel[for=txtManualName]::before {
-    content: "\e853";
-    font-size: 3rem;
-    font-family: 'Material Icons Outlined';
+    content: "\f406";
+    font-size: 2rem;
+    font-family: 'Font Awesome 5 Pro';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    left: 1rem;
 }
 
 .layout-mobile #loginPage .inputLabel[for=txtManualName]::after {
@@ -1542,13 +1541,13 @@ div#loginPage {
 }
 
 .layout-mobile #loginPage .inputLabel[for=txtManualPassword]::before {
-    content: "\f042";
-    font-size: 3rem;
-    font-family: 'Material Icons Outlined';
+    content: "\f084";
+    font-size: 2rem;
+    font-family: 'Font Awesome 5 Pro';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 1%;
+    left: 1rem;
 }
 
 .layout-mobile #loginPage .inputLabel[for=txtManualPassword]::after {
