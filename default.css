@@ -1562,20 +1562,7 @@ div#loginPage {
     transform: translateY(-50%);
 }
 
-.hide+.pageTitleWithDefaultLogo {
-    width: 95% !important;
-    background-size: contain;
-    height: 8rem;
-    background-position: 50%;
-    margin-top: 01rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @media (orientation: landscape) {
-    .hide+.pageTitleWithDefaultLogo {
-        display: none;
-    }
     .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
         margin-top: auto;
         margin-bottom: auto !important;
@@ -1583,9 +1570,6 @@ div#loginPage {
 }
 
 @media (max-height: 621px) {
-    .hide+.pageTitleWithDefaultLogo {
-        display: none;
-    }
     .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
         margin-top: auto;
         margin-bottom: auto !important;
