@@ -687,10 +687,11 @@ div#itemBackdrop {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 10;
     top: 0;
     left: 0;
     -webkit-mask: linear-gradient(to bottom, black 4EM, transparent calc(15px + 4em) calc(100% - 15px), BLACK);
+    pointer-events: none;
 }
 
 

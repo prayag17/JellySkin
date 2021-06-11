@@ -26,6 +26,12 @@ In JellySkin 11 I have added a transparency gradient like CTalvio's Themes and j
 ```
 
 <br>
+
+<h3>Background Fix:</h3>
+Many of you are facing issues that backdrop is not visible by default....this is not a JellySkin issue but rather Jellfin issue, in Jellyfin Version 10.7.X backgrounds are disabled by defualt but you can enable them individually on you devices/client by going to: 
+SETTINGS --> DISPLAY --> ENABLE BACKDROPS/BACKGROUND.
+
+<br>
 <h3>If you want to display your posters to be compact use the following line with default css</h3>
 
 ```css
