@@ -150,8 +150,18 @@ add_header Content-Security-Policy "default-src https: data: blob: http://image.
 
 If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from a disallowed external source.
   </div>
-  
-<div class="conribute" align="center" style="text-align: center;">
+
+  <div class="logopull">
+    <h2> How to get Logo </h2>
+    <ul>
+      <li>Get Fanart Plugin, Dashboard -> Plugin -> Catalog</li>
+      <li>Enable Faart as a metadata provider for your libraries in the library settings, Dashboard -> Library -> Click on 3 dots on your Library -> Manage Library -> Scroll to find Metadata provider and enable Fanart in all of them.</li>
+      <li>Rescan your drive by selecting <code>Replace Metadata</code> and scan</li>
+      <li>Done!</li>
+    </ul>
+  </div>  
+
+<div class="conribute" style="text-align: center;">
 <h2> Wanna Contribute? </h2>
 <ul>
 <li>Fork this Repo</li>
