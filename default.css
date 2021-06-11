@@ -450,7 +450,7 @@ fieldset {
     transition: margin-right .2s;
 }
 
-span.listItemIcon.material-icons {
+.listItemIcon.material-icons {
     background: var(--accent-icon);
     -webkit-background-clip: text;
     background-clip: text;
