@@ -157,7 +157,6 @@ img {
 .headerButton,
 .paper-icon-button-light,
 .dialog,
-.listItemIcon,
 .button-flat,
 .visualCardBox,
 .chapterThumbContainer,
@@ -1617,10 +1616,6 @@ html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
 .paperList,
 .visualCardBox {
     background-color: #000;
-}
-
-.listItemIcon {
-    border-radius: 6px !important;
 }
 
 .listItem-border {
