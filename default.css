@@ -387,7 +387,7 @@ fieldset {
     transition: .15s;
 }
 
-:not(.detailImageContainer)>.card:not(.overflowSquareCard):hover .cardImageContainer::before {
+html:not(.layout-mobile)>body>.mainAnimatedPages>#itemDetailPage>.detailPageWrapperContainer :not(.detailImageContainer)>.card:not(.overflowSquareCard):hover .cardImageContainer::before {
     transform: scale(1.2);
 }
 
@@ -681,17 +681,26 @@ div#itemBackdrop {
     height: calc(100vh - 4em);
 }
 
-.layout-mobile #itemDetailPage::after {
-    content: "";
-    background: linear-gradient(140deg, #3E2247 10%, #003C50 90%);
-    position: fixed;
-    width: 100%;
+.layout-mobile .detailPageWrapperContainer {
     height: 100%;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    -webkit-mask: linear-gradient(to bottom, black 4EM, transparent calc(15px + 4em) calc(100% - 15px), BLACK);
-    mask: linear-gradient(to bottom, black 4EM, transparent calc(15px + 4em) calc(100% - 15px), BLACK);
+    overflow: scroll;
+}
+
+.layout-mobile .detailPageWrapperContainer::after {
+    content: "";
+    position: fixed;
+    width: 90%;
+    background: linear-gradient(0deg, #ddd, transparent 15px calc(100% - 15px), #ddd);
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 200;
+    height: calc(100% - 4em - 34px);
+    bottom: 20px;
+    border-radius: var(--rounding);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
     pointer-events: none;
 }
 
