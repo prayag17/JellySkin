@@ -1765,3 +1765,10 @@ a.button-link.emby-button[href="https://jellyfin.org"]::after {
     border-top: 20px solid rgba(0, 0, 0, 0.4);
     bottom: -20px;
 }
+
+.selectionCommandsPanel {
+    background: rgba(24, 24, 24, 0.75);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 44px black;
+}
