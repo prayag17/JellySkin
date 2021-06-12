@@ -26,12 +26,6 @@ In JellySkin 11 I have added a transparency gradient like CTalvio's Themes and j
 ```
 
 <br>
-
-<h3>Background Fix:</h3>
-Many of you are facing issues that backdrop is not visible by default....this is not a JellySkin issue but rather Jellfin issue, in Jellyfin Version 10.7.X backgrounds are disabled by defualt but you can enable them individually on you devices/client by going to: 
-SETTINGS --> DISPLAY --> ENABLE BACKDROPS/BACKGROUND.
-
-<br>
 <h3>If you want to display your posters to be compact use the following line with default css</h3>
 
 ```css
@@ -129,9 +123,19 @@ preference (needs to be set to
 
 </div>
 
-
-<div class="nginx-reverseproxy">
-<h3>Using Nginx Reverse Proxy</h3>
+<div class="faq">
+  <div class="logopull">
+    <h2> How to get Logo </h2>
+    <ul>
+      <li>Get Fanart Plugin, Dashboard -> Plugin -> Catalog</li>
+      <li>Enable Faart as a metadata provider for your libraries in the library settings, Dashboard -> Library -> Click on 3 dots on your Library -> Manage Library -> Scroll to find Metadata provider and enable Fanart in all of them.</li>
+      <li>Rescan your drive by selecting <code>Replace Metadata</code> and scan</li>
+      <li>Done!</li>
+    </ul>
+  </div>
+  <br>
+  <div class="nginx-reverseproxy">
+<h3>Not working with Nginx Reverse Prxy</h3>
   When using the Nginx Reverse proxy config from the <a href="https://jellyfin.org/docs/general/networking/nginx.html">Jellyfin docs</a> the theme will probably not work by default. (If you are using the subpath config, you can ignore all this.)
 
 This config includes an CSP (Content Security Policy) with headers that don't allow for loading in external content that are not defined there.
@@ -150,16 +154,11 @@ add_header Content-Security-Policy "default-src https: data: blob: http://image.
 
 If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from a disallowed external source.
   </div>
-
-  <div class="logopull">
-    <h2> How to get Logo </h2>
-    <ul>
-      <li>Get Fanart Plugin, Dashboard -> Plugin -> Catalog</li>
-      <li>Enable Faart as a metadata provider for your libraries in the library settings, Dashboard -> Library -> Click on 3 dots on your Library -> Manage Library -> Scroll to find Metadata provider and enable Fanart in all of them.</li>
-      <li>Rescan your drive by selecting <code>Replace Metadata</code> and scan</li>
-      <li>Done!</li>
-    </ul>
-  </div>  
+  <br>
+<h3>Background not working?</h3>
+Many of you are facing issues that backdrop is not visible by default....this is not a JellySkin issue but rather Jellfin issue, in Jellyfin Version 10.7.X backgrounds are disabled by defualt but you can enable them individually on you devices/client by going to: 
+SETTINGS --> DISPLAY --> ENABLE BACKDROPS/BACKGROUND.
+</div>
 
 <div class="conribute" style="text-align: center;">
 <h2> Wanna Contribute? </h2>

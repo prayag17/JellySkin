@@ -677,6 +677,7 @@ div#itemBackdrop {
 .layout-mobile #itemDetailPage {
     position: fixed;
     -webkit-mask: none;
+    mask: none;
     margin-top: 4em !important;
     height: calc(100vh - 4em);
 }
@@ -691,6 +692,7 @@ div#itemBackdrop {
     top: 0;
     left: 0;
     -webkit-mask: linear-gradient(to bottom, black 4EM, transparent calc(15px + 4em) calc(100% - 15px), BLACK);
+    mask: linear-gradient(to bottom, black 4EM, transparent calc(15px + 4em) calc(100% - 15px), BLACK);
     pointer-events: none;
 }
 
@@ -1440,6 +1442,7 @@ html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
     background-blend-mode: overlay;
     margin-top: 0 !important;
     -webkit-mask: none;
+    mask: none;
 }
 
 #loginPage .squareCard {

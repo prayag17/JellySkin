@@ -2,3 +2,7 @@
     mask: none !important;
     -webkit-mask: none !important;
 }
+
+.layout-mobile #itemDetailPage::after {
+    display: none !important;
+}
