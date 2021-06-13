@@ -387,8 +387,16 @@ fieldset {
     transition: .15s;
 }
 
-html:not(.layout-mobile)>body>.mainAnimatedPages>#itemDetailPage>.detailPageWrapperContainer :not(.detailImageContainer)>.card:not(.overflowSquareCard):hover .cardImageContainer::before {
+.card:not(.overflowSquareCard):hover .cardImageContainer::before {
     transform: scale(1.2);
+}
+
+.layout-mobile .card:not(.overflowSquareCard):hover .cardImageContainer::before {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
 .progressring-bg {
