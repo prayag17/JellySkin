@@ -52,8 +52,9 @@ html {
     background: rgb(0 60 80 / 10%);
 }
 
+.withTabs .content-primary,
 .content-primary {
-    padding-top: 0;
+    padding-top: 0 !important;
 }
 
 .layout-mobile .adminDrawerLogo {
@@ -1168,14 +1169,6 @@ h2 {
     100% {
         background-position: 0 0;
     }
-}
-
-#nowPlayingPage {
-    background: linear-gradient(140deg, #3E2247 10%, #003C50 90%);
-    background-size: 550%;
-    -webkit-animation: gradient 10s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    animation: gradient 10s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    overflow-y: scroll;
 }
 
 .nowPlayingPageImage {
