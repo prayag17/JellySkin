@@ -1147,30 +1147,6 @@ h2 {
 
 /*Player theme*/
 
-@-webkit-keyframes gradient {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-
 .nowPlayingPageImage {
     box-shadow: none !important;
     border: none;
