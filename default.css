@@ -57,11 +57,6 @@ html {
     padding-top: 0 !important;
 }
 
-.layout-mobile .adminDrawerLogo {
-    border-bottom: 1px solid rgb(224 224 224 / 30%);
-    border-radius: 0 !important;
-}
-
 .layout-tv body {
     overflow-y: scroll !important;
 }
@@ -870,7 +865,7 @@ h2 {
 
 /*Theme some dialogues*/
 
-.mainDrawer.drawer-open {
+.main.drawer-open {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 0 1000vh rgb(0 0 0 / 45%), 0 0 20px 0px black;
 }
@@ -885,18 +880,31 @@ h2 {
     backdrop-filter: blur(60px);
 }
 
+.layout-mobile .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
+    overflow: hidden;
+}
+
+.layout-mobile .adminDrawerLogo {
+    border-bottom: 0;
+    border-radius: 0 !important;
+    padding: 1.5em 1em 1.2em;
+    margin: 0;
+}
+
 .layout-mobile .drawerContent {
     padding-bottom: 4em;
     overflow: scroll;
     height: 100%;
+    -webkit-mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
 }
 
 .layout-mobile .drawer-open .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
-    overflow-y: scroll;
-}
-
-.layout-mobile .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 
