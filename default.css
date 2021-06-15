@@ -878,6 +878,10 @@ h2 {
     -moz-backdrop-filter: blur(60px);
     -o-backdrop-filter: blur(60px);
     backdrop-filter: blur(60px);
+    -webkit-transition: all .2s !important;
+    -moz-transition: all .2s !important;
+    -ms-transition: all .2s !important;
+    -o-transition: all .2s !important;
 }
 
 .layout-mobile .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
