@@ -1,7 +1,7 @@
 /*Fonts */
 
-@import url("https://prayag17.github.io/Jellyfin-Icons/Font%20Awesome/light.css");
-@import url('./src/Raleway.css');
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Font%20Awesome/light.css");
+@import url("./src/Raleway.css");
 @import url("./src/Montserrat.css");
 html,
 body,
@@ -9,47 +9,46 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Montserrat', 'Raleway', sans-serif;
+  font-family: "Montserrat", "Raleway", sans-serif;
 }
 
 ::-moz-selection {
-    background: #aa5cc3;
-    text-shadow: none;
+  background: #aa5cc3;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #aa5cc3;
-    text-shadow: none;
+  background: #aa5cc3;
+  text-shadow: none;
 }
-
 
 /*Mini My media*/
 
 #indexPage .raised.emby-button:hover {
-    background: rgb(0, 0, 0, .75) !important;
-    box-shadow: 0px 5px 9px 0px black;
+  background: rgb(0, 0, 0, 0.75) !important;
+  box-shadow: 0px 5px 9px 0px black;
 }
 
 .section0 .itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX {
-    flex-flow: wrap;
-    align-content: flex-start;
-    flex: 1 1 80px !important;
+  flex-flow: wrap;
+  align-content: flex-start;
+  flex: 1 1 80px !important;
 }
 
 .section0 .emby-scrollbuttons {
-    display: none;
+  display: none;
 }
 
 #indexPage .raised.emby-button {
-    background: rgb(0, 0, 0, .25) !important;
-    box-shadow: 0px 0px 9px 0px black;
-    transition: background .15s ease-out, box-shadow .15s ease-out;
-    border-radius: var(--rounding);
+  background: rgb(0, 0, 0, 0.25) !important;
+  box-shadow: 0px 0px 9px 0px black;
+  transition: background 0.15s ease-out, box-shadow 0.15s ease-out;
+  border-radius: var(--rounding);
 }
 
 .raised {
-    border-radius: 50vh;
-    overflow: hidden;
+  border-radius: 50vh;
+  overflow: hidden;
 }
 
 .backgroundContainer,
@@ -59,94 +58,87 @@ h4 {
 .mainDrawer,
 .drawer-open,
 html {
-    background: rgb(0 60 80 / 10%);
+  background: rgb(0 60 80 / 10%);
 }
 
 .withTabs .content-primary,
 .content-primary {
-    padding-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .layout-tv body {
-    overflow-y: scroll !important;
+  overflow-y: scroll !important;
 }
 
-.layout-tv div[data-role=page] {
-    margin: 0;
-    overflow: visible;
+.layout-tv div[data-role="page"] {
+  margin: 0;
+  overflow: visible;
 }
-
 
 /*Subtitle Fonts thanks the u/Edgementality-https://bit.ly/33slrSa*/
-
 
 /*Firefox*/
 
 .videoSubtitles {
-    font-family: 'Raleway', sans-serif !important;
-    font-weight: 700 !important;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
 }
-
 
 /*Chrome, Edge Chromium & Saffari*/
 
 video::-webkit-media-text-track-display {
-    font-family: "Raleway", sans-serif !important;
-    font-weight: 700 !important;
-    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0em 0em 0.2em rgba(0, 0, 0, 1) !important;
 }
-
 
 /*backup for subtitles*/
 
 video::-webkit-media-text-track-container {
-    font-family: "Raleway", sans-serif !important;
-    font-weight: 700 !important;
-    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0em 0em 0.2em rgba(0, 0, 0, 1) !important;
 }
 
 video:cue {
-    font-family: "Raleway" !important;
-    font-weight: 700 !important;
-    text-shadow: 0em 0em .2em rgba(0, 0, 0, 1) !important;
+  font-family: "Raleway" !important;
+  font-weight: 700 !important;
+  text-shadow: 0em 0em 0.2em rgba(0, 0, 0, 1) !important;
 }
-
 
 /*Setting border Radius*/
 
 :root {
-    --rounding: 10px;
-    --card-rounding: 10px 10px 0px 0px;
-    --accent: linear-gradient(140deg, #aa5cc3, #00a4dc);
-    --accent-selected: linear-gradient(140deg, #00a4dc, #aa5cc3);
-    --accent-text: linear-gradient(#00a4dc 0%, #aa5cc3 60%);
-    --accent-icon: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
+  --rounding: 10px;
+  --card-rounding: 10px 10px 0px 0px;
+  --accent: linear-gradient(140deg, #aa5cc3, #00a4dc);
+  --accent-selected: linear-gradient(140deg, #00a4dc, #aa5cc3);
+  --accent-text: linear-gradient(#00a4dc 0%, #aa5cc3 60%);
+  --accent-icon: linear-gradient(140deg, #aa5cc3 20%, #00a4dc);
 }
-
 
 /*Image streching fix*/
 
 img {
-    -o-object-fit: cover;
-    object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
-
 
 /*Rounded corners on pretty much everything-Source Monochromic*/
 
 .formDialogHeader {
-    border-top-left-radius: var(--rounding);
-    border-top-right-radius: var(--rounding);
+  border-top-left-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
 }
 
 .formDialogFooter {
-    border-bottom-left-radius: var(--rounding);
-    border-bottom-right-radius: var(--rounding);
+  border-bottom-left-radius: var(--rounding);
+  border-bottom-right-radius: var(--rounding);
 }
 
 .cardOverlayContainer {
-    border-radius: var(---card-rounding) !important;
+  border-radius: var(---card-rounding) !important;
 }
 
 .nowPlayingPageImage,
@@ -168,44 +160,44 @@ img {
 .chapterThumbContainer,
 .cardOverlayButtonIcon,
 .subtitleappearance-preview.flex.align-items-center.justify-content-center {
-    border-radius: var(--rounding) !important;
+  border-radius: var(--rounding) !important;
 }
 
 .osdPoster img {
-    border-radius: var(--rounding);
-    border: none;
+  border-radius: var(--rounding);
+  border: none;
 }
 
 .mdl-slider::-moz-range-thumb {
-    border-radius: var(--rounding);
+  border-radius: var(--rounding);
 }
 
 .mdl-slider::-ms-thumb {
-    border-radius: var(--rounding);
+  border-radius: var(--rounding);
 }
 
 .mdl-slider::-webkit-slider-thumb {
-    border-radius: var(--rounding);
+  border-radius: var(--rounding);
 }
 
 div[data-role="controlgroup"] a[data-role="button"]:first-child {
-    border-bottom-left-radius: var(--rounding);
-    border-top-left-radius: var(--rounding);
+  border-bottom-left-radius: var(--rounding);
+  border-top-left-radius: var(--rounding);
 }
 
 div[data-role="controlgroup"] a[data-role="button"]:last-child {
-    border-bottom-right-radius: var(--rounding);
-    border-top-right-radius: var(--rounding);
+  border-bottom-right-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
 }
 
 .detailImageContainer .cardBox {
-    overflow: hidden;
-    border-right: var(--rounding);
+  overflow: hidden;
+  border-right: var(--rounding);
 }
 
 .emby-select,
 .emby-select-withcolor {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .cardContent-button,
@@ -220,7 +212,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .cardOverlayButton,
 .dialog,
 a.listItem-border {
-    border-radius: var(--rounding);
+  border-radius: var(--rounding);
 }
 
 .cardScalable,
@@ -230,1552 +222,1586 @@ a.listItem-border {
 .cardImageContainer,
 .blurhash-canvas,
 .cardPadder {
-    border-radius: var(--card-rounding);
+  border-radius: var(--card-rounding);
 }
 
 .checkboxOutline {
-    border-radius: 5px !important;
+  border-radius: 5px !important;
 }
 
 .paperList {
-    border-radius: 20px !important;
-    overflow: hidden;
-    border: .01em solid #191819;
+  border-radius: 20px !important;
+  overflow: hidden;
+  border: 0.01em solid #191819;
 }
-
 
 /*fixing Poster Margin*/
 
-.itemsContainer>.card>.cardBox {
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 16px;
+.itemsContainer > .card > .cardBox {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
 }
 
 .cardBox-bottompadded {
-    margin-bottom: 16px !important;
+  margin-bottom: 16px !important;
 }
 
 .collectionItemsContainer .card.portraitCard {
-    width: 13rem;
+  width: 13rem;
 }
 
 .sectionTitleContainer.flex {
-    box-shadow: 0 0 black !important;
+  box-shadow: 0 0 black !important;
 }
 
 .section2 a.raised.homeLibraryButton.emby-button {
-    background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 fieldset {
-    border: 1px dotted rgb(87 87 87);
-    border-radius: var(--rounding);
+  border: 1px dotted rgb(87 87 87);
+  border-radius: var(--rounding);
 }
-
 
 /*Hover items*/
 
 .emby-input,
 .emby-textarea {
-    color: inherit;
-    border: .07em solid #7b7b7b;
-    border-radius: 5px;
-    box-shadow: 0 0 8px 0px black !important;
-    background: rgba(0, 0, 0, 0.2) !important;
-    backdrop-filter: blur(60px);
-    -webkit-backdrop-filter: blur(60px);
-    text-shadow: 0 0 5px black;
+  color: inherit;
+  border: 0.07em solid #7b7b7b;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0px black !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+  text-shadow: 0 0 5px black;
 }
 
 .emby-select-withcolor {
-    border: .07em solid #7b7b7b;
+  border: 0.07em solid #7b7b7b;
 }
 
 .cardIndicators {
-    right: 0;
-    top: 0;
+  right: 0;
+  top: 0;
 }
 
 .indicator {
-    background: var(--accent) !important;
-    border-radius: 0px 0px 0px 5px;
-    padding: .1em;
-    box-shadow: 0 0 10px 1px black;
-    color: white;
+  background: var(--accent) !important;
+  border-radius: 0px 0px 0px 5px;
+  padding: 0.1em;
+  box-shadow: 0 0 10px 1px black;
+  color: white;
 }
 
 .indicators {
-    right: 0;
-    top: 0;
+  right: 0;
+  top: 0;
 }
 
 .actionSheetMenuItem:hover {
-    background: linear-gradient(140deg, #aa5cc385, #00a4dc75) !important;
+  background: linear-gradient(140deg, #aa5cc385, #00a4dc75) !important;
 }
 
 .cardBox {
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    box-shadow: 0px 0px 9px 0px rgb(0 0 0);
-    transition: background .15s ease-out, box-shadow .15s ease-out;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 0px rgb(0 0 0);
+  transition: background 0.15s ease-out, box-shadow 0.15s ease-out;
 }
 
 .card:hover .cardBox,
 .card:focus .cardBox {
-    background: rgba(0, 0, 0, 0.75);
-    box-shadow: 0 5px 9px black;
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 9px black;
 }
 
 .cardScalable {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .layout-mobile .card:hover .cardBox {
-    background: rgba(0, 0, 0, 0.25) !important;
+  background: rgba(0, 0, 0, 0.25) !important;
 }
 
 .layout-mobile .cardImageContainer {
-    background-size: cover;
+  background-size: cover;
 }
 
 .layout-mobile .card:hover .cardImageContainer {
-    background-size: cover;
+  background-size: cover;
 }
 
 .overflowSquareCard .cardImageContainer {
-    background-size: 180%;
+  background-size: 180%;
 }
 
 .overflowSquareCard:hover .cardImageContainer {
-    background-size: 200%;
+  background-size: 200%;
 }
 
 .overflowSquareCard .cardImageContainer::before {
-    content: "";
-    background: inherit;
-    width: 130%;
-    height: 130%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-size: cover;
-    -webkit-filter: brightness(40%) blur(10px);
-    filter: brightness(40%) blur(10px);
-    z-index: 0;
-    transform: translate(-50%, -50%);
+  content: "";
+  background: inherit;
+  width: 130%;
+  height: 130%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-size: cover;
+  -webkit-filter: brightness(40%) blur(10px);
+  filter: brightness(40%) blur(10px);
+  z-index: 0;
+  transform: translate(-50%, -50%);
 }
 
 .overflowSquareCard .cardImageContainer::after {
-    content: "";
-    background: inherit;
-    z-index: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
-    transition: all .15s;
+  content: "";
+  background: inherit;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  transition: all 0.15s;
 }
 
 .overflowSquareCard:hover .cardImageContainer::after {
-    background-size: 120%;
+  background-size: 120%;
 }
 
-:not(.detailImageContainer)>.card:not(.overflowSquareCard) .cardImageContainer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    background-size: cover;
-    transition: .15s;
+:not(.detailImageContainer)
+  > .card:not(.overflowSquareCard)
+  .cardImageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  background-size: cover;
+  transition: 0.15s;
 }
 
 .card:not(.overflowSquareCard):hover .cardImageContainer::before {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.layout-mobile .card:not(.overflowSquareCard):hover .cardImageContainer::before {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
+.layout-mobile
+  .card:not(.overflowSquareCard):hover
+  .cardImageContainer::before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 .progressring-bg {
-    border: .25em solid transparent;
-    background: transparent;
+  border: 0.25em solid transparent;
+  background: transparent;
 }
 
 .itemName.parentNameLast {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 #itemDetailPage .button-flat:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .button-flat {
-    border-radius: 5px !important;
+  border-radius: 5px !important;
 }
 
 .detailButton-content {
-    -webkit-filter: drop-shadow(0px 3px 3px black);
-    filter: drop-shadow(0px 3px 3px black);
+  -webkit-filter: drop-shadow(0px 3px 3px black);
+  filter: drop-shadow(0px 3px 3px black);
 }
 
 .navMenuOption::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: var(--accent);
-    z-index: -1;
-    left: 0;
-    opacity: 0%;
-    transition: opacity .2s;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--accent);
+  z-index: -1;
+  left: 0;
+  opacity: 0%;
+  transition: opacity 0.2s;
 }
 
 .navMenuOption:hover::before {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .navMenuOption .navMenuOptionIcon {
-    transition: margin-right .2s;
+  transition: margin-right 0.2s;
 }
 
 .navMenuOption:hover .navMenuOptionIcon {
-    margin-right: 1.5em;
+  margin-right: 1.5em;
 }
 
 .listItem-border.emby-button:hover {
-    background: black;
+  background: black;
 }
 
 .listItem-border.emby-button:hover .listItemIcon {
-    margin-right: .65rem;
+  margin-right: 0.65rem;
 }
 
 .listItem-border.emby-button .listItemIcon {
-    transition: margin-right .2s;
+  transition: margin-right 0.2s;
 }
 
 .listItemIcon.material-icons {
-    background: var(--accent-icon);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  background: var(--accent-icon);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .defaultCardBackground {
-    background: transparent;
+  background: transparent;
 }
 
 .cardImageIcon {
-    background: var(--accent);
-    color: transparent;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
+  background: var(--accent);
+  color: transparent;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
 }
 
 .navMenuOption-selected {
-    background: var(--accent-selected) !important;
+  background: var(--accent-selected) !important;
 }
 
 span.material-icons.detailButton-icon.check.playstatebutton-icon-played,
 span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
-    background: var(--accent-text);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  background: var(--accent-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .raised::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    background: var(--accent);
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: var(--accent);
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .raised:hover::before {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .dashboardSection .defaultCardBackground {
-    color: white;
+  color: white;
 }
 
 #indexPage .raised::before {
-    background: transparent;
+  background: transparent;
 }
-
 
 /*fancy link*/
 
 .button-link::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #00a4dc;
-    position: absolute;
-    bottom: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .2s ease;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #00a4dc;
+  position: absolute;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease;
 }
 
 .button-link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .button-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 #itemDetailPage .button-link::after {
-    background: white;
-    height: 2px;
+  background: white;
+  height: 2px;
 }
-
 
 /*fancy link end*/
 
 .listItem.listItem-border:hover {
-    border-color: rgba(0, 0, 0, 0) !important;
-    background: #3f3f3f;
+  border-color: rgba(0, 0, 0, 0) !important;
+  background: #3f3f3f;
 }
 
 .listItem-border {
-    transition: border-color .2s, background .2s;
+  transition: border-color 0.2s, background 0.2s;
 }
 
 div#divRunningTasks:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 div#divRunningTasks {
-    transition: transform .2s, background .2s;
+  transition: transform 0.2s, background 0.2s;
 }
 
 .navMenuOption-selected {
-    background: var(--accent-selected) !important;
+  background: var(--accent-selected) !important;
 }
 
 .detailPageContent {
-    text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px black;
 }
 
 select {
-    box-shadow: 0 0 6px 0px black !important;
-    background: rgba(0, 0, 0, 0.2) !important;
-    backdrop-filter: blur(50px) !important;
-    -webkit-backdrop-filter: blur(50px);
-    text-shadow: 0 0 5px black !important;
+  box-shadow: 0 0 6px 0px black !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(50px) !important;
+  -webkit-backdrop-filter: blur(50px);
+  text-shadow: 0 0 5px black !important;
 }
-
 
 /*Header*/
 
 .skinHeader-withBackground {
-    text-shadow: 0 0 5px black;
-    background-color: transparent !important;
+  text-shadow: 0 0 5px black;
+  background-color: transparent !important;
 }
 
 .emby-button-foreground::after {
-    content: "";
-    height: 2px;
-    width: 0%;
-    background: rgb(0, 164, 220);
-    position: absolute;
-    bottom: -35%;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: width .15s ease-in-out;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: rgb(0, 164, 220);
+  position: absolute;
+  bottom: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.15s ease-in-out;
 }
 
 .emby-tab-button:hover .emby-button-foreground::after {
-    width: 120%;
+  width: 120%;
 }
 
 body.force-scroll {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .skinHeader {
-    position: static;
-    width: 100%;
-    align-self: flex-start;
+  position: static;
+  width: 100%;
+  align-self: flex-start;
 }
 
 .mainAnimatedPages {
-    height: 100vh;
-    position: relative !important;
-    overflow: hidden;
+  height: 100vh;
+  position: relative !important;
+  overflow: hidden;
 }
 
 .libraryPage:not(.noSecondaryNavPage) {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 div#itemDetailPage {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 @media (min-width: 40em) {
-    .dashboardDocument .skinBody {
-        left: 20em;
-        width: calc(100vw - 20em);
-    }
+  .dashboardDocument .skinBody {
+    left: 20em;
+    width: calc(100vw - 20em);
+  }
 }
 
 div#loginPage {
-    margin-top: 0 !important;
-    position: fixed;
+  margin-top: 0 !important;
+  position: fixed;
 }
 
-div[data-role=page] {
-    margin: 0 !important;
-    padding: 0 !important;
-    position: static;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    -webkit-mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
-    mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
+div[data-role="page"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: static;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-mask: linear-gradient(
+    to bottom,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
+  mask: linear-gradient(
+    to bottom,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
 }
 
 .layout-tv .mainAnimatedPages {
-    overflow: visible;
-    mask: none;
-    -webkit-mask: none;
+  overflow: visible;
+  mask: none;
+  -webkit-mask: none;
 }
 
 div#videoOsdPage {
-    overflow: hidden !important;
-    margin-top: 0 !important;
-    -webkit-mask: none !important;
-    mask: none !important;
+  overflow: hidden !important;
+  margin-top: 0 !important;
+  -webkit-mask: none !important;
+  mask: none !important;
 }
 
-div[data-role=page]:not(.withTabs) {
-    margin-top: 0 !important;
+div[data-role="page"]:not(.withTabs) {
+  margin-top: 0 !important;
 }
 
 div#itemBackdrop {
-    display: none;
+  display: none;
 }
 
 .layout-desktop .detailRibbon {
-    margin-top: 7.2em;
+  margin-top: 7.2em;
 }
 
 .layout-mobile #itemDetailPage {
-    position: fixed;
-    -webkit-mask: none;
-    mask: none;
-    margin-top: 4em !important;
-    height: calc(100vh - 4em);
+  position: fixed;
+  -webkit-mask: none;
+  mask: none;
+  margin-top: 4em !important;
+  height: calc(100vh - 4em);
 }
 
 .layout-mobile .detailPageWrapperContainer {
-    height: 100%;
-    overflow: scroll;
+  height: 100%;
+  overflow: scroll;
 }
 
 .layout-mobile .detailPageWrapperContainer::after {
-    content: "";
-    position: fixed;
-    width: 90%;
-    background: linear-gradient(0deg, #ddd, transparent 15px calc(100% - 15px), #ddd);
-    left: 50%;
-    transform: translatex(-50%);
-    z-index: 200;
-    height: calc(100% - 4em - 34px);
-    bottom: 20px;
-    border-radius: var(--rounding);
-    -webkit-transform: translatex(-50%);
-    -moz-transform: translatex(-50%);
-    -ms-transform: translatex(-50%);
-    -o-transform: translatex(-50%);
-    pointer-events: none;
+  content: "";
+  position: fixed;
+  width: 90%;
+  background: linear-gradient(
+    0deg,
+    #ddd,
+    transparent 15px calc(100% - 15px),
+    #ddd
+  );
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 200;
+  height: calc(100% - 4em - 34px);
+  bottom: 20px;
+  border-radius: var(--rounding);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+  pointer-events: none;
 }
-
 
 /*Subtitle preview*/
 
 .subtitleappearance-preview {
-    background: var(--accent) !important;
+  background: var(--accent) !important;
 }
-
 
 /*Video Player*/
 
 div#videoOsdPage {
-    overflow: hidden !important;
-    margin-top: 0 !important;
+  overflow: hidden !important;
+  margin-top: 0 !important;
 }
 
 .layout-desktop .osdControls {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 .sliderBubble {
-    border-radius: var(--rounding);
-    background: rgba(0, 0, 0, 0.4);
-    font-weight: 400 !important;
+  border-radius: var(--rounding);
+  background: rgba(0, 0, 0, 0.4);
+  font-weight: 400 !important;
 }
 
 h1.sliderBubbleText {
-    background: var(--accent);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-weight: 700;
+  background: var(--accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
 }
-
 
 /*cardbox border-radius change*/
 
-#indexPage button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
+#indexPage
+  button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
 .emby-scroller button.cardImageContainer.coveredImage.cardContent,
 .childrenItemsContainer button.cardImageContainer.coveredImage.cardContent,
-.nextUpItems button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
+.nextUpItems
+  button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
 .vertical-wrap button.cardImageContainer.coveredImage.cardContent,
 .emby-scroller button.cardImageContainer {
-    border-radius: 10px 10px 0px 0px !important;
+  border-radius: 10px 10px 0px 0px !important;
 }
 
 .justify-content-center.flex-wrap-wrap.padded-top.padded-left.padded-right.padded-bottom {
-    -webkit-backdrop-filter: none !important;
-    backdrop-filter: none !important;
-    box-shadow: 0 0 black;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  box-shadow: 0 0 black;
 }
 
 .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
 button.button-flat.btnResume.detailButton.emby-button,
 button.emby-tab-button.emby-button,
 h2 {
-    text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px black;
 }
 
 .tmla-mask {
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .dialogBackdropOpened {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 .dialogBackdrop {
-    background-color: #0000;
+  background-color: #0000;
 }
 
 .raised {
-    background: #00a4dc;
+  background: #00a4dc;
 }
 
 .cardBox:not(.visualCardBox) .cardPadder,
 .cardContent-shadow {
-    background: transparent;
-    box-shadow: 0 0 rgba(0, 0, 0, 0) !important;
+  background: transparent;
+  box-shadow: 0 0 rgba(0, 0, 0, 0) !important;
 }
 
 .card-hoverable:hover .cardOverlayContainer {
-    border-radius: 10px 10px 0px 0px !important;
-    -webkit-border-radius: 10px 10px 0px 0px !important;
-    -moz-border-radius: 10px 10px 0px 0px !important;
-    -ms-border-radius: 10px 10px 0px 0px !important;
-    -o-border-radius: 10px 10px 0px 0px !important;
+  border-radius: 10px 10px 0px 0px !important;
+  -webkit-border-radius: 10px 10px 0px 0px !important;
+  -moz-border-radius: 10px 10px 0px 0px !important;
+  -ms-border-radius: 10px 10px 0px 0px !important;
+  -o-border-radius: 10px 10px 0px 0px !important;
 }
 
 .layout-mobile .overflowPortraitCard,
 .layout-mobile .overflowSquareCard {
-    width: 200px !important;
+  width: 200px !important;
 }
 
 .layout-mobile .portraitCard {
-    width: 50%;
+  width: 50%;
 }
-
 
 /* Adjust both "size-adjust" and "size" to modify size */
 
 .pageTitle {
-    margin-top: auto;
-    margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .emby-tab-button {
-    padding: 1.75em 1.7em;
+  padding: 1.75em 1.7em;
 }
-
 
 /*Blur backdrops, feel free to edit the intensity of the filter values*/
 
 .backdropImage {
-    -webkit-filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
-    filter: blur(10px) saturate(110%) contrast(110%)brightness(95%);
+  -webkit-filter: blur(10px) saturate(110%) contrast(110%) brightness(95%);
+  filter: blur(10px) saturate(110%) contrast(110%) brightness(95%);
 }
 
 .backgroundContainer.withBackdrop {
-    background: rgba(24, 24, 24, .5);
-    box-shadow: inset 0 0 100px 100px rgb(4 4 4 / 85%);
+  background: rgba(24, 24, 24, 0.5);
+  box-shadow: inset 0 0 100px 100px rgb(4 4 4 / 85%);
 }
 
 .layout-desktop .itemBackdrop:after,
 .layout-tv .itemBackdrop:after {
-    background: transparent;
+  background: transparent;
 }
 
 .dialog {
-    background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(60px) !important;
-    -webkit-backdrop-filter: blur(60px) !important;
-    -moz-backdrop-filterss: blur (60px) !important;
-    -o-backdrop-filter: blur(60px) !important;
-    box-shadow: 0 0 0 500vw rgb(0, 0, 0, .5), 0 0 20px 4px black;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(60px) !important;
+  -webkit-backdrop-filter: blur(60px) !important;
+  -moz-backdrop-filterss: blur (60px) !important;
+  -o-backdrop-filter: blur(60px) !important;
+  box-shadow: 0 0 0 500vw rgb(0, 0, 0, 0.5), 0 0 20px 4px black;
 }
-
 
 /* Top menu transparency */
 
 .upNextDialog {
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 8px 5px black;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 8px 5px black;
 }
 
 .upNextDialog-poster-img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .cardOverlayContainer {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 /*Theme some dialogues*/
 
 .main.drawer-open {
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 0 1000vh rgb(0 0 0 / 45%), 0 0 20px 0px black;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 1000vh rgb(0 0 0 / 45%), 0 0 20px 0px black;
 }
 
 .mainDrawer {
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: none;
-    transition: all .2s !important;
-    -webkit-backdrop-filter: blur(60px);
-    -moz-backdrop-filter: blur(60px);
-    -o-backdrop-filter: blur(60px);
-    backdrop-filter: blur(60px);
-    -webkit-transition: all .2s !important;
-    -moz-transition: all .2s !important;
-    -ms-transition: all .2s !important;
-    -o-transition: all .2s !important;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  transition: all 0.2s !important;
+  -webkit-backdrop-filter: blur(60px);
+  -moz-backdrop-filter: blur(60px);
+  -o-backdrop-filter: blur(60px);
+  backdrop-filter: blur(60px);
+  -webkit-transition: all 0.2s !important;
+  -moz-transition: all 0.2s !important;
+  -ms-transition: all 0.2s !important;
+  -o-transition: all 0.2s !important;
 }
 
-.layout-mobile .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
-    overflow: hidden;
+.layout-mobile
+  .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
+  overflow: hidden;
 }
 
 .layout-mobile .adminDrawerLogo {
-    border-bottom: 0;
-    border-radius: 0 !important;
-    padding: 1.5em 1em 1.2em;
-    margin: 0;
+  border-bottom: 0;
+  border-radius: 0 !important;
+  padding: 1.5em 1em 1.2em;
+  margin: 0;
 }
 
 .layout-mobile .drawerContent {
-    padding-bottom: 4em;
-    overflow: scroll;
-    height: 100%;
-    -webkit-mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
-    mask: linear-gradient(to bottom, transparent, black 15px calc(100% - 15px), transparent);
+  padding-bottom: 4em;
+  overflow: scroll;
+  height: 100%;
+  -webkit-mask: linear-gradient(
+    to bottom,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
+  mask: linear-gradient(
+    to bottom,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
 }
 
-.layout-mobile .drawer-open .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    margin: 0 !important;
-    padding: 0 !important;
+.layout-mobile
+  .drawer-open
+  .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-
 
 /*Fixing position of tv or movie poster*/
 
 .detailImageContainer .card {
-    position: fixed;
-    top: 50% !important;
+  position: fixed;
+  top: 50% !important;
 }
-
 
 /*Tweak series/movie/album title screen*/
 
 .detailPagePrimaryContainer {
-    background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 
 .mediaInfoOfficialRating {
-    border-radius: 100vh;
+  border-radius: 100vh;
 }
 
 .detailImageContainer .cardScalable .cardImageContainer {
-    background-size: cover !important;
+  background-size: cover !important;
 }
 
-.card[data-type=Actor] .cardBox {
-    background: none;
-    position: relative;
+.card[data-type="Actor"] .cardBox {
+  background: none;
+  position: relative;
 }
 
-.card[data-type=Actor] .cardScalable {
-    height: 0;
-    overflow: hidden;
-    padding-top: 100%;
-    border-radius: var(--rounding);
+.card[data-type="Actor"] .cardScalable {
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+  border-radius: var(--rounding);
 }
 
-.card[data-type=Actor] .cardText {
-    position: absolute;
-    background: transparent !important;
+.card[data-type="Actor"] .cardText {
+  position: absolute;
+  background: transparent !important;
 }
 
-.card[data-type=Actor] .cardImageContainer::after {
-    content: "";
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    padding-top: 100%;
+.card[data-type="Actor"] .cardImageContainer::after {
+  content: "";
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.75), transparent 70%);
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-top: 100%;
 }
 
-.card[data-type=Actor] .cardText-secondary {
-    bottom: 0%;
-    width: -webkit-fill-available;
-    border-radius: 0px 0px 10px 10px;
-    height: 22px;
+.card[data-type="Actor"] .cardText-secondary {
+  bottom: 0%;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  height: 22px;
 }
 
-.card[data-type=Actor] .cardText-first {
-    bottom: 23.5px;
-    width: -webkit-fill-available;
-    height: 22px;
+.card[data-type="Actor"] .cardText-first {
+  bottom: 23.5px;
+  width: -webkit-fill-available;
+  height: 22px;
 }
 
-.layout-mobile .card[data-type=Actor] .cardText-first {
-    color: white !important;
+.layout-mobile .card[data-type="Actor"] .cardText-first {
+  color: white !important;
 }
 
-.card[data-type=Actor] .cardScalable {
-    overflow: hidden;
-    border-radius: var(--rounding);
-    height: 3rem;
+.card[data-type="Actor"] .cardScalable {
+  overflow: hidden;
+  border-radius: var(--rounding);
+  height: 3rem;
 }
 
-.card[data-type=Actor] .cardOverlayButton-br {
-    position: absolute;
-    bottom: 23%;
-    right: 0;
+.card[data-type="Actor"] .cardOverlayButton-br {
+  position: absolute;
+  bottom: 23%;
+  right: 0;
 }
 
-.card[data-type=Actor] .cardPadder {
-    background: none;
+.card[data-type="Actor"] .cardPadder {
+  background: none;
 }
 
-.card[data-type=Actor] .cardImageIcon {
-    bottom: 41%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.card[data-type="Actor"] .cardImageIcon {
+  bottom: 41%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .detailLogo {
-    display: none;
+  display: none;
 }
 
 .layout-mobile .tagline {
-    text-align: center;
-    font-weight: 700;
-    background: var(--accent);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    border-radius: 10px;
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
-    margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  background: var(--accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-radius: 10px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin: 0 auto;
 }
 
 #itemDetailPage .emby-select {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .layout-mobile #itemDetailPage .cardBox {
-    box-shadow: 0px 15px 10px -10px #5d5d5d, 0px 0px 13px 0px #a1a1a1;
-    background: rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0px 15px 10px -10px #5d5d5d, 0px 0px 13px 0px #a1a1a1;
+  background: rgba(0, 0, 0, 0.25) !important;
 }
 
 .layout-mobile #itemDetailPage::before {
-    content: "";
-    background: linear-gradient(140deg, #3E2247 10%, #003C50 90%);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    top: 0;
-    left: 0;
+  content: "";
+  background: linear-gradient(140deg, #3e2247 10%, #003c50 90%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
 
 .layout-mobile .mainDetailButtons {
-    width: 100%;
-    font-size: 100%;
+  width: 100%;
+  font-size: 100%;
 }
 
 .layout-mobile .detailButton-content {
-    -webkit-filter: none;
-    filter: none;
+  -webkit-filter: none;
+  filter: none;
 }
 
-@media (min-width: 32em),
-(min-height: 32em) {
-    .itemBackdrop {
-        height: 23vh !important;
-        background-image: none !important;
-    }
+@media (min-width: 32em), (min-height: 32em) {
+  .itemBackdrop {
+    height: 23vh !important;
+    background-image: none !important;
+  }
 }
 
-@media all and (max-width: 32em),
-(max-height: 32em) {
-    .mainDetailButtons {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .itemBackdrop {
-        width: 100vw !important;
-        height: 100vh !important;
-        position: fixed;
-    }
-    .detailPageWrapperContainer {
-        background: #ddd;
-        color: #383838;
-        width: 90%;
-        border-radius: 10px;
-        font-size: 110%;
-        margin: 20px auto;
-    }
-    .primaryImageWrapper>img {
-        display: block;
-        margin: 0 auto;
-        max-width: 80vw;
-        max-height: 50vh;
-        border-radius: var(--rounding);
-        margin-bottom: 0.5rem;
-        box-shadow: 0px 2rem 3rem -1.5rem #111111, 0px 0px 20px 0px #afaeae;
-    }
-    .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
-    button.button-flat.btnResume.detailButton.emby-button,
-    button.emby-tab-button.emby-button,
-    h2 {
-        text-shadow: none !important;
-    }
-    .detailPageContent {
-        text-shadow: none !important;
-    }
-    select {
-        text-shadow: none !important;
-    }
-    .button-flat:hover {
-        transform: none;
-    }
+@media all and (max-width: 32em), (max-height: 32em) {
+  .mainDetailButtons {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .itemBackdrop {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed;
+  }
+  .detailPageWrapperContainer {
+    background: #ddd;
+    color: #383838;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 110%;
+    margin: 20px auto;
+  }
+  .primaryImageWrapper > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80vw;
+    max-height: 50vh;
+    border-radius: var(--rounding);
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 2rem 3rem -1.5rem #111111, 0px 0px 20px 0px #afaeae;
+  }
+  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
+  button.button-flat.btnResume.detailButton.emby-button,
+  button.emby-tab-button.emby-button,
+  h2 {
+    text-shadow: none !important;
+  }
+  .detailPageContent {
+    text-shadow: none !important;
+  }
+  select {
+    text-shadow: none !important;
+  }
+  .button-flat:hover {
+    transform: none;
+  }
 }
 
 .itemProgressBar {
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
 }
 
 .innerCardFooter {
-    height: 6px;
-    background: rgba(255, 255, 255, .6);
-    width: 95%;
-    left: 50%;
-    transform: translate(-50%, -5px);
-    border-radius: var(--rounding);
+  height: 6px;
+  background: rgba(255, 255, 255, 0.6);
+  width: 95%;
+  left: 50%;
+  transform: translate(-50%, -5px);
+  border-radius: var(--rounding);
 }
 
 .itemProgressBarForeground {
-    background: var(--accent) !important;
+  background: var(--accent) !important;
 }
 
 .mainDetailButtons {
-    font-size: 130%;
+  font-size: 130%;
 }
 
 .navMenuOptionIcon {
-    font-size: 1.75rem !important;
-    transition: margin .2s ease-in-out;
+  font-size: 1.75rem !important;
+  transition: margin 0.2s ease-in-out;
 }
 
 .paper-icon-button-light:hover {
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @media all and (min-width: 100em) {
-    .cardOverlayFab-primary {
-        background-color: #00000000;
-    }
-    .cardOverlayButtonIcon {
-        background-color: #00000000 !important;
-    }
-    .cardOverlayContainer {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+  .cardOverlayFab-primary {
+    background-color: #00000000;
+  }
+  .cardOverlayButtonIcon {
+    background-color: #00000000 !important;
+  }
+  .cardOverlayContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 @media all and (max-width: 100em) {
-    .cardOverlayButtonIcon {
-        border-radius: 5px !important;
-    }
-    .layout-mobile .cardOverlayButtonIcon {
-        background-color: rgba(0, 0, 0, 0.5) !important;
-    }
-    .cardOverlayButton {
-        padding: 0.3em;
-    }
+  .cardOverlayButtonIcon {
+    border-radius: 5px !important;
+  }
+  .layout-mobile .cardOverlayButtonIcon {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .cardOverlayButton {
+    padding: 0.3em;
+  }
 }
-
 
 /*Player theme*/
 
 .nowPlayingPageImage {
-    box-shadow: none !important;
-    border: none;
-    overflow: hidden;
+  box-shadow: none !important;
+  border: none;
+  overflow: hidden;
 }
 
 .layout-mobile .remoteControlContent {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem !important;
-    margin: 0 7.3%;
-    border-radius: var(--rounding);
-    overflow: hidden;
-    height: 65%;
-    position: relative;
-    top: 45%;
-    transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem !important;
+  margin: 0 7.3%;
+  border-radius: var(--rounding);
+  overflow: hidden;
+  height: 65%;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
 }
-
 
 /*Size episode preview images in a more compact way*/
 
 .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media all and (max-width: 1001px) {
-    .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-        grid-template-columns: 1fr 1fr;
-    }
+  .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.layout-mobile .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
-    grid-template-columns: 1fr;
+.layout-mobile
+  .childrenItemsContainer.itemsContainer.padded-right.vertical-list {
+  grid-template-columns: 1fr;
 }
 
 #itemDetailPage .listItem-content {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: background .15s ease-in-out;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    flex-flow: column;
-    -webkit-transition: background .15s ease-in-out;
-    -moz-transition: background .15s ease-in-out;
-    -ms-transition: background .15s ease-in-out;
-    -o-transition: background .15s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background 0.15s ease-in-out;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  flex-flow: column;
+  -webkit-transition: background 0.15s ease-in-out;
+  -moz-transition: background 0.15s ease-in-out;
+  -ms-transition: background 0.15s ease-in-out;
+  -o-transition: background 0.15s ease-in-out;
 }
 
 .listItemImage.listItemImage-large {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
 #itemDetailPage .listItem:hover .listItem-content {
-    background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .listItemImageButton-icon {
-    padding: 0;
+  padding: 0;
 }
 
 #itemDetailPage .listItem {
-    position: relative;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    overflow: hidden;
-    margin-bottom: 1.5rem;
-    border-radius: var(--rounding);
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: var(--rounding);
 }
 
 #itemDetailPage .secondary.listItem-overview.listItemBodyText {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
-.listItem[data-mediatype=Audio] {
-    padding: 0 1em;
-    border-radius: 15px !IMPORTANT;
-    -webkit-border-radius: 15px !IMPORTANT;
-    -moz-border-radius: 15px !IMPORTANT;
-    -ms-border-radius: 15px !IMPORTANT;
-    -o-border-radius: 15px !IMPORTANT;
+.listItem[data-mediatype="Audio"] {
+  padding: 0 1em;
+  border-radius: 15px !important;
+  -webkit-border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  -ms-border-radius: 15px !important;
+  -o-border-radius: 15px !important;
 }
 
 .layout-mobile #itemDetailPage .listItemImageButton {
-    font-size: 0 !important;
-    width: 100%;
-    height: 100%;
-    background: rgba(16, 16, 16, .65);
-    z-index: -1;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+  font-size: 0 !important;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 16, 16, 0.65);
+  z-index: -1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .layout-mobile .listItemIndicators {
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .layout-mobile .playedIndicator {
-    width: 100%;
-    height: 100%;
-    font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
 }
 
 .layout-mobile .listItemIndicators .indicatorIcon.check {
-    position: absolute;
-    top: 5%;
-    right: 32%;
+  position: absolute;
+  top: 5%;
+  right: 32%;
 }
 
 .layout-mobile .listItemBodyText {
-    max-width: 10rem;
+  max-width: 10rem;
 }
 
 .layout-mobile .listItem .playedIndicator {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 .layout-mobile .listItemImage {
-    height: 100% !important;
-    width: 100% !important;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    border-radius: 10px !important;
-    z-index: -1;
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 10px !important;
+  z-index: -1;
 }
 
 .layout-mobile .listViewUserDataButtons {
-    position: absolute;
-    right: 0;
-    top: 5%;
+  position: absolute;
+  right: 0;
+  top: 5%;
 }
 
 .layout-mobile .listItemButton {
-    padding: 0 .556em !important;
+  padding: 0 0.556em !important;
 }
 
 .layout-mobile #itemDetailPage .listItem-content {
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-    align-items: flex-start;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  align-items: flex-start;
 }
 
 .layout-mobile #itemDetailPage .listItem-content {
-    background: none !important;
-    position: unset;
-    color: white;
+  background: none !important;
+  position: unset;
+  color: white;
 }
 
 .listItemImageButton {
-    margin: auto;
-    font-size: 1.6em !important;
+  margin: auto;
+  font-size: 1.6em !important;
 }
-
 
 /* My Media Styling */
 
 .section0 button.itemAction.textActionButton {
-    height: 3.5em;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 10px;
+  height: 3.5em;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
 }
 
 .section0 .overflowBackdropCard,
 .section0 .overflowSmallBackdropCard {
-    max-width: 90vw;
+  max-width: 90vw;
 }
 
 .section0 .emby-scroller {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .emby-scroller {
-    -webkit-mask: linear-gradient(to left, transparent, black 15px calc(100% - 15px), transparent);
-    mask: linear-gradient(to left, transparent, black 15px calc(100% - 15px), transparent);
+  -webkit-mask: linear-gradient(
+    to left,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
+  mask: linear-gradient(
+    to left,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
 }
 
 .mainDrawer-scrollContainer {
-    -webkit-mask: linear-gradient(to top, transparent, black 15px calc(100% - 15px), transparent);
-    mask: linear-gradient(to top, transparent, black 15px calc(100% - 15px), transparent);
+  -webkit-mask: linear-gradient(
+    to top,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
+  mask: linear-gradient(
+    to top,
+    transparent,
+    black 15px calc(100% - 15px),
+    transparent
+  );
 }
 
 .raised.homeLibraryButton:hover {
-    transition: -webkit-filter 1s;
-    transition: filter 1s;
-    transition: filter 1s, -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
 }
 
 .raised.homeLibraryButton {
-    transition: -webkit-filter 1s;
-    transition: filter 1s;
-    transition: filter 1s, -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
 }
 
 .homeLibraryButton {
-    min-width: 12em;
-    margin: 0.4em;
+  min-width: 12em;
+  margin: 0.4em;
 }
-
 
 /*Narrow the login form*/
 
 #loginPage .readOnlyContent,
 #loginPage form {
-    max-width: 22em;
+  max-width: 22em;
 }
 
 @-webkit-keyframes act-labl {
-    0% {
-        top: 50%;
-        left: 5%;
-    }
-    100% {
-        top: -50%;
-        left: 0;
-    }
+  0% {
+    top: 50%;
+    left: 5%;
+  }
+  100% {
+    top: -50%;
+    left: 0;
+  }
 }
 
 @keyframes act-labl {
-    0% {
-        top: 50%;
-        left: 5%;
-    }
-    100% {
-        top: -50%;
-        left: 0;
-    }
+  0% {
+    top: 50%;
+    left: 5%;
+  }
+  100% {
+    top: -50%;
+    left: 0;
+  }
 }
 
 html:not(.layout-mobile) #loginPage .inputContainer {
-    position: relative;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin-bottom: 2.75em;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 2.75em;
 }
 
 html:not(.layout-mobile) #loginPage .inputLabelUnfocused {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    transition: .2s;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  transition: 0.2s;
 }
 
 html:not(.layout-mobile) #loginPage .inputLabelFocused,
 html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
-    top: -50%;
-    left: 0;
-    -webkit-animation: act-labl .2s;
-    animation: act-labl .2s;
-    transform: translateY(-50%) scale(1.1);
-    position: absolute;
-    z-index: 1;
-    transition: .2s;
-    -webkit-transform: translateY(-50%) scale(1.1);
-    -moz-transform: translateY(-50%) scale(1.1);
-    -ms-transform: translateY(-50%) scale(1.1);
-    -o-transform: translateY(-50%) scale(1.1);
+  top: -50%;
+  left: 0;
+  -webkit-animation: act-labl 0.2s;
+  animation: act-labl 0.2s;
+  transform: translateY(-50%) scale(1.1);
+  position: absolute;
+  z-index: 1;
+  transition: 0.2s;
+  -webkit-transform: translateY(-50%) scale(1.1);
+  -moz-transform: translateY(-50%) scale(1.1);
+  -ms-transform: translateY(-50%) scale(1.1);
+  -o-transform: translateY(-50%) scale(1.1);
 }
-
 
 /*Login background*/
 
 #loginPage {
-    background: url(https://prayag17.github.io/JellySkin/login.png), radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) !important;
-    background-size: cover !important;
-    background-blend-mode: overlay;
-    margin-top: 0 !important;
-    -webkit-mask: none;
-    mask: none;
+  background: url(https://prayag17.github.io/JellySkin/login.png),
+    radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) !important;
+  background-size: cover !important;
+  background-blend-mode: overlay;
+  margin-top: 0 !important;
+  -webkit-mask: none;
+  mask: none;
 }
 
 #loginPage .squareCard {
-    width: 50%;
+  width: 50%;
 }
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
-    width: 22em;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2em 2em !important;
-    border-radius: 20px;
-    -webkit-backdrop-filter: bl1ur(10px);
-    backdrop-filter: blur(10px);
+  width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2em 2em !important;
+  border-radius: 20px;
+  -webkit-backdrop-filter: bl1ur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .layout-mobile #loginPage {
-    background: linear-gradient(140deg, #3E2247 10%, #003C50) !important;
-    overflow: scroll;
+  background: linear-gradient(140deg, #3e2247 10%, #003c50) !important;
+  overflow: scroll;
 }
 
 .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
-    background: #eee;
-    width: 80%;
-    color: #373737;
-    border-radius: 5px;
-    margin-top: auto;
-    margin-bottom: -4rem;
+  background: #eee;
+  width: 80%;
+  color: #373737;
+  border-radius: 5px;
+  margin-top: auto;
+  margin-bottom: -4rem;
 }
 
 .layout-mobile #loginPage .cardBox.cardBox-bottompadded {
-    background: white;
-    color: black;
-    font-weight: 800;
-    border: .5px solid rgba(0, 0, 0, 0.5);
-    box-shadow: none;
+  background: white;
+  color: black;
+  font-weight: 800;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: none;
 }
 
 .layout-mobile #loginPage .emby-input {
-    height: 100%;
-    width: 80%;
-    float: right;
-    background: transparent !important;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-    box-shadow: none !important;
-    border: none;
-    font-size: 2rem;
-    text-shadow: none;
+  height: 100%;
+  width: 80%;
+  float: right;
+  background: transparent !important;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none !important;
+  border: none;
+  font-size: 2rem;
+  text-shadow: none;
 }
 
 .layout-mobile #loginPage .raised {
-    border-radius: 50px;
-    background: linear-gradient(90deg, #aa5cc3 0%, #00a4dc);
-    font-size: 1.3rem !important;
-    overflow: hidden !Important;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #aa5cc3 0%, #00a4dc);
+  font-size: 1.3rem !important;
+  overflow: hidden !important;
 }
 
 .layout-mobile #loginPage h1 {
-    display: none;
+  display: none;
 }
 
 .layout-mobile h1.itemName {
-    font-size: 2.2em;
-    font-weight: 700;
+  font-size: 2.2em;
+  font-weight: 700;
 }
 
 .layout-mobile #loginPage .inputContainer {
-    position: relative;
-    height: 3rem;
-    border: 1px solid #aaa;
-    border-radius: 50px;
-    overflow: hidden;
+  position: relative;
+  height: 3rem;
+  border: 1px solid #aaa;
+  border-radius: 50px;
+  overflow: hidden;
 }
 
-.layout-mobile #loginPage .inputLabel[for=txtManualName] {
-    font-size: 0;
-    color: #383838;
+.layout-mobile #loginPage .inputLabel[for="txtManualName"] {
+  font-size: 0;
+  color: #383838;
 }
 
-.layout-mobile #loginPage .inputLabel[for=txtManualName]::before {
-    content: "\f406";
-    font-size: 2rem;
-    font-family: 'Font Awesome 5 Pro';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1rem;
+.layout-mobile #loginPage .inputLabel[for="txtManualName"]::before {
+  content: "\f406";
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
 }
 
-.layout-mobile #loginPage .inputLabel[for=txtManualName]::after {
-    content: "";
-    height: 70%;
-    width: 2px;
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    right: 82.5%;
-    top: 50%;
-    transform: translateY(-50%);
+.layout-mobile #loginPage .inputLabel[for="txtManualName"]::after {
+  content: "";
+  height: 70%;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 82.5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.layout-mobile #loginPage .inputLabel[for=txtManualName]::after {
-    content: "";
-    height: 70%;
-    width: 2px;
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    right: 82.5%;
-    top: 50%;
-    transform: translateY(-50%);
+.layout-mobile #loginPage .inputLabel[for="txtManualName"]::after {
+  content: "";
+  height: 70%;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 82.5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.layout-mobile #loginPage .inputLabel[for=txtManualPassword] {
-    font-size: 0;
-    color: #383838;
+.layout-mobile #loginPage .inputLabel[for="txtManualPassword"] {
+  font-size: 0;
+  color: #383838;
 }
 
-.layout-mobile #loginPage .inputLabel[for=txtManualPassword]::before {
-    content: "\f084";
-    font-size: 2rem;
-    font-family: 'Font Awesome 5 Pro';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1rem;
+.layout-mobile #loginPage .inputLabel[for="txtManualPassword"]::before {
+  content: "\f084";
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
 }
 
-.layout-mobile #loginPage .inputLabel[for=txtManualPassword]::after {
-    content: "";
-    height: 70%;
-    width: 2px;
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    right: 82.5%;
-    top: 50%;
-    transform: translateY(-50%);
+.layout-mobile #loginPage .inputLabel[for="txtManualPassword"]::after {
+  content: "";
+  height: 70%;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 82.5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (orientation: landscape) {
-    .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
-        margin-top: auto;
-        margin-bottom: auto !important;
-    }
+  .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-top: auto;
+    margin-bottom: auto !important;
+  }
 }
 
 @media (max-height: 621px) {
-    .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
-        margin-top: auto;
-        margin-bottom: auto !important;
-    }
+  .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-top: auto;
+    margin-bottom: auto !important;
+  }
 }
 
 @media (max-width: 346px) {
-    .layout-mobile #loginPage .inputLabel[for=txtManualName]::before {
-        font-size: 2.5rem;
-    }
-    .layout-mobile #loginPage .inputLabel[for=txtManualPassword]::before {
-        font-size: 2.5rem;
-    }
-    .layout-mobile #loginPage .emby-input {
-        font-size: 1.5rem;
-    }
-    .layout-mobile #loginPage .raised {
-        font-size: .895rem !important;
-    }
+  .layout-mobile #loginPage .inputLabel[for="txtManualName"]::before {
+    font-size: 2.5rem;
+  }
+  .layout-mobile #loginPage .inputLabel[for="txtManualPassword"]::before {
+    font-size: 2.5rem;
+  }
+  .layout-mobile #loginPage .emby-input {
+    font-size: 1.5rem;
+  }
+  .layout-mobile #loginPage .raised {
+    font-size: 0.895rem !important;
+  }
 }
-
 
 /*Theming for the dashboard*/
 
 .paperList,
 .visualCardBox {
-    background-color: #000;
+  background-color: #000;
 }
 
 .listItem-border {
-    border-color: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
 }
 
 .headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
-    border-radius: 5px !important;
+  border-radius: 5px !important;
 }
 
 #dashboardPage .cardBox {
-    box-shadow: none;
-    border: .01em solid #191819;
+  box-shadow: none;
+  border: 0.01em solid #191819;
 }
 
 .listItem.listItem-border {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 a.button-link.emby-button[href="https://jellyfin.org"]:hover,
-a.button-link.emby-button[href="https://jellyfin.org"]:focus {
-    font-weight: 700;
+a.button-link.emby-button[href="https://jellyfin.org"]:focus
+{
+  font-weight: 700;
 }
 
-a.button-link.emby-button[href="https://jellyfin.org"] {
-    font-size: 3em;
-    font-weight: 300;
-    background: var(--accent);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+a.button-link.emby-button[href="https://jellyfin.org"]
+{
+  font-size: 3em;
+  font-weight: 300;
+  background: var(--accent);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
-a.button-link.emby-button[href="https://jellyfin.org"]::after {
-    background: var(--accent);
-    height: 5px;
-    bottom: -5px;
+a.button-link.emby-button[href="https://jellyfin.org"]::after
+{
+  background: var(--accent);
+  height: 5px;
+  bottom: -5px;
 }
-
 
 /*Theming Playback data info*/
 
 .playerStats {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(90px);
-    -webkit-backdrop-filter: blur(90px);
-    box-shadow: 0 0 8px black;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(90px);
+  -webkit-backdrop-filter: blur(90px);
+  box-shadow: 0 0 8px black;
 }
-
 
 /*For browsers that don't support backdrop-filter*/
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    .mainDrawer.drawer-open {
-        background: rgba(0, 0, 0, 0.85);
-    }
-    .dialogBackdropOpened {
-        opacity: 1 !important;
-        background: rgba(0, 0, 0, 0.1);
-    }
-    .dialog {
-        background-color: rgba(0, 0, 0, 0.95) !important;
-        box-shadow: 0 0 20px 4px black;
-    }
-    .mainDrawer {
-        background-color: rgba(0, 0, 0, 0.95);
-        box-shadow: none;
-    }
-    .playerStats {
-        background: rgba(28, 28, 28, .8);
-        box-shadow: 0 0 8px black !important;
-    }
+  .mainDrawer.drawer-open {
+    background: rgba(0, 0, 0, 0.85);
+  }
+  .dialogBackdropOpened {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .dialog {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 0 0 20px 4px black;
+  }
+  .mainDrawer {
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: none;
+  }
+  .playerStats {
+    background: rgba(28, 28, 28, 0.8);
+    box-shadow: 0 0 8px black !important;
+  }
 }
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    .mainDrawer.drawer-open {
-        background: rgba(0, 0, 0, 0.85);
-    }
-    .dialogBackdropOpened {
-        opacity: 1 !important;
-        background: rgba(0, 0, 0, 0.1);
-    }
-    .dialog {
-        background-color: rgba(0, 0, 0, 0.95) !important;
-        box-shadow: 0 0 20px 4px black;
-    }
-    .mainDrawer {
-        background-color: rgba(0, 0, 0, 0.95);
-        box-shadow: none;
-    }
-    .playerStats {
-        background: rgba(28, 28, 28, .8);
-        box-shadow: 0 0 8px black !important;
-    }
+  .mainDrawer.drawer-open {
+    background: rgba(0, 0, 0, 0.85);
+  }
+  .dialogBackdropOpened {
+    opacity: 1 !important;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .dialog {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 0 0 20px 4px black;
+  }
+  .mainDrawer {
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: none;
+  }
+  .playerStats {
+    background: rgba(28, 28, 28, 0.8);
+    box-shadow: 0 0 8px black !important;
+  }
 }
-
 
 /* Chapters */
 
 .chapterCard .innerCardFooter {
-    height: auto;
-    background: rgba(0, 0, 0, 0.7);
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.chapterCard .innerCardFooter>.cardText:first-child {
-    float: left;
+.chapterCard .innerCardFooter > .cardText:first-child {
+  float: left;
 }
 
-.chapterCard .innerCardFooter>.cardText:last-child {
-    float: right;
+.chapterCard .innerCardFooter > .cardText:last-child {
+  float: right;
 }
 
 .chapterThumbContainer {
-    box-shadow: none !important;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  box-shadow: none !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .chapterThumb {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: var(--card-rounding);
-    -webkit-border-radius: var(--card-rounding);
-    -moz-border-radius: var(--card-rounding);
-    -ms-border-radius: var(--card-rounding);
-    -o-border-radius: var(--card-rounding);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: var(--card-rounding);
+  -webkit-border-radius: var(--card-rounding);
+  -moz-border-radius: var(--card-rounding);
+  -ms-border-radius: var(--card-rounding);
+  -o-border-radius: var(--card-rounding);
 }
 
 .chapterThumbTextContainer {
-    position: relative;
-    padding: 0 1em;
-    border-radius: 0px 0px 10px 10px !important;
-    background: transparent !important;
+  position: relative;
+  padding: 0 1em;
+  border-radius: 0px 0px 10px 10px !important;
+  background: transparent !important;
 }
 
 .sliderBubble::after {
-    content: "";
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid rgba(0, 0, 0, 0.4);
-    bottom: -20px;
+  content: "";
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgba(0, 0, 0, 0.4);
+  bottom: -20px;
 }
 
 .selectionCommandsPanel {
-    background: rgba(24, 24, 24, 0.75);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 0 44px black;
+  background: rgba(24, 24, 24, 0.75);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 44px black;
 }
