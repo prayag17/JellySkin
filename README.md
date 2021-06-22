@@ -7,12 +7,12 @@
 To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
 
 ```css
-@import url("https://prayag17.github.io/JellySkin/default.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/default.css");
 ```
 To use Logos like the images given below use:
 
 ```css
-@import url("https://prayag17.github.io/JellySkin/addons/Logo.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Logo.css");
 ```
   
 <h3> You can also use Jellyfin-Skin-Manager-Plugin : https://github.com/danieladov/jellyfin-plugin-skin-manager
@@ -22,22 +22,22 @@ To use Logos like the images given below use:
 In JellySkin 11 I have added a transparency gradient like CTalvio's Themes and just like his skin's have a performance issue on some older devices because of this I have created that remove all the transparency gradient in the skin.
   
 ```css
-@import url("https://prayag17.github.io/JellySkin/addons/imp-per.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/imp-per.css");
 ```
 
 <br>
 <h3>If you want to display your posters to be compact use the following line with default css</h3>
 
 ```css
-@import url("https://prayag17.github.io/JellySkin/addons/compact-poster.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/compact-poster.css");
 ```
 
 To use different gradient for your buttons I have added few different gradients you can choose or you can create your own (check the steps given bellow), the default gradient used is jellyfin's default logo gradient,using this alone will only skin the button colors and I know the names for this are very funny:
 ```css
-@import url("https://prayag17.github.io/JellySkin/addons/Gradients/seaGradient.css");
-@import url("https://prayag17.github.io/JellySkin/addons/Gradients/sunsetGradient.css");
-@import url("https://prayag17.github.io/JellySkin/addons/Gradients/mauveGradient.css");
-@import url("https://prayag17.github.io/JellySkin/addons/Gradients/nightSkyGradient.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/seaGradient.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/sunsetGradient.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/mauveGradient.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/nightSkyGradient.css");
 ```
 <br>
 Using custom own Gradient or color
@@ -64,44 +64,44 @@ Now, to use your own Gradient (to get great button or any gradient go to https:/
 Add the follwing line to custom CSS with the default css file-
 
 ```css
-@import url("https://prayag17.github.io/JellySkin/addons/progress-bar.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/progress-bar.css");
 ```
 
 <h3>Here are some images:</h3>
 
 <h5>Login Page</h5>
-<img src="https://prayag17.github.io/JellySkin/img/login.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/login.jpg">
 
 <h5>Home screen:</h5>
-<img src="https://prayag17.github.io/JellySkin/img/Home.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Home.jpg">
 
 <h5>Library View</h5>
-<img src="https://prayag17.github.io/JellySkin/img/Movies.jpg">
-<img src="https://prayag17.github.io/JellySkin/img/TV%20Shows.jpg">
-<img src="https://prayag17.github.io/JellySkin/img/Collections.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Movies.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/TV%20Shows.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Collections.jpg">
 
 <h5>Title screen:</h5>
-<img src="https://prayag17.github.io/JellySkin/img/Title%20Page-Movie.jpg">
-<img src="https://prayag17.github.io/JellySkin/img/Title%20Page-TV.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Title%20Page-Movie.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Title%20Page-TV.jpg">
 
 <h5>TV Shows Season Episode list:</h5>
-<img src="https://prayag17.github.io/JellySkin/img/Ep-list.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Ep-list.jpg">
 
 <h5>Settings</h5>
-<img src="https://prayag17.github.io/JellySkin/img/Settings.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Settings.jpg">
 
 <h5>Dashboard</h5>
-<img src="https://prayag17.github.io/JellySkin/img/Dashboard.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Dashboard.jpg">
 
 <h5>Plugins</h5>
-<img src="https://prayag17.github.io/JellySkin/img/Plugins.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Plugins.jpg">
 
 
 <h5>Dialogs</h5>
-<img src="https://prayag17.github.io/JellySkin/img/Menu.jpg">
-<img src="https://prayag17.github.io/JellySkin/img/Dialog-1.jpg">
-<img src="https://prayag17.github.io/JellySkin/img/Dialog-2.jpg">
-<img src="https://prayag17.github.io/JellySkin/img/Dialog-3.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Menu.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Dialog-1.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Dialog-2.jpg">
+<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Dialog-3.jpg">
 <br>
 <br>
 
@@ -149,7 +149,7 @@ add_header Content-Security-Policy "default-src https: data: blob: http://image.
 becomes (with only adding the default style):
 
 ```
-add_header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline' https://prayag17.github.io/JellySkin/default.css; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
+add_header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline'https://cdn.jsdelivr.net/gh/prayag17/JellySkin/default.css; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
 ```
 
 If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from a disallowed external source.
@@ -169,5 +169,3 @@ SETTINGS --> DISPLAY --> ENABLE BACKDROPS/BACKGROUND.
 <li>Wait for it to be merged.</li>
 </ul>
 </div>
-<br>
-<br>
