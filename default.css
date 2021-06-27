@@ -1234,6 +1234,12 @@ h2 {
   margin: 0;
 }
 
+.listItem-overview.listItemBodyText {
+  height: 2.5em !important;
+  font-size: 1em !important;
+  -webkit-mask: linear-gradient(to top, transparent, black 1.2em);
+}
+
 #itemDetailPage .listItem:hover .listItem-content {
   background: rgba(0, 0, 0, 0.8);
 }
