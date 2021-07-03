@@ -876,7 +876,7 @@ h2 {
 
 /*Theme some dialogues*/
 
-.main.drawer-open {
+.mainDrawer.drawer-open {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0 1000vh rgb(0 0 0 / 45%), 0 0 20px 0px black;
 }
@@ -934,6 +934,7 @@ h2 {
   align-items: stretch;
   margin: 0 !important;
   padding: 0 !important;
+  overflow: scroll;
 }
 
 /*Fixing position of tv or movie poster*/
