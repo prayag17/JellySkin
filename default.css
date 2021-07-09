@@ -821,14 +821,6 @@ h2 {
   width: 200px !important;
 }
 
-.layout-mobile .portraitCard {
-  width: 12rem;
-}
-
-.itemsContainer {
-  justify-content: space-evenly;
-}
-
 /* Adjust both "size-adjust" and "size" to modify size */
 
 .pageTitle {
