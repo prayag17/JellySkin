@@ -421,6 +421,10 @@ fieldset {
   filter: drop-shadow(0px 3px 3px black);
 }
 
+.navMenuOption {
+  background: transparent !important;
+}
+
 .navMenuOption::before {
   content: "";
   width: 100%;
@@ -596,7 +600,7 @@ select {
 }
 
 .emby-tab-button:hover .emby-button-foreground::after {
-  width: 120%;
+  width: 75%;
 }
 
 body.force-scroll {
@@ -818,7 +822,11 @@ h2 {
 }
 
 .layout-mobile .portraitCard {
-  width: 50%;
+  width: 12rem;
+}
+
+.itemsContainer {
+  justify-content: space-evenly;
 }
 
 /* Adjust both "size-adjust" and "size" to modify size */
@@ -1239,6 +1247,7 @@ h2 {
   height: 2.5em !important;
   font-size: 1em !important;
   -webkit-mask: linear-gradient(to top, transparent, black 1.2em);
+  mask: linear-gradient(to top, transparent, black 1.2em);
 }
 
 #itemDetailPage .listItem:hover .listItem-content {
