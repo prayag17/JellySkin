@@ -703,6 +703,13 @@ div#itemBackdrop {
 .layout-mobile .detailPageWrapperContainer {
   height: 100%;
   overflow: scroll;
+  background: #ddd;
+  color: #383838;
+  width: 90%;
+  border-radius: 10px;
+  font-size: 110%;
+  margin: 20px auto;
+  text-shadow: none !important;
 }
 
 .layout-mobile .detailPageWrapperContainer::after {
@@ -1088,14 +1095,6 @@ h2 {
     width: 100vw !important;
     height: 100vh !important;
     position: fixed;
-  }
-  .detailPageWrapperContainer {
-    background: #ddd;
-    color: #383838;
-    width: 90%;
-    border-radius: 10px;
-    font-size: 110%;
-    margin: 20px auto;
   }
   .primaryImageWrapper > img {
     display: block;
