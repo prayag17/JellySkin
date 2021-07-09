@@ -5,12 +5,26 @@
 <br>
 <h3>How to use</h3>
 To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
+Latest/Specific Version:
+  
+```css
+  @import ur("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@11.4/default.css");
+```
 
+Auto Update:
+  
 ```css
 @import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/default.css");
 ```
 To use Logos like the images given below use:
+Latest/Specific Version:
+  
+```css
+  @import ur("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@11.4/addons/Logo.css");
+```
 
+Auto Update:
+  
 ```css
 @import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Logo.css");
 ```
