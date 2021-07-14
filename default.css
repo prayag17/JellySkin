@@ -703,6 +703,7 @@ div#itemBackdrop {
 .layout-mobile .detailPageWrapperContainer {
   height: 100%;
   overflow: scroll;
+  position: relative;
   background: #ddd;
   color: #383838;
   width: 90%;
