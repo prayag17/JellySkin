@@ -736,6 +736,21 @@ div#itemBackdrop {
   pointer-events: none;
 }
 
+.layout-mobile
+  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+  text-shadow: none !important;
+}
+
+.layout-mobile .detailPageContent {
+  text-shadow: none !important;
+}
+
+.layout-mobile
+  #itemDetailPage
+  .childrenSectionHeader.sectionTitle.sectionTitle-cards {
+  text-shadow: non !important;
+}
+
 /*Subtitle preview*/
 
 .subtitleappearance-preview {
