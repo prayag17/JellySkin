@@ -8,10 +8,10 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
 Latest/Specific Version:
   
 ```css
-  @import ur("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@11.5/default.css");
+  @import ur("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@latest/default.css");
 ```
 
-Auto Update:
+Auto Update(Slower update time):
   
 ```css
 @import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/default.css");
@@ -20,10 +20,10 @@ To use Logos like the images given below use:
 Latest/Specific Version:
   
 ```css
-  @import ur("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@11.5/addons/Logo.css");
+  @import ur("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@latest/addons/Logo.css");
 ```
 
-Auto Update:
+Auto Update(Slower update time):
   
 ```css
 @import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Logo.css");
