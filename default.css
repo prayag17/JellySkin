@@ -1202,15 +1202,23 @@ h2 {
 }
 
 .layout-mobile .remoteControlContent {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem !important;
-  margin: 0 7.3%;
-  border-radius: var(--rounding);
+  background: transparent;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
-  height: 65%;
+  height: 80%;
   position: relative;
-  top: 45%;
+  top: 48%;
   transform: translateY(-50%);
+}
+
+.nowPlayingSongName {
+  font-size: 3vh;
+}
+
+.infoContainer,
+.sliderContainer {
+  align-items: center;
 }
 
 /*Size episode preview images in a more compact way*/
