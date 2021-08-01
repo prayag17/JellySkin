@@ -7,14 +7,7 @@
     flex-shrink: 0;
     background-position: 0 50%;
     margin-top: 8vh;
-}
-
-.layout-desktop .detailRibbon {
-    margin-top: 0;
-}
-
-.layout-mobile .detailRibbon {
-    margin-top: 0 !important;
+    margin-bottom: -10em;
 }
 
 .layout-mobile .detailLogo {
