@@ -1,42 +1,47 @@
 #itemDetailPage .detailLogo {
-    position: static;
-    margin-left: 32.5%;
-    display: block;
-    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    flex-shrink: 0;
-    background-position: 0 50%;
-    margin-top: 8vh;
+  position: static;
+  margin-left: 32.5%;
+  display: block;
+  -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+  flex-shrink: 0;
+  background-position: 0 50%;
+  margin-top: 8vh;
 }
 
 .layout-desktop .detailRibbon {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .layout-mobile .detailRibbon {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .layout-mobile .detailLogo {
-    display: none !important;
+  display: none !important;
 }
 
-.layout-mobile .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    padding-top: 4.5rem !important;
+.layout-mobile
+  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+  padding-top: 4.5rem !important;
 }
 
 #itemDetailPage .itemName.infoText.parentNameLast {
-    display: none;
+  display: none;
 }
 
-.hide+.detailPageWrapperContainer .itemName {
-    display: block !important;
+.hide + .detailPageWrapperContainer .itemName {
+  display: block !important;
+}
+
+.layout-desktop .hide + .detailPageWrapperContainer .detailRibbon {
+  margin-top: 10em;
 }
 
 .itemName {
-    margin: .5em 0 !important;
+  margin: 0.5em 0 !important;
 }
 
 .layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-    display: block;
+  display: block;
 }

@@ -1212,6 +1212,12 @@ h2 {
   transform: translateY(-50%);
 }
 
+.playlistSectionButton .volumecontrol {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 .nowPlayingSongName {
   font-size: 3vh;
 }
