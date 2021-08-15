@@ -20,7 +20,7 @@ To use Logos like the images given below use:
 Latest/Specific Version:
   
 ```css
-  @import ur("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@latest/addons/Logo.css");
+  @import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@latest/addons/Logo.css");
 ```
 
 Auto Update(Slower update time):
