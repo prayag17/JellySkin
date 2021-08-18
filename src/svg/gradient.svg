@@ -10,13 +10,6 @@
             inset:0;
         }
     </style>
-    <!-- <script>//<![CDATA[
-        const canvas = document.createElement("canvas");
-        canvas.setAttribute('id', 'gradient')
-        const svg = document.querySelector('#one')
-        svg.appendChild(canvas)
-        ]]>
-    </script> -->
     <script xlink:href="https://thayallan.com/stripe.gradient.js/src/stripe.gradient.js"></script>
     <script>//<![CDATA[ 
         var gradient = new Gradient();
