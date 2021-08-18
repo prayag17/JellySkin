@@ -1,8 +1,8 @@
-<svg id="one" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100vw" height="100vh">
-    <foreignObject x="0" y="0" width="100vw" height="100vh">
-        <canvas id="gradient" xmlns="http://www.w3.org/1999/xhtml"></canvas>
+<svg id='one' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100vw' height='100vh'>
+    <foreignObject x='0' y='0' width='100vw' height='100vh' class='isLoaded'>
+        <canvas id='gradient' xmlns='http://www.w3.org/1999/xhtml' class='isLoaded' width='100vw' height='100vh'></canvas>
     </foreignObject>
-    <style id="style">
+    <style id='style'>
         #gradient {
             width:100vw;
             height:100vh;
@@ -10,9 +10,11 @@
             inset:0;
         }
     </style>
-    <script xlink:href="https://thayallan.com/stripe.gradient.js/src/stripe.gradient.js"></script>
-    <script>//<![CDATA[ 
+    <script xlink:href='https://thayallan.com/stripe.gradient.js/src/stripe.gradient.js'></script>
+    <script>//<![CDATA[
+        window.onload = function (){ 
         var gradient = new Gradient();
-gradient.initGradient("#gradient", "#aa5cc3","#3E2247", "#003C50", "#00a4dc");
+        gradient.initGradient('#gradient', '#aa5cc3','#3E2247', '#003C50', '#00a4dc');
+        }
 ]]></script>
     </svg>
