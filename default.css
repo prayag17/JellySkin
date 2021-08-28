@@ -443,6 +443,7 @@ fieldset {
 
 .navMenuOption .navMenuOptionIcon {
   transition: margin-right 0.2s;
+  width: 1.2em;
 }
 
 .navMenuOption:hover .navMenuOptionIcon {
