@@ -1,5 +1,0 @@
-<svg id='one' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100vw' height='100vh'>
-    <foreignObject x='0' y='0' width='100vw' height='100vh' class='isLoaded'>
-        <object data="https://cdn.jsdelivr.net/gh/prayag17/JellySkin@latest/src/svg/gradient.svg"></object>
-    </foreignObject>
-</svg>
