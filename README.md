@@ -1,5 +1,8 @@
 <div align="center">
-<h1>JellySkin</h1><h3>Use 67% or 70% zoom in web browser for better experience</h3>
+<h1>JellySkin</h1><br>
+<img src="https://data.jsdelivr.com/v1/package/gh/prayag17/JellySkin/badge">
+<br>
+<h3>Use 67% or 70% zoom in web browser for better experience</h3>
 <h4>Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.</h4>
 </div>
 <br>
