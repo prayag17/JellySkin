@@ -1,8 +1,12 @@
 * {
-    mask: none !important;
-    -webkit-mask: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
 }
 
 .layout-mobile #itemDetailPage::after {
-    display: none !important;
+  display: none !important;
+}
+
+.div#loginPage {
+  background-image: var(--accent-icon) !important;
 }
