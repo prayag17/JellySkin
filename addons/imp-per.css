@@ -7,6 +7,6 @@
   display: none !important;
 }
 
-.div#loginPage {
+div#loginPage {
   background-image: var(--accent-icon) !important;
 }
