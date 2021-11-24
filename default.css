@@ -1881,3 +1881,7 @@ a.button-link.emby-button[href="https://jellyfin.org"]::after
   backdrop-filter: blur(4px);
   box-shadow: 0 0 44px black;
 }
+
+.dashboardSection .sectionTitleTextButton > .material-icons {
+  margin-left: 0.5em;
+}
