@@ -1098,40 +1098,46 @@ h2 {
   }
 }
 
-@media all and (max-width: 32em), (max-height: 32em) {
-  .mainDetailButtons {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .itemBackdrop {
-    width: 100vw !important;
-    height: 100vh !important;
-    position: fixed;
-  }
-  .primaryImageWrapper > img {
-    display: block;
-    margin: 0 auto;
-    max-width: 80vw;
-    max-height: 50vh;
-    border-radius: var(--rounding);
-    margin-bottom: 0.5rem;
-    box-shadow: 0px 2rem 3rem -1.5rem #111111, 0px 0px 20px 0px #afaeae;
-  }
+.layout-mobile .mainDetailButtons {
+  margin-left: auto;
+  margin-right: auto;
+}
+.layout-mobile .primaryImageWrapper > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80vw;
+  max-height: 50vh;
+  border-radius: var(--rounding);
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 2rem 3rem -1.5rem #111111, 0px 0px 20px 0px #afaeae;
+}
+.layout-mobile
   .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon,
-  button.button-flat.btnResume.detailButton.emby-button,
-  button.emby-tab-button.emby-button,
-  h2 {
-    text-shadow: none !important;
-  }
-  .detailPageContent {
-    text-shadow: none !important;
-  }
-  select {
-    text-shadow: none !important;
-  }
-  .button-flat:hover {
-    transform: none;
-  }
+.layout-mobile button.button-flat.btnResume.detailButton.emby-button,
+.layout-mobile button.emby-tab-button.emby-button,
+.layout-mobile h2 {
+  text-shadow: none !important;
+}
+.layout-mobile .detailPageContent {
+  text-shadow: none !important;
+}
+.layout-mobile select {
+  text-shadow: none !important;
+}
+.layout-mobile .button-flat:hover {
+  transform: none;
+}
+
+.layout-mobile .detailPagePrimaryContainer {
+  flex-wrap: wrap;
+  position: relative;
+  padding: 4.5em 4.5em 0.5rem;
+  grid-column-gap: 1em;
+  justify-content: space-around;
+}
+
+.layout-mobile .detailPagePrimaryContainer > * {
+  flex: 0 0 auto;
 }
 
 .itemProgressBar {
