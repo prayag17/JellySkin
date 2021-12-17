@@ -7,7 +7,6 @@
   flex-shrink: 0;
   background-position: 0 50%;
   margin-top: 8vh;
-  margin-bottom: -10em !important;
 }
 
 .layout-mobile .detailLogo {
@@ -28,7 +27,7 @@
 }
 
 .layout-desktop .hide + .detailPageWrapperContainer .detailRibbon {
-  margin-top: 10em;
+  margin-top: 8vh;
 }
 
 .itemName {

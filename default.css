@@ -685,7 +685,7 @@ div#itemBackdrop {
 }
 
 .layout-desktop .detailRibbon {
-  margin-top: 7.2em;
+  margin-top: 0 !important;
 }
 
 .layout-mobile #itemDetailPage {
