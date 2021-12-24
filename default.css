@@ -72,7 +72,7 @@ html {
 
 .layout-tv div[data-role="page"] {
   margin: 0;
-  overflow: visible;
+  overflow: auto;
 }
 
 /*Subtitle Fonts thanks the u/Edgementality-https://bit.ly/33slrSa*/
