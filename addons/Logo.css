@@ -1,3 +1,8 @@
+.detailLogo {
+  width: 35vw;
+  height: 16vh;
+}
+
 #itemDetailPage .detailLogo {
   position: static;
   margin-left: 32.5%;
