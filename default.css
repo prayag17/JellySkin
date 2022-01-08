@@ -423,6 +423,7 @@ fieldset {
 
 .navMenuOption {
   background: transparent !important;
+  flex-grow: 0 !important;
 }
 
 .navMenuOption::before {
@@ -1337,7 +1338,7 @@ h2 {
 }
 
 .layout-mobile .listItemBodyText {
-  max-width: 10rem;
+  max-width: 100% !important;
 }
 
 .layout-mobile .listItem .playedIndicator {
