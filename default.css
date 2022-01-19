@@ -1906,3 +1906,8 @@ a.button-link.emby-button[href="https://jellyfin.org"]::after
 .dashboardSection .sectionTitleTextButton > .material-icons {
   margin-left: 0.5em;
 }
+
+/* Live tv fix */
+.absolutePageTabContent {
+  top: 0 !important;
+}
