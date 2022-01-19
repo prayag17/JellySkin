@@ -389,6 +389,10 @@ fieldset {
   transform: scale(1.2);
 }
 
+.dialog .cardImageContainer::before {
+  display: none;
+}
+
 .layout-mobile
   .card:not(.overflowSquareCard):hover
   .cardImageContainer::before {
