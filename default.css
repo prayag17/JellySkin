@@ -784,6 +784,12 @@ h1.sliderBubbleText {
   font-weight: 700;
 }
 
+/* Music Player */
+.appfooter,
+.playlistSectionButton {
+  background: transparent !important;
+}
+
 /*cardbox border-radius change*/
 
 #indexPage
@@ -1213,10 +1219,16 @@ h2 {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  height: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
   top: 48%;
   transform: translateY(-50%);
+}
+
+.layout-mobile .playlistSectionButton {
+  position: static !important;
 }
 
 .playlistSectionButton .volumecontrol {
