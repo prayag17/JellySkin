@@ -1900,3 +1900,12 @@ a.button-link.emby-button[href="https://jellyfin.org"]::after
 .absolutePageTabContent {
   top: 0 !important;
 }
+
+/* Fix Playback report plugn text */
+
+select#weeks,
+select#max_data_age_select,
+select#files_to_keep,
+select#user_list_for_add {
+  color: white !important;
+}
