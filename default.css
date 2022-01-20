@@ -380,8 +380,7 @@ fieldset {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: inherit;
-  background-color: #000;
+  background: inherit;
   background-size: cover;
   transition: 0.15s;
 }
@@ -390,7 +389,8 @@ fieldset {
   transform: scale(1.2);
 }
 
-.dialog .cardImageContainer::before {
+.dialog .cardImageContainer::before,
+.liveTvPage .cardImageContainer::before {
   display: none;
 }
 
@@ -669,6 +669,10 @@ div[data-role="page"] {
   );
 }
 
+div[data-role="page"] > * {
+  padding-top: 16px;
+}
+
 .layout-tv .mainAnimatedPages {
   overflow: visible;
   mask: none;
@@ -789,6 +793,8 @@ h1.sliderBubbleText {
 .appfooter,
 .playlistSectionButton {
   background: transparent !important;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
 }
 
 /*cardbox border-radius change*/
@@ -1822,27 +1828,9 @@ a.button-link.emby-button[href="https://jellyfin.org"]::after
     background: rgba(28, 28, 28, 0.8);
     box-shadow: 0 0 8px black !important;
   }
-}
-
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .mainDrawer.drawer-open {
-    background: rgba(0, 0, 0, 0.85);
-  }
-  .dialogBackdropOpened {
-    opacity: 1 !important;
-    background: rgba(0, 0, 0, 0.1);
-  }
-  .dialog {
-    background-color: rgba(0, 0, 0, 0.95) !important;
-    box-shadow: 0 0 20px 4px black;
-  }
-  .mainDrawer {
-    background-color: rgba(0, 0, 0, 0.95);
-    box-shadow: none;
-  }
-  .playerStats {
-    background: rgba(28, 28, 28, 0.8);
-    box-shadow: 0 0 8px black !important;
+  .appfooter,
+  .playlistSectionButton {
+    background: rgba(6, 6, 6, 0.65) !important;
   }
 }
 
