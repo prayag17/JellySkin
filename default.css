@@ -552,11 +552,9 @@ span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
   height: 2px;
 }
 
-/*fancy link end*/
-
 .listItem.listItem-border:hover {
   border-color: rgba(0, 0, 0, 0) !important;
-  background: #3f3f3f;
+  background: #1010109e;
 }
 
 .listItem-border {
@@ -1312,7 +1310,7 @@ h2 {
   height: fit-content;
   overflow: hidden;
   margin-bottom: 1.5rem;
-  border-radius: var(--rounding);
+  border-radius: var(--rounding) !important;
 }
 
 #itemDetailPage .secondary.listItem-overview.listItemBodyText {
