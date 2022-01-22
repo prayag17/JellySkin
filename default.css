@@ -1363,8 +1363,9 @@ h2 {
   max-width: 100% !important;
 }
 
-.layout-mobile .listItemBodyText.secondary {
-  color: #999;
+.layout-mobile .listItemBodyText.secondary,
+.listItem .secondary {
+  color: #999 !important;
 }
 
 .layout-mobile .listItem .playedIndicator {
