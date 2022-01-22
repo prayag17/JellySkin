@@ -8,5 +8,26 @@
 }
 
 div#loginPage {
-  background-image: var(--accent-icon) !important;
+  background-size: 500% !important;
+  background: linear-gradient(140deg, #003c50, #00a4dc, #aa5cc3, #3e2247);
+  -webkit-animation: lgnbg 15s ease-in-out infinite alternate;
+  animation: lgnbg 15s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes lgnbg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes lgnbg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }

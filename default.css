@@ -1697,6 +1697,10 @@ html:not(.layout-mobile) #loginPage .inputLabel:not(.inputLabel-float) {
   border: 2px solid white;
 }
 
+#loginPage .emby-button:hover {
+  background: rgb(255 255 255 / 0.35);
+}
+
 div#divUsers::-webkit-scrollbar-track-piece {
   background: transparent !important;
 }
@@ -1704,25 +1708,13 @@ div#divUsers::-webkit-scrollbar-track {
   box-shadow: none !important;
 }
 #loginPage .raised::before {
-  background: rgb(255 255 255 / 0.25);
+  display: none;
 }
 
 #loginPage .raised span {
   z-index: 1;
   color: white;
   background: transparent;
-}
-
-#loginPage .raised::before {
-  transform: scale(0);
-  transition: all 0.35s !important;
-  border-radius: 100vh;
-  opacity: 1;
-  z-index: -5;
-}
-
-#loginPage .raised:hover::before {
-  transform: scale(1) !important;
 }
 
 html:not(.layout-mobile) #loginPage .inputContainer input {
