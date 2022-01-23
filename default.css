@@ -972,6 +972,16 @@ h2 {
   overflow: scroll;
 }
 
+.drawer-open
+  .mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY
+  > div:nth-child(1) {
+  height: 15px !important;
+}
+
+.mainDrawer-scrollContainer {
+  padding-bottom: 0;
+}
+
 /*Fixing position of tv or movie poster*/
 
 .detailImageContainer .card {
