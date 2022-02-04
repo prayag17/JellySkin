@@ -173,7 +173,7 @@ If you don't do this the theme will simply not load (reverts back to default the
   </div>
   <br>
 <h3>Background not working?</h3>
-Many of you are facing issues that backdrop is not visible by default....this is not a JellySkin issue but rather Jellyfin issue, in Jellyfin Version 10.7.X backgrounds are disabled by defualt but you can enable them individually on you devices/client by going to: 
+Many of you are facing issues that backdrop is not visible by default....this is not a JellySkin issue but rather Jellyfin issue, in Jellyfin Version 10.7.X backgrounds are disabled by default but you can enable them individually on you devices/client by going to: 
 SETTINGS --> DISPLAY --> ENABLE BACKDROPS/BACKGROUND.
 </div>
 
