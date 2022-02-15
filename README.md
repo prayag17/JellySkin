@@ -145,7 +145,7 @@ preference (needs to be set to
     <h2> How to get Logo </h2>
     <ul>
       <li>Get Fanart Plugin, Dashboard -> Plugin -> Catalog</li>
-      <li>Enable Faart as a metadata provider for your libraries in the library settings, Dashboard -> Library -> Click on 3 dots on your Library -> Manage Library -> Scroll to find Metadata provider and enable Fanart in all of them.</li>
+      <li>Enable Fanart as a metadata provider for your libraries in the library settings, Dashboard -> Library -> Click on 3 dots on your Library -> Manage Library -> Scroll to find Metadata provider and enable Fanart in all of them.</li>
       <li>Rescan your drive by selecting <code>Replace Metadata</code> and scan</li>
       <li>Done!</li>
     </ul>
