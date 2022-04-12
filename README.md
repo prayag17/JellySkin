@@ -36,7 +36,7 @@ Auto Update(Slower update time):
 <br>
 
 <h3>Fix Performance</h3>
-In JellySkin 11 I have added a transparency gradient like CTalvio's Themes and just like his skin's have a performance issue on some older devices because of this I have created that remove all the transparency gradient in the skin.
+In JellySkin 11 I added a transparency gradient like CTalvio's Themes and just like his skins, this skin also has a performance issue on some older devices because of this I have created that remove all the transparency gradient in the skin.
   
 ```css
 @import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/imp-per.css");
