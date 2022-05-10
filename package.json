@@ -2,7 +2,6 @@
   "name": "jellyskin",
   "version": "12.0.0",
   "description": "A vibrant skin for jellyfin made with SASS",
-  "main": "src/main.scss",
   "scripts": {
     "build:sass": "sass src/:dist/",
     "watch:sass": "sass  --no-source-map --watch src/:dev/",

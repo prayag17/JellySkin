@@ -6,7 +6,18 @@ name: Node.js Package
 on: [push,pull_request]
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run build
+
   publish-npm:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,17 +26,6 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - name: Build JellySkin
-        run: |
-          npm run build
-          npm run postbuild
-      - name: Create nightly release
-        run: |
-          npx lerna version premajor --no-git-tag-version --no-push --preid nightly.$(git rev-parse --short HEAD) --yes --exact
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -am "chore: Publish"
-      - name: Publish to NPM registry with nightly tag
-        run: npx lerna publish from-package --yes --dist-tag nightly
+      - run: npm publish --tag nightly
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
