@@ -1,0 +1,110 @@
+@use "../abstract" as ab;
+
+.emby-scroller{
+    overflow: visible !important;
+    .itemsContainer{
+        transition: transform ab.$transition-time-fast-1 linear 0s !important;
+    }
+    .card{
+        contain: none !important;
+        .cardScalable{
+            overflow: hidden;
+            border-radius: ab.$rounding-default;
+            box-shadow: 0 0 15px rgb(0 0 0 / 0.2);
+            & > *:not(.cardOverlayContainer){
+                transform: scale(1);
+                transition: transform ab.$transition-time-fast-1 ease-in-out;
+            }
+        }
+        &:hover .cardScalable > *:not(.cardOverlayContainer){
+            transform: scale(1.2);
+        }
+        &[data-type="Person"]{
+            aspect-ratio: 1/1;
+            height: auto;
+            .cardBox{
+                position: relative;
+                margin: 0 1.2em 0 0 !important;
+            }
+            .cardText.cardText-first{
+                position: absolute;
+                bottom: 0;
+                width: calc(100% - 1em);
+                padding: 0.5em !important;
+                color: white;
+                font-size: 1.2em;
+            }
+            .cardScalable{
+                aspect-ratio: 1/1;
+                height: auto;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(to top, rgb(0 0 0 / 0.6), transparent);
+                }
+            }
+        }
+        &[data-type="Actor"]{
+            .cardScalable{
+                height: auto;
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+    .cardPadder{
+        background: ab.$gradient-dark !important;
+        .cardImageIcon{
+            color: transparent;
+            background: ab.$gradient-default;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    }
+    .cardImageContainer {
+        &.defaultCardBackground {
+            background: transparent;
+        }
+        .cardImageIcon{
+            color: transparent;
+            background: ab.$gradient-default;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    }
+    .innerCardFooter {
+        width: 90%;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: ab.$rounding-default;
+        .itemProgressBar {
+            background: rgb(255 255 255/0.3);
+            height: 0.4em;
+            .itemProgressBarForeground{
+                background: ab.$gradient-default;
+            }
+        }
+    }
+    .cardOverlayButton{
+        border-radius: 0;
+        backdrop-filter: blur(0px);
+        &[data-action=resume]{
+            border-radius: ab.$rounding-min;
+            background: rgb(0 0 0 / 0.5);
+            border-radius: ab.$rounding-min;
+            padding: 1.5em;
+        }
+        &:hover{
+            background-color: ab.$jf-purple-light-opacity-1;
+            color: ab.$jf-purple-light;
+        }
+    }
+    .cardOverlayButton-br.flex .cardOverlayButton:nth-child(1){
+        border-radius: ab.$rounding-min 0 0 0;
+    }
+}

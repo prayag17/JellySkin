@@ -1,0 +1,10 @@
+@use "../abstract" as ab;
+.backgroundContainer{
+    background-color: ab.$background-darker;
+    &.withBackdrop{
+        background: transparent !important;
+    }
+}
+.backdropContainer{
+    filter: blur(ab.$filter-blur-default) brightness(ab.$filter-brightness-default) saturate(ab.$filter-saturation-default) contrast(ab.$filter-contrast-default);
+}

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Font%20Awesome/light.css");
+html, body, h1, h2, h2, h4, h5 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.backgroundContainer {
+  background-color: hsl(208deg, 89%, 5%);
+}
+.backgroundContainer.withBackdrop {
+  background: transparent !important;
+}
+
+.backdropContainer {
+  filter: blur(80px) brightness(50%) saturate(110%) contrast(130%);
+}
+
+.skinHeader {
+  background: transparent !important;
+  position: static;
+}
+
+.layout-mobile body, .layout-desktop body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden !important;
+}
+
+div[data-role=page].page {
+  position: absolute;
+  padding: 0 !important;
+  height: 100%;
+  overflow: hidden visible;
+}
+
+.mainAnimatedPages.skinBody {
+  height: 100%;
+  position: relative;
+  mask-image: linear-gradient(to top, transparent, black 1em calc(100% - 1em), transparent);
+  -webkit-mask-image: linear-gradient(to top, transparent, black 1em calc(100% - 1em), transparent);
+}
+
+.emby-button {
+  position: relative;
+}
+.emby-button[is=emby-button]:not(.emby-tab-button) {
+  background: hsl(208deg, 89%, 20%);
+  border-radius: 100vh;
+  overflow: hidden;
+}
+.emby-button[is=emby-button]:not(.emby-tab-button)::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(130deg, hsl(285deg, 46%, 56%), hsl(195deg, 100%, 43%));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+.emby-button[is=emby-button]:not(.emby-tab-button):hover::after {
+  opacity: 1;
+}
+
+.emby-scroller {
+  overflow: visible !important;
+}
+.emby-scroller .itemsContainer {
+  transition: transform 150ms linear 0s !important;
+}
+.emby-scroller .card {
+  contain: none !important;
+}
+.emby-scroller .card .cardScalable {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.emby-scroller .card .cardScalable > *:not(.cardOverlayContainer) {
+  transform: scale(1);
+  transition: transform 150ms ease-in-out;
+}
+.emby-scroller .card:hover .cardScalable > *:not(.cardOverlayContainer) {
+  transform: scale(1.2);
+}
+.emby-scroller .card[data-type=Person] {
+  aspect-ratio: 1/1;
+  height: auto;
+}
+.emby-scroller .card[data-type=Person] .cardBox {
+  position: relative;
+  margin: 0 1.2em 0 0 !important;
+}
+.emby-scroller .card[data-type=Person] .cardText.cardText-first {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 1em);
+  padding: 0.5em !important;
+  color: white;
+  font-size: 1.2em;
+}
+.emby-scroller .card[data-type=Person] .cardScalable {
+  aspect-ratio: 1/1;
+  height: auto;
+}
+.emby-scroller .card[data-type=Person] .cardScalable::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+.emby-scroller .card[data-type=Actor] .cardScalable {
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.emby-scroller .cardPadder {
+  background: linear-gradient(130deg, hsl(285deg, 35%, 21%), hsl(195deg, 100%, 16%)) !important;
+}
+.emby-scroller .cardPadder .cardImageIcon {
+  color: transparent;
+  background: linear-gradient(130deg, hsl(285deg, 46%, 56%), hsl(195deg, 100%, 43%));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.emby-scroller .cardImageContainer.defaultCardBackground {
+  background: transparent;
+}
+.emby-scroller .cardImageContainer .cardImageIcon {
+  color: transparent;
+  background: linear-gradient(130deg, hsl(285deg, 46%, 56%), hsl(195deg, 100%, 43%));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.emby-scroller .innerCardFooter {
+  width: 90%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.emby-scroller .innerCardFooter .itemProgressBar {
+  background: rgba(255, 255, 255, 0.3);
+  height: 0.4em;
+}
+.emby-scroller .innerCardFooter .itemProgressBar .itemProgressBarForeground {
+  background: linear-gradient(130deg, hsl(285deg, 46%, 56%), hsl(195deg, 100%, 43%));
+}
+.emby-scroller .cardOverlayButton {
+  border-radius: 0;
+  backdrop-filter: blur(0px);
+}
+.emby-scroller .cardOverlayButton[data-action=resume] {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 1.5em;
+}
+.emby-scroller .cardOverlayButton:hover {
+  background-color: hsla(285deg, 46%, 56%, 0.4);
+  color: hsl(285deg, 46%, 56%);
+}
+.emby-scroller .cardOverlayButton-br.flex .cardOverlayButton:nth-child(1) {
+  border-radius: 5px 0 0 0;
+}
+
+#indexPage .sectionTitle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.5em;
+  color: white;
+  align-items: center;
+  font-size: 1.6em;
+}
+#indexPage .sectionTitle::before {
+  content: "";
+  width: 1.3em;
+  height: 2px;
+  background: white;
+}
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton) {
+  margin-right: 1.2em;
+  border-radius: 10px;
+  background: hsl(208deg, 89%, 20%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton)::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(130deg, hsl(285deg, 46%, 56%), hsl(195deg, 100%, 43%));
+  opacity: 0;
+  transition: opacity 150ms;
+  z-index: -1;
+}
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton):hover::after {
+  opacity: 1;
+}
