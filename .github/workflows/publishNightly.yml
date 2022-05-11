@@ -26,6 +26,10 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish --tag nightly
+      - name: Build css
+        run: npm run build
+      - name: Postbuild css
+        run: npm run postbuild
+      - run: np prerelease --tag nightly
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
