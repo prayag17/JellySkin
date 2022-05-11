@@ -23,8 +23,6 @@ jobs:
       - name: Postbuild css
         run: npm run postbuild
       - name: Publish to npm
-        run: |
-          # npm-cli-login -u testUser -p ${} -e prayagprajapati.17@gmail.com
-          npm run pub
+        run: npm run pub
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
