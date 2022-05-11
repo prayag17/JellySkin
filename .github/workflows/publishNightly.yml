@@ -14,11 +14,15 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
+      - name: Install deps
+        run: |
+          npm ci
+          npm i -g npm-cli-login
       - name: Build css
         run: npm run build
       - name: Postbuild css
         run: npm run postbuild
-      - run: npm run pub
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: Publish to npm
+        run: |
+          npm-cli-login -u ${{secret.npm_user}} -p ${{secret.npm_pass}} -e prayagprajapati.17@gmail.com
+          npm run pub
