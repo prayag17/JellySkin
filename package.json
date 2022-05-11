@@ -2,7 +2,6 @@
   "name": "jellyskin",
   "version": "12.0.0",
   "description": "A vibrant skin for jellyfin made with SASS",
-  "files":["/dist"],
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch src/:dev/",
     "serve": "browser-sync start --server dev --files dev",
@@ -14,7 +13,6 @@
   },
   "np": {
 		"yarn": false,
-		"contents": "dist",
     "anyBranch": true
 	},
   "devDependencies": {
