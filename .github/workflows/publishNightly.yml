@@ -30,6 +30,6 @@ jobs:
         run: npm run build
       - name: Postbuild css
         run: npm run postbuild
-      - run: npm run publish
+      - run: npm run pub
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
