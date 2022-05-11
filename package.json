@@ -9,7 +9,8 @@
     "build": "sass src/:dist/",
     "postbuild": "postcss dist/*.css -u autoprefixer cssnano -r",
     "postbuild:dev": "postcss dev/*.css -u autoprefixer cssnano -r",
-    "start": "npm-run-all --parallel watch:sass postbuild:dev serve"
+    "start": "npm-run-all --parallel watch:sass postbuild:dev serve",
+    "publish": "np prerelease --preid beta --tag nightly"
   },
   "np": {
 		"yarn": false,

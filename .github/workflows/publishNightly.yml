@@ -30,6 +30,6 @@ jobs:
         run: npm run build
       - name: Postbuild css
         run: npm run postbuild
-      - run: np prerelease --tag nightly
+      - run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
