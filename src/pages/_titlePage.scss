@@ -1,0 +1,30 @@
+@use "../abstract/variables" as *;
+
+#itemDetailPage{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    overflow-y: auto;
+    
+    .detailRibbon {
+        height: 7.2em;
+        margin-top: 10vh;
+        background: transparent;
+        font-size: 2.2vh;
+        position: static !important;
+    }
+    .detailImageContainer .card {
+        position: fixed !important;
+        left: 3.3%;
+        top: calc(50% + 1em);
+        width: 25vw;
+        transform: translateY(-50%);
+        border-radius: $rounding-default;
+    }
+    .detailPageSecondaryContainer {
+        width: 100vw;
+    }
+}

@@ -8,6 +8,7 @@ $jf-purple-dark: hsl(285, 35%, 21%);
 $jf-blue-light:hsl(195, 100%, 43%);
 $jf-blue-dark: hsl(195, 100%, 16%);
 $gradient-default: linear-gradient(130deg, $jf-purple-light, $jf-blue-light);
+$gradient-icon: linear-gradient(0deg, $jf-purple-light 10%, $jf-blue-light 90%);
 $gradient-dark: linear-gradient(130deg, $jf-purple-dark, $jf-blue-dark);
 $gradient-default-inverted: linear-gradient(130deg, $jf-blue-light, $jf-purple-light);
 $rounding-max: 20px;

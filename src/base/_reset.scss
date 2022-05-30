@@ -1,4 +1,4 @@
-@use "../abstract" as ab;
+@use "../abstract/variables" as ab;
 .backgroundContainer{
     background-color: ab.$background-darker;
     &.withBackdrop{

@@ -1,0 +1,49 @@
+
+@mixin actorCard($type){
+    aspect-ratio: 1/1;
+    height: auto;
+    .cardBox{
+        position: relative;
+        margin: 0 1.2em 0 0 !important;
+    }
+    .cardScalable{
+        aspect-ratio: 1/1;
+        height: auto;
+        &::after{
+            content: "";
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, rgb(0 0 0 / 0.6), transparent);
+        }
+    }
+    .cardText{
+        @if $type == Person {
+            &-first{
+                position: absolute;
+                bottom: 0;
+                width: calc(100% - 1em);
+                padding: 0.5em !important;
+                color: white;
+            }
+        } @else if $type == Actor{
+            &-first{
+                position: absolute;
+                bottom:1.565em;
+                width: calc(100% - 1em);
+                padding: 0.1em 0.5em !important;
+                color: white;
+            }
+            &-secondary{
+                position: absolute;
+                bottom: 0.2em;
+                width: calc(100% - 1em);
+                padding: 0.1em 0.5em !important;
+                font-size: 0.86em;
+            }
+        }
+    }
+}
