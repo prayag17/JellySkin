@@ -7,4 +7,6 @@
 }
 .backdropContainer{
     filter: blur(ab.$filter-blur-default) brightness(ab.$filter-brightness-default) saturate(ab.$filter-saturation-default) contrast(ab.$filter-contrast-default);
+    mask-image: linear-gradient(to bottom, black, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
 }

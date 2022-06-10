@@ -24,7 +24,10 @@
         transform: translateY(-50%);
         border-radius: $rounding-default;
     }
-    .detailPageSecondaryContainer {
+    .detailPageWrapperContainer {
         width: 100vw;
+    }
+    .mainDetailButtons .emby-button:not([data-action="resume"]){
+        background: transparent !important;
     }
 }
