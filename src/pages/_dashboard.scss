@@ -1,0 +1,12 @@
+@media (min-width: 40em){
+    .dashboardDocument .skinBody {
+        width: calc(100% - 20em);
+    }
+}
+
+.dashboardDocument {
+    .headerTabs{
+        margin-left: auto;
+        width: calc(100% - 20em);
+    }
+}

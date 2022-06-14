@@ -25,10 +25,13 @@
         .navMenuOptionIcon{
             transition: margin-right $transition-time-fast-1 linear;
         }
+        &-selected{
+            background: $gradient-default-inverted !important;
+        }
         &:hover
         {
             .navMenuOptionIcon{
-                margin-right: 1.36em;
+                margin-right: 1.46em;
             }
             &::after{
                 opacity: 1;

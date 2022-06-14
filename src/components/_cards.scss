@@ -68,6 +68,13 @@
 }
 .cardPadder{
     background: ab.$gradient-dark !important;
+    &-square {
+        aspect-ratio: 0 !important;
+        padding: 0;
+    }
+    &-square + div{
+        aspect-ratio: 1;
+    }
     .cardImageIcon{
         color: transparent;
         background: ab.$gradient-default;
@@ -145,4 +152,7 @@
 }
 .cardText:nth-child(4){
     display: none;
+}
+.defaultCardBackground{
+    background: ab.$gradient-dark !important;
 }

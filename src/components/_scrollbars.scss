@@ -1,0 +1,11 @@
+// side menu
+.mainDrawer.drawer-open .scrollContainer{
+    &::-webkit-scrollbar{
+        &-track{
+            box-shadow: none !important;
+            &-piece{
+                background: transparent !important;
+            }
+        }
+    }
+}
