@@ -65,6 +65,10 @@
     &:hover .cardBox{
         background: rgb(0 0 0 / 0.5);
     }
+    &.squareCard .cardScalable{
+        aspect-ratio: 1;
+        width: 100%;
+    }
 }
 .cardPadder{
     background: ab.$gradient-dark !important;
