@@ -15,7 +15,7 @@
     .emby-input {
         background: transparent;
         border: none;
-        border-bottom: 0.3em solid rgb(255 255 255);
+        border-bottom: 0.1em solid rgba(255, 255, 255, 0.7);
         border-radius: 0 !important;
         &:focus{
             border-color: $jf-blue-light !important;

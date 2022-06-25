@@ -1,0 +1,24 @@
+@use "../abstract/variables" as *;
+// myPreferencesMenuPage
+#myPreferencesMenuPage{
+    .listItem{
+        border-radius: $rounding-default;
+        transition: background $transition-time-default;
+        &:hover{
+            background: black;
+            .listItemIcon{
+                margin-right: 0.5em;
+            }
+        }
+        &-border{
+            border: none !important;
+        }
+        &Icon{
+            background: $gradient-default;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            transition: margin-right $transition-time-default;
+        }
+    }
+}

@@ -7,7 +7,10 @@
 }
 .card{
     contain: none !important;
-    .cardScalable{
+    &OverlayContainer{
+        background: rgb(0 0 0 / 0.7);
+    }
+    &Scalable{
         position: relative;
         overflow: hidden;
         border-radius: ab.$rounding-default ab.$rounding-default 0 0;
