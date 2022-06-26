@@ -18,7 +18,7 @@
             opacity: 0;
             transition: opacity ab.$transition-time-fast-1 linear;
         }
-        &:hover::after{
+        &:hover::after, &:focus::after{
             opacity: 1;
         }
     }
