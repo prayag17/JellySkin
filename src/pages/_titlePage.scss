@@ -30,4 +30,35 @@
     .mainDetailButtons .emby-button:not([data-action="resume"]){
         background: transparent !important;
     }
+    .detailLogo{
+        display: none;
+    }
+    .emby-button{
+        background: transparent !important;
+        border-radius: 10vh;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background: rgb(255 255 255 / 0.1) !important;
+            color: white;
+        }
+        &::after{
+            display: none;
+        }
+        
+        &[title="Play"], &[title="Resume"]{
+            border: 0.1em solid currentColor;
+            &::after{
+                content: attr(title);
+                display: block;
+                opacity: 1;
+                background: transparent;
+                position: static;
+                font-weight: 400;
+                height: fit-content;
+                font-size: 1.5em;
+            }
+        }
+    }
 }

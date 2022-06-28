@@ -15,6 +15,7 @@
         overflow: hidden;
         border-radius: ab.$rounding-default ab.$rounding-default 0 0;
         box-shadow: none !important;
+        width: calc(100% + 1px);
         & > * {
             border-radius: 0 !important;
             width: 100%;
@@ -162,4 +163,9 @@
 }
 .defaultCardBackground{
     background: ab.$gradient-dark !important;
+}
+.chapterCard .innerCardFooter {
+    backdrop-filter: blur(5px);
+    background: rgb(0 0 0 / 0.6);
+    border-radius: 0 1em 1em 0 !important;
 }

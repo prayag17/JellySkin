@@ -22,3 +22,18 @@
         }
     }
 }
+
+//dialog
+.dialog{
+    background: rgb(0 0 0 / 0.7);
+    box-shadow: none;
+    border-radius: $rounding-max !important;
+    overflow: hidden;
+    backdrop-filter: blur($filter-blur-default);
+    .emby-button{
+        background: rgb(0 0 0 / 0) !important;
+        &::after{
+            all:unset !important;
+        }
+    }
+}
