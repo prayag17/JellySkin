@@ -10,6 +10,9 @@
     &OverlayContainer{
         background: rgb(0 0 0 / 0.7);
     }
+    &ImageIcon{
+        @include cardIcon();
+    }
     &Scalable{
         position: relative;
         overflow: hidden;
@@ -46,7 +49,7 @@
             }
         }
     }
-    &:hover .cardImageContainer::after{
+    &:hover .cardImageContainer::after, &:focus-visible .cardImageContainer::after{
         transform: scale(1.2);
     }
     &[data-type="Person"]{
@@ -66,7 +69,7 @@
     &:not([data-type="Person"]) .cardText-secondary {
         padding-bottom: 0.5em;
     }
-    &:hover .cardBox{
+    &:hover .cardBox, &:focus-visible .cardBox{
         background: rgb(0 0 0 / 0.5);
     }
     &.squareCard .cardScalable{
@@ -83,22 +86,10 @@
     &-square + div{
         aspect-ratio: 1;
     }
-    .cardImageIcon{
-        color: transparent;
-        background: ab.$gradient-default;
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
 }
 .cardImageContainer {
     &.defaultCardBackground {
         background: transparent;
-    }
-    .cardImageIcon{
-        color: transparent;
-        background: ab.$gradient-default;
-        background-clip: text;
-        -webkit-background-clip: text;
     }
 }
 .innerCardFooter {
@@ -138,7 +129,7 @@
         padding: 1.5em;
         background: transparent !important;
     }
-    &:hover span{
+    &:hover span, &:focus-visible span{
         color: transparent !important;
     }
 }
@@ -168,4 +159,13 @@
     backdrop-filter: blur(5px);
     background: rgb(0 0 0 / 0.6);
     border-radius: 0 1em 1em 0 !important;
+}
+
+.layout-mobile .cardOverlayButton {
+    width: fit-content;
+    background: rgb(0 0 0 / 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: ab.$rounding-default !important;
+    bottom: 10px;
+    right: 10px;
 }

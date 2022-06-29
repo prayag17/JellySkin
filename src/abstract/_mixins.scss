@@ -1,3 +1,4 @@
+@use "../abstract/variables" as *;
 
 @mixin actorCard($type){
     aspect-ratio: 1/1;
@@ -46,4 +47,11 @@
             }
         }
     }
+}
+
+@mixin cardIcon() {
+    color: transparent;
+    background: $gradient-default;
+    background-clip: text;
+    -webkit-background-clip: text;
 }

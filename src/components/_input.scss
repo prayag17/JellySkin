@@ -53,7 +53,7 @@ span.checkboxLabel{
         background-color: white;
     }
 }
-.emby-checkbox:focus+span.checkboxLabel::after {
+.emby-checkbox:focus-visible+span.checkboxLabel::after {
     transform: scaleX(1);
 }
 
@@ -90,7 +90,7 @@ span.checkboxLabel{
             border: none;
             margin-bottom: 0 !important;
         }
-        &:hover{
+        &:hover, &:focus-visible{
             background: rgb(0 0 0 / 0.7);
         }
         &Icon {

@@ -10,7 +10,7 @@
         left: 0;
         background: url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@11.3.9/src/svg/gradient.svg");
         background-size: cover;
-        z-index: -1;
+        z-index: 1;
     }
     & > div{
         position: absolute;
@@ -18,6 +18,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 0 !important;
+        min-width: 40vw;
+        max-width: 50vw;
+        z-index: 2;
     } 
     #divUsers{
         flex-wrap: nowrap;
@@ -25,6 +28,28 @@
         overflow: auto;
         .card{
             width: 30%;
+            .cardBox{
+                box-shadow: none !important;
+            }
         }
     }
+    .emby-button {
+        background: transparent;
+        border: 0.2em solid;
+        &::after{
+            all: unset !important;  
+        }
+        &:hover, &:focus-visible{
+            background: rgb(255 255 255 / 0.2);
+        }
+    }
+    .checkboxOutline{
+        background: transparent !important;
+        border: 0.152em solid white !important;
+    }
+    .inputLabelFocused, .emby-input:focus {
+        color: white !important;
+        border-bottom-color: white !important;
+    }
+    
 }
