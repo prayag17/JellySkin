@@ -5,7 +5,7 @@
     height: auto;
     .cardBox{
         position: relative;
-        margin: 0 1.2em 0 0 !important;
+        margin: 0.5em !important;
     }
     .cardScalable{
         aspect-ratio: 1/1;
@@ -19,6 +19,9 @@
             top: 0;
             left: 0;
             background: linear-gradient(to top, rgb(0 0 0 / 0.6), transparent);
+        }
+        .cardImageContainer::after{
+            background-size: cover;
         }
     }
     .cardText{
@@ -54,4 +57,15 @@
     background: $gradient-default;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+@mixin indicator() {
+    top: 0;
+    right: 0;
+    .indicator{
+        border-radius: 0 0 0 $rounding-default;
+        background: $gradient-default;
+        padding: 0.2em;
+        box-shadow: 0 0 5px rgb(0 0 0 / 0.7);
+    }
 }

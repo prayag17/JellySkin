@@ -2,7 +2,7 @@
 
 .emby-button{
     position: relative;
-    &[is="emby-button"]:not(.emby-tab-button){
+    &[is="emby-button"]:not(.emby-tab-button), &.raised[is="emby-linkbutton"]:not(.emby-tab-button){
         background: ab.$background-dark;
         border-radius: 100vh;
         overflow: hidden;
@@ -22,4 +22,8 @@
             opacity: 1;
         }
     }
+}
+
+.paper-icon-button-light{
+    border-radius: ab.$rounding-default;
 }

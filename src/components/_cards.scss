@@ -133,15 +133,8 @@
         color: transparent !important;
     }
 }
-.cardIndicators{
-    top: 0;
-    right: 0;
-    .indicator{
-        border-radius: 0 0 0 ab.$rounding-default;
-        background: ab.$gradient-default;
-        padding: 0.2em;
-        box-shadow: 0 0 5px rgb(0 0 0 / 0.7);
-    }
+.cardIndicators, .listItemIndicators{
+    @include indicator();
 }
 [data-isfolder="true"][data-type="CollectionFolder"]:not([data-type="Series"]) .cardText{
     padding: 0.75em !important;
@@ -169,3 +162,11 @@
     bottom: 10px;
     right: 10px;
 }
+.devicesList {
+    .cardScalable{
+        aspect-ratio: 16/9;
+    }
+    .cardPadder{
+        display: none;
+    }
+} 

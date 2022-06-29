@@ -61,72 +61,122 @@
             }
         }
     }
+    .childrenItemsContainer.itemsContainer.vertical-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        .listItem{
+            .paper-icon-button-light {
+                &[data-action="menu"]::after{
+                    content: "";
+                    margin-left: 100%;
+                }
+                &:not([data-action="menu"]) {
+
+                    aspect-ratio: 1;
+                    border-radius: $rounding-default;
+                }
+            }
+            &[data-type="Episode"] {
+                flex-direction: column;
+                padding: 0;
+                margin: 0 !important;
+                background: rgb(0 0 0 / 0.5);
+                border-radius: $rounding-default;
+                transition: background $transition-time-default ;
+                &:hover{
+                    background: rgb(0 0 0 / 0.7);
+                }
+            }
+            
+            &-content {
+                flex-direction: column;
+            }
+            &Image {
+                width: 100%;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            &-overview {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                text-align: start;
+                width: 100%;
+                overflow: hidden;
+            }
+            
+            &Body {
+                width: 95%;
+            }
+        }
+    }
 }
 
 // mobile 
-.layout-mobile{
-    #itemDetailPage {
-        .itemBackdrop {
-            position: absolute !important;
-            width: calc(100vw + 20px);
-            height: 100vh !important;
-            top: 0%;
-            left: -10px;
-            filter: blur($filter-blur-default) brightness(50%);
-            margin-top: 0 !important;
-            mask-image: linear-gradient(to bottom, black, transparent);
-            -webkit-mask-image: linear-gradient(to bottom, black, transparent);
-        }
-        .detail{
-            &Ribbon {
-                height: 70vh;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-end;
-            }
-            &ImageContainer {
-                position: static;
-                overflow: hidden;
-                padding: 0 !important;
-                .card {
-                    top: 0;
-                    max-width: 50vw !important;
-                    min-width: 50vw;
-                    margin: 0 !important;
-                    position: static!important;
-                    transform: none;
-                    filter: none !important;
-                    &Box{
-                        margin: 0 !important;
-                        box-shadow: none;
-                    }
-                }
-            }
-        }
-        .itemMiscInfo{
-            justify-content: flex-start;
-        }
-        .infoText{
-            width: fit-content !important;
-        }
-        .infoWrapper {
+.layout-mobile #itemDetailPage {
+    .itemBackdrop {
+        position: absolute !important;
+        width: calc(100vw + 20px);
+        height: 100vh !important;
+        top: 0%;
+        left: -10px;
+        filter: blur($filter-blur-default) brightness(50%);
+        margin-top: 0 !important;
+        mask-image: linear-gradient(to bottom, black, transparent);
+        -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+    }
+    .detail{
+        &Ribbon {
+            height: 70vh;
             display: flex;
             flex-direction: column;
-            flex-wrap: nowrap;
             align-items: flex-start;
             justify-content: flex-end;
-            padding: 0 !important;
         }
-        .mainDetailButtons {
-            gap: 1em !important;
-            .emby-button[title=Play], .emby-button[title=Resume]{
-                border: none !important;
-                padding: 0 !important;
-                &::after{
-                    all: unset !important;
+        &ImageContainer {
+            position: static;
+            overflow: hidden;
+            padding: 0 !important;
+            .card {
+                top: 0;
+                max-width: 50vw !important;
+                min-width: 50vw;
+                margin: 0 !important;
+                position: static!important;
+                transform: none;
+                filter: none !important;
+                &Box{
+                    margin: 0 !important;
+                    box-shadow: none;
                 }
             }
         }
+    }
+    .itemMiscInfo{
+        justify-content: flex-start;
+    }
+    .infoText{
+        width: fit-content !important;
+    }
+    .infoWrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 0 !important;
+    }
+    .mainDetailButtons {
+        gap: 1em !important;
+        .emby-button[title=Play], .emby-button[title=Resume]{
+            border: none !important;
+            padding: 0 !important;
+            &::after{
+                all: unset !important;
+            }
+        }
+    }
+    .childrenItemsContainer.itemsContainer.vertical-list {
+        grid-template-columns: 1fr;
     }
 }

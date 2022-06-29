@@ -10,3 +10,9 @@
         width: calc(100% - 20em);
     }
 }
+
+.dashboardColumn:first-child .dashboardSection .paperList {
+    background: rgb(0 0 0 / 0.5) !important;
+    font-size: 1.1em;
+    color: rgb(255 255 255 / 0.7);
+}
