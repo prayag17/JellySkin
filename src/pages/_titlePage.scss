@@ -188,6 +188,20 @@
 	}
 	.childrenItemsContainer.itemsContainer.vertical-list {
 		grid-template-columns: 1fr;
+		.listItemImage {
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100%;
+			flex-shrink: 0;
+			flex-grow: 1;
+			flex-basis: 20vh;
+		}
+		.listItem-bottomoverview {
+			font-size: 88%;
+			margin-bottom: 1em;
+			margin-top: 0.2em;
+			padding: 0 1em 1em 1em;
+		}
 	}
 }
 

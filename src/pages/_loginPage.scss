@@ -1,55 +1,66 @@
-#loginPage{
-    mask-image: none;
-    -webkit-mask-image: none;
-    &:after {
-        content: "";
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@11.3.9/src/svg/gradient.svg");
-        background-size: cover;
-        z-index: 1;
-    }
-    & > div{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0 !important;
-        min-width: 40vw;
-        max-width: 50vw;
-        z-index: 2;
-    } 
-    #divUsers{
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow: auto;
-        .card{
-            width: 30%;
-            .cardBox{
-                box-shadow: none !important;
-            }
-        }
-    }
-    .emby-button {
-        background: transparent;
-        border: 0.2em solid;
-        &::after{
-            all: unset !important;  
-        }
-        &:hover, &:focus-visible{
-            background: rgb(255 255 255 / 0.2);
-        }
-    }
-    .checkboxOutline{
-        background: transparent !important;
-        border: 0.152em solid white !important;
-    }
-    .inputLabelFocused, .emby-input:focus {
-        color: white !important;
-        border-bottom-color: white !important;
-    }
-    
+/** @format */
+
+#loginPage {
+	mask-image: none;
+	-webkit-mask-image: none;
+	&:after {
+		content: "";
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin@11.3.9/src/svg/gradient.svg");
+		background-size: cover;
+		z-index: 1;
+	}
+	& > div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0 !important;
+		min-width: 40vw;
+		max-width: 50vw;
+		z-index: 2;
+	}
+	#divUsers {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		overflow: auto;
+		.card {
+			width: 30%;
+			.cardBox {
+				box-shadow: none !important;
+			}
+		}
+	}
+	.emby-button {
+		background: transparent;
+		border: 0.2em solid;
+		&::after {
+			all: unset !important;
+		}
+		&:hover,
+		&:focus-visible {
+			background: rgb(255 255 255 / 0.2);
+		}
+	}
+	.checkboxOutline {
+		background: transparent !important;
+		border: 0.152em solid white !important;
+	}
+	.inputLabelFocused,
+	.emby-input:focus {
+		color: white !important;
+		border-bottom-color: white !important;
+	}
+}
+
+// mobile
+.layout-mobile #loginPage {
+	& > div {
+		width: 85vw;
+		max-width: 85vw;
+	}
 }
