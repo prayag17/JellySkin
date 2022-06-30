@@ -1,0 +1,41 @@
+@use "../abstract/variables" as *;
+.mainDrawer{
+    background: rgb(0 0 0 / 0.5);
+    backdrop-filter: blur(0);
+    &.drawer-open{
+        backdrop-filter: blur($filter-blur-default);
+        .scrollContainer{
+            mask-image: linear-gradient(to top, transparent, black 0.5em calc(100% - 0.5em), transparent);
+            -webkit-mask-image: linear-gradient(to top, transparent, black 0.5em calc(100% - 0.5em), transparent);
+        }
+    }
+    .navMenuOption{
+        &::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: $gradient-default;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity $transition-time-fast-1 linear;
+        }
+        .navMenuOptionIcon{
+            transition: margin-right $transition-time-fast-1 linear;
+        }
+        &-selected{
+            background: $gradient-default-inverted !important;
+        }
+        &:hover
+        {
+            .navMenuOptionIcon{
+                margin-right: 1.46em;
+            }
+            &::after{
+                opacity: 1;
+            }
+        }
+    }
+}

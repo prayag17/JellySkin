@@ -1,0 +1,274 @@
+/** @format */
+
+@use "../abstract/variables" as *;
+
+#itemDetailPage {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100vw;
+	overflow-y: auto;
+
+	.detailRibbon {
+		height: 7.2em;
+		margin-top: 10vh;
+		background: transparent;
+		font-size: 2.2vh;
+		position: static !important;
+	}
+	.detailImageContainer .card {
+		position: fixed !important;
+		left: 3.3%;
+		top: calc(50% + 1em);
+		width: 25vw;
+		transform: translateY(-50%);
+		border-radius: $rounding-default;
+	}
+	.detailPageWrapperContainer {
+		width: 100vw;
+	}
+	.mainDetailButtons .emby-button:not([data-action="resume"]) {
+		background: transparent !important;
+	}
+	.detailLogo {
+		display: none;
+	}
+	.emby-button {
+		background: transparent !important;
+		border-radius: 10vh;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			background: rgb(255 255 255 / 0.1) !important;
+			color: white;
+		}
+		&::after {
+			display: none;
+		}
+
+		&[title="Play"],
+		&[title="Resume"] {
+			border: 0.1em solid currentColor;
+			&::after {
+				content: attr(title);
+				display: block;
+				opacity: 1;
+				background: transparent;
+				position: static;
+				font-weight: 400;
+				height: fit-content;
+				font-size: 1.5em;
+			}
+		}
+	}
+	.childrenItemsContainer.itemsContainer.vertical-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1em;
+		.listItem {
+			.paper-icon-button-light {
+				&[data-action="menu"]::after {
+					content: "";
+					margin-left: 100%;
+				}
+				&:not([data-action="menu"]) {
+					aspect-ratio: 1;
+					border-radius: $rounding-default;
+				}
+			}
+			&[data-type="Episode"] {
+				flex-direction: column;
+				padding: 0;
+				margin: 0 !important;
+				background: rgb(0 0 0 / 0.5);
+				border-radius: $rounding-default;
+				transition: background $transition-time-default;
+				&:hover {
+					background: rgb(0 0 0 / 0.7);
+				}
+			}
+
+			&-content {
+				flex-direction: column;
+			}
+			&Image {
+				width: 100%;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+			&-overview {
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				text-align: start;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			&Body {
+				width: 95%;
+			}
+		}
+	}
+}
+
+// mobile
+.layout-mobile #itemDetailPage {
+	.itemBackdrop {
+		position: absolute !important;
+		width: calc(100vw + 20px);
+		height: 80vh !important;
+		top: 0%;
+		left: -10px;
+		filter: blur($filter-blur-default) brightness(50%);
+		margin-top: 0 !important;
+		mask-image: linear-gradient(to bottom, black, transparent);
+		-webkit-mask-image: linear-gradient(to bottom, black, transparent);
+	}
+	.detail {
+		&Ribbon {
+			height: 70vh;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-end;
+			margin-top: 0 !important;
+		}
+		&ImageContainer {
+			position: static;
+			overflow: hidden;
+			padding: 0 !important;
+			.card {
+				top: 0;
+				max-width: 50vw !important;
+				min-width: 50vw;
+				margin: 0 !important;
+				position: static !important;
+				transform: none;
+				filter: none !important;
+				&Box {
+					margin: 0 !important;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+	.itemMiscInfo {
+		justify-content: flex-start;
+	}
+	.infoText {
+		text-align: start;
+		width: fit-content !important;
+	}
+	.infoWrapper {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: flex-start;
+		justify-content: flex-end;
+		padding: 0 !important;
+	}
+	.mainDetailButtons {
+		gap: 1em !important;
+		width: 100%;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		overflow: auto;
+		.emby-button[title="Play"],
+		.emby-button[title="Resume"] {
+			border: none !important;
+			padding: 0 !important;
+			overflow: visible;
+			&::after {
+				all: unset !important;
+			}
+		}
+	}
+	.childrenItemsContainer.itemsContainer.vertical-list {
+		grid-template-columns: 1fr;
+		.listItemImage {
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100%;
+			flex-shrink: 0;
+			flex-grow: 1;
+			flex-basis: 20vh;
+		}
+		.listItem-bottomoverview {
+			font-size: 88%;
+			margin-bottom: 1em;
+			margin-top: 0.2em;
+			padding: 0 1em 1em 1em;
+		}
+	}
+}
+
+@media (orientation: landscape) {
+	.layout-mobile #itemDetailPage {
+		.detail {
+			&Ribbon {
+				flex-direction: row;
+				margin-top: 10vh !important;
+				justify-content: center;
+				align-items: center;
+				.info {
+					&Wrapper {
+						display: grid;
+						grid-template-areas:
+							"card name"
+							"card info";
+						flex-direction: row;
+						flex-basis: 50vw;
+						align-items: center;
+						.detailImageContainer {
+							grid-area: card;
+						}
+						.nameContainer {
+							grid-area: name;
+							align-self: self-end;
+							justify-self: flex-end;
+							width: calc(100% - 1.2em);
+							text-overflow: ellipsis;
+						}
+						.itemMiscInfo-primary {
+							grid-area: info;
+							align-self: self-start;
+							justify-self: flex-end;
+							width: calc(100% - 1.2em);
+							text-overflow: ellipsis;
+						}
+					}
+					&Text {
+						text-align: start;
+						width: fit-content !important;
+						font-size: 3.2em;
+						max-width: fit-content;
+						-webkit-line-clamp: 2;
+						-webkit-box-orient: vertical;
+						display: -webkit-box;
+						overflow: hidden;
+					}
+				}
+			}
+			&ImageContainer {
+				.card {
+					min-width: 40vh;
+					max-width: 40vh !important;
+					width: 100%;
+				}
+			}
+		}
+		.mainDetailButtons {
+			width: fit-content;
+			margin: 0 !important;
+			padding: 0 !important;
+			flex-basis: 50vw;
+			font-size: 1.5em;
+		}
+		.parentName a {
+			text-align: start;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+/** @format */
+
+@use "../abstract/variables" as ab;
+.backgroundContainer {
+	background-color: ab.$background-darker;
+	&.withBackdrop {
+		background: transparent !important;
+	}
+}
+.backdropContainer {
+	filter: blur(ab.$filter-blur-default)
+		brightness(ab.$filter-brightness-default)
+		saturate(ab.$filter-saturation-default)
+		contrast(ab.$filter-contrast-default);
+	mask-image: linear-gradient(to bottom, black, transparent);
+	-webkit-mask-image: linear-gradient(to bottom, black, transparent);
+}
+.withTabs .content-primary {
+	padding-top: 1em !important;
+}
+
+.scrollY {
+	mask-image: linear-gradient(
+		to bottom,
+		transparent,
+		black 1em calc(100% - 1em),
+		transparent
+	);
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		transparent,
+		black 1em calc(100% - 1em),
+		transparent
+	);
+}

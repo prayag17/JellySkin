@@ -1,0 +1,26 @@
+.skinHeader{
+    background: transparent !important;
+    position: static;
+}
+
+.layout-mobile, .layout-desktop{
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: hidden !important;
+    }
+}
+
+div[data-role=page].page {
+    position: absolute;
+    padding: 0 !important;
+    height: 100%;
+    overflow: hidden visible;
+    mask-image: linear-gradient(to top, transparent, black 1em calc(100% - 1em), transparent);
+    -webkit-mask-image: linear-gradient(to top, transparent, black 1em calc(100% - 1em), transparent);
+}
+.mainAnimatedPages.skinBody {
+    height: 100%;
+    position: relative;
+}

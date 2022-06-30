@@ -1,0 +1,103 @@
+@use "../abstract/variables" as *;
+// Textbox
+.inputContainer {
+    position: relative;
+    .inputLabel{
+        top: -1.2em;
+        font-size: 0.95em;
+        position: absolute;
+        transition: top $transition-time-default, font-size $transition-time-default;
+        &-float:not(&Focused) {
+            font-size: 1.2em;
+            top: 0;
+        }
+    }
+    .emby-input {
+        background: transparent;
+        border: none;
+        border-bottom: 0.1em solid rgba(255, 255, 255, 0.7);
+        border-radius: 0 !important;
+        &:focus{
+            border-color: $jf-blue-light !important;
+        }
+    }
+}
+
+// Selectbox
+.emby-select {
+    background: transparent;
+    border: none !important;
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.7) !important;
+    border-radius: 0 !important;
+}
+
+// Checkbox
+.checkbox{
+    &Outline{
+        background-color: $background-dark !important;
+        border-color: $background-dark !important;
+    }
+}
+span.checkboxLabel{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 0.1em;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform $transition-time-default ease-in-out;
+        left: 0;
+        bottom: -0.2em;
+        background-color: white;
+    }
+}
+.emby-checkbox:focus-visible+span.checkboxLabel::after {
+    transform: scaleX(1);
+}
+
+// Textarea
+.emby-textarea{
+    background: transparent;
+    border: none;
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.7);
+    border-radius: 0 !important;
+    &:focus{
+        border-color: $jf-blue-light !important;
+    }
+}
+
+// Checkbox and Paper list
+
+.checkboxList.paperList{
+    background: rgb(0 0 0 / 0.5) !important;
+    overflow: hidden !important;
+    border-radius: $rounding-default !important;
+}
+
+.paperList {
+    overflow: hidden;
+    border-radius: $rounding-max;
+    background: transparent !important;
+    .listItem{
+        transition: background $transition-time-default;
+        background: rgb(0 0 0 / 0.5);
+        border: none !important;
+        border-radius: $rounding--1;
+        margin-bottom: 0.3em;
+        &:last-child{
+            border: none;
+            margin-bottom: 0 !important;
+        }
+        &:hover, &:focus-visible{
+            background: rgb(0 0 0 / 0.7);
+        }
+        &Icon {
+            background: $gradient-default;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    }
+}

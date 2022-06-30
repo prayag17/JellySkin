@@ -1,0 +1,42 @@
+@use "../abstract/variables" as ab;
+#indexPage{
+    .sectionTitle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.5em;
+        color: white;
+        align-items: center;
+        font-size: 1.6em;
+        &::before{
+            content: "";
+            width: 1.3em;
+            height: 2px;
+            background: white;
+        }
+    }
+    .emby-scroller{
+        .emby-button:not(.cardOverlayButton){
+            margin-right: 1.2em;
+            border-radius: ab.$rounding-default;
+            background: ab.$background-dark;
+            box-shadow: 0 0 15px rgb(0 0 0 / 0.2);
+            overflow: hidden;
+            &::after{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: ab.$gradient-default;
+                opacity: 0;
+                transition: opacity ab.$transition-time-fast-1;
+                z-index: -1;
+            }
+            &:hover::after{
+                opacity: 1;
+            }
+        }
+    }
+}
