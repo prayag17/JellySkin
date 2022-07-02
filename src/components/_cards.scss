@@ -19,6 +19,11 @@
 }
 .card {
 	contain: none !important;
+	&.overflowSquareCard .cardImageContainer {
+		&::after {
+			background-size: contain !important;
+		}
+	}
 	&OverlayContainer {
 		background: rgb(0 0 0 / 0.7);
 	}
@@ -44,7 +49,7 @@
 				background: inherit;
 			}
 			&::after {
-				background-size: contain;
+				background-size: cover;
 				width: 100%;
 				height: 100%;
 				left: 0;

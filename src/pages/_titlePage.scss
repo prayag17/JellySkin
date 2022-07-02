@@ -17,6 +17,9 @@
 		background: transparent;
 		font-size: 2.2vh;
 		position: static !important;
+		.itemMiscInfo {
+			margin-bottom: 0 !important;
+		}
 	}
 	.detailImageContainer .card {
 		position: fixed !important;
@@ -52,6 +55,9 @@
 		&[title="Play"],
 		&[title="Resume"] {
 			border: 0.1em solid currentColor;
+			padding: 0.2em 1.2em !important;
+			gap: 0.2em;
+			margin-right: 0.5em;
 			&::after {
 				content: attr(title);
 				display: block;
