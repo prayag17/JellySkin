@@ -10,13 +10,13 @@
 To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
   
 ```css
-  @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.0.1/dist/main.css");
+  @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/main.css");
 ```
 
 To use Logos like the images given below use:
   
 ```css
-  @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.0.1/dist/logo.css");
+  @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/logo.css");
 ```
   
 <h3> You can also use Jellyfin-Skin-Manager-Plugin : https://github.com/danieladov/jellyfin-plugin-skin-manager
