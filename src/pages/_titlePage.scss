@@ -11,6 +11,10 @@
 	width: 100vw;
 	overflow-y: auto;
 
+	.mediaInfoItem {
+		border-radius: 10vh;
+	}
+
 	.detailRibbon {
 		height: 7.2em;
 		margin-top: 10vh;

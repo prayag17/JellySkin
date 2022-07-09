@@ -32,7 +32,10 @@
 	border-radius: $rounding-max !important;
 	overflow: hidden;
 	backdrop-filter: blur($filter-blur-default);
-	.emby-button {
+	.smoothScrollY {
+		max-height: 100%;
+	}
+	.emby-button:not(.cardImageContainer) {
 		background: rgb(0 0 0 / 0) !important;
 		&::after {
 			all: unset !important;

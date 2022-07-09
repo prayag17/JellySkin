@@ -1,7 +1,11 @@
 /** @format */
 
-body:not(layout-mobile) #itemDetailPage {
-	.itemName {
+.layout-mobile #itemDetailPage .detailLogo:not(.hide) {
+	display: none !important;
+}
+
+body #itemDetailPage {
+	.parentName {
 		display: none;
 	}
 	.nameContainer .parentName {

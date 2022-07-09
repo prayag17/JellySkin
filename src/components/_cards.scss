@@ -19,11 +19,20 @@
 }
 .card {
 	contain: none !important;
-	&.overflowSquareCard .cardImageContainer {
-		&::after {
-			background-size: contain !important;
+	&.overflowSquareCard {
+		.cardScalable {
+			aspect-ratio: 1;
+		}
+		.cardImageContainer {
+			&::after {
+				background-size: contain !important;
+			}
 		}
 	}
+
+	// &.overflowBackdropCard .cardScalable {
+	// 	aspect-ratio: auto;
+	// }
 	&OverlayContainer {
 		background: rgb(0 0 0 / 0.7);
 	}
@@ -32,10 +41,12 @@
 	}
 	&Scalable {
 		position: relative;
+		aspect-ratio: auto;
 		overflow: hidden;
 		border-radius: ab.$rounding-default ab.$rounding-default 0 0;
 		box-shadow: none !important;
 		width: calc(100% + 1px);
+
 		& > * {
 			border-radius: 0 !important;
 			width: 100%;
@@ -93,8 +104,8 @@
 		background: rgb(0 0 0 / 0.5);
 	}
 	&.squareCard .cardScalable {
-		aspect-ratio: 1;
 		width: 100%;
+		aspect-ratio: 1;
 	}
 }
 .cardPadder {
