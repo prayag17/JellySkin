@@ -32,7 +32,12 @@
 			}
 		}
 	}
-	.section0 .itemsContainer {
-		flex-wrap: wrap;
+	.section0 {
+		.emby-scrollbuttons {
+			display: none;
+		}
+		.itemsContainer {
+			flex-wrap: wrap;
+		}
 	}
 }
