@@ -114,16 +114,16 @@ Add the follwing line to custom CSS with the default css file-
 <h3>Enabling backdrop-filter in FireFox</h3>
 
 <code style="display: block !important;">
-Deaktiviert From version 70: this feature is behind the
-layout.css.backdrop-filter.enabled
-preference (needs to be set to
-  true
-  ) and the
-  gfx.webrender.all
-  preference (needs to be set to
-    true
-    ).
- To change preferences in Firefox, visit about:config.
+Deaktiviert From version 70: this feature is behind the<br>
+layout.css.backdrop-filter.enabled<br>
+preference (needs to be set to<br>
+  true<br>
+  ) and the<br>
+  gfx.webrender.all<br>
+  preference (needs to be set to<br>
+    true<br>
+    ).<br>
+ To change preferences in Firefox, visit about:config.<br>
 </code>
 
 </div>

@@ -5,8 +5,9 @@
 }
 
 body #itemDetailPage {
-	.parentName {
-		display: none;
+	.parentName,
+	.parentNameLast {
+		font-size: 0 !important;
 	}
 	.nameContainer .parentName {
 		a {

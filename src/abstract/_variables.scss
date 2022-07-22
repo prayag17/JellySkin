@@ -1,16 +1,33 @@
+/** @format */
+
+:root {
+	--accent1-light: hsl(285, 46%, 56%);
+	--accent1-dark: hsl(285, 35%, 21%);
+	--accent1-light-opacity1: hsla(285, 46%, 56%, 0.4);
+	--accent2-light: hsl(195, 100%, 43%);
+	--accent2-dark: hsl(195, 100%, 16%);
+}
 $background-dark: hsl(208, 89%, 20%);
 $background-darker: hsl(208, 89%, 5%);
-$background-gradient: linear-gradient(45deg, $background-darker,$background-dark);
+$background-gradient: linear-gradient(
+	45deg,
+	$background-darker,
+	$background-dark
+);
 $background-light: hsl(0, 0%, 100%);
-$jf-purple-light: hsl(285, 46%, 56%);
-$jf-purple-light-opacity-1: hsla(285, 46%, 56%, 0.4);
-$jf-purple-dark: hsl(285, 35%, 21%);
-$jf-blue-light:hsl(195, 100%, 43%);
-$jf-blue-dark: hsl(195, 100%, 16%);
+$jf-purple-light: var(--accent1-light);
+$jf-purple-light-opacity-1: var(--accent1-light-opacity1);
+$jf-purple-dark: var(--accent1-dark);
+$jf-blue-light: var(--accent2-light);
+$jf-blue-dark: var(--accent2-dark);
 $gradient-default: linear-gradient(130deg, $jf-purple-light, $jf-blue-light);
 $gradient-icon: linear-gradient(0deg, $jf-purple-light 10%, $jf-blue-light 90%);
 $gradient-dark: linear-gradient(130deg, $jf-purple-dark, $jf-blue-dark);
-$gradient-default-inverted: linear-gradient(130deg, $jf-blue-light, $jf-purple-light);
+$gradient-default-inverted: linear-gradient(
+	130deg,
+	$jf-blue-light,
+	$jf-purple-light
+);
 $rounding-max: 20px;
 $rounding-default: 10px;
 $rounding--1: 8px;
