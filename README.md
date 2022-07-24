@@ -1,6 +1,8 @@
 <div align="center">
 <h1>JellySkin</h1><br>
+  
 ![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge)
+  
 <br>
 <h3>Use 67% or 70% zoom in web browser for better experience</h3>
 <h4>Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.</h4>
