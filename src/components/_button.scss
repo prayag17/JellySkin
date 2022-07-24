@@ -1,29 +1,41 @@
+/** @format */
+
 @use "../abstract/variables" as ab;
 
-.emby-button{
-    position: relative;
-    &[is="emby-button"]:not(.emby-tab-button), &.raised[is="emby-linkbutton"]:not(.emby-tab-button){
-        background: ab.$background-dark;
-        border-radius: 100vh;
-        overflow: hidden;
-        &::after{
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background: ab.$gradient-default;
-            z-index: -1;
-            opacity: 0;
-            transition: opacity ab.$transition-time-fast-1 linear;
-        }
-        &:hover::after, &:focus::after{
-            opacity: 1;
-        }
-    }
+.emby-button {
+	position: relative;
+	&[is="emby-button"]:not(.emby-tab-button),
+	&.raised[is="emby-linkbutton"]:not(.emby-tab-button) {
+		background: ab.$background-dark;
+		border-radius: 100vh;
+		overflow: hidden;
+		&::after {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background: ab.$gradient-default;
+			z-index: -1;
+			opacity: 0;
+			transition: opacity ab.$transition-time-fast-1 linear;
+		}
+		&:hover::after,
+		&:focus::after {
+			opacity: 1;
+		}
+	}
+	&.emby-collapsible-button {
+		box-shadow: none;
+		border: 0 !important;
+		background: transparent !important;
+		&::after {
+			display: none !important;
+		}
+	}
 }
 
-.paper-icon-button-light{
-    border-radius: ab.$rounding-default;
+.paper-icon-button-light {
+	border-radius: ab.$rounding-default;
 }

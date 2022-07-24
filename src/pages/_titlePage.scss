@@ -48,12 +48,19 @@
 		flex-flow: row;
 		justify-content: center;
 		align-items: center;
-		&:not([is="emby-linkbutton"]):hover {
-			background: rgb(255 255 255 / 0.1) !important;
-			color: white;
+		text-decoration: none;
+		&[is="emby-linkbutton"] {
+			color: unset;
 		}
-		&::after {
-			display: none;
+		&:not([is="emby-linkbutton"]) {
+			&:hover {
+				background: rgb(255 255 255 / 0.1) !important;
+				color: white;
+			}
+
+			&::after {
+				display: none;
+			}
 		}
 
 		&[title="Play"],
@@ -121,6 +128,9 @@
 				width: 95%;
 			}
 		}
+	}
+	.listItem {
+		flex-flow: column !important;
 	}
 }
 

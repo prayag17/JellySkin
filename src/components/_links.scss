@@ -2,6 +2,11 @@
 @use "../abstract/variables" as *;
 a[is="emby-linkbutton"] {
 	position: relative;
+	margin-bottom: 0.3em;
+	text-decoration: none !important;
+	&.button-link {
+		color: $jf-blue-light;
+	}
 	&::after {
 		content: "" !important;
 		position: absolute;
@@ -9,12 +14,12 @@ a[is="emby-linkbutton"] {
 		width: 100%;
 		height: 0.1em;
 		background: currentColor;
-		transform-origin: left;
+		transform-origin: right;
 		transform: scale(0);
 		transition: transform $transition-time-fast-1 ease-in-out;
 	}
 	&:hover::after {
-		transform-origin: right;
+		transform-origin: left;
 		transform: scale(1);
 	}
 }
