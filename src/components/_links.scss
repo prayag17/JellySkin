@@ -1,6 +1,6 @@
 /** @format */
 @use "../abstract/variables" as *;
-a[is="emby-linkbutton"]:not(.listItem-border) {
+a[is="emby-linkbutton"]:not(.listItem-border, .navMenuOption) {
 	position: relative;
 	margin-bottom: 0.3em;
 	text-decoration: none !important;
