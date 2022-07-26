@@ -132,6 +132,10 @@
 	.listItem {
 		flex-flow: column !important;
 	}
+	.listItem[data-mediatype="Audio"] {
+		flex-flow: row !important;
+		grid-column: auto / span 3;
+	}
 }
 
 // mobile
