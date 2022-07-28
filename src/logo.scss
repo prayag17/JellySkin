@@ -1,7 +1,13 @@
 /** @format */
 
-.layout-mobile #itemDetailPage .detailLogo:not(.hide) {
-	display: none !important;
+.layout-mobile #itemDetailPage {
+	.parentName,
+	.parentNameLast {
+		display: block !important;
+	}
+	.detailLogo:not(.hide) {
+		display: none !important;
+	}
 }
 
 body #itemDetailPage {
