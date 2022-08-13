@@ -3,8 +3,8 @@
   <h2>Vibrant, minimal, and sprinkled with tons of animations <br> CSS theme for Jellyfin</h2>
 </h1><br>
   
-![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge)
-  
+![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge) <br>
+![GitHub Repo stars](https://img.shields.io/github/stars/prayag17/JellySkin?style=social)
 <br>
 <h3>Use 67% or 70% zoom in web browser for better experience</h3>
 <h4>Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.</h4>
