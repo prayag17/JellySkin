@@ -1,6 +1,3 @@
-node_modules
-dev/*.css
-dev/addons
-dist/*.css
-dist/*.css.map
-dist/addons
+/dev
+/node_modules
+/dist

@@ -1,9 +1,13 @@
 /** @format */
 
 .layout-mobile #itemDetailPage {
+	.itemBackdrop {
+		display: block !important;
+	}
 	.parentName,
 	.parentNameLast {
 		display: block !important;
+		font-size: 1.6em !important;
 	}
 	.detailLogo:not(.hide) {
 		display: none !important;
@@ -11,6 +15,9 @@
 }
 
 body #itemDetailPage {
+	.itemBackdrop {
+		display: none !important;
+	}
 	.parentName,
 	.parentNameLast {
 		font-size: 0 !important;

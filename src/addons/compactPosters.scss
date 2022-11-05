@@ -1,0 +1,63 @@
+/** @format */
+
+$cardText-bg: rgb(0 0 0 / 0.7);
+.card {
+	--height: calc(100% - 3.65em);
+	.innerCardFooter {
+		border-radius: 0 !important;
+		margin-bottom: 3.65em;
+		width: 100% !important;
+		.itemProgressBar {
+			background: $cardText-bg;
+		}
+	}
+	&Text {
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 1.5em;
+		z-index: 5;
+		&-first {
+			bottom: 1.75em;
+		}
+		&-secondary {
+			bottom: 0;
+		}
+	}
+	&Scalable::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 3.65em;
+		background: linear-gradient(to top, rgb(0 0 0 / 0.9), $cardText-bg);
+	}
+	&Box {
+		position: relative;
+	}
+	&OverlayContainer {
+		height: var(--height);
+	}
+	&[data-type="CollectionFolder"] {
+		--height: calc(100% - 2.999em);
+		.cardScalable::after {
+			display: none !important;
+		}
+		.cardText {
+			bottom: 0;
+			background: linear-gradient(
+				to top,
+				rgb(0 0 0 / 0.9),
+				$cardText-bg
+			);
+			text-align: center;
+		}
+	}
+}
+
+.detailImageContainer {
+	.cardScalable::after {
+		display: none !important;
+	}
+}

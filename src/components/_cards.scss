@@ -84,9 +84,15 @@
 	}
 	&[data-type="Person"] {
 		@include actorCard("Person");
+		&:hover .cardContent {
+			filter: brightness(0.3);
+		}
 	}
 	&[data-type="Actor"] {
 		@include actorCard("Actor");
+		&:hover .cardContent {
+			filter: brightness(0.3);
+		}
 	}
 	.cardBox {
 		margin: 0.5em !important;

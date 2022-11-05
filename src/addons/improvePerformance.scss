@@ -1,0 +1,39 @@
+/** @format */
+
+@use "../abstract/variables" as *;
+
+#loginPage:after {
+	background: linear-gradient(
+		135deg,
+		$jf-purple-dark,
+		$jf-blue-dark,
+		$jf-purple-light,
+		$jf-blue-light
+	);
+	background-size: 500%;
+	animation: gradient-cycle 10s linear infinite alternate;
+}
+
+.scrollY,
+div[data-role="page"].page {
+	mask-image: none !important;
+	-webkit-mask-image: none !important;
+}
+
+.mainDrawer,
+.dialog {
+	background: rgb(0 0 0 / 0.95);
+}
+
+* {
+	backdrop-filter: none !important;
+}
+
+@keyframes gradient-cycle {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}

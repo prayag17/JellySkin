@@ -17,7 +17,6 @@
 
 div[data-role="page"].page {
 	position: absolute;
-	padding: 0 !important;
 	height: calc(100% + 1.2em);
 	overflow: hidden visible;
 	mask-image: linear-gradient(
@@ -32,7 +31,7 @@ div[data-role="page"].page {
 		black 1em calc(100% - 1em),
 		transparent
 	);
-	margin: 1.2em 0 !important;
+	padding: 1.2em 0 !important;
 }
 .mainAnimatedPages.skinBody {
 	height: 100%;
