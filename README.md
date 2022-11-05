@@ -78,11 +78,11 @@
 
 # Screenshot :framed_picture: :
 - ### Login Page:
-    ![loginPage](https://user-images.githubusercontent.com/55829513/200133069-3e9785fc-8658-4a31-b4b4-6db3e3a531be.png)
-    
+    ![loginPage](https://user-images.githubusercontent.com/55829513/200134094-9bafba9d-4cfa-48c3-bbf4-e01bc21ecdd1.png)
+
 - ### Home Screen:
-    ![Home Screen](https://user-images.githubusercontent.com/55829513/200133116-eddd087e-2e64-43d0-82be-ce429edac952.png)
-    
+    ![Home Screen](https://user-images.githubusercontent.com/55829513/200134098-6463a6e7-95bb-4af6-a451-b6ac5ef7abad.png)
+
 - ### Library View:
     ![LibView](https://user-images.githubusercontent.com/55829513/200133209-413d6e6c-3569-4aaf-9db7-f576c141f519.png)
     
