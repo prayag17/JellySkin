@@ -1,181 +1,125 @@
-<div align="center">
-<h1>JellySkin 
-  <h2>Vibrant, minimal, and sprinkled with tons of animations <br> CSS theme for Jellyfin</h2>
-</h1><br>
+# JellySkin:
+### Vibrant, minimal, and sprinkled with tons of animations <br> CSS theme for Jellyfin
   
 ![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge) <br>
 ![GitHub Repo stars](https://img.shields.io/github/stars/prayag17/JellySkin?style=social)
-<br>
-<h3>Use 67% or 70% zoom in web browser for better experience</h3>
-<h4>Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.</h4>
-</div>
-<br>
-<h3>How to use</h3>
-To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
-  
-```css
+
+#### Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.
+
+# Usage :information_source: :
+- To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
+
+  ```css
   @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/main.css");
-```
+  ```
 
-To use Logos like the images given below use:
-  
-```css
+- To enable Logos add this to custom css:
+  ```css
   @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/logo.css");
-```
+  ```
   
-<h3> You can also use Jellyfin-Skin-Manager-Plugin : https://github.com/danieladov/jellyfin-plugin-skin-manager
-<br>
+- You can also use Jellyfin-Skin-Manager-Plugin : https://github.com/danieladov/jellyfin-plugin-skin-manager
 
-<h3>Fix Performance</h3>
-In JellySkin 11 I added a transparency gradient like CTalvio's Themes and just like his skins, this skin also has a performance issue on some older devices because of this I have created that remove all the transparency gradient in the skin.
+# Addons :electric_plug: :
+- ## Improve Performance:
+    If you fix performace issues like stutter while normally browsing jellyfin while use JellySkin, try adding this to custom css to fix the issue:
+    
+    ```css
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/improvePerformance.css")
+    ```
+    
+    Note: This removes the background blur from dialogs, gradient scroll in and out "bars" and animated mesh gradient from login page (replaced by normal gradient animation)
+    
+- ## Compact Poster:
+    Want to use compact posters instead of normal cards, add this to you custom css:
+    
+    ```css
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/compactPosters.css");
+    ```
+    
+    Example:
+    ![image](https://user-images.githubusercontent.com/55829513/200132447-5307c19f-97e5-4022-ab42-c5b8bf632d6b.png)
+
+- ## Using/Changing default gradient accent:
+    If you want want to change the default jellyfin gradient accent to some other preset gradient use:
+    
+    - ### Mauve
+      ```css
+      @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/gradients/mauve.css");
+      ```
+      Example:\
+      ![image](https://user-images.githubusercontent.com/55829513/200132732-d188392a-5642-47f7-bb62-f204a85d992e.png)
+
+    - ### NightSky
+      ```css
+      @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/gradients/nightSky.css");
+      ```
+      Example:\
+      ![image](https://user-images.githubusercontent.com/55829513/200132808-5b02c8e9-29c1-4a6b-ad3c-514588cf717a.png)
+
+    - ### Sea
+      ```css
+      @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/gradients/sea.css");
+      ```
+      Example:\
+      ![image](https://user-images.githubusercontent.com/55829513/200132840-984deaf3-c228-4092-be8f-44c325d57782.png)
+      
+    - ### Custom:
+      If you need to add your own gradient use:
+      ```css
+      :root {
+        --accent1-light: YOUR ACCENT COLOR 1(LIGHTER SHADE);
+        --accent1-dark: YOUR ACCENT COLOR 1(DARKER SHADE);
+        --accent1-light-opacity1: YOUR ACCENT COLOR 1(WITH OPACITY 0.4);
+        --accent2-light: YOUR ACCENT COLOR 2(LIGHTER SHADE);
+        --accent2-dark: YOUR ACCENT COLOR 2(DARKER SHADE);
+      }
+      ```
+
+# Screenshot :framed_picture: :
+- ### Login Page:
+    ![loginPage](https://user-images.githubusercontent.com/55829513/200133069-3e9785fc-8658-4a31-b4b4-6db3e3a531be.png)
+    
+- ### Home Screen:
+    ![Home Screen](https://user-images.githubusercontent.com/55829513/200133116-eddd087e-2e64-43d0-82be-ce429edac952.png)
+    
+- ### Library View:
+    ![LibView](https://user-images.githubusercontent.com/55829513/200133209-413d6e6c-3569-4aaf-9db7-f576c141f519.png)
+    
+- ### Title Screen:
+    ![TitleView](https://user-images.githubusercontent.com/55829513/200133240-075f604d-ae7f-48cb-9a42-445d8f3ef427.png)
+
+- ### Episode View:
+    ![EpisodeView](https://user-images.githubusercontent.com/55829513/200133258-4eabfc3d-475f-4b42-a496-bc2de60c11a5.png)
+
+- ### Settings:
+    ![SettingsView](https://user-images.githubusercontent.com/55829513/200133273-3ff7ba73-bad2-4f7c-88b1-e8298d246587.png)
+
+- ### Dashboard:
+    ![DashboardView](https://user-images.githubusercontent.com/55829513/200133302-5d7e7ac1-201b-4cb4-a839-ee53c5c6a6f2.png)
+
+- ### Dialog:
+    ![DialogView](https://user-images.githubusercontent.com/55829513/200133331-ee7838d0-6318-4175-b969-c06647bf65a0.png)
+
+# Common Problem Fixes :question: :
+- ### Unable to see blured background in Firefox:
+  Deaktiviert From version 70: this feature is behind the `layout.css.backdrop-filter.enabled` preference (needs to be set to true) and the `gfx.webrender.all`  preference (needs to be set to true).
+  To change preferences in Firefox, visit about:config
   
-```css
-@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/imp-per.css");
-```
+- ### Logos are not visible even with `logo.css`:
+  - Get Fanart Plugin, Dashboard -> Plugin -> Catalog
+  - Enable Fanart as a metadata provider for your libraries in the library settings, Dashboard -> Library -> Click on 3 dots on your Library -> Manage Library -> Scroll to find Metadata provider and enable Fanart in all of them.
+  - Rescan your drive and also enable `Replace Metadata` and scan
 
-<br>
-<h3>If you want to display your posters to be compact use the following line with default css</h3>
+- ### Background not visible:
+  - Go to Seetiing -> Display -> and enable `Backdrops` option
 
-```css
-@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/compact-poster.css");
-```
+- ### How to report a Bug or request a Feature?
+  - Go to https://github.com/prayag17/JellySkin/issues
+  - Click on `New Issue` button
+  - Select the appropriate template
 
-To use different gradient for your buttons I have added few different gradients you can choose or you can create your own (check the steps given bellow), the default gradient used is jellyfin's default logo gradient,using this alone will only skin the button colors and I know the names for this are very funny:
-
-```css
-@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/seaGradient.css");
-@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/sunsetGradient.css");
-@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/mauveGradient.css");
-@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/nightSkyGradient.css");
-```
-
-<br>
-Using custom own Gradient or color
-Create your gradient or solid color and past it in <code>--accent</code> and gradient in opposite angle in <code>--accent-selected</code> :
-  
-```css
-:root {
-  --accent: your gradient;
-  --accent-selected: your gradient in opposite angle;
-}
-```
-  
-Now, to use your own Gradient (to get great button or any gradient go to <https://cssgradient.io/gradient-backgrounds> or <https://cssgradient.io>) or solid color:
-  
-```css
-:root {
-  --accent: your gradient;
-  --accent-selected: your gradient in opposite angle;
-}
-```
-  
-<br>
-<h3>Don't like the progress bar</h3>
-Add the follwing line to custom CSS with the default css file-
-
-```css
-@import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/progress-bar.css");
-```
-
-<h3>Here are some images:</h3>
-
-<h5>Login Page</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/login.jpg">
-
-<h5>Home screen:</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Home.jpg">
-
-<h5>Library View</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Movies.jpg">
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/TV%20Shows.jpg">
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Collections.jpg">
-
-<h5>Title screen:</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Title%20Page-Movie.jpg">
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Title%20Page-TV.jpg">
-
-<h5>TV Shows Season Episode list:</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Ep-list.jpg">
-
-<h5>Settings</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Settings.jpg">
-
-<h5>Dashboard</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Dashboard.jpg">
-
-<h5>Plugins</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Plugins.jpg">
-
-<h5>Dialogs</h5>
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Menu.jpg">
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Dialog-1.jpg">
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Dialog-2.jpg">
-<img src="https://cdn.jsdelivr.net/gh/prayag17/JellySkin/img/Dialog-3.jpg">
-<br>
-<br>
-
-<div class="firefox">
-<h3>Enabling backdrop-filter in FireFox</h3>
-
-<code style="display: block !important;">
-Deaktiviert From version 70: this feature is behind the<br>
-layout.css.backdrop-filter.enabled<br>
-preference (needs to be set to<br>
-  true<br>
-  ) and the<br>
-  gfx.webrender.all<br>
-  preference (needs to be set to<br>
-    true<br>
-    ).<br>
- To change preferences in Firefox, visit about:config.<br>
-</code>
-
-</div>
-
-<div class="faq">
-  <div class="logopull">
-    <h2> How to get Logo </h2>
-    <ul>
-      <li>Get Fanart Plugin, Dashboard -> Plugin -> Catalog</li>
-      <li>Enable Fanart as a metadata provider for your libraries in the library settings, Dashboard -> Library -> Click on 3 dots on your Library -> Manage Library -> Scroll to find Metadata provider and enable Fanart in all of them.</li>
-      <li>Rescan your drive by selecting <code>Replace Metadata</code> and scan</li>
-      <li>Done!</li>
-    </ul>
-  </div>
-  <br>
-  <div class="nginx-reverseproxy">
-<h3>Not working with Nginx Reverse Prxy</h3>
-  When using the Nginx Reverse proxy config from the <a href="https://jellyfin.org/docs/general/networking/nginx.html">Jellyfin docs</a> the theme will probably not work by default. (If you are using the subpath config, you can ignore all this.)
-
-This config includes an CSP (Content Security Policy) with headers that don't allow for loading in external content that are not defined there.
-
-In the nginx config you should add the URLs of all the CSS files you've imported through the "Custom CSS" box.
-this:
-
-```
-add_header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
-```
-
-becomes (with only adding the default style):
-
-```
-add_header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline'https://cdn.jsdelivr.net/gh/prayag17/JellySkin/default.css; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'";
-```
-
-If you don't do this the theme will simply not load (reverts back to default theme) and the browser console will spit out an error. Even if you paste in all the CSS, the font will still not load since it is loaded from a disallowed external source.
-  </div>
-  <br>
-<h3>Background not working?</h3>
-Many of you are facing issues that backdrop is not visible by default....this is not a JellySkin issue but rather Jellyfin issue, in Jellyfin Version 10.7.X backgrounds are disabled by default but you can enable them individually on you devices/client by going to:
-SETTINGS --> DISPLAY --> ENABLE BACKDROPS/BACKGROUND.
-</div>
-
-<div class="conribute" style="text-align: center;">
-<h2> Wanna Contribute? </h2>
-<ul>
-<li>Fork this Repo</li>
-<li>Add your features</li>
-<li>Create a Pull Request</li>
-<li>Wait for it to be merged.</li>
-</ul>
-</div>
+- ### How to contribute:
+  - Fork this repository.
+  - Add your patch/feature
+  - Create a pull request and thats it
