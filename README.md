@@ -28,7 +28,7 @@
     @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/improvePerformance.css")
     ```
     
-    Note: This removes the background blur from dialogs, gradient scroll in and out "bars" and animated mesh gradient from login page (replaced by normal gradient animation)
+    :warning: Note: This removes the background blur from dialogs, gradient scroll in and out "bars" and animated mesh gradient from login page (replaced by normal gradient animation)
     
 - ## Compact Poster:
     Want to use compact posters instead of normal cards, add this to you custom css:
