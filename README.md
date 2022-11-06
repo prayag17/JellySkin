@@ -37,7 +37,7 @@
     @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/compactPosters.css");
     ```
     
-    Example:
+    Example:\
     ![image](https://user-images.githubusercontent.com/55829513/200132447-5307c19f-97e5-4022-ab42-c5b8bf632d6b.png)
 
 - ## Using/Changing default gradient accent:
