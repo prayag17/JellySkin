@@ -1,10 +1,8 @@
 # JellySkin:
 ### Vibrant, minimal, and sprinkled with tons of animations <br> CSS theme for Jellyfin
   
-![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge) <br>
+![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge)\
 ![GitHub Repo stars](https://img.shields.io/github/stars/prayag17/JellySkin?style=social)
-
-#### Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.
 
 # Usage :information_source: :
 - To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
@@ -28,7 +26,7 @@
     @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/improvePerformance.css")
     ```
     
-    :warning: Note: This removes the background blur from dialogs, gradient scroll in and out "bars" and animated mesh gradient from login page (replaced by normal gradient animation)
+    :warning: This removes the background blur from dialogs, gradient scroll in and out "bars" and animated mesh gradient from login page (replaced by normal gradient animation)
     
 - ## Compact Poster:
     Want to use compact posters instead of normal cards, add this to you custom css:
