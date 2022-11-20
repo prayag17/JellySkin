@@ -78,7 +78,7 @@ span.checkboxLabel {
 
 .checkboxList.paperList {
 	background: rgb(0 0 0 / 0.5) !important;
-	overflow: hidden !important;
+	overflow: auto !important;
 	border-radius: $rounding-default !important;
 }
 
