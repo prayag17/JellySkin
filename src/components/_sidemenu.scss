@@ -4,8 +4,6 @@
 :not(.dashboardDocument) .mainDrawer {
 	background: rgb(0 0 0 / 0.5);
 	backdrop-filter: blur(0);
-	margin: 1em;
-	border-radius: $rounding-max;
 
 	&.drawer-open {
 		backdrop-filter: blur($filter-blur-default + 10px);
