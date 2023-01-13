@@ -61,3 +61,53 @@ $cardText-bg: rgb(0 0 0 / 0.7);
 		display: none !important;
 	}
 }
+
+.localUsers .card {
+	.cardFooter {
+		display: flex;
+		position: absolute;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		justify-content: center;
+		padding: 0.3em;
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.9),
+			rgba(0, 0, 0, 0.7)
+		);
+		width: calc(100% - 0.6em);
+		bottom: 0;
+		height: fit-content;
+	}
+	.cardText {
+		position: static !important;
+		height: 1.5em;
+		z-index: 5;
+		flex: 0 0 100%;
+		box-sizing: content-box;
+		padding: 0;
+		width: 100%;
+	}
+	.cardScalable::after {
+		display: none;
+	}
+}
+
+#divUsers .card {
+	.cardFooter {
+		padding: 0.3em 0.3em 0.5em;
+		position: absolute;
+		bottom: 0;
+		width: calc(100% - 0.61em);
+		height: 1.5em;
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.9),
+			rgba(0, 0, 0, 0.7)
+		);
+	}
+	.cardScalable::after {
+		display: none;
+	}
+}
