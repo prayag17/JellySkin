@@ -111,3 +111,23 @@ $cardText-bg: rgb(0 0 0 / 0.7);
 		display: none;
 	}
 }
+
+.card {
+	.cardFooter {
+		padding: 0.3em 0.3em 0.5em;
+		position: absolute;
+		display: flex;
+		justify-content: stretch;
+		align-items: stretch;
+		width: calc(100% - 0.61em);
+		bottom: 0;
+		flex-direction: column;
+		background: linear-gradient(to top, rgb(0 0 0 / 0.7), transparent);
+	}
+	.cardText {
+		position: static !important;
+	}
+	.cardScalable::after {
+		display: none;
+	}
+}
