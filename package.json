@@ -12,10 +12,10 @@
 		"build": "sass src/:dist/ src/addons/:dist/addons/",
 		"postbuild": "postcss dist/*.css -u autoprefixer cssnano -r",
 		"start": "npm-run-all --parallel watch:sass serve",
-		"pub:prerelease": "np prerelease --no-tests --tag nightly --branch SASSify",
-		"pub:patch": "np patch --no-tests --tag latest --branch SASSify",
-		"pub:minor": "np minor --no-tests --tag latest --branch SASSify",
-		"pub:major": "np major --no-tests --tag latest --branch SASSify"
+		"pub:prerelease": "np prerelease --no-tests --tag nightly --branch master",
+		"pub:patch": "np patch --no-tests --tag latest --branch master",
+		"pub:minor": "np minor --no-tests --tag latest --branch master",
+		"pub:major": "np major --no-tests --tag latest --branch master"
 	},
 	"np": {
 		"yarn": false,
