@@ -110,7 +110,7 @@
   - Rescan your drive and also enable `Replace Metadata` and scan
 
 - ### Background not visible:
-  - Go to Seetiing -> Display -> and enable `Backdrops` option
+  - Go to Settings -> Display -> and enable `Backdrops` option
 
 - ### How to report a Bug or request a Feature?
   - Go to https://github.com/prayag17/JellySkin/issues
