@@ -150,6 +150,7 @@
 		margin-top: 0 !important;
 		mask-image: linear-gradient(to bottom, black, transparent);
 		-webkit-mask-image: linear-gradient(to bottom, black, transparent);
+		background-image: $gradient-default;
 	}
 	.detail {
 		&Ribbon {

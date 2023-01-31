@@ -1,5 +1,7 @@
 /** @format */
 
+@use "../abstract/variables" as *;
+
 .skinHeader {
 	background: transparent !important;
 	position: static;
@@ -36,4 +38,12 @@ div[data-role="page"].page {
 .mainAnimatedPages.skinBody {
 	height: 100%;
 	position: relative;
+}
+
+// Command Panel
+
+.selectionCommandsPanel {
+	background: rgb(0 0 0 / 0.75);
+	backdrop-filter: blur($filter-blur-default);
+	box-shadow: 0 0 15px black;
 }

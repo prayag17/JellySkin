@@ -1,6 +1,6 @@
 /** @format */
 
-@use "../abstract/variables" as ab;
+@use "../abstract/variables" as *;
 @use "../abstract/mixins" as *;
 
 .emby-scroller {
@@ -43,7 +43,7 @@
 		position: relative;
 		aspect-ratio: auto;
 		overflow: hidden;
-		border-radius: ab.$rounding-default ab.$rounding-default 0 0;
+		border-radius: $rounding-default $rounding-default 0 0;
 		box-shadow: none !important;
 		width: calc(100% + 1px);
 
@@ -66,7 +66,7 @@
 				left: 0;
 				transform: scale(1);
 				z-index: -1;
-				transition: transform ab.$transition-time-fast-1 ease-in-out;
+				transition: transform $transition-time-fast-1 ease-in-out;
 			}
 			&::before {
 				filter: blur(5px) brightness(50%);
@@ -98,9 +98,9 @@
 		margin: 0.5em !important;
 		box-shadow: 0 0 0.5em rgb(0 0 0 / 0.75);
 		background: rgb(0 0 0 / 0.2);
-		border-radius: ab.$rounding-default;
+		border-radius: $rounding-default;
 		overflow: hidden;
-		transition: background ab.$transition-time-fast-1;
+		transition: background $transition-time-fast-1;
 	}
 	&:not([data-type="Person"]) .cardText-secondary {
 		padding-bottom: 0.5em;
@@ -115,7 +115,7 @@
 	}
 }
 .cardPadder {
-	background: ab.$gradient-dark !important;
+	background: $gradient-dark !important;
 	&-square {
 		aspect-ratio: 0 !important;
 		padding: 0;
@@ -134,12 +134,12 @@
 	margin-bottom: 5%;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: ab.$rounding-default;
+	border-radius: $rounding-default;
 	.itemProgressBar {
 		background: rgb(255 255 255/0.3);
 		height: 0.4em;
 		.itemProgressBarForeground {
-			background: ab.$gradient-default;
+			background: $gradient-default;
 		}
 	}
 }
@@ -154,15 +154,15 @@
 }
 
 .cardOverlayButton {
-	border-radius: ab.$rounding-min;
+	border-radius: $rounding-min;
 	span {
-		background: ab.$gradient-icon !important;
+		background: $gradient-icon !important;
 		background-clip: text !important;
 		-webkit-background-clip: text !important;
-		transition: ab.$transition-time-fast-1;
+		transition: $transition-time-fast-1;
 	}
 	&[data-action="resume"] {
-		border-radius: ab.$rounding-min;
+		border-radius: $rounding-min;
 		padding: 1.5em;
 		background: transparent !important;
 	}
@@ -186,7 +186,7 @@
 	display: none;
 }
 .defaultCardBackground {
-	background: ab.$gradient-dark !important;
+	background: $gradient-dark !important;
 }
 .chapterCard .innerCardFooter {
 	backdrop-filter: blur(5px);
@@ -198,7 +198,7 @@
 	width: fit-content;
 	background: rgb(0 0 0 / 0.5);
 	backdrop-filter: blur(5px);
-	border-radius: ab.$rounding-default !important;
+	border-radius: $rounding-default !important;
 	bottom: 10px;
 	right: 10px;
 }
@@ -209,4 +209,14 @@
 	.cardPadder {
 		display: none;
 	}
+}
+
+// commandPanel Selected card border
+
+.itemSelectionPanel {
+	border: 1px solid $jf-purple-light;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 0.5em;
+	background: linear-gradient(to bottom, rgb(0 0 0 / 0.75), transparent 21%);
 }
