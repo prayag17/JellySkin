@@ -10,6 +10,7 @@ a[is="emby-linkbutton"]:not(.listItem-border, .navMenuOption) {
 	&::after {
 		content: "" !important;
 		position: absolute;
+		left: 0 !important;
 		bottom: -0.1em;
 		width: 100%;
 		height: 0.1em;
