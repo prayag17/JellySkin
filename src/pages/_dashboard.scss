@@ -6,11 +6,9 @@
 	}
 }
 
-.dashboardDocument {
-	.headerTabs {
-		margin-left: auto;
-		width: calc(100% - 20em);
-	}
+.dashboardDocument .headerTabs {
+	margin-left: 0;
+	width: auto;
 }
 
 .dashboardColumn:first-child .dashboardSection .paperList {
