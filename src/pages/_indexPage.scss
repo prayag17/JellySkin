@@ -6,12 +6,12 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		gap: 0.5em;
 		color: white;
 		align-items: center;
 		font-size: 1.6em;
 		&::before {
 			content: "";
+			margin-right: 0.5em;
 			width: 1.3em;
 			height: 2px;
 			background: white;
