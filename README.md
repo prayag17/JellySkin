@@ -23,7 +23,7 @@
     If you fix performace issues like stutter while normally browsing jellyfin while use JellySkin, try adding this to custom css to fix the issue:
     
     ```css
-    @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/improvePerformance.css")
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance.css")
     ```
     
     :warning: This removes the background blur from dialogs, gradient scroll in and out "bars" and animated mesh gradient from login page (replaced by normal gradient animation)
@@ -32,7 +32,7 @@
     Want to use compact posters instead of normal cards, add this to you custom css:
     
     ```css
-    @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/compactPosters.css");
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/compactPosters.css");
     ```
     
     Example:\
@@ -43,21 +43,21 @@
     
     - ### Mauve
       ```css
-      @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/gradients/mauve.css");
+      @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/gradients/mauve.css");
       ```
       Example:\
       ![image](https://user-images.githubusercontent.com/55829513/200132732-d188392a-5642-47f7-bb62-f204a85d992e.png)
 
     - ### NightSky
       ```css
-      @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/gradients/nightSky.css");
+      @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/gradients/nightSky.css");
       ```
       Example:\
       ![image](https://user-images.githubusercontent.com/55829513/200132808-5b02c8e9-29c1-4a6b-ad3c-514588cf717a.png)
 
     - ### Sea
       ```css
-      @import url("https://cdn.jsdelivr.net/npm/jellyskin@12.2.0/dist/addons/gradients/sea.css");
+      @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/gradients/sea.css");
       ```
       Example:\
       ![image](https://user-images.githubusercontent.com/55829513/200132840-984deaf3-c228-4092-be8f-44c325d57782.png)
