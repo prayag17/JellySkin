@@ -17,6 +17,7 @@
   ```
   
 - You can also use Jellyfin-Skin-Manager-Plugin : https://github.com/danieladov/jellyfin-plugin-skin-manager
+  > **Note** : Jellyfin Skin Manager has not been updated for some time and doesn't have the latest JellySkin css available.
 
 # :electric_plug: Addons :
 - ## Improve Performance:
