@@ -4,7 +4,7 @@
 ![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge)\
 ![GitHub Repo stars](https://img.shields.io/github/stars/prayag17/JellySkin?style=social)
 
-# Usage :information_source: :
+# :information_source: Usage :
 - To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
 
   ```css
@@ -18,7 +18,7 @@
   
 - You can also use Jellyfin-Skin-Manager-Plugin : https://github.com/danieladov/jellyfin-plugin-skin-manager
 
-# Addons :electric_plug: :
+# :electric_plug: Addons :
 - ## Improve Performance:
     If you fix performace issues like stutter while normally browsing jellyfin while use JellySkin, try adding this to custom css to fix the issue:
     
@@ -40,7 +40,7 @@
 
 - ## Using/Changing default gradient accent:
     If you want want to change the default jellyfin gradient accent to some other preset gradient use:
-    
+    > **Note** : Remember to put gradient css files below the main.css file import 
     - ### Mauve
       ```css
       @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/gradients/mauve.css");
@@ -74,7 +74,7 @@
       }
       ```
 
-# Screenshot :framed_picture: :
+# :framed_picture: Screenshots :
 - ### Login Page:
     ![loginPage](https://user-images.githubusercontent.com/55829513/200134094-9bafba9d-4cfa-48c3-bbf4-e01bc21ecdd1.png)
 
@@ -99,7 +99,7 @@
 - ### Dialog:
     ![DialogView](https://user-images.githubusercontent.com/55829513/200133331-ee7838d0-6318-4175-b969-c06647bf65a0.png)
 
-# Common Problem Fixes :question: :
+# :question: Common Problem Fixes :
 - ### Unable to see blured background in Firefox:
   Deaktiviert From version 70: this feature is behind the `layout.css.backdrop-filter.enabled` preference (needs to be set to true) and the `gfx.webrender.all`  preference (needs to be set to true).
   To change preferences in Firefox, visit about:config
