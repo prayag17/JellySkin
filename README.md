@@ -1,4 +1,4 @@
-# JellySkin:
+# JellySkin
 ### Vibrant, minimal, and sprinkled with tons of animations <br> CSS theme for Jellyfin
   
 ![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge)\
