@@ -35,6 +35,15 @@
 	padding: 1em 0;
 }
 
+.pageTabContent {
+	padding: 0 1em;
+}
+
+.appfooter {
+	background: rgb(0 0 0 / 0.65);
+	backdrop-filter: blur(30px);
+}
+
 ::selection {
 	background: ab.$jf-blue-light;
 }

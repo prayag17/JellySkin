@@ -13,6 +13,7 @@
 
 	.mediaInfoItem {
 		border-radius: 10vh;
+		white-space: nowrap;
 	}
 
 	.detailRibbon {
@@ -36,7 +37,8 @@
 	.detailPageWrapperContainer {
 		width: 100vw;
 	}
-	.mainDetailButtons .emby-button:not([data-action="resume"]) {
+	.mainDetailButtons
+		.emby-button:not([data-action="resume"], [data-action="play"]) {
 		background: transparent !important;
 	}
 	.detailLogo {
@@ -49,6 +51,7 @@
 		justify-content: center;
 		align-items: center;
 		text-decoration: none;
+		margin-right: 0.5em !important;
 		&[is="emby-linkbutton"] {
 			color: unset;
 		}
@@ -65,8 +68,9 @@
 
 		&[title="Play"],
 		&[title="Resume"] {
-			border: 0.1em solid currentColor;
-			padding: 0.2em 1.2em !important;
+			background: rgb(255 255 255 / 0.2) !important;
+			color: white;
+			padding: 0.4em 1em !important;
 			gap: 0.2em;
 			margin-right: 0.5em;
 			&::after {

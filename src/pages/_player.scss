@@ -1,0 +1,21 @@
+/** @format */
+
+@media (orientation: portrait) and (max-width: 43em) {
+	.nowPlaying {
+		&InfoContainer {
+			justify-content: center;
+			align-items: center;
+		}
+		&PageImageContainer {
+			flex-grow: 0;
+		}
+	}
+}
+
+.nowPlaying {
+	&SongName {
+		font-size: 1.5em;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
