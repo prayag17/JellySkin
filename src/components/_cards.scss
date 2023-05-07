@@ -29,10 +29,6 @@
 			}
 		}
 	}
-
-	// &.overflowBackdropCard .cardScalable {
-	// 	aspect-ratio: auto;
-	// }
 	&OverlayContainer {
 		background: rgb(0 0 0 / 0.7);
 	}
@@ -111,7 +107,13 @@
 	}
 	&.squareCard .cardScalable {
 		width: 100%;
-		aspect-ratio: 1;
+		padding-top: 100%;
+	}
+}
+.card[data-userid] .cardScalable {
+	padding-top: 0 !important;
+	.cardContent {
+		padding-top: 100% !important;
 	}
 }
 .cardPadder {
