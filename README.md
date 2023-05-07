@@ -39,6 +39,13 @@
     Example:\
     ![image](https://user-images.githubusercontent.com/55829513/200132447-5307c19f-97e5-4022-ab42-c5b8bf632d6b.png)
 
+- ## Horizontal My Media:
+    Brings back the horizontal section for My Media
+    
+    ```css
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/verticalMyMedia.css");
+    ```
+
 - ## Using/Changing default gradient accent:
     If you want want to change the default jellyfin gradient accent to some other preset gradient use:
     > **Note** : Remember to put gradient css files below the main.css file import 
