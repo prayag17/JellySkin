@@ -45,7 +45,7 @@
     Brings back the horizontal section for My Media
     
     ```css
-    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/verticalMyMedia.css");
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/horizontalMyMedia.css");
     ```
 
 - ## Using/Changing default gradient accent:
