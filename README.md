@@ -24,7 +24,7 @@
     If you fix performace issues like stutter while normally browsing jellyfin while use JellySkin, try adding this to custom css to fix the issue:
     
     ```css
-    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance.css")
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance.css");
     ```
     
     > **Warning** : This removes the background blur from dialogs, gradient scroll in and out "bars" and animated mesh gradient from login page (replaced by linear gradient animation)
