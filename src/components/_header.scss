@@ -10,7 +10,7 @@
 .layout-mobile,
 .layout-desktop {
 	body {
-		display: flex;
+		display: grid;
 		flex-direction: column;
 		flex-wrap: nowrap;
 		overflow: hidden !important;
