@@ -28,7 +28,7 @@
 
 - ### Remove BackdropFilter
 
-      This remove the frosted glass like effect from every place.
+  This remove the frosted glass like effect from every place.
 
       ```css
       @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeBackdropFilter.css");
@@ -36,7 +36,7 @@
 
 - ### Remove scroll fade
 
-      This remove the faded scroll view
+  This remove the faded scroll view
 
       ```css
       @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeFadingScroll.css");
@@ -112,9 +112,8 @@
 # 💻 Screenshots
 
 - ### Login Page
-
-    ![loginPage](https://user-images.githubusercontent.com/55829513/200134094-9bafba9d-4cfa-48c3-bbf4-e01bc21ecdd1.png)
-
+    ![Login_Page](https://github.com/prayag17/JellySkin/assets/55829513/9ca0d0c2-9ada-4e41-93b9-e4281be20d1d)
+  
 - ### Home Screen
 
     ![Home Screen](https://user-images.githubusercontent.com/55829513/200134098-6463a6e7-95bb-4af6-a451-b6ac5ef7abad.png)
