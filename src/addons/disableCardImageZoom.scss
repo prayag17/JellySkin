@@ -1,0 +1,8 @@
+/** @format */
+
+.card {
+	&:hover .cardImageContainer::after,
+	&:focus-visible .cardImageContainer::after {
+		transform: scale(1) !important;
+	}
+}

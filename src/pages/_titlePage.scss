@@ -208,7 +208,8 @@
 		.emby-button[title="Play"],
 		.emby-button[title="Resume"] {
 			border: none !important;
-			padding: 0 !important;
+			background: transparent !important;
+			padding: 0.7em;
 			overflow: visible;
 			&::after {
 				all: unset !important;
@@ -231,6 +232,9 @@
 			margin-top: 0.2em;
 			padding: 0 1em 1em 1em;
 		}
+	}
+	.emby-button {
+		margin: 0 !important;
 	}
 }
 

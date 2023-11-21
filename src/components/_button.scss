@@ -78,3 +78,7 @@
 		opacity: 1;
 	}
 }
+.dialog
+	.emby-button:not(.cardImageContainer, .actionSheetMenuItem).button-delete {
+	background: rgb(247, 0, 0) !important;
+}
