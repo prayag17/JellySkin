@@ -177,7 +177,7 @@
 .listItemIndicators {
 	@include indicator();
 }
-[data-isfolder="true"][data-type="CollectionFolder"]:not([data-type="Series"])
+[data-isfolder="true"]:is([data-type=CollectionFolder],[data-type=UserView]):not([data-type="Series"])
 	.cardText {
 	padding: 0.75em !important;
 }
