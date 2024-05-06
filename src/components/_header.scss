@@ -47,3 +47,8 @@ div[data-role="page"].page {
 	backdrop-filter: blur($filter-blur-default);
 	box-shadow: 0 0 15px black;
 }
+
+// Cast management button fix
+.material-icons.cast_connected:before {
+    content: "\f1de" !important;
+}
