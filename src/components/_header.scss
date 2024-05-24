@@ -17,24 +17,32 @@
 	}
 }
 
+div#reactRoot {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 div[data-role="page"].page {
 	position: absolute;
-	height: calc(100% + 1.2em);
 	overflow: hidden visible;
 	mask-image: linear-gradient(
 		to top,
-		transparent,
-		black 1em calc(100% - 1em),
+		black 1em calc(100% - 2em),
 		transparent
 	);
 	-webkit-mask-image: linear-gradient(
 		to top,
-		transparent,
-		black 1em calc(100% - 1em),
+		black 1em calc(100% - 2em),
 		transparent
 	);
 	padding: 1.2em 0 !important;
+
+	&#searchPage {
+		margin-top: 4.4em;
+	}
 }
+
 .mainAnimatedPages.skinBody {
 	height: 100%;
 	position: relative;

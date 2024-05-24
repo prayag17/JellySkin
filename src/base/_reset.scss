@@ -1,19 +1,21 @@
 /** @format */
 
-@use "../abstract/variables" as ab;
+@use "../abstract/variables" as *;
 .backgroundContainer {
-	background-color: ab.$background-darker;
+	background-color: $background-darker;
 	&.withBackdrop {
 		background: transparent !important;
 	}
 }
 .backdropContainer {
-	filter: blur(ab.$filter-blur-default)
-		brightness(ab.$filter-brightness-default)
-		saturate(ab.$filter-saturation-default)
-		contrast(ab.$filter-contrast-default);
-	mask-image: linear-gradient(to bottom, black, transparent);
-	-webkit-mask-image: linear-gradient(to bottom, black, transparent);
+	filter: blur($filter-blur-default)
+		brightness($filter-brightness-default)
+		saturate($filter-saturation-default)
+		contrast($filter-contrast-default);
+	margin-left: -$filter-blur-default;
+	margin-top: -$filter-blur-default;
+	width: calc(100vw + 2 * $filter-blur-default);
+	height: calc(100vh + 2 * $filter-blur-default);
 }
 .withTabs .content-primary {
 	padding-top: 1em !important;
@@ -45,5 +47,5 @@
 }
 
 ::selection {
-	background: ab.$jf-blue-light;
+	background: $jf-blue-light;
 }

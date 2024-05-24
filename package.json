@@ -7,7 +7,7 @@
 	],
 	"main": "/dist/main.css",
 	"scripts": {
-		"watch:sass": "sass  --no-source-map --watch src/:dev/ src/addons/:dev/addons/",
+		"watch:sass": "sass --watch src/:dev/ src/addons/:dev/addons/",
 		"serve": "browser-sync start --server --files 'dev' 'src'",
 		"build": "sass src/:dist/ src/addons/:dist/addons/",
 		"postbuild": "postcss dist/*.css -u autoprefixer cssnano -r",

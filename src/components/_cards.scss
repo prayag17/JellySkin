@@ -76,7 +76,7 @@
 	}
 	&:hover .cardImageContainer::after,
 	&:focus-visible .cardImageContainer::after {
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
 	&[data-type="Person"] {
 		@include actorCard("Person");
@@ -90,8 +90,9 @@
 			filter: brightness(0.3);
 		}
 	}
-	.cardBox {
-		margin: 0.5em !important;
+	&Box {
+		$card-padding: 1.5em;
+		margin: 0.5em $card-padding $card-padding 0 !important;
 		box-shadow: 0 0 0.5em rgb(0 0 0 / 0.75);
 		background: rgb(0 0 0 / 0.2);
 		border-radius: $rounding-default;
@@ -156,7 +157,7 @@
 }
 
 .cardOverlayButton {
-	border-radius: $rounding-min;
+	border-radius: 100px !important;
 	span {
 		background: $gradient-icon !important;
 		background-clip: text !important;
@@ -164,13 +165,18 @@
 		transition: $transition-time-fast-1;
 	}
 	&[data-action="resume"] {
-		border-radius: $rounding-min;
+		border-radius: 1000px;
 		padding: 1.5em;
-		background: transparent !important;
+		background: $gradient-default !important;
+		color: white !important;
+		&:hover,
+		&:focus-visible {
+			filter: brightness(0.5);
+		}
 	}
-	&:hover span,
-	&:focus-visible span {
-		color: transparent !important;
+	&:hover,
+	&:focus-visible {
+		transform: scale(1) !important;
 	}
 }
 .cardIndicators,
