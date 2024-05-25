@@ -4,18 +4,8 @@
 @use "../abstract/mixins" as *;
 
 .emby-scroller {
-	mask-image: linear-gradient(
-		to left,
-		transparent,
-		black 0.5em calc(100% - 0.5em),
-		transparent
-	);
-	-webkit-mask-image: linear-gradient(
-		to left,
-		transparent,
-		black 0.5em calc(100% - 0.5em),
-		transparent
-	);
+	overflow: visible !important;
+	margin-top: 0.5em;
 }
 .card {
 	contain: none !important;
@@ -78,16 +68,48 @@
 	&:focus-visible .cardImageContainer::after {
 		transform: scale(1.1);
 	}
-	&[data-type="Person"] {
-		@include actorCard("Person");
-		&:hover .cardContent {
-			filter: brightness(0.3);
-		}
-	}
-	&[data-type="Actor"] {
-		@include actorCard("Actor");
-		&:hover .cardContent {
-			filter: brightness(0.3);
+	&.personCard {
+		height: auto;
+		.card {
+			&Padder-overflowPortrait {
+				// padding-bottom: 100% !important;
+				.cardImageIcon {
+					color: transparent !important;
+				}
+			}
+			&Box {
+				position: relative;
+			}
+			&Overlay {
+				&Container {
+					background: transparent !important;
+					// height: calc(100% - 2.825em);
+					z-index: 3;
+				}
+
+				&Button-br {
+					right: 0.5em;
+					bottom: 0.5em;
+				}
+			}
+			&Content {
+				filter: brightness(1);
+				transition: filter $transition-time-default ease-in-out;
+				$image-margin: 1em;
+				margin: $image-margin !important;
+				width: calc(100% - 2*$image-margin);
+				height: calc(100% - 2*$image-margin);
+				border-radius: 100% !important;
+			}
+			&Scalable {
+				height: auto;
+				aspect-ratio: 1;
+				.cardImageContainer::after {
+					background-size: cover;
+				}
+			}
+			&Text {
+			}
 		}
 	}
 	&Box {
@@ -118,7 +140,7 @@
 	}
 }
 .cardPadder {
-	background: $gradient-dark !important;
+	background: transparent !important;
 	&-square {
 		aspect-ratio: 0 !important;
 		padding: 0;
@@ -183,7 +205,10 @@
 .listItemIndicators {
 	@include indicator();
 }
-[data-isfolder="true"]:is([data-type=CollectionFolder],[data-type=UserView]):not([data-type="Series"])
+[data-isfolder="true"]:is(
+		[data-type="CollectionFolder"],
+		[data-type="UserView"]
+	):not([data-type="Series"])
 	.cardText {
 	padding: 0.75em !important;
 }

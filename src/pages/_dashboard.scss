@@ -20,3 +20,24 @@
 .layout-mobile .dashboardDocument .headerTabs {
 	width: 100%;
 }
+
+.MuiBox-root{
+	.mainAnimatedPages {
+		width: 100%;
+		height: auto;
+		overflow: visible;
+	}
+}
+
+body.dashboardDocument{
+	overflow: auto !important;
+	div[data-role="page"]{
+		position: relative !important;
+		width: 100%;
+		height: fit-content;
+		overflow: visible;
+		mask-image: none !important;
+		-webkit-mask-image: none !important;
+		// contain: layout style size !important;
+	}
+}

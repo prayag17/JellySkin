@@ -3,24 +3,21 @@
 @use "../abstract/variables" as *;
 
 @mixin actorCard($type) {
-	aspect-ratio: 1/1;
 	height: auto;
 	.card {
 		&Padder-overflowPortrait {
-			padding-bottom: 100% !important;
+			// padding-bottom: 100% !important;
 			.cardImageIcon {
 				color: transparent !important;
 			}
 		}
 		&Box {
 			position: relative;
-			margin: 0.5em !important;
-			aspect-ratio: 1/1;
 		}
 		&Overlay {
 			&Container {
 				background: transparent !important;
-				height: calc(100% - 2.825em);
+				// height: calc(100% - 2.825em);
 				z-index: 3;
 			}
 
@@ -34,7 +31,6 @@
 			transition: filter $transition-time-default ease-in-out;
 		}
 		&Scalable {
-			aspect-ratio: 1/1;
 			height: auto;
 			&::after {
 				content: "";
@@ -55,30 +51,7 @@
 			}
 		}
 		&Text {
-			@if $type == Person {
-				&-first {
-					position: absolute;
-					bottom: 0;
-					width: calc(100% - 1em);
-					padding: 0.5em !important;
-					color: white;
-				}
-			} @else if $type == Actor {
-				&-first {
-					position: absolute;
-					bottom: 1.565em;
-					width: calc(100% - 1em);
-					padding: 0.1em 0.5em !important;
-					color: white;
-				}
-				&-secondary {
-					position: absolute;
-					bottom: 0.2em;
-					width: calc(100% - 1em);
-					padding: 0.1em 0.5em !important;
-					font-size: 0.86em;
-				}
-			}
+			
 		}
 	}
 }

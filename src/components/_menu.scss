@@ -27,9 +27,8 @@
 
 //dialog
 .dialog {
-	background: rgb(0 0 0 / 0.7);
-	box-shadow: none;
-	border-radius: $rounding-max !important;
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 15px !important;
 	overflow: hidden;
 	backdrop-filter: blur($filter-blur-default);
 	.smoothScrollY {
@@ -43,10 +42,23 @@
 	}
 	.emby-button.actionSheetMenuItem {
 		background: transparent !important;
-		border-radius: 0 !important;
 	}
 	.cardText {
 		display: block !important;
+	}
+	.actionSheetContent {
+		margin: 10px !important;
+		border-radius: 10px;
+		overflow: hidden;
+		padding: 0 !important;
+	}
+	.actionSheetScroller{
+		mask-image: none !important;
+		-webkit-mask-image: none !important;
+		padding: 0 !important;
+	}
+	.actionSheetMenuItem{
+		border-radius: 5px !important;
 	}
 }
 

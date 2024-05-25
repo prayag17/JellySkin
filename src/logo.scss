@@ -15,12 +15,15 @@
 }
 
 body #itemDetailPage {
-	.itemBackdrop {
-		display: none !important;
-	}
 	.parentName,
 	.parentNameLast {
 		font-size: 0 !important;
+	}
+	.detailLogo {
+		left: 18.8vw;
+		top: 17.5vh;
+		height: 30vh;
+		background-position: left bottom !important;
 	}
 	.nameContainer .parentName {
 		a {
@@ -33,22 +36,16 @@ body #itemDetailPage {
 			font-size: 0;
 		}
 	}
-	.detailRibbon {
-		margin-top: 0vh;
-		height: fit-content;
-	}
 	.detailLogo:not(.hide) {
 		display: block !important;
-		position: static;
+		position: absolute;
 		flex-shrink: 0;
 		flex-grow: 0;
-		margin-left: 32.425vw;
 		background-position: left;
-		margin-top: 10vh !important;
 	}
 	.detailLogo.hide
-		+ .detailPageWrapperContainer
-		> .detailPagePrimaryContainer {
+	+ .detailPageWrapperContainer
+	> .detailPagePrimaryContainer {
 		margin-top: 10vh;
 		& > .infoWrapper > .nameContainer > .itemName {
 			font-size: 2.5em !important;

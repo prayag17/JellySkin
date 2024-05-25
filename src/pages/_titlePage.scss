@@ -2,40 +2,80 @@
 
 @use "../abstract/variables" as *;
 
+$card-width: 14vw;
+
 #itemDetailPage {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	width: 100vw;
 	overflow-y: auto;
-
+	padding: 3.2em !important;
 	.mediaInfoItem {
 		border-radius: 10vh;
 		white-space: nowrap;
 	}
 
 	.detailRibbon {
-		height: 7.2em;
-		margin-top: 10vh;
+		height: 60vh;
+		margin-top: 0;
 		background: transparent;
 		font-size: 2.2vh;
 		position: static !important;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
 		.itemMiscInfo {
 			margin-bottom: 0 !important;
 		}
 	}
-	.detailImageContainer .card {
-		position: fixed !important;
-		left: 3.3%;
-		top: calc(50% + 1em);
-		width: 25vw;
-		transform: translateY(-50%);
-		border-radius: $rounding-default;
+	.infoWrapper {
+		display: grid;
+		grid-template-areas:
+			"img text"
+			"img info"
+			"img info";
+		grid-template-columns: $card-width 1fr;
+		column-gap: 2em;
+		row-gap: 1em;
+		grid-template-rows: 1fr auto auto;
+		flex: unset !important;
+		align-items: end;
+		.nameContainer {
+			grid-area: text;
+		}
+		.itemMiscInfo {
+			grid-area: info;
+		}
+		.itemName {
+			font-size: 3em;
+			color: white;
+		}
+	}
+	.detailImageContainer {
+		grid-area: img;
+		padding: 0 !important;
+		width: $card-width;
+		.card {
+			width: 100%;
+			position: static !important;
+			border-radius: $rounding-default;
+			.cardBox {
+				margin: 0 !important;
+			}
+		}
 	}
 	.detailPageWrapperContainer {
-		width: 100vw;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		& > * {
+			padding: 0 !important;
+		}
+	}
+	.detailPageContent {
+		padding-left: 0 !important;
 	}
 	.mainDetailButtons
 		.emby-button:not([data-action="resume"], [data-action="play"]) {
@@ -68,20 +108,26 @@
 
 		&[title="Play"],
 		&[title="Resume"] {
-			background: rgb(255 255 255 / 0.2) !important;
-			color: white;
+			background: white !important;
+			color: black;
 			padding: 0.4em 1em !important;
-			gap: 0.2em;
+			gap: 0.6em;
 			margin-right: 0.5em;
+			width: $card-width;
 			&::after {
 				content: attr(title);
 				display: block;
 				opacity: 1;
 				background: transparent;
 				position: static;
-				font-weight: 400;
+				font-weight: 500;
 				height: fit-content;
 				font-size: 1.5em;
+				width: fit-content;
+			}
+			&:hover {
+				background: hsl(0, 0, 80%) !important;
+				color: black;
 			}
 		}
 	}
@@ -139,6 +185,35 @@
 	.listItem[data-mediatype="Audio"] {
 		flex-flow: row !important;
 		grid-column: auto / span 3;
+	}
+	.detailsGroupItem {
+		max-width: 100% !important;
+	}
+	.detailSection {
+		display: grid;
+		grid-template-areas:
+			"content selector"
+			"detailGroup detailGroup"
+			"recording recording";
+		grid-template-columns: 1fr 40%;
+		gap: 2em;
+		.itemDetailsGroup {
+			grid-area: detailGroup;
+		}
+		.recordingFields {
+			grid-area: recording;
+		}
+		.detailSectionContent {
+			grid-area: content;
+		}
+		.trackSelections {
+			grid-area: selector;
+		}
+	}
+	.tagline {
+		border-left: 0.25em solid rgb(255 255 255);
+		padding: 0 0.5em;
+		color: white;
 	}
 }
 
