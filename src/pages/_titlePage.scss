@@ -51,6 +51,11 @@ $card-width: 14vw;
 		.itemName {
 			font-size: 3em;
 			color: white;
+			&.subtitle {
+				font-size: 1.4em;
+				margin: 0 !important;
+				padding: 0 !important;
+			}
 		}
 	}
 	.detailImageContainer {
@@ -132,51 +137,62 @@ $card-width: 14vw;
 		}
 	}
 	.childrenItemsContainer.itemsContainer.vertical-list {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		gap: 1em;
+		padding: 0;
 		.listItem {
 			.paper-icon-button-light {
 				&[data-action="menu"]::after {
 					content: "";
 					margin-left: 100%;
 				}
-				&:not([data-action="menu"]) {
+				&.listItemImageButton {
 					aspect-ratio: 1;
-					border-radius: $rounding-default;
+					border-radius: 100%;
+					background: $gradient-default;
+					color: white;
+					opacity: 0;
+					box-shadow: 0 0 0 10em rgb(255 255 255 / 0.1);
+					transition: opacity $transition-time-default;
 				}
 			}
 			&[data-type="Episode"] {
-				flex-direction: column;
 				padding: 0;
 				margin: 0 !important;
-				background: rgb(0 0 0 / 0.5);
-				border-radius: $rounding-default;
-				transition: background $transition-time-default;
-				&:hover {
-					background: rgb(0 0 0 / 0.7);
+				background: transparent !important;
+				& .listItem-content {
+					display: grid;
+					grid-template-columns: 25% 1fr 15%;
+					align-content: center;
+					align-items: center;
+					&:hover {
+						.listItemImageButton{
+							opacity: 1;
+						}
+					}
 				}
 			}
 
-			&-content {
-				flex-direction: column;
-			}
+			// 	&-content {
+			// 		flex-direction: column;
+			// 	}
 			&Image-large {
-				width: 100%;
-				padding: 0 !important;
-				margin: 0 !important;
-			}
-			&-overview {
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				text-align: start;
-				width: 100%;
+				justify-self: center;
+				margin: 2em !important;
+				// margin: 0 !important;
+				border-radius: $rounding-default;
 				overflow: hidden;
+				height: 12em;
 			}
+			// 	&-overview {
+			// 		text-overflow: ellipsis;
+			// 		white-space: nowrap;
+			// 		text-align: start;
+			// 		width: 100%;
+			// 		overflow: hidden;
+			// 	}
 
-			&Body {
-				width: 95%;
-			}
+			// 	&Body {
+			// 		width: 95%;
+			// 	}
 		}
 	}
 	.listItem {

@@ -25,14 +25,19 @@ body #itemDetailPage {
 		height: 30vh;
 		background-position: left bottom !important;
 	}
+	&:has(.itemName.subtitle) {
+		.detailLogo {
+			top: 9.5vh;
+		}
+	}
 	.nameContainer .parentName {
 		a {
 			position: absolute;
-			top: 10vh;
-			left: 32.435vw;
+			top: 9.5vh;
+			left: 18.8vw;
 			border-radius: 0 !important;
 			width: 25vw;
-			height: 16vh;
+			height: 30vh;
 			font-size: 0;
 		}
 	}
@@ -44,8 +49,8 @@ body #itemDetailPage {
 		background-position: left;
 	}
 	.detailLogo.hide
-	+ .detailPageWrapperContainer
-	> .detailPagePrimaryContainer {
+		+ .detailPageWrapperContainer
+		> .detailPagePrimaryContainer {
 		margin-top: 10vh;
 		& > .infoWrapper > .nameContainer > .itemName {
 			font-size: 2.5em !important;
