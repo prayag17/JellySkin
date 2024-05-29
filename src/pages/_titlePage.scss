@@ -11,8 +11,12 @@
 	align-items: flex-start;
 	overflow-y: auto;
 	padding: 3.2em !important;
-	.mediaInfoItem {
-		border-radius: 10vh;
+	.mediaInfoItem.mediaInfoOfficialRating {
+		border-radius: 5px;
+		background: rgb(255 255 255 / 0.8);
+		color: #000;
+		border: none;
+		font-weight: 600;
 		white-space: nowrap;
 	}
 
