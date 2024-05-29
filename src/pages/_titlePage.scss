@@ -235,7 +235,7 @@
 		color: white;
 	}
 	// Episode Page
-	&:has(.parentName a[data-type="Series"]) {
+	&:has(.parentName a[data-type="Series"]):not(:has(.listItem)) {
 		--card-width: 24vw;
 		.detailPagePrimaryContainer {
 			margin-top: 8.5vh;

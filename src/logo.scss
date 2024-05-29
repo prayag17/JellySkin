@@ -59,7 +59,7 @@ body #itemDetailPage {
 	}
 
 	// Episode Page
-	&:has(.parentName a[data-type="Series"]) {
+	&:has(.parentName a[data-type="Series"]):not(:has(.listItem)) {
 		.nameContainer .parentName a,
 		.detailLogo {
 			top: 2vh;
