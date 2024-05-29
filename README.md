@@ -28,7 +28,7 @@
 
 - ### Remove BackdropFilter
 
-  This remove the frosted glass like effect from every place.
+  This removes the frosted glass like effect from every place and improves performance
 
       ```css
       @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeBackdropFilter.css");
@@ -36,24 +36,11 @@
 
 - ### Remove scroll fade
 
-  This remove the faded scroll view
+  This removes the gradient faded bar at top of a scrollable container
 
       ```css
       @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeFadingScroll.css");
       ```
-
-- ## Compact Poster
-
-    Want to use compact posters instead of normal cards, add this to your custom css:
-
-    ```css
-    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/compactPosters.css");
-    ```
-
-    Example:\
-    ![image](https://user-images.githubusercontent.com/55829513/200132447-5307c19f-97e5-4022-ab42-c5b8bf632d6b.png)
-
-    > **Warning** : Compact posters might not look as expected for some screen sizes
 
 - ## Horizontal My Media
 
