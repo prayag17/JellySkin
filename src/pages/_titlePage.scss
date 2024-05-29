@@ -240,7 +240,7 @@
 		.detailPagePrimaryContainer {
 			margin-top: 8.5vh;
 		}
-		.detailRibbon{
+		.detailRibbon {
 			height: 43vh;
 		}
 	}
@@ -248,21 +248,34 @@
 
 // mobile
 .layout-mobile #itemDetailPage {
+	--card-width: 100%;
 	.itemBackdrop {
 		position: absolute !important;
-		width: calc(100vw + 20px);
-		height: 80vh !important;
-		top: 0%;
-		left: -10px;
-		filter: blur($filter-blur-default) brightness(50%);
+		width: 100vw;
+		height: 90vh !important;
+		top: 0;
+		left: 0;
+		filter: brightness(65%);
 		margin-top: 0 !important;
 		mask-image: linear-gradient(to bottom, black, transparent);
 		-webkit-mask-image: linear-gradient(to bottom, black, transparent);
-		background-image: $gradient-default;
+	}
+	&:has(.parentName a[data-type="Series"]):not(:has(.listItem)) {
+		.detailRibbon {
+			height: 60vh;
+			--card-width: 100%;
+			.detailImageContainer .card{
+				max-width: 80vw !important;
+				min-width: 80vw !important;
+			}
+		}
+		.itemBackdrop{
+			height: 55vh !important;
+		}
 	}
 	.detail {
 		&Ribbon {
-			height: 70vh;
+			height: 90vh;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
@@ -275,9 +288,9 @@
 			padding: 0 !important;
 			.card {
 				top: 0;
-				max-width: 50vw !important;
-				min-width: 50vw;
-				margin: 0 !important;
+				max-width: 60vw !important;
+				min-width: 60vw;
+				margin: auto !important;
 				position: static !important;
 				transform: none;
 				filter: none !important;
@@ -286,6 +299,15 @@
 					box-shadow: none;
 				}
 			}
+		}
+		&Section {
+			display: flex;
+			flex-direction: column;
+			margin-top: 2em;
+			font-size: 1.3em;
+		}
+		&PageContent {
+			padding-right: 0;
 		}
 	}
 	.itemMiscInfo {
@@ -304,20 +326,17 @@
 		padding: 0 !important;
 	}
 	.mainDetailButtons {
-		gap: 1em !important;
-		width: 100%;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
-		overflow: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		row-gap: 0.5em !important;
+		column-gap: 0.5em !important;
+		// width: 100%;
+		// flex-wrap: nowrap;
+		// justify-content: flex-start;
+		// overflow: auto;
 		.emby-button[title="Play"],
 		.emby-button[title="Resume"] {
-			border: none !important;
-			background: transparent !important;
-			padding: 0.7em;
-			overflow: visible;
-			&::after {
-				all: unset !important;
-			}
+			width: 100%;
 		}
 	}
 	.childrenItemsContainer.itemsContainer.vertical-list {

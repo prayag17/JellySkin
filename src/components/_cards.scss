@@ -7,6 +7,10 @@
 	overflow: visible !important;
 	margin-top: 0.5em;
 }
+
+.layout-mobile .emby-scroller{
+	overflow-x: scroll !important;
+}
 .card {
 	contain: none !important;
 	&.overflowSquareCard {
