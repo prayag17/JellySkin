@@ -2,9 +2,8 @@
 
 @use "../abstract/variables" as *;
 
-$card-width: 14vw;
-
 #itemDetailPage {
+	--card-width: 14vw;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -36,7 +35,7 @@ $card-width: 14vw;
 			"img text"
 			"img info"
 			"img info";
-		grid-template-columns: $card-width 1fr;
+		grid-template-columns: var(--card-width) 1fr;
 		column-gap: 2em;
 		row-gap: 1em;
 		grid-template-rows: 1fr auto auto;
@@ -61,7 +60,7 @@ $card-width: 14vw;
 	.detailImageContainer {
 		grid-area: img;
 		padding: 0 !important;
-		width: $card-width;
+		width: var(--card-width);
 		.card {
 			width: 100%;
 			position: static !important;
@@ -118,7 +117,7 @@ $card-width: 14vw;
 			padding: 0.4em 1em !important;
 			gap: 0.6em;
 			margin-right: 0.5em;
-			width: $card-width;
+			width: var(--card-width);
 			&::after {
 				content: attr(title);
 				display: block;
@@ -164,7 +163,7 @@ $card-width: 14vw;
 					align-content: center;
 					align-items: center;
 					&:hover {
-						.listItemImageButton{
+						.listItemImageButton {
 							opacity: 1;
 						}
 					}
@@ -230,6 +229,16 @@ $card-width: 14vw;
 		border-left: 0.25em solid rgb(255 255 255);
 		padding: 0 0.5em;
 		color: white;
+	}
+	// Episode Page
+	&:has(.parentName a[data-type="Series"]) {
+		--card-width: 24vw;
+		.detailPagePrimaryContainer {
+			margin-top: 8.5vh;
+		}
+		.detailRibbon{
+			height: 43vh;
+		}
 	}
 }
 

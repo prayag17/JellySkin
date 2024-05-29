@@ -57,4 +57,13 @@ body #itemDetailPage {
 			display: block !important;
 		}
 	}
+
+	// Episode Page
+	&:has(.parentName a[data-type="Series"]) {
+		.nameContainer .parentName a,
+		.detailLogo {
+			top: 2vh;
+			left: 28.8vw;
+		}
+	}
 }
