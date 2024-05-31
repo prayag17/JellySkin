@@ -12,7 +12,7 @@
 		left: 0;
 		background: url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/src/assets/background.png");
 		background-size: cover;
-		z-index: 1;
+		z-index: -1;
 	}
 	& > div {
 		position: absolute;

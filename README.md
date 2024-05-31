@@ -1,11 +1,14 @@
 # JellySkin
 
-### Vibrant, minimal, and sprinkled with tons of animations <br> CSS theme for Jellyfin
+### over engineered css theme for Jellyfin
   
 ![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge)\
 ![GitHub Repo stars](https://img.shields.io/github/stars/prayag17/JellySkin?style=social)
 
 # ℹ️ Usage
+
+> [!IMPORTANT]
+> JellySkin requires Chrome (105 and above), Edge (105 and above), Safari (15.4 and above), Firefox (121 and above), Opera (91 and above) and any other Browser supporting Baseline 23 css features to work properly
 
 - To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
 
@@ -20,7 +23,8 @@
   ```
   
 - You can also use Jellyfin-Skin-Manager-Plugin : <https://github.com/danieladov/jellyfin-plugin-skin-manager>
-  > **Note** : Jellyfin Skin Manager has not been updated for some time and doesn't have the latest JellySkin css available.
+  > [!CAUTION]
+  > Jellyfin Skin Manager is not being actively maintained and might not load latest css themes
 
 # 🧩 Addons
 
@@ -113,21 +117,9 @@
 
     ![TitleView](https://user-images.githubusercontent.com/55829513/200133240-075f604d-ae7f-48cb-9a42-445d8f3ef427.png)
 
-- ### Episode View
+- ### Episode List
 
     ![EpisodeView](https://user-images.githubusercontent.com/55829513/200133258-4eabfc3d-475f-4b42-a496-bc2de60c11a5.png)
-
-- ### Settings
-
-    ![SettingsView](https://user-images.githubusercontent.com/55829513/200133273-3ff7ba73-bad2-4f7c-88b1-e8298d246587.png)
-
-- ### Dashboard
-
-    ![DashboardView](https://user-images.githubusercontent.com/55829513/200133302-5d7e7ac1-201b-4cb4-a839-ee53c5c6a6f2.png)
-
-- ### Dialog
-
-    ![DialogView](https://user-images.githubusercontent.com/55829513/200133331-ee7838d0-6318-4175-b969-c06647bf65a0.png)
 
 # ❓ Common Problem Fixes
 
