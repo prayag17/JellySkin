@@ -106,20 +106,16 @@
     ![Login_Page](https://github.com/prayag17/JellySkin/assets/55829513/9ca0d0c2-9ada-4e41-93b9-e4281be20d1d)
   
 - ### Home Screen
+    ![Home page](https://github.com/prayag17/JellySkin/assets/55829513/075d844b-ca43-4f61-b54a-cb75110e77ed)
 
-    ![Home Screen](https://user-images.githubusercontent.com/55829513/200134098-6463a6e7-95bb-4af6-a451-b6ac5ef7abad.png)
-
-- ### Library View
-
-    ![LibView](https://user-images.githubusercontent.com/55829513/200133209-413d6e6c-3569-4aaf-9db7-f576c141f519.png)
-
+- ### Library
+    ![Library](https://github.com/prayag17/JellySkin/assets/55829513/c3ef8e48-df17-44f0-9708-e10dfa448237)
+  
 - ### Title Screen
+    ![Title page](https://github.com/prayag17/JellySkin/assets/55829513/270bb0bb-a755-449d-a57d-9da4e31d6082)
 
-    ![TitleView](https://user-images.githubusercontent.com/55829513/200133240-075f604d-ae7f-48cb-9a42-445d8f3ef427.png)
-
-- ### Episode List
-
-    ![EpisodeView](https://user-images.githubusercontent.com/55829513/200133258-4eabfc3d-475f-4b42-a496-bc2de60c11a5.png)
+- ### Episodes List
+    ![Episodes](https://github.com/prayag17/JellySkin/assets/55829513/eaded068-5930-47fd-b5d0-03cf89e1da44)
 
 # ❓ Common Problem Fixes
 
