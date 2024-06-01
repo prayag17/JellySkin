@@ -34,17 +34,17 @@
 
   This removes the frosted glass like effect from every place and improves performance
 
-      ```css
-      @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeBackdropFilter.css");
-      ```
+    ```css
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeBackdropFilter.css");
+    ```
 
 - ### Remove scroll fade
 
   This removes the gradient faded bar at top of a scrollable container
 
-      ```css
-      @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeFadingScroll.css");
-      ```
+    ```css
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/improvePerformance/removeFadingScroll.css");
+    ```
 
 - ## Horizontal My Media
 
