@@ -99,6 +99,15 @@
         --accent2-dark: YOUR ACCENT COLOR 2(DARKER SHADE);
       }
       ```
+- ## Add blur to video theme backgrounds
+
+    Adds the blur effect present on static backgrounds to video theme backgrounds as well.
+    *Caution*: This is a performance intensive filter and may cause considerable slowdowns on some devices.
+    If you are adding this to the serverwide Custom CSS, users can remove the effect using the *Remove Backdrop Filter* addon above.
+
+    ```css
+    @import url("https://cdn.jsdelivr.net/npm/jellyskin@latest/dist/addons/videoThemeBlur.css");
+    ```
 
 # 💻 Screenshots
 
