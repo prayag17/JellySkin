@@ -1,14 +1,77 @@
 /** @format */
 
 @use "../abstract/variables" as ab;
+@use "../abstract/config" as config;
 
-.emby-button {
-	position: relative;
-	&[is="emby-button"]:not(.emby-tab-button),
-	&.raised[is="emby-linkbutton"]:not(.emby-tab-button) {
-		background: ab.$background-dark;
+@if config.$component-button {
+	.emby-button {
+		position: relative;
+		&[is="emby-button"]:not(%emby-button-exceptions),
+		&.raised[is="emby-linkbutton"]:not(.emby-tab-button) {
+			background: ab.$background-dark;
+			border-radius: 100vh;
+			overflow: hidden;
+			&::after {
+				content: "";
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				background: ab.$gradient-default;
+				z-index: -1;
+				opacity: 0;
+				transition: opacity ab.$transition-time-fast-1 linear;
+			}
+			&:hover::after,
+			&:focus::after {
+				opacity: 1;
+			}
+		}
+		&.emby-collapsible-button {
+			box-shadow: none;
+			border: 0 !important;
+			background: transparent !important;
+			&::after {
+				display: none !important;
+			}
+		}
+	}
+
+	.emby-tab-button {
+		@if config.$pages-titlePage == false {
+			@extend %emby-button-exceptions
+		}
+	}
+
+	.detailButton {
+		@if config.$pages-titlePage == false {
+			@extend %emby-button-exceptions
+		}
+	}
+
+	.paper-icon-button-light {
+		border-radius: ab.$rounding-default;
+	}
+
+	// Skip Intro
+	.skipIntro,
+	.skip-button {
+		background: ab.$background-dark !important;
 		border-radius: 100vh;
 		overflow: hidden;
+		bottom: 10em;
+		color: white !important;
+		border: none;
+		box-shadow: 0 0 15px black;
+		padding: 0.5em;
+		font-size: 1.2em;
+		right: 1em;
+		position: fixed !important;
+
+		&:hover {
+			box-shadow: 0 0 15px black !important;
+		}
 		&::after {
 			content: "";
 			position: absolute;
@@ -17,68 +80,22 @@
 			top: 0;
 			left: 0;
 			background: ab.$gradient-default;
-			z-index: -1;
+			z-index: 0;
 			opacity: 0;
 			transition: opacity ab.$transition-time-fast-1 linear;
+		}
+		.paper-icon-button-light {
+			z-index: 1;
+			color: white !important;
 		}
 		&:hover::after,
 		&:focus::after {
 			opacity: 1;
 		}
 	}
-	&.emby-collapsible-button {
-		box-shadow: none;
-		border: 0 !important;
-		background: transparent !important;
-		&::after {
-			display: none !important;
-		}
-	}
-}
 
-.paper-icon-button-light {
-	border-radius: ab.$rounding-default;
-}
-
-// Skip Intro
-
-.skipIntro {
-	background: ab.$background-dark !important;
-	border-radius: 100vh;
-	overflow: hidden;
-	bottom: 12em;
-	color: white !important;
-	border: none;
-	box-shadow: 0 0 15px black;
-	padding: 0.5em;
-	font-size: 1.2em;
-	right: 8em;
-
-	&:hover {
-		box-shadow: 0 0 15px black !important;
+	.dialog
+		.emby-button:not(.cardImageContainer, .actionSheetMenuItem).button-delete {
+		background: rgb(247, 0, 0) !important;
 	}
-	&::after {
-		content: "";
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		top: 0;
-		left: 0;
-		background: ab.$gradient-default;
-		z-index: 0;
-		opacity: 0;
-		transition: opacity ab.$transition-time-fast-1 linear;
-	}
-	.paper-icon-button-light {
-		z-index: 1;
-		color: white !important;
-	}
-	&:hover::after,
-	&:focus::after {
-		opacity: 1;
-	}
-}
-.dialog
-	.emby-button:not(.cardImageContainer, .actionSheetMenuItem).button-delete {
-	background: rgb(247, 0, 0) !important;
 }

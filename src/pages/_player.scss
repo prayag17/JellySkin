@@ -1,40 +1,43 @@
 /** @format */
 @use "../abstract/variables" as *;
+@use "../abstract/config" as config;
 
-@media (orientation: portrait) and (max-width: 43em) {
+@if config.$pages-player {
+	@media (orientation: portrait) and (max-width: 43em) {
+		.nowPlaying {
+			&InfoContainer {
+				justify-content: center;
+				align-items: center;
+			}
+			&PageImageContainer {
+				flex-grow: 0;
+			}
+		}
+	}
+
 	.nowPlaying {
-		&InfoContainer {
-			justify-content: center;
-			align-items: center;
-		}
-		&PageImageContainer {
-			flex-grow: 0;
+		&SongName {
+			font-size: 1.5em;
+			white-space: nowrap;
+			text-overflow: ellipsis;
 		}
 	}
-}
 
-.nowPlaying {
-	&SongName {
-		font-size: 1.5em;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+	.subtitleSync {
+		top: 8em;
+		left: 0;
+		&Container {
+			background-color: rgb(0 0 0 / 0.75);
+			backdrop-filter: blur($filter-blur-default);
+		}
 	}
-}
 
-.subtitleSync {
-	top: 8em;
-	left: 0;
-	&Container {
-		background-color: rgb(0 0 0 / 0.75);
+	.sliderBubble {
+		background: rgb(0 0 0 / 0.75);
 		backdrop-filter: blur($filter-blur-default);
 	}
-}
 
-.sliderBubble {
-	background: rgb(0 0 0 / 0.75);
-	backdrop-filter: blur($filter-blur-default);
-}
-
-.osdTextContainer{
-	font-family: monospace;
+	.osdTextContainer{
+		font-family: monospace;
+	}
 }

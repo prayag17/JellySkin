@@ -1,43 +1,47 @@
 /** @format */
 
 @use "../abstract/variables" as ab;
-#indexPage {
-	.sectionTitle {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		color: white;
-		align-items: center;
-		font-size: 1.6em;
-		&::before {
-			content: "";
-			margin-right: 0.5em;
-			width: 1.3em;
-			height: 2px;
-			background: white;
-		}
-	}
-	.emby-scroller {
-		.emby-button:not(.cardOverlayButton) {
-			margin-right: 1.2em;
-			border-radius: ab.$rounding-default;
-			background: rgb(0 0 0 / 0.2);
-			box-shadow: 0 0 0.5em rgb(0 0 0 / 0.75);
-			overflow: hidden;
-			&::after {
-				all: unset;
-			}
-			&:hover {
-				background: rgb(0 0 0 / 0.5);
+@use "../abstract/config" as config;
+
+@if config.$pages-indexPage {
+	#indexPage {
+		.sectionTitle {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			color: white;
+			align-items: center;
+			font-size: 1.6em;
+			&::before {
+				content: "";
+				margin-right: 0.5em;
+				width: 1.3em;
+				height: 2px;
+				background: white;
 			}
 		}
-	}
-	.section0 {
-		.emby-scrollbuttons {
-			display: none;
+		.emby-scroller {
+			.emby-button:not(.cardOverlayButton) {
+				margin-right: 1.2em;
+				border-radius: ab.$rounding-default;
+				background: rgb(0 0 0 / 0.2);
+				box-shadow: 0 0 0.5em rgb(0 0 0 / 0.75);
+				overflow: hidden;
+				&::after {
+					all: unset;
+				}
+				&:hover {
+					background: rgb(0 0 0 / 0.5);
+				}
+			}
 		}
-		.itemsContainer {
-			flex-wrap: wrap;
+		.section0 {
+			.emby-scrollbuttons {
+				display: none;
+			}
+			.itemsContainer {
+				flex-wrap: wrap;
+			}
 		}
 	}
 }

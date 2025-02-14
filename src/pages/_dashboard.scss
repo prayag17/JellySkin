@@ -1,43 +1,47 @@
 /** @format */
 
-@media (min-width: 40em) {
-	.dashboardDocument .skinBody {
-		width: calc(100% - 20em);
+@use "../abstract/config" as config;
+
+@if config.$pages-dashboard {
+	@media (min-width: 40em) {
+		.dashboardDocument .skinBody {
+			width: calc(100% - 20em);
+		}
 	}
-}
 
-.dashboardDocument .headerTabs {
-	margin-left: 0;
-	width: auto;
-}
-
-.dashboardColumn:first-child .dashboardSection .paperList {
-	background: rgb(0 0 0 / 0.5) !important;
-	font-size: 1.1em;
-	color: rgb(255 255 255 / 0.7);
-}
-
-.layout-mobile .dashboardDocument .headerTabs {
-	width: 100%;
-}
-
-.MuiBox-root{
-	.mainAnimatedPages {
-		width: 100%;
-		height: auto;
-		overflow: visible;
+	.dashboardDocument .headerTabs {
+		margin-left: 0;
+		width: auto;
 	}
-}
 
-body.dashboardDocument{
-	overflow: auto !important;
-	div[data-role="page"]{
-		position: relative !important;
+	.dashboardColumn:first-child .dashboardSection .paperList {
+		background: rgb(0 0 0 / 0.5) !important;
+		font-size: 1.1em;
+		color: rgb(255 255 255 / 0.7);
+	}
+
+	.layout-mobile .dashboardDocument .headerTabs {
 		width: 100%;
-		height: fit-content;
-		overflow: visible;
-		mask-image: none !important;
-		-webkit-mask-image: none !important;
-		left: 0 !important;
+	}
+
+	.MuiBox-root{
+		.mainAnimatedPages {
+			width: 100%;
+			height: auto;
+			overflow: visible;
+		}
+	}
+
+	body.dashboardDocument{
+		overflow: auto !important;
+		div[data-role="page"]{
+			position: relative !important;
+			width: 100%;
+			height: fit-content;
+			overflow: visible;
+			mask-image: none !important;
+			-webkit-mask-image: none !important;
+			left: 0 !important;
+		}
 	}
 }

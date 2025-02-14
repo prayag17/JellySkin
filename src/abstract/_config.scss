@@ -1,0 +1,46 @@
+/** @format */
+
+/*
+  Include Configuration
+    Exclude certain core parts of the theme by
+    setting the value to false.
+*/
+// Abstract
+//   Font Stlye Changes
+$abstract-fonts: true;
+
+// Components
+//   Button Style Changes
+$component-button: true;
+//   Cards Style Changes
+$component-cards: true;
+//   Solid color completed indicator
+$component-cards-indicator-solid-completed: false;
+//   Portrait styled cards
+$component-cards-portraits: true;
+//   Header Style Changes
+$component-header: true;
+//   Input Element Style Changes
+$component-input: true;
+//   Links Style Changes
+$component-links: true;
+//   Manue Style Changes
+$component-menu: true;
+//   Scrollbar Style Changes
+$component-scrollbars: true;
+//   Side Menu Style Changes
+$component-sidemenu: true;
+//   Slider Bubble Style Changes
+$component-sliderBubble: true;
+
+// Pages
+//   Dashboard Page Style Changes
+$pages-dashboard: true;
+//   Main/Library Page Style Changes
+$pages-indexPage: true;
+//   Login Page Style Changes
+$pages-loginPage: true;
+//   Player Page Style Changes
+$pages-player: true;
+//   Show/Movies Page Style Changes
+$pages-titlePage: true;

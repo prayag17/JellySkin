@@ -1,431 +1,434 @@
 /** @format */
 
 @use "../abstract/variables" as *;
+@use "../abstract/config" as config;
 
-#itemDetailPage {
-	--card-width: 14vw;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	overflow-y: auto;
-	padding: 3.2em !important;
-	.mediaInfoItem.mediaInfoOfficialRating {
-		border-radius: 5px;
-		background: rgb(255 255 255 / 0.8);
-		color: #000;
-		border: none;
-		font-weight: 600;
-		white-space: nowrap;
-	}
-
-	.detailRibbon {
-		height: 60vh;
-		margin-top: 0;
-		background: transparent;
-		font-size: 2.2vh;
-		position: static !important;
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
-		.itemMiscInfo {
-			margin-bottom: 0 !important;
-		}
-	}
-	.infoWrapper {
-		display: grid;
-		grid-template-areas:
-			"img text"
-			"img info"
-			"img info";
-		grid-template-columns: var(--card-width) 1fr;
-		column-gap: 2em;
-		row-gap: 1em;
-		grid-template-rows: 1fr auto auto;
-		flex: unset !important;
-		align-items: end;
-		.nameContainer {
-			grid-area: text;
-		}
-		.itemMiscInfo {
-			grid-area: info;
-		}
-		.itemName {
-			font-size: 3em;
-			color: white;
-			&.subtitle {
-				font-size: 1.4em;
-				margin: 0 !important;
-				padding: 0 !important;
-			}
-		}
-	}
-	.detailImageContainer {
-		grid-area: img;
-		padding: 0 !important;
-		width: var(--card-width);
-		.card {
-			width: 100%;
-			position: static !important;
-			border-radius: $rounding-default;
-			.cardBox {
-				margin: 0 !important;
-			}
-		}
-	}
-	.detailPageWrapperContainer {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		& > * {
-			padding: 0 !important;
-			background: transparent;
-		}
-	}
-	.detailPageContent {
-		padding-left: 0 !important;
-	}
-	.mainDetailButtons
-		.emby-button:not([data-action="resume"], [data-action="play"]) {
-		background: transparent !important;
-	}
-	.detailLogo {
-		display: none;
-	}
-	.emby-button {
-		background: transparent !important;
-		border-radius: 10vh;
-		flex-flow: row;
-		justify-content: center;
-		align-items: center;
-		text-decoration: none;
-		margin-right: 0.5em !important;
-		&[is="emby-linkbutton"] {
-			color: unset;
-		}
-		&:not([is="emby-linkbutton"]) {
-			&:hover {
-				background: rgb(255 255 255 / 0.1) !important;
-				color: white;
-			}
-
-			&::after {
-				display: none;
-			}
-		}
-
-		&[title="Play"],
-		&[title="Resume"] {
-			background: white !important;
-			color: black;
-			padding: 0.4em 1em !important;
-			gap: 0.6em;
-			margin-right: 0.5em;
-			width: var(--card-width);
-			&::after {
-				content: attr(title);
-				display: block;
-				opacity: 1;
-				background: transparent;
-				position: static;
-				font-weight: 500;
-				height: fit-content;
-				font-size: 1.5em;
-				width: fit-content;
-			}
-			&:hover {
-				background: hsl(0, 0%, 80%) !important;
-				color: black;
-			}
-		}
-	}
-	.childrenItemsContainer.itemsContainer.vertical-list {
-		padding: 0;
-		.listItem {
-			.paper-icon-button-light {
-				&[data-action="menu"]::after {
-					content: "";
-					margin-left: 100%;
-				}
-				&.listItemImageButton {
-					aspect-ratio: 1;
-					border-radius: 100%;
-					background: $gradient-default;
-					color: white;
-					opacity: 0;
-					box-shadow: 0 0 0 10em rgb(255 255 255 / 0.1);
-					transition: opacity $transition-time-default;
-				}
-			}
-			&[data-type="Episode"] {
-				padding: 0;
-				margin: 0 !important;
-				background: transparent !important;
-				& .listItem-content {
-					display: grid;
-					grid-template-columns: 25% 1fr 15%;
-					align-content: center;
-					align-items: center;
-					&:hover {
-						.listItemImageButton {
-							opacity: 1;
-						}
-					}
-				}
-			}
-
-			// 	&-content {
-			// 		flex-direction: column;
-			// 	}
-			&Image-large {
-				justify-self: center;
-				margin: 2em !important;
-				// margin: 0 !important;
-				border-radius: $rounding-default;
-				overflow: hidden;
-				height: 12em;
-			}
-			// 	&-overview {
-			// 		text-overflow: ellipsis;
-			// 		white-space: nowrap;
-			// 		text-align: start;
-			// 		width: 100%;
-			// 		overflow: hidden;
-			// 	}
-
-			// 	&Body {
-			// 		width: 95%;
-			// 	}
-		}
-	}
-	.listItem {
-		flex-flow: column !important;
-	}
-	.listItem[data-mediatype="Audio"] {
-		flex-flow: row !important;
-		grid-column: auto / span 3;
-	}
-	.detailsGroupItem {
-		max-width: 100% !important;
-	}
-	.detailSection {
-		display: grid;
-		grid-template-areas:
-			"content selector"
-			"detailGroup detailGroup"
-			"recording recording";
-		grid-template-columns: 1fr 40%;
-		gap: 2em;
-		.itemDetailsGroup {
-			grid-area: detailGroup;
-		}
-		.recordingFields {
-			grid-area: recording;
-		}
-		.detailSectionContent {
-			grid-area: content;
-		}
-		.trackSelections {
-			grid-area: selector;
-		}
-	}
-	.tagline {
-		border-left: 0.25em solid rgb(255 255 255);
-		padding: 0 0.5em;
-		color: white;
-	}
-	// Episode Page
-	&:has(.parentName a[data-type="Series"]):not(:has(.listItem)) {
-		--card-width: 24vw;
-		.detailPagePrimaryContainer {
-			margin-top: 8.5vh;
-		}
-		.detailRibbon {
-			height: 43vh;
-		}
-	}
-}
-
-// mobile
-.layout-mobile #itemDetailPage {
-	--card-width: 100%;
-	.itemBackdrop {
-		position: absolute !important;
-		width: 100vw;
-		height: 90vh !important;
-		top: 0;
-		left: 0;
-		filter: brightness(65%);
-		margin-top: 0 !important;
-		mask-image: linear-gradient(to bottom, black, transparent);
-		-webkit-mask-image: linear-gradient(to bottom, black, transparent);
-	}
-	&:has(.parentName a[data-type="Series"]):not(:has(.listItem)) {
-		.detailRibbon {
-			height: 60vh;
-			--card-width: 100%;
-			.detailImageContainer .card{
-				max-width: 80vw !important;
-				min-width: 80vw !important;
-			}
-		}
-		.itemBackdrop{
-			height: 55vh !important;
-		}
-	}
-	.detail {
-		&Ribbon {
-			height: 90vh;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: flex-end;
-			margin-top: 0 !important;
-		}
-		&ImageContainer {
-			position: static;
-			overflow: hidden;
-			padding: 0 !important;
-			.card {
-				top: 0;
-				max-width: 60vw !important;
-				min-width: 60vw;
-				margin: auto !important;
-				position: static !important;
-				transform: none;
-				filter: none !important;
-				&Box {
-					margin: 0 !important;
-					box-shadow: none;
-				}
-			}
-		}
-		&Section {
-			display: flex;
-			flex-direction: column;
-			margin-top: 2em;
-			font-size: 1.3em;
-		}
-		&PageContent {
-			padding-right: 0;
-		}
-	}
-	.itemMiscInfo {
-		justify-content: flex-start;
-	}
-	.infoText {
-		text-align: start;
-		width: fit-content !important;
-	}
-	.infoWrapper {
+@if config.$pages-titlePage {
+	#itemDetailPage {
+		--card-width: 14vw;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
+		justify-content: flex-start;
 		align-items: flex-start;
-		justify-content: flex-end;
-		padding: 0 !important;
-	}
-	.mainDetailButtons {
-		flex-direction: row;
-		flex-wrap: wrap;
-		row-gap: 0.5em !important;
-		column-gap: 0.5em !important;
-		// width: 100%;
-		// flex-wrap: nowrap;
-		// justify-content: flex-start;
-		// overflow: auto;
-		.emby-button[title="Play"],
-		.emby-button[title="Resume"] {
-			width: 100%;
+		overflow-y: auto;
+		padding: 3.2em !important;
+		.mediaInfoItem.mediaInfoOfficialRating {
+			border-radius: 5px;
+			background: rgb(255 255 255 / 0.8);
+			color: #000;
+			border: none;
+			font-weight: 600;
+			white-space: nowrap;
 		}
-	}
-	.childrenItemsContainer.itemsContainer.vertical-list {
-		grid-template-columns: 1fr;
-		.listItemImage {
-			margin: 0 !important;
-			padding: 0 !important;
-			width: 100%;
-			flex-shrink: 0;
-			flex-grow: 1;
-			flex-basis: 20vh;
-		}
-		.listItem-bottomoverview {
-			font-size: 88%;
-			margin-bottom: 1em;
-			margin-top: 0.2em;
-			padding: 0 1em 1em 1em;
-		}
-	}
-	.emby-button {
-		margin: 0 !important;
-	}
-}
 
-@media (orientation: landscape) {
+		.detailRibbon {
+			height: 60vh;
+			margin-top: 0;
+			background: transparent;
+			font-size: 2.2vh;
+			position: static !important;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			.itemMiscInfo {
+				margin-bottom: 0 !important;
+			}
+		}
+		.infoWrapper {
+			display: grid;
+			grid-template-areas:
+				"img text"
+				"img info"
+				"img info";
+			grid-template-columns: var(--card-width) 1fr;
+			column-gap: 2em;
+			row-gap: 1em;
+			grid-template-rows: 1fr auto auto;
+			flex: unset !important;
+			align-items: end;
+			.nameContainer {
+				grid-area: text;
+			}
+			.itemMiscInfo {
+				grid-area: info;
+			}
+			.itemName {
+				font-size: 3em;
+				color: white;
+				&.subtitle {
+					font-size: 1.4em;
+					margin: 0 !important;
+					padding: 0 !important;
+				}
+			}
+		}
+		.detailImageContainer {
+			grid-area: img;
+			padding: 0 !important;
+			width: var(--card-width);
+			.card {
+				width: 100%;
+				position: static !important;
+				border-radius: $rounding-default;
+				.cardBox {
+					margin: 0 !important;
+				}
+			}
+		}
+		.detailPageWrapperContainer {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			& > * {
+				padding: 0 !important;
+				background: transparent;
+			}
+		}
+		.detailPageContent {
+			padding-left: 0 !important;
+		}
+		.mainDetailButtons
+			.emby-button:not([data-action="resume"], [data-action="play"]) {
+			background: transparent !important;
+		}
+		.detailLogo {
+			display: none;
+		}
+		.emby-button {
+			background: transparent !important;
+			border-radius: 10vh;
+			flex-flow: row;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			margin-right: 0.5em !important;
+			&[is="emby-linkbutton"] {
+				color: unset;
+			}
+			&:not([is="emby-linkbutton"]) {
+				&:hover {
+					background: rgb(255 255 255 / 0.1) !important;
+					color: white;
+				}
+
+				&::after {
+					display: none;
+				}
+			}
+
+			&[title="Play"],
+			&[title="Resume"] {
+				background: white !important;
+				color: black;
+				padding: 0.4em 1em !important;
+				gap: 0.6em;
+				margin-right: 0.5em;
+				width: var(--card-width);
+				&::after {
+					content: attr(title);
+					display: block;
+					opacity: 1;
+					background: transparent;
+					position: static;
+					font-weight: 500;
+					height: fit-content;
+					font-size: 1.5em;
+					width: fit-content;
+				}
+				&:hover {
+					background: hsl(0, 0%, 80%) !important;
+					color: black;
+				}
+			}
+		}
+		.childrenItemsContainer.itemsContainer.vertical-list {
+			padding: 0;
+			.listItem {
+				.paper-icon-button-light {
+					&[data-action="menu"]::after {
+						content: "";
+						margin-left: 100%;
+					}
+					&.listItemImageButton {
+						aspect-ratio: 1;
+						border-radius: 100%;
+						background: $gradient-default;
+						color: white;
+						opacity: 0;
+						box-shadow: 0 0 0 10em rgb(255 255 255 / 0.1);
+						transition: opacity $transition-time-default;
+					}
+				}
+				&[data-type="Episode"] {
+					padding: 0;
+					margin: 0 !important;
+					background: transparent !important;
+					& .listItem-content {
+						display: grid;
+						grid-template-columns: 25% 1fr 15%;
+						align-content: center;
+						align-items: center;
+						&:hover {
+							.listItemImageButton {
+								opacity: 1;
+							}
+						}
+					}
+				}
+
+				// 	&-content {
+				// 		flex-direction: column;
+				// 	}
+				&Image-large {
+					justify-self: center;
+					margin: 2em !important;
+					// margin: 0 !important;
+					border-radius: $rounding-default;
+					overflow: hidden;
+					height: 12em;
+				}
+				// 	&-overview {
+				// 		text-overflow: ellipsis;
+				// 		white-space: nowrap;
+				// 		text-align: start;
+				// 		width: 100%;
+				// 		overflow: hidden;
+				// 	}
+
+				// 	&Body {
+				// 		width: 95%;
+				// 	}
+			}
+		}
+		.listItem {
+			flex-flow: column !important;
+		}
+		.listItem[data-mediatype="Audio"] {
+			flex-flow: row !important;
+			grid-column: auto / span 3;
+		}
+		.detailsGroupItem {
+			max-width: 100% !important;
+		}
+		.detailSection {
+			display: grid;
+			grid-template-areas:
+				"content selector"
+				"detailGroup detailGroup"
+				"recording recording";
+			grid-template-columns: 1fr 40%;
+			gap: 2em;
+			.itemDetailsGroup {
+				grid-area: detailGroup;
+			}
+			.recordingFields {
+				grid-area: recording;
+			}
+			.detailSectionContent {
+				grid-area: content;
+			}
+			.trackSelections {
+				grid-area: selector;
+			}
+		}
+		.tagline {
+			border-left: 0.25em solid rgb(255 255 255);
+			padding: 0 0.5em;
+			color: white;
+		}
+		// Episode Page
+		&:has(.parentName a[data-type="Series"]):not(:has(.listItem)) {
+			--card-width: 24vw;
+			.detailPagePrimaryContainer {
+				margin-top: 8.5vh;
+			}
+			.detailRibbon {
+				height: 43vh;
+			}
+		}
+	}
+
+	// mobile
 	.layout-mobile #itemDetailPage {
+		--card-width: 100%;
+		.itemBackdrop {
+			position: absolute !important;
+			width: 100vw;
+			height: 90vh !important;
+			top: 0;
+			left: 0;
+			filter: brightness(65%);
+			margin-top: 0 !important;
+			mask-image: linear-gradient(to bottom, black, transparent);
+			-webkit-mask-image: linear-gradient(to bottom, black, transparent);
+		}
+		&:has(.parentName a[data-type="Series"]):not(:has(.listItem)) {
+			.detailRibbon {
+				height: 60vh;
+				--card-width: 100%;
+				.detailImageContainer .card{
+					max-width: 80vw !important;
+					min-width: 80vw !important;
+				}
+			}
+			.itemBackdrop{
+				height: 55vh !important;
+			}
+		}
 		.detail {
 			&Ribbon {
-				flex-direction: row;
-				margin-top: 10vh !important;
-				justify-content: center;
-				align-items: center;
-				.info {
-					&Wrapper {
-						display: grid;
-						grid-template-areas:
-							"card name"
-							"card info";
-						flex-direction: row;
-						flex-basis: 50vw;
-						align-items: center;
-						.detailImageContainer {
-							grid-area: card;
-						}
-						.nameContainer {
-							grid-area: name;
-							align-self: self-end;
-							justify-self: flex-end;
-							width: calc(100% - 1.2em);
-							text-overflow: ellipsis;
-						}
-						.itemMiscInfo-primary {
-							grid-area: info;
-							align-self: self-start;
-							justify-self: flex-end;
-							width: calc(100% - 1.2em);
-							text-overflow: ellipsis;
-						}
-					}
-					&Text {
-						text-align: start;
-						width: fit-content !important;
-						font-size: 3.2em;
-						max-width: fit-content;
-						-webkit-line-clamp: 2;
-						-webkit-box-orient: vertical;
-						display: -webkit-box;
-						overflow: hidden;
-					}
-				}
+				height: 90vh;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-end;
+				margin-top: 0 !important;
 			}
 			&ImageContainer {
+				position: static;
+				overflow: hidden;
+				padding: 0 !important;
 				.card {
-					min-width: 20vw;
-					max-width: 40vw !important;
-					width: 100%;
+					top: 0;
+					max-width: 60vw !important;
+					min-width: 60vw;
+					margin: auto !important;
+					position: static !important;
+					transform: none;
+					filter: none !important;
+					&Box {
+						margin: 0 !important;
+						box-shadow: none;
+					}
 				}
 			}
+			&Section {
+				display: flex;
+				flex-direction: column;
+				margin-top: 2em;
+				font-size: 1.3em;
+			}
+			&PageContent {
+				padding-right: 0;
+			}
+		}
+		.itemMiscInfo {
+			justify-content: flex-start;
+		}
+		.infoText {
+			text-align: start;
+			width: fit-content !important;
+		}
+		.infoWrapper {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			justify-content: flex-end;
+			padding: 0 !important;
 		}
 		.mainDetailButtons {
-			width: fit-content;
-			margin: 0 !important;
-			padding: 0 !important;
-			flex-basis: 50vw;
-			font-size: 1.5em;
+			flex-direction: row;
+			flex-wrap: wrap;
+			row-gap: 0.5em !important;
+			column-gap: 0.5em !important;
+			// width: 100%;
+			// flex-wrap: nowrap;
+			// justify-content: flex-start;
+			// overflow: auto;
+			.emby-button[title="Play"],
+			.emby-button[title="Resume"] {
+				width: 100%;
+			}
 		}
-		.parentName a {
-			text-align: start;
+		.childrenItemsContainer.itemsContainer.vertical-list {
+			grid-template-columns: 1fr;
+			.listItemImage {
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 100%;
+				flex-shrink: 0;
+				flex-grow: 1;
+				flex-basis: 20vh;
+			}
+			.listItem-bottomoverview {
+				font-size: 88%;
+				margin-bottom: 1em;
+				margin-top: 0.2em;
+				padding: 0 1em 1em 1em;
+			}
+		}
+		.emby-button {
+			margin: 0 !important;
+		}
+	}
+
+	@media (orientation: landscape) {
+		.layout-mobile #itemDetailPage {
+			.detail {
+				&Ribbon {
+					flex-direction: row;
+					margin-top: 10vh !important;
+					justify-content: center;
+					align-items: center;
+					.info {
+						&Wrapper {
+							display: grid;
+							grid-template-areas:
+								"card name"
+								"card info";
+							flex-direction: row;
+							flex-basis: 50vw;
+							align-items: center;
+							.detailImageContainer {
+								grid-area: card;
+							}
+							.nameContainer {
+								grid-area: name;
+								align-self: self-end;
+								justify-self: flex-end;
+								width: calc(100% - 1.2em);
+								text-overflow: ellipsis;
+							}
+							.itemMiscInfo-primary {
+								grid-area: info;
+								align-self: self-start;
+								justify-self: flex-end;
+								width: calc(100% - 1.2em);
+								text-overflow: ellipsis;
+							}
+						}
+						&Text {
+							text-align: start;
+							width: fit-content !important;
+							font-size: 3.2em;
+							max-width: fit-content;
+							-webkit-line-clamp: 2;
+							-webkit-box-orient: vertical;
+							display: -webkit-box;
+							overflow: hidden;
+						}
+					}
+				}
+				&ImageContainer {
+					.card {
+						min-width: 20vw;
+						max-width: 40vw !important;
+						width: 100%;
+					}
+				}
+			}
+			.mainDetailButtons {
+				width: fit-content;
+				margin: 0 !important;
+				padding: 0 !important;
+				flex-basis: 50vw;
+				font-size: 1.5em;
+			}
+			.parentName a {
+				text-align: start;
+			}
 		}
 	}
 }

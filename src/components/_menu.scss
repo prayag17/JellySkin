@@ -1,66 +1,70 @@
 /** @format */
 
 @use "../abstract/variables" as *;
-// myPreferencesMenuPage
-#myPreferencesMenuPage {
-	.listItem {
-		border-radius: $rounding-default;
-		transition: background $transition-time-default;
-		&:hover {
-			background: black;
-			.listItemIcon {
-				margin-right: 0.5em;
+@use "../abstract/config" as config;
+
+@if config.$component-menu {
+	// myPreferencesMenuPage
+	#myPreferencesMenuPage {
+		.listItem {
+			border-radius: $rounding-default;
+			transition: background $transition-time-default;
+			&:hover {
+				background: black;
+				.listItemIcon {
+					margin-right: 0.5em;
+				}
+			}
+			&-border {
+				border: none !important;
+			}
+			&Icon {
+				background: $gradient-default;
+				color: transparent;
+				background-clip: text;
+				-webkit-background-clip: text;
+				transition: margin-right $transition-time-default;
 			}
 		}
-		&-border {
-			border: none !important;
-		}
-		&Icon {
-			background: $gradient-default;
-			color: transparent;
-			background-clip: text;
-			-webkit-background-clip: text;
-			transition: margin-right $transition-time-default;
-		}
 	}
-}
 
-//dialog
-.dialog {
-	background: rgba(0, 0, 0, 0.4);
-	border-radius: 15px !important;
-	overflow: hidden;
-	backdrop-filter: blur($filter-blur-default);
-	.smoothScrollY {
-		max-height: 100%;
-	}
-	.emby-button:not(.cardImageContainer, .actionSheetMenuItem) {
-		background: rgb(0 0 0 / 0) !important;
-		&::after {
-			all: unset !important;
+	//dialog
+	.dialog {
+		background: rgba(0, 0, 0, 0.4);
+		border-radius: 15px !important;
+		overflow: hidden;
+		backdrop-filter: blur($filter-blur-default);
+		.smoothScrollY {
+			max-height: 100%;
+		}
+		.emby-button:not(.cardImageContainer, .actionSheetMenuItem) {
+			background: rgb(0 0 0 / 0) !important;
+			&::after {
+				all: unset !important;
+			}
+		}
+		.emby-button.actionSheetMenuItem {
+			background: transparent !important;
+		}
+		.cardText {
+			display: block !important;
+		}
+		.actionSheetContent {
+			margin: 10px !important;
+			padding: 0 !important;
+		}
+		.actionSheetScroller{
+			mask-image: none !important;
+			-webkit-mask-image: none !important;
+			padding: 0 !important;
+		}
+		.actionSheetMenuItem{
+			border-radius: 5px !important;
 		}
 	}
-	.emby-button.actionSheetMenuItem {
-		background: transparent !important;
-	}
-	.cardText {
-		display: block !important;
-	}
-	.actionSheetContent {
-		margin: 10px !important;
-		padding: 0 !important;
-	}
-	.actionSheetScroller{
-		mask-image: none !important;
-		-webkit-mask-image: none !important;
-		padding: 0 !important;
-	}
-	.actionSheetMenuItem{
-		border-radius: 5px !important;
-	}
-}
 
-.filterDialogContent {
-	height: 100%;
-	overflow: auto;
+	.filterDialogContent {
+		height: 100%;
+		overflow: auto;
+	}
 }

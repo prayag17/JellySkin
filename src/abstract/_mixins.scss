@@ -1,6 +1,7 @@
 /** @format */
 
 @use "../abstract/variables" as *;
+@use "../abstract/config" as config;
 
 @mixin actorCard($type) {
 	height: auto;
@@ -71,5 +72,11 @@
 		background: $gradient-default;
 		padding: 0.2em;
 		box-shadow: 0 0 5px rgb(0 0 0 / 0.7);
+	}
+
+	@if config.$component-cards-indicator-solid-completed {
+		.playedIndicator {
+			background: $jf-color-completed !important;
+		}
 	}
 }

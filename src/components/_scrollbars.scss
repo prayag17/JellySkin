@@ -1,10 +1,14 @@
-// side menu
-.mainDrawer.drawer-open .scrollContainer{
-    &::-webkit-scrollbar{
-        &-track{
-            box-shadow: none !important;
-            &-piece{
-                background: transparent !important;
+@use "../abstract/config" as config;
+
+@if config.$component-scrollbars {
+    // side menu
+    .mainDrawer.drawer-open .scrollContainer{
+        &::-webkit-scrollbar{
+            &-track{
+                box-shadow: none !important;
+                &-piece{
+                    background: transparent !important;
+                }
             }
         }
     }
