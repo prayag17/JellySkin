@@ -388,6 +388,7 @@
 							justify-self: flex-end;
 							width: calc(100% - 1.2em);
 							text-overflow: ellipsis;
+							margin-bottom: 100px;
 						}
 						.itemMiscInfo-primary {
 							grid-area: info;
@@ -429,3 +430,4 @@
 		}
 	}
 }
+
